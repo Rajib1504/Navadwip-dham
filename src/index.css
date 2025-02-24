@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: url(/src/assets/otf/PPEditorialOld-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Italic";
+  src: url(/src/assets/otf/PPEditorialOld-Italic.otf)format("opentype");
+}
+@font-face {
+  font-family: "Italic";
+  src: url(/src/assets/otf/PPEditorialOld-Italic.otf)format("opentype");
+}
+@font-face {
+  font-family: "UltraBoldItalic";
+  src: url(/src/assets/otf/PPEditorialOld-UltraboldItalic.otf)format("opentype");
+}
+@font-face {
+  font-family: "UltraLightItalic";
+  src: url(/src/assets/otf/PPEditorialOld-UltralightItalic.otf)format("opentype");
+}
+@font-face {
+  font-family: "UltraBold";
+  src: url(/src/assets/otf/PPEditorialOld-Ultrabold.otf)format("opentype");
+}
+@font-face {
+  font-family: "UltraLight";
+  src: url(/src/assets/otf/PPEditorialOld-Ultralight.otf)format("opentype");
+}

@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        primayRegular:['Regular'],
+        primaryItalic:['Italic'],
+        primaryBoldItalic:['UltraBoldItalic'],
+        primaryLightItalic:['UltraLightItalic'],
+        primaryBold:['UltraBold'],
+        primaryLight:['UltraLight'],
+       
+      }
+    },
   },
   plugins: [
     // eslint-disable-next-line no-undef
