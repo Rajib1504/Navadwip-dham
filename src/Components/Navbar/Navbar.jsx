@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 const Navbar = () => {
   const placesData = [
@@ -75,6 +75,7 @@ const Navbar = () => {
         {/* left content  */}
         <div className=" flex ">
           {/* logo  */}
+          <div className=" flex justify-center items-center">
           <div className="relative w-fit border-box ">
             <img
               src="https://imgur.com/iNztNSp.png"
@@ -86,7 +87,7 @@ const Navbar = () => {
             </h1>
           </div>
           {/* menu   */}
-          <div className="p-2 ">
+          <div className="lg:p-2 ">
             <div className="relative inline-block text-left">
               {/* Dropdown Button */}
               <button
@@ -156,54 +157,52 @@ const Navbar = () => {
               )}
             </div>
           </div>
+          </div>
           {/* center content   */}
           {/* main container  */}
-          <div className=" flex gap-4 font-primayRegular justify-center mx-auto w-1/2 items-center ">
+          <div className="fixed bottom-0 md:static lg:static flex w-full  border-2 border-red-400 gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")} 
-              className="p-3.5 rounded-full  border-success border-2 transition-all"
+              className="md:p-3.5 lg:p-3.5 p-2 rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongLeft />
             </button>
             <div className="flex items-center justify-between w-full  border-2 border-success rounded-full">
               {/* dynamic number  */}
-              <div className="bg-accentWhite text-lg tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
+              <div className="bg-accentWhite md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
               {currentPlace.id}
               </div>
               {/* center content  */}
-              <span className="text-xl">  {currentPlace.name}</span>
+              <span className="md:text-xl lg:text-xl text-xs">  {currentPlace.name}</span>
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="mr-3"
+                className="mr-3 ml-2 md:ml-0 lg:ml-0"
               >
                 {/* <span> {title} (Day {dayNo})</span> */}
-                <IoIosArrowDown className="text-gray-300" />
+                <IoIosArrowDown className="text-gray-300 lg:block md:block hidden" />
+                <IoIosArrowUp className="text-gray-300 lg:hidden md:hidden" />
               </button>
             
               {dropdownOpen && (
-                <ul className="absolute overflow-y-auto bg-success w-1/3 h-[482px] border-2 ml-10 top-20 left-auto shadow-md rounded-md p-4">
+                <ul className="absolute overflow-y-auto  bg-success w-10/12 md:w-2/3 lg:w-1/3 h-[320px] md:h-[320px] lg:h-[482px] border-2 lg:ml-10 md:-ml-4 -ml-5 lg:top-16 md:top-16 bottom-10 left-auto shadow-md rounded-md p-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch", WebkitScrollbar: "none"}}>
 
                   <div className="mx-auto text-center">
                   {placesData.map((day) => (
                     <div key={day.title}>
                       <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
-                        <h3 className="font-primaryLight text-4xl">{`${day.title}`}</h3>
-                        <h5 className="text-success text-xl font-primaryLight">{`${day.day}`}</h5>
+                        <h3 className="font-primaryLight text-lg md:text-2xl lg:text-4xl">{`${day.title}`}</h3>
+                        <h5 className="text-neutralBlack opacity-55 text-sm md:text-lg lg:text-xl font-primaryLight">{`${day.day}`}</h5>
                       </div>
-                      <div className=" p-4 border-2 border-red-400 ">
+                      <div className=" p-4  ">
                       {day.places.map((place) => (
                         <div
                           key={place.id}
-                          className={`p-2 border-2  border-blue-500 mb-1 flex w-full cursor-pointer text-xl rounded-full ${currentPlace.id === place.id ? 'bg-black text-white' : 'hover:bg-success'}`}
+                          className={`p-3  mb-1 flex w-full cursor-pointer text-xs lg:text-xl md:text-xl rounded-full ${currentPlace.id === place.id ? 'bg-black text-white' : 'hover:bg-success'}`}
                           onClick={() => handleSelectPlace(place)}
                         > 
-                          
-                
-                         <span className="w-1/4 text-left">{place.id}</span>
-                         <span className="w-2/3 text-center  "> {place.name}</span>
-
-                       
+                         <span className="lg:w-1/4 md:w-1/4 w-1/5 pl-2 text-left">{place.id}</span>
+                         <span className="md:w-7/12 lg:w-7/12 w-2/3 text-center "> {place.name}</span>
                         </div>
                       ))}
                       </div>
@@ -215,10 +214,12 @@ const Navbar = () => {
             </div>
             <button
            onClick={() => handleNavigate("next")}
-              className="p-3.5 rounded-full  border-success border-2 transition-all"
+              className="md:p-3.5 lg:p-3.5 p-2  rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongRight className="text-lg" />
             </button>
+            
+
           </div>
         </div>
       </div>
