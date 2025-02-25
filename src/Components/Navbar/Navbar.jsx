@@ -1,111 +1,79 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 const Navbar = () => {
+  const placesData = [
+    {
+      day: "Day One",
+      title: "Antardwip",
+      places: [
+        { id: "1.1", name: "Sri Chaitanya Gaudiya Math" },
+        { id: "1.2", name: "Nanda Acharya Bhavan" },
+        { id: "1.3", name: "Yogapith" },
+        { id: "1.4", name: "Srivas Angan" },
+        { id: "1.5", name: "Advaita Bhavan" },
+      ],
+    },
+    {
+      day: "Day Two",
+      title: "Simantadwip",
+      places: [
+        { id: "2.1", name: "Example Section 1" },
+        { id: "2.2", name: "Example Section 2" },
+      ],
+    },
+    {
+      day: "Day Three",
+      title: "Antardwip",
+      places: [
+        { id: "3.1", name: "Sri Chaitanya Gaudiya Math" },
+        { id: "3.2", name: "Nanda Acharya Bhavan" },
+        { id: "3.3", name: "Yogapith" },
+        { id: "3.4", name: "Srivas Angan" },
+        { id: "3.5", name: "Advaita Bhavan" },
+      ],
+    },
+    {
+      day: "Day Four",
+      title: "Antardwip",
+      places: [
+        { id: "4.1", name: "Sri Chaitanya Gaudiya Math" },
+        { id: "4.2", name: "Nanda Acharya Bhavan" },
+        { id: "4.3", name: "Yogapith" },
+        { id: "4.4", name: "Srivas Angan" },
+        { id: "4.5", name: "Advaita Bhavan" },
+      ],
+    },
+  ];
+  
 
-  const daysData = {
-      "Day One": [
-        { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-        { id: "11.2", name: "Nanda Acharya Bhavan" },
-        { id: "11.3", name: "Yogapith" },
-        { id: "11.4", name: "Srivas Angan" },
-        { id: "11.5", name: "Advaita Bhavan" },
-        { id: "11.6", name: "Gadadhar Angan" },
-        { id: "11.7", name: "Murari Gupta Angan" },
-        { id: "11.8", name: "Prithu Kunda" },
-        { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-      "Day Two": [
-            // { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-            { id: "11.2", name: "Nanda Acharya Bhavan" },
-            { id: "11.3", name: "Yogapith" },
-            { id: "11.4", name: "Srivas Angan" },
-            { id: "11.5", name: "Advaita Bhavan" },
-            { id: "11.6", name: "Gadadhar Angan" },
-            { id: "11.7", name: "Murari Gupta Angan" },
-            { id: "11.8", name: "Prithu Kunda" },
-            { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-      "Day Three": [
-            // { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-            // { id: "11.2", name: "Nanda Acharya Bhavan" },
-            { id: "11.3", name: "Yogapith" },
-            { id: "11.4", name: "Srivas Angan" },
-            { id: "11.5", name: "Advaita Bhavan" },
-            { id: "11.6", name: "Gadadhar Angan" },
-            { id: "11.7", name: "Murari Gupta Angan" },
-            { id: "11.8", name: "Prithu Kunda" },
-            { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-      "Day Four": [
-            // { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-            // { id: "11.2", name: "Nanda Acharya Bhavan" },
-            // { id: "11.3", name: "Yogapith" },
-            { id: "11.4", name: "Srivas Angan" },
-            { id: "11.5", name: "Advaita Bhavan" },
-            { id: "11.6", name: "Gadadhar Angan" },
-            { id: "11.7", name: "Murari Gupta Angan" },
-            { id: "11.8", name: "Prithu Kunda" },
-            { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-      "Day Five": [
-            // { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-            // { id: "11.2", name: "Nanda Acharya Bhavan" },
-            // { id: "11.3", name: "Yogapith" },
-            // { id: "11.4", name: "Srivas Angan" },
-            { id: "11.5", name: "Advaita Bhavan" },
-            { id: "11.6", name: "Gadadhar Angan" },
-            { id: "11.7", name: "Murari Gupta Angan" },
-            { id: "11.8", name: "Prithu Kunda" },
-            { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-      "Day Six": [
-            // { id: "11.1", name: "Sri Chaitanya Gaudiya Math" },
-            // { id: "11.2", name: "Nanda Acharya Bhavan" },
-            // { id: "11.3", name: "Yogapith" },
-            // { id: "11.4", name: "Srivas Angan" },
-            // { id: "11.5", name: "Advaita Bhavan" },
-            { id: "11.6", name: "Gadadhar Angan" },
-            { id: "11.7", name: "Murari Gupta Angan" },
-            { id: "11.8", name: "Prithu Kunda" },
-            { id: "11.9", name: "Sri Chaitanya Math" },
-      ],
-    };
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [currentDay, setCurrentDay] = useState("Day One");
     const [currentIndex, setCurrentIndex] = useState(0);
-    const sections = daysData[currentDay];
+    const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
+ 
+  const handleNavigate = (direction) => {
+    let allPlaces = placesData.flatMap((day) => day.places);
+    let currentIndex = allPlaces.findIndex((p) => p.id === currentPlace.id);
+    let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1
 
-    const handleNextDay = () => {
-      const dayKeys = Object.keys(daysData);
-      const currentDayIndex = dayKeys.indexOf(currentDay);
-      if (currentDayIndex < dayKeys.length - 1) {
-        setCurrentDay(dayKeys[currentDayIndex + 1]);
-        setCurrentIndex(0);
-      }
-    };
+    if (newIndex >= 0 && newIndex < allPlaces.length) {
+      setCurrentPlace(allPlaces[newIndex]);
+      document.getElementById(allPlaces[newIndex].id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleSelectPlace = (place) => {
+    setCurrentPlace(place);
+    document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
+    setDropdownOpen(false);
+  };
 
-    const handlePrevDay = () => {
-      const dayKeys = Object.keys(daysData);
-      const currentDayIndex = dayKeys.indexOf(currentDay);
-      if (currentDayIndex > 0) {
-        setCurrentDay(dayKeys[currentDayIndex - 1]);
-        setCurrentIndex(0);
-      }
-    };
-
-  //     dropdown
-  const handleSelectSection = (index) => {
-      setCurrentIndex(index);
-      setDropdownOpen(false);
-    };
   return (
     <div className="w-full sticky t-0 ">
-      <div className="lg:w-11/12 border-2 border-red-300 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
+      <div className="lg:w-11/12  sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
         {/* left content  */}
-        <div className=" flex border-2 border-green-600">
+        <div className=" flex ">
           {/* logo  */}
           <div className="relative w-fit border-box ">
             <img
@@ -130,7 +98,7 @@ const Navbar = () => {
 
               {/* Dropdown Menu */}
               {isOpen && (
-                <ul className="absolute  mt-2 -left-[68px] w-72 bg-white border border-gray-300 rounded-lg shadow-lg">
+                <ul className="absolute  mt-2 -left-[68px] top-20 lg:w-96 bg-white border border-gray-300 rounded-lg shadow-lg">
                   <li className="relative group">
                     <a
                       href="#"
@@ -190,9 +158,9 @@ const Navbar = () => {
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="border-2 flex gap-4 font-primayRegular justify-center mx-auto w-1/2 items-center border-blue-500">
+          <div className=" flex gap-4 font-primayRegular justify-center mx-auto w-1/2 items-center ">
             <button
-              onClick={handlePrevDay} 
+              onClick={() => handleNavigate("prev")} 
               className="p-3.5 rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongLeft />
@@ -200,33 +168,53 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full  border-2 border-success rounded-full">
               {/* dynamic number  */}
               <div className="bg-accentWhite text-lg tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
-                {sections[currentIndex].id}
+              {currentPlace.id}
               </div>
               {/* center content  */}
-              <span className="text-xl">{sections[currentIndex].name}</span>
+              <span className="text-xl">  {currentPlace.name}</span>
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
                 className="mr-3"
               >
+                {/* <span> {title} (Day {dayNo})</span> */}
                 <IoIosArrowDown className="text-gray-300" />
               </button>
+            
               {dropdownOpen && (
-              <ul className="absolute bg-white top-20 max-w-fit shadow-md rounded-md mt-2 p-2">
-                {sections.map((section, index) => (
-                  <li
-                    key={section.id}
-                    onClick={() => handleSelectSection(index)}
-                    className={`p-2 cursor-pointer rounded text-xl w-fit ${index === currentIndex ? 'bg-black text-white' : 'hover:bg-gray-100'}`}
-                  >
-                    {section.id} {section.name}
-                  </li>
-                ))}
-              </ul>
-            )}
+                <ul className="absolute overflow-y-auto bg-success w-1/3 h-[482px] border-2 ml-10 top-20 left-auto shadow-md rounded-md p-4">
+
+                  <div className="mx-auto text-center">
+                  {placesData.map((day) => (
+                    <div key={day.title}>
+                      <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
+                        <h3 className="font-primaryLight text-4xl">{`${day.title}`}</h3>
+                        <h5 className="text-success text-xl font-primaryLight">{`${day.day}`}</h5>
+                      </div>
+                      <div className=" p-4 border-2 border-red-400 ">
+                      {day.places.map((place) => (
+                        <div
+                          key={place.id}
+                          className={`p-2 border-2  border-blue-500 mb-1 flex w-full cursor-pointer text-xl rounded-full ${currentPlace.id === place.id ? 'bg-black text-white' : 'hover:bg-success'}`}
+                          onClick={() => handleSelectPlace(place)}
+                        > 
+                          
+                
+                         <span className="w-1/4 text-left">{place.id}</span>
+                         <span className="w-2/3 text-center  "> {place.name}</span>
+
+                       
+                        </div>
+                      ))}
+                      </div>
+                    </div>
+                  ))}
+                   </div>
+                </ul>
+              )}
             </div>
             <button
-              onClick={handleNextDay}
+           onClick={() => handleNavigate("next")}
               className="p-3.5 rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongRight className="text-lg" />
