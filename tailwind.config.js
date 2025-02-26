@@ -34,6 +34,7 @@ export default {
       },
       spacing: {
         space300: "30rem",
+        space240: "24rem",
         space120: "12rem",
         space60: "6rem",
         space30: "3rem",

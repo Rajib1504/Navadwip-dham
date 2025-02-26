@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
+import Home from "../../Home/Home";
 const Navbar = () => {
   const placesData = [
     {
@@ -70,7 +71,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full sticky t-0 ">
+    <div className="w-full sticky z-50 t-0 ">
       <div className="lg:w-11/12  sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
         {/* left content  */}
         <div className=" flex ">
