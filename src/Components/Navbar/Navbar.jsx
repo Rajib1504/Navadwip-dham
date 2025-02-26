@@ -193,7 +193,7 @@ const Navbar = () => {
                     <div key={day.title}>
                       <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
                         <h3 className="font-primaryLight text-lg md:text-2xl lg:text-4xl">{`${day.title}`}</h3>
-                        <h5 className="text-neutralBlack opacity-55 text-sm md:text-lg lg:text-xl font-primaryLight">{`${day.day}`}</h5>
+                        <h5 className="text-neutralBlack opacity-55 text-sm md:text-lg lg:text-xl text-center font-primaryLight">{`${day.day}`}</h5>
                       </div>
                       <div className=" p-4  ">
                       {day.places.map((place) => (

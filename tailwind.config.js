@@ -1,18 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily:{
-        primayRegular:['Regular'],
-        primaryItalic:['Italic'],
-        primaryBoldItalic:['UltraBoldItalic'],
-        primaryLightItalic:['UltraLightItalic'],
-        primaryBold:['UltraBold'],
-        primaryLight:['UltraLight']
+      fontFamily: {
+        primayRegular: ["Regular"],
+        primaryItalic: ["Italic"],
+        primaryBoldItalic: ["UltraBoldItalic"],
+        primaryLightItalic: ["UltraLightItalic"],
+        primaryBold: ["UltraBold"],
+        primaryLight: ["UltraLight"],
       },
       colors: {
         primaryBlack: "#1C1B1B", // black
@@ -22,10 +19,11 @@ export default {
         success: "#E9E4DD", // send
         primaryWhite: "#E9E4DD", // white 50%
         secondaryWhite: "#E9E4DD", // white 20 %
-        accentWhite:"#E9E4DD",//white 10%
+        accentWhite: "#E9E4DD", //white 10%
       },
       fontSize: {
         heading1: ["10rem", { lineHeight: "110%" }],
+        heading: ["8rem", { lineHeight: "110%" }],
         heading2: ["4rem", { lineHeight: "130%" }],
         heading3: ["3rem", { lineHeight: "130%" }],
         heading4: ["1.5rem", { lineHeight: "150%" }],
@@ -43,12 +41,10 @@ export default {
         spacemd: "0.5rem",
         spacesm: "0.25rem",
       },
-
     },
   },
   plugins: [
     // eslint-disable-next-line no-undef
-    require('daisyui'),
+    require("daisyui"),
   ],
-}
-
+};
