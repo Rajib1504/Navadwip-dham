@@ -24,23 +24,23 @@ export default {
         secondaryWhite: "#E9E4DD", // white 20 %
         accentWhite:"#E9E4DD",//white 10%
       },
-      textStyles: {
-        headin1: "text-[10rem] leading-[110%]",
-        headin2: "text-[4rem] leading-[130%]",
-        heading3: "text-[3rem] leading-[130%]",
-        LuHeading4: "text-[1.5rem] leading-[150%]",
-        TextRegular: "text-[1.5rem] leading-[150%]",
-        TextSmall: "text-[1rem] leading-[150%]",
+      fontSize: {
+        heading1: ["10rem", { lineHeight: "110%" }],
+        heading2: ["4rem", { lineHeight: "130%" }],
+        heading3: ["3rem", { lineHeight: "130%" }],
+        heading4: ["1.5rem", { lineHeight: "150%" }],
+        textRegular: ["1.5rem", { lineHeight: "150%" }],
+        textSmall: ["1rem", { lineHeight: "150%" }],
       },
-      padding: {
-        space300: "p-[30rem]",
-        space120: "p-[12rem]",
-        space60: "p-[6rem]",
-        space30: "p-[3rem]",
-        space15: "p-[1.5rem]",
-        spacelg: "p-[0.75rem]",
-        spacemd: "p-[0.5rem]",
-        spacesm: "p-[0.25rem]",
+      spacing: {
+        space300: "30rem",
+        space120: "12rem",
+        space60: "6rem",
+        space30: "3rem",
+        space15: "1.5rem",
+        spacelg: "0.75rem",
+        spacemd: "0.5rem",
+        spacesm: "0.25rem",
       },
 
     },

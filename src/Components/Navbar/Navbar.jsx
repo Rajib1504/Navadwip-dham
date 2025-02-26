@@ -78,7 +78,7 @@ const Navbar = () => {
           <div className=" flex justify-center items-center">
           <div className="relative w-fit border-box ">
             <img
-              src="https://imgur.com/iNztNSp.png"
+              src="/public/Vector.svg"
               className="text-white mt-1 w-14"
               alt=""
             />
