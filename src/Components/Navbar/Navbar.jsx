@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
-import Home from "../../Home/Home";
 const Navbar = () => {
   const placesData = [
     {
