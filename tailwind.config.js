@@ -12,14 +12,14 @@ export default {
         primaryLight: ["UltraLight"],
       },
       colors: {
-        primaryBlack: "#1C1B1B", // black
-        secondaryBlack: "#1C1B1B", // black 50%
-        accentBlack: "#1C1B1B", // black 20%
-        neutralBlack: "#1C1B1B", // black 10%
-        success: "#E9E4DD", // send
-        primaryWhite: "#E9E4DD", // white 50%
-        secondaryWhite: "#E9E4DD", // white 20 %
-        accentWhite: "#E9E4DD", //white 10%
+        primaryBlack: "rgb(28,27,27)", // black "rgba(34, 197, 94, 0.8)"
+        secondaryBlack: "rgba(28,27,27,0.5)", // black 50%
+        accentBlack: "rgba(28,27,27,0.2)", // black 20%
+        neutralBlack: "rgba(28,27,27,0.1)", // black 10%
+        success: "rgb(233,228,221)", // send
+        primaryWhite: "rgba(233,228,221,0.5)", // white 50%
+        secondaryWhite: "rgba(233,228,221,0.2)", // white 20 %
+        accentWhite: "rgba(233,228,221,0.1)", //white 10%
       },
       fontSize: {
         heading1: ["10rem", { lineHeight: "110%" }],

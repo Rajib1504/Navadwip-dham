@@ -70,8 +70,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full sticky z-50 t-0 ">
-      <div className="lg:w-11/12  sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
+    <div className="w-full fixed z-50 t-0 ">
+      <div className="lg:w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
         {/* left content  */}
         <div className=" flex ">
           {/* logo  */}
@@ -82,7 +82,7 @@ const Navbar = () => {
               className="text-white mt-1 w-14"
               alt=""
             />
-            <h1 className="absolute top-6 drop-shadow-md text-secondaryWhite left-[18px] font-primayRegular font-bold text-xl">
+            <h1 className="absolute top-6 drop-shadow-md text-success left-[18px] font-primayRegular font-bold text-xl">
               N
             </h1>
           </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
               {/* Dropdown Button */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="border m-2 rounded-full p-4 w-12 h-12 bg-transparent flex items-center justify-center"
+                className="border backdrop-blur-sm  m-2 rounded-full p-4 w-12 h-12 bg-transparent flex items-center justify-center"
               >
                 <HiOutlineMenuAlt4 />
               </button>
@@ -160,24 +160,24 @@ const Navbar = () => {
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed bottom-0 md:static lg:static flex w-full  border-2 border-red-400 gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed  bottom-0 md:static lg:static flex w-full  border-2 border-red-400 gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")} 
-              className="md:p-3.5 lg:p-3.5 p-2 rounded-full  border-success border-2 transition-all"
+              className="md:p-3.5 backdrop-blur-sm lg:p-3.5 p-2 rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongLeft />
             </button>
-            <div className="flex items-center justify-between w-full  border-2 border-success rounded-full">
+            <div className="flex backdrop-blur-sm items-center justify-between w-full  border-2 border-success rounded-full">
               {/* dynamic number  */}
               <div className="bg-accentWhite md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
               {currentPlace.id}
               </div>
               {/* center content  */}
-              <span className="md:text-xl lg:text-xl text-xs">  {currentPlace.name}</span>
+              <span className="md:text-xl mix-blend-difference lg:text-xl text-xs">  {currentPlace.name}</span>
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="mr-3 ml-2 md:ml-0 lg:ml-0"
+                className="mr-3   ml-2 md:ml-0 lg:ml-0"
               >
                 {/* <span> {title} (Day {dayNo})</span> */}
                 <IoIosArrowDown className="text-gray-300 lg:block md:block hidden" />
@@ -214,7 +214,7 @@ const Navbar = () => {
             </div>
             <button
            onClick={() => handleNavigate("next")}
-              className="md:p-3.5 lg:p-3.5 p-2  rounded-full  border-success border-2 transition-all"
+              className="md:p-3.5 lg:p-3.5 p-2 backdrop-blur-sm  rounded-full  border-success border-2 transition-all"
             >
               <HiArrowLongRight className="text-lg" />
             </button>
