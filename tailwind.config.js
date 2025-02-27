@@ -41,6 +41,10 @@ export default {
         spacemd: "0.5rem",
         spacesm: "0.25rem",
       },
+      screens: {
+        smMobile:'320px', //sm Mobile(custom)
+        lgMobile: "381px", // Large Mobile (Custom)
+      },
     },
   },
   plugins: [

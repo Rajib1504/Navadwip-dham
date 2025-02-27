@@ -3,7 +3,7 @@ import React from "react";
 const IlandImages = () => {
   return (
     <div className="  ">
-      <div className="  lg:flex pt-space240 py-space120 md:mb-[2rem]  justify-between">
+      <div className="  lg:flex md:pt-space240 py-space60 pt-space120 md:py-space120 md:mb-[2rem]  justify-between">
 
       <div className="hidden lg:flex justify-center items-center gap-space15 ">
         <img src="/public/ilandImages/left/IMG_8584.svg" alt="img" />

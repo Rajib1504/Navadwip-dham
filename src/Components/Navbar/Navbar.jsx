@@ -160,7 +160,7 @@ const Navbar = () => {
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed  bottom-0 md:static lg:static flex w-full  border-2 border-red-400 gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed  bottom-0 md:static lg:static flex w-full  gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")} 
               className="md:p-3.5 backdrop-blur-sm lg:p-3.5 p-2 rounded-full  border-success border-2 transition-all"
@@ -173,7 +173,7 @@ const Navbar = () => {
               {currentPlace.id}
               </div>
               {/* center content  */}
-              <span className="md:text-xl mix-blend-difference lg:text-xl text-xs">  {currentPlace.name}</span>
+              <span className="md:text-xl text-center mix-blend-difference lg:text-xl text-xs">  {currentPlace.name}</span>
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -185,13 +185,14 @@ const Navbar = () => {
               </button>
             
               {dropdownOpen && (
-                <ul className="absolute overflow-y-auto  bg-success w-10/12 md:w-2/3 lg:w-1/3 h-[320px] md:h-[320px] lg:h-[482px] border-2 lg:ml-10 md:-ml-4 -ml-5 lg:top-16 md:top-16 bottom-10 left-auto shadow-md rounded-md p-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch", WebkitScrollbar: "none"}}>
+                <ul className="absolute overflow-y-auto  bg-success 
+                w-full h-[320px] md:h-[320px] backdrop-blur-none lg:h-[482px] border-2 ml-0 lg:top-16 md:top-12 bottom-10 left-auto shadow-md rounded-md p-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch", WebkitScrollbar: "none"}}>
 
                   <div className="mx-auto text-center">
                   {placesData.map((day) => (
                     <div key={day.title}>
                       <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
-                        <h3 className="font-primaryLight text-lg md:text-2xl lg:text-4xl">{`${day.title}`}</h3>
+                        <h3 className="font-primaryLight text-lg  md:text-2xl lg:text-heading4">{`${day.title}`}</h3>
                         <h5 className="text-neutralBlack opacity-55 text-sm md:text-lg lg:text-xl text-center font-primaryLight">{`${day.day}`}</h5>
                       </div>
                       <div className=" p-4  ">
