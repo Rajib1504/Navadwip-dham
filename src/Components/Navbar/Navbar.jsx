@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed z-50 t-0 ">
-      <div className="w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
+      <div className="w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2">
         {/* left content  */}
         <div className=" flex ">
           {/* logo  */}
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="relative w-fit border-box ">
             <img
               src="/public/Vector.svg"
-              className="mt-1 w-14 mix-blend-difference text-success"
+              className="mt-1 w-14  text-success"
               alt=""
             />
             <h1 className="absolute top-6 drop-shadow-md text-success left-[18px] font-primayRegular font-bold text-xl">
@@ -169,7 +169,7 @@ const Navbar = () => {
             </button>
             <div className="flex backdrop-blur-sm items-center justify-between w-full  border-2 border-success rounded-full">
               {/* dynamic number  */}
-              <div className="bg-accentWhite md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
+              <div className="bg- md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
               {currentPlace.id}
               </div>
               {/* center content  */}
