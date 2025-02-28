@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed z-50 t-0 ">
-      <div className="lg:w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
+      <div className="w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2 sm:w-full md:w-full">
         {/* left content  */}
         <div className=" flex ">
           {/* logo  */}
