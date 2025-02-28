@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="relative w-fit border-box ">
             <img
               src="/public/Vector.svg"
-              className="text-white mt-1 w-14"
+              className="mt-1 w-14 mix-blend-difference text-success"
               alt=""
             />
             <h1 className="absolute top-6 drop-shadow-md text-success left-[18px] font-primayRegular font-bold text-xl">
