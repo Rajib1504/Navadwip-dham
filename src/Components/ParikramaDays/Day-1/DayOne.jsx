@@ -24,7 +24,7 @@ const DayOne = () => {
         <div className="mt-spacelg mb:mt-0  lg:pl-space300">
             <div className="md:w-[500px]  lg:mx-auto">
           <p className="mb-spacelg text-primaryWhite font-primaryLight text-heading4 tracking-wider">
-            Visiting Places<span className="ml-spacelg">( 13</span> <span className="">)</span>
+            Visiting Places<sup className="ml-spacelg text-textSmall">(13)</sup> 
           </p>
           <h6 className="font-primaryLight md:text-heading4 tracking-wider text-success">
             Sri Chaitanya Gaudiya Math → Nandan Acharya Bhavan → Yogapith →

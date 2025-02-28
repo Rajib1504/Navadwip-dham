@@ -167,13 +167,13 @@ const Navbar = () => {
             >
               <HiArrowLongLeft />
             </button>
-            <div className="flex backdrop-blur-sm items-center justify-between w-full  border-2 border-success rounded-full">
+            <div className="flex mix-blend-difference backdrop-blur-sm items-center justify-between w-full  border-2 border-success rounded-full">
               {/* dynamic number  */}
               <div className="bg- md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
               {currentPlace.id}
               </div>
               {/* center content  */}
-              <span className="md:text-xl text-center mix-blend-difference lg:text-xl text-xs">  {currentPlace.name}</span>
+              <span className="md:text-xl  text-center  lg:text-xl text-xs">  {currentPlace.name}</span>
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -193,7 +193,7 @@ const Navbar = () => {
                     <div key={day.title}>
                       <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
                         <h3 className="font-primaryLight text-lg  md:text-2xl lg:text-heading4">{`${day.title}`}</h3>
-                        <h5 className="text-neutralBlack opacity-55 text-sm md:text-lg lg:text-xl text-center font-primaryLight">{`${day.day}`}</h5>
+                        <h5 className="text-accentBlack opacity-55 text-sm md:text-lg lg:text-xl text-center font-primaryLight">{`${day.day}`}</h5>
                       </div>
                       <div className=" p-4  ">
                       {day.places.map((place) => (
