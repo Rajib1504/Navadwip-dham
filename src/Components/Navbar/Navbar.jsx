@@ -10,7 +10,7 @@ const Navbar = () => {
       places: [
         { id: "1.1", name: "Sri Chaitanya Gaudiya Math" },
         { id: "1.2", name: "Nanda Acharya Bhavan" },
-        { id: "1.3", name: "Yogapith" },
+        { id: "I1.1", name: "Yogapith" },
         { id: "1.4", name: "Srivas Angan" },
         { id: "1.5", name: "Advaita Bhavan" },
       ],
@@ -167,7 +167,7 @@ const Navbar = () => {
             >
               <HiArrowLongLeft />
             </button>
-            <div className="flex mix-blend-difference backdrop-blur-sm items-center justify-between w-full  border-2 border-success rounded-full">
+            <div className="flex mix-blend-difference backdrop-blur-sm items-center justify-between w-space300  border-2 border-success rounded-full">
               {/* dynamic number  */}
               <div className="bg- md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full mr-4">
               {currentPlace.id}
