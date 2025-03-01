@@ -44,8 +44,8 @@ const Antardvip = () => {
   <p className="self-start">I1.1</p>
 
   {/* Second Box (Centered by default) */}
-  <div className="md:w-[50%] mr-space30 border-2 border-green-500">
-    <h4 className="text-heading2 font-primaryLight mb-spacelg">Yogapith</h4>
+  <div className="md:w-[50%] w-full mr-space30 border-2 border-green-500">
+    <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">Yogapith</h4>
     <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
     {/* description  */}
 <div className="my-space60 md:my-space120 ">
@@ -86,6 +86,57 @@ const Antardvip = () => {
     </div>
   </div>
 </div>
+{/* ............................... */}
+      {/* Nanda Acaraya Bahavan  */}
+      <div id="I1.2" className="border-2 md:mt-0 mt-space120 border-blue-500 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4">
+  {/* First Box (Starts from top) */}
+  <p className="self-start">I1.2</p>
+
+  {/* Second Box (Centered by default) */}
+  <div className="md:w-[50%] w-full mr-space30 border-2 border-green-500">
+    <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">Nanda Acaraya Bahavan</h4>
+    <p>House of Nanda Acharya</p>
+    {/* description  */}
+<div className="my-space60 md:my-space120 ">
+  <p className="mb-space15 md:mb-space30">A Neem tree marks the exact birthplace of Sri Chaitanya. Near this sacred tree, there is a small shrine depicting Jagannath Mishra and Sachi Devi holding baby Nimai in her arms.</p>
+  <p className="mb-space15 md:mb-space30">Behind this shrine is the temple of Gopeshwar Mahadeva. Lord Shiva, as the guardian of the Holy Dhama, reveals the Dhama to devotees through His grace. The Shiva linga worshipped here was originally discovered near a place called Shiva-Doba, adjacent to Vrddha Shiva Ghat. Today, this linga resides in Yogapith alongside a smaller linga of Gopeshwar Mahadeva.</p>
+  <p className="mb-space15 md:mb-space30">The temple complex also includes the deities of Lakshmi Nrisimha and Gaura-Gadadhara, located behind the main temple hall. Nearby, the sacred Gaura Kund adds to the sanctity of the site.</p>
+</div>
+  </div>
+  
+</div>
+{/* images   */}
+<div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start border-2 border-orange-600">
+  {/* 1st img  */}
+  <div className="">
+<img src="/public/Day Images/1stDay/NMP1-111 1 (2).svg" className="md:w-auto w-[100vw]" alt="" />
+<p className="md:block hidden mt-space30 w-[200px] font-primaryLight">The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.</p>
+  </div>
+  {/* 2nd img  */}
+  <div className=" ">
+    <img src="/public/Day Images/1stDay/IMG_8584 (1).svg" alt="" className="md:mb-space60 " />
+    <div className="relative group md:block hidden">
+    <div className=" w-space240 flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-gray-200 text-primaryBlack transition-all">
+    <p className="font-primaryLight">Open Full Gallery</p>
+    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+      <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
+    </div>
+    </div>
+  </div>
+  {/* array for gallery  */}
+  <div>
+   
+    <div className="relative group md:hidden block mt-spacelg">
+    <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-gray-200 text-primaryBlack transition-all">
+    <p className="font-primaryLight text-textSmall">Open Full Gallery</p>
+    <img src="/public/Day Images/1stDay/→.svg"  alt="" />
+      <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+    </div>
+    </div>
+  </div>
+</div>
+{/* ............ */}
+
 </div>
     </div>
   );
