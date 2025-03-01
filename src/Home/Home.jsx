@@ -4,6 +4,7 @@ import Extra from '../Components/IlandImages/Extra';
 import IslandList from '../Components/IslandList/IslandList';
 import DayList from '../Components/ParikramaDays/DayList';
 import Antardvip from '../Components/ParikramaDays/Day-1/Antardvip/Antardvip';
+import Books from './../Components/Books/Books';
 
 const Home = () => {
       return (
@@ -15,6 +16,8 @@ const Home = () => {
                  {/* Daylist  */}
                  <DayList/>
                  <Antardvip/>
+                 {/* books  */}
+                 <Books/>
             </div>
       );
 };
