@@ -22,11 +22,11 @@ const IslandList = () => {
       <p className="text-center text-lg font-bold">Loading...</p>
     ) : (
       <>
-      <hr className="border"/>
+      <hr className=" border border-accentBlack"/>
         {ilands?.map((item) => (
          <div
          key={item.id}
-         className="py-space15 lg:py-space border-b-2 mx-auto grid-rows-12  lg:flex lg:justify-around items-center justify-center"
+         className="py-space15 lg:py-space border-b-2 border-accentBlack mx-auto grid-rows-12  lg:flex lg:justify-around items-center justify-center"
        >
             {/* Left Section */}
             <h1 className="  smMobile:text-heading3 text-heading1  row-start-2 lg:col-start-2 row-span-3 lg:col-span-3  font-primaryLight relative">

@@ -15,17 +15,17 @@ const Antardvip = () => {
 {/* top text with left right sticky  */}
       <div className="flex md:flex-row flex-col justify-start  mt-space120 ">
         {/* left */}
-       <div className="md:mt-space60 md:mr-[330px]  md:w-auto w-full md:border-b-0 border-b-2   ">     
+       <div className="md:mt-space60 md:mr-[330px]  md:w-auto w-full md:border-b-0 border-b-2 border-accentBlack   ">     
        <div className="">
-            <div className="text-textRegular md:block flex md:border-b-0 border-b-2   py-spacelg md:py-0 justify-between items-center">
+            <div className="text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between items-center">
           <h4 className="text-secondaryBlack font-primaryLight">Represents</h4>
           <p className="font-primaryLight md:block flex flex-col md:flex-row text-right md:text-left"><span>Shravanam</span><span> [hearing]</span></p>
         </div>
-        <div className="text-textRegular md:block md:border-b-0 border-b-2  py-spacelg md:py-0  flex justify-between items-center">
+        <div className="text-textRegular md:block md:border-b-0 border-b-2  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
           <h4 className="text-secondaryBlack font-primaryLight">Embodies</h4>
           <p className="font-primaryLight  md:block flex flex-col md:flex-row text-right md:text-left"><span>Mathura,</span><span> Talavan</span></p>
         </div>
-        <div className="text-textRegular md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2  py-spacelg md:py-0 flex justify-between items-center">
+        <div className="text-textRegular md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2 border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
           <h4 className="text-secondaryBlack font-primaryLight">Visit on</h4>
           <p className="font-primaryLight md:block flex flex-col md:flex-row text-right md:text-left "><span> Day One</span> <span> of Parikrama</span></p>
         </div>
@@ -67,7 +67,7 @@ const Antardvip = () => {
   <div className=" md:-mr-[257px]">
     <img src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg" alt="" className="md:mb-space60 md:w-[480px]" />
     <div className="relative group md:block hidden">
-    <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-gray-200 text-primaryBlack transition-all">
+    <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
     <p className="font-primaryLight">Open Full Gallery</p>
     <img src="/public/Day Images/1stDay/→.svg" alt="" />
       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
@@ -78,7 +78,7 @@ const Antardvip = () => {
   <div>
     <img src="/public/Day Images/1stDay/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
     <div className="relative group md:hidden block mt-spacelg">
-    <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-gray-200 text-primaryBlack transition-all">
+    <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
     <p className="font-primaryLight text-textSmall">Open Full Gallery</p>
     <img src="/public/Day Images/1stDay/→.svg"  alt="" />
       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
@@ -116,7 +116,7 @@ const Antardvip = () => {
   <div className=" ">
     <img src="/public/Day Images/1stDay/IMG_8584 (1).svg" alt="" className="md:mb-space60 " />
     <div className="relative group md:block hidden">
-    <div className=" w-space240 flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-gray-200 text-primaryBlack transition-all">
+    <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
     <p className="font-primaryLight">Open Full Gallery</p>
     <img src="/public/Day Images/1stDay/→.svg" alt="" />
       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
@@ -127,7 +127,7 @@ const Antardvip = () => {
   <div>
    
     <div className="relative group md:hidden block mt-spacelg">
-    <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-gray-200 text-primaryBlack transition-all">
+    <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
     <p className="font-primaryLight text-textSmall">Open Full Gallery</p>
     <img src="/public/Day Images/1stDay/→.svg"  alt="" />
       <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
