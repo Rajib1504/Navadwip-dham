@@ -2,20 +2,20 @@ import React from "react";
 
 const Antardvip = () => {
   return (
-    <div className="  pt-space120 md:pt-space300 border-2 border-red-400">
+    <div className="  pt-space120 md:pt-space300 ">
       <div className="w-11/12 mx-auto ">
       <p className="text-center mb-space60 md:mb-space120 font-primaryLight">1</p>
-      <h2 className="font-primaryLight md:ml-space60 border-2 border-blue-500 md:text-heading1 text-heading2 text-center mb-space120 md:mb-space240">
+      <h2 className="font-primaryLight md:ml-space60 md:text-heading1 text-heading2 text-center mb-space120 md:mb-space240">
         Antardvip
       </h2>
-      <h4 className="font-primaryLight  border-2 border-blue-500 md:text-heading2 text-[32px] md:w-[80%] ">
+      <h4 className="font-primaryLight   md:text-heading2 text-[32px] md:w-[80%] ">
         The island of Simantadvip, now known as Simuliya, was once surrounded by
         the Ganges.
       </h4>
 {/* top text with left right sticky  */}
-      <div className="flex md:flex-row flex-col justify-start  border-2 border-red-500 mt-space120 ">
+      <div className="flex md:flex-row flex-col justify-start  mt-space120 ">
         {/* left */}
-       <div className="md:mt-space60 md:mr-[330px] border-2 md:w-auto w-full md:border-b-0 border-b-2   border-blue-500">     
+       <div className="md:mt-space60 md:mr-[330px]  md:w-auto w-full md:border-b-0 border-b-2   ">     
        <div className="">
             <div className="text-textRegular md:block flex md:border-b-0 border-b-2   py-spacelg md:py-0 justify-between items-center">
           <h4 className="text-secondaryBlack font-primaryLight">Represents</h4>
@@ -32,19 +32,19 @@ const Antardvip = () => {
         </div>
        </div>
       {/* right   */}
-      <div className="border-2 self-center border-red-500 mt-space60 md:mb-space300 text-textSmall md:text-textRegular  md:w-[49%] font-primaryLight">
+      <div className=" self-center  mt-space60 md:mb-space300 text-textSmall md:text-textRegular  md:w-[49%] font-primaryLight">
             <p>During ancient times, Parvati Devi came here to overcome her grief and despondency, performing meditation and austerities. As a result, she was granted the divine vision of Sri Chaitanya’s transcendental beauty. Overwhelmed with devotion, she placed the dust of His lotus feet on the central part of her hair—simanta—giving this island its name.</p>
             <p className="mt-space15 md:mt-space30">In Satya-yuga, Lord Shiva revealed a great secret to his consort, Parvati. She had observed his ecstatic chanting of the name Gaura and his blissful dancing, and she inquired about the reason for his joy. Lord Shiva then spoke of the future advent of Sri Chaitanya in Navadvipa, describing how the golden-complexioned Lord would chant the Holy Names and spread devotion and divine love throughout the world. He explained that only the most unfortunate would fail to drown in this ocean of bliss. Even Mahadev himself could not contain his ecstasy upon hearing Sri Chaitanya’s name. Finally, he resolved to leave Kashi and come to Mayapur to engage in devotional service.</p>
             <p className="mt-space15 md:mt-space30">Hearing this revelation, Parvati Devi was also inspired to travel to Navadvipa. She arrived with great eagerness to offer obeisances to the Supreme Lord in His divine form as Sri Chaitanya and performed austerities to obtain His mercy. In due course, her devotion was rewarded—she was blessed with the vision of Sri Chaitanya. Overcome with ecstasy, she fell at His lotus feet and reverently placed their dust upon her forehead.</p>
       </div>
       </div>
       {/* yogapith  */}
-      <div id="I1.1" className="border-2 md:mt-0 mt-space120 border-blue-500 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4">
+      <div id="I1.1" className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4">
   {/* First Box (Starts from top) */}
   <p className="self-start">I1.1</p>
 
   {/* Second Box (Centered by default) */}
-  <div className="md:w-[50%] w-full mr-space30 border-2 border-green-500">
+  <div className="md:w-[50%] w-full mr-space30 ">
     <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">Yogapith</h4>
     <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
     {/* description  */}
@@ -57,7 +57,7 @@ const Antardvip = () => {
   
 </div>
 {/* images   */}
-<div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start border-2 border-orange-600">
+<div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
   {/* 1st img  */}
   <div className="">
 <img src="/public/Day Images/1stDay/IMG20240326083954 1.svg" className="md:w-auto w-[100vw]" alt="" />
@@ -88,12 +88,12 @@ const Antardvip = () => {
 </div>
 {/* ............................... */}
       {/* Nanda Acaraya Bahavan  */}
-      <div id="I1.2" className="border-2 md:mt-0 mt-space120 border-blue-500 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4">
+      <div id="I1.2" className=" md:mt-0 mt-space120  gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4">
   {/* First Box (Starts from top) */}
   <p className="self-start">I1.2</p>
 
   {/* Second Box (Centered by default) */}
-  <div className="md:w-[50%] w-full mr-space30 border-2 border-green-500">
+  <div className="md:w-[50%] w-full mr-space30 ">
     <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">Nanda Acaraya Bahavan</h4>
     <p>House of Nanda Acharya</p>
     {/* description  */}
@@ -106,7 +106,7 @@ const Antardvip = () => {
   
 </div>
 {/* images   */}
-<div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start border-2 border-orange-600">
+<div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
   {/* 1st img  */}
   <div className="">
 <img src="/public/Day Images/1stDay/NMP1-111 1 (2).svg" className="md:w-auto w-[100vw]" alt="" />
