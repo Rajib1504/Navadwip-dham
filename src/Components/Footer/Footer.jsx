@@ -23,29 +23,59 @@ const Footer = () => {
           <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
 
           {/* travel list section  */}
-          <div className="border-2 border-red-400 py-space15 mb-space60">
-            {Object.entries(travellist).map(([day, place], index) => (
-              <div key={index}>
-                <h2 className=" text-xl mb-4 font-bold text-success border-2 border-blue-500">
+          <div className="border-2 flex flex-col border-red-400 py-space15 mb-space60">
+            {Object.entries(travellist).map(([day, places], index) => (
+              <div
+                key={index}
+                className="mb-6 grid grid-cols-4 gap-4 border-2 border-green-500 items-start"
+              >
+                {/* Day Name */}
+                <h2 className="text-xl col-span-1 row-span-full border-2 border-yellow-200 font-bold text-gray-400 mb-2">
                   {day}
                 </h2>
-                <div>
-                {Object.entries(place).map(([placeName, locations],idx) => (
-                  <div>
-                        <h3 key={idx}>{placeName}</h3>
-                        <div>
-                              {locations.map((location,i)=>(
-                                    <h5 key={i}>{location}</h5>
-                              ))}
+                <div className="col-span-3 grid grid-cols-3">
+                  {Object.entries(places).map(([placeName, locations], idx) => {
+                    // Convert odd length to even by subtracting 1 if needed
+                    let adjustedLength =
+                      locations.length % 2 !== 0
+                        ? locations.length + 1
+                        : locations.length;
+                    let halfLength = adjustedLength / 2; // Divide into 2 equal columns
+
+                    return (
+                      <React.Fragment key={idx}>
+                        {/* Place Name - Same row for first item, new row for others */}
+                        <div
+                          className={`col-span-1 text-blue-600 border-2 border-green-500 font-semibold`}
+                        >
+                          {placeName}
                         </div>
 
-                  </div>
-            
-                ))}
+                        {/* First Column (First half of locations) */}
+                        <div className="text-gray-100 mb-space30 col-span-1">
+                          {locations.slice(0, halfLength).map((location, i) => (
+                            <div key={i} className="text-gray-100">
+                              {location}
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Second Column (Remaining half of locations) */}
+                        <div className="text-gray-100 mb-space30 col-span-1">
+                          {locations
+                            .slice(halfLength, adjustedLength)
+                            .map((location, i) => (
+                              <div key={i} className="text-gray-100">
+                                {location}
+                              </div>
+                            ))}
+                        </div>
+                      </React.Fragment>
+                    );
+                  })}
                 </div>
               </div>
             ))}
-            hiii there how are
           </div>
         </div>
       </div>
