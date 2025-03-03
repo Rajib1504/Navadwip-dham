@@ -26,29 +26,30 @@ const IslandList = () => {
         {ilands?.map((item) => (
          <div
          key={item.id}
-         className="py-space15 lg:py-space border-b-2 border-accentBlack mx-auto grid-rows-12  lg:flex lg:justify-around items-center justify-center"
+         className="py-space15 md:py-space border-b-2 border-accentBlack mx-auto md:grid justify-center grid-cols-12 md:grid-flow-col flex flex-col"
        >
             {/* Left Section */}
-            <h1 className="  smMobile:text-heading3 text-heading1  row-start-2 lg:col-start-2 row-span-3 lg:col-span-3  font-primaryLight relative">
-              <span className="absolute lg:top-0 lg:-left-6 md:-right-20 md:-top-10 lgMobile:-top-10 right-2 text-sm">{item.id}</span>
-             <span className=""> {item.title}</span>
+            <div className="text-left md:col-start-2 md:col-span-3  col-span-6 ">
+            <h1 className="  smMobile:text-heading3 text-heading1  row-start-2 row-span-3   font-primaryLight relative">
+              <span className="absolute lg:top-0 lg:-left-6 md:-right-20 md:-top-10 lgMobile:-top-4 right-2 text-sm">{item.id}</span>
+             <span className="text-left"> {item.title}</span>
             </h1>
-  
+            </div>
             {/* Right Section */}
-            <div className="flex  row-span-7 lg:col-span-7 lgMobile:gap-6 md:gap-14  flex-row justify-end items-center">
-              <div className="smMobile:w-[323px] w-48 md:w-36 min-h-[5rem]  text-left ">
+            <div className="flex md:col-start-6 md:col-span-12 mt-spacelg  col-span-6 lgMobile:gap-6 md:gap-space60 border-2 border-red-500 flex-row justify-start items-center">
+              <div className="smMobile:w-[323px] w-48 md:w-36 border-2 border-red-300 min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.represents.label}</h3>
                 <p className="font-primaryLight text-sm">{item.represents.value}</p>
                 <p className="font-primaryLight text-sm">{item.represents.personal}</p>
               </div>
   
-              <div className="w-64 md:w-40 min-h-[5rem]  text-left ">
+              <div className="w-64 md:w-40 min-h-[5rem] border-2 border-red-300 text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.embodies.label}</h3>
                 <p className="font-primaryLight text-sm">{item.embodies.value}</p>
                 <p className="font-primaryLight text-sm">{item.embodies.place}</p>
               </div>
   
-              <div className="w-32 md:w-38 min-h-[5rem]  text-left ">
+              <div className="w-32 md:w-space60 min-h-[5rem] border-2 border-red-300 text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.visit_on.label}</h3>
                 <p className="font-primaryLight text-sm">{item.visit_on.value}</p>
               </div>

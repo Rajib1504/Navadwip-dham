@@ -12,7 +12,7 @@ const Books = () => {
           </h5>
         </div>
         {/* books images  */}
-        <div className="w-full mt-space120 md:mt-space240 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
+        <div className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
           <div className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
             <img src="/public/Books/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
             <h6 className="text-center  font-primaryLight text-success">

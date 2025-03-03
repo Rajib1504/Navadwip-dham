@@ -89,29 +89,30 @@ useEffect(()=>{
   return ()=>observer.disconnect()
 },[allPlaces])
   return (
-    <div className="w-full bg-secondaryWhite fixed z-50 t-0 ">
+    <div className="w-full fixed z-50 t-0 ">
       <div className="md:w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2">
         {/* left content  */}
         <div className=" flex  ">
           {/* logo  */}
-          <div className=" flex  justify-center items-center">
-          <div className="relative  w-fit border-box ">
+          <div className=" flex justify-center items-center ">
+          <div className="w-fit bg-primaryBlack  border-box ">
             <img
-              src="/public/Vector.svg"
-              className="w-14 "
+              src="/logo.svg"
+              className="w-14 text-primaryBlack  mix-blend-difference"
               alt=""
             />
-            <h1 className="absolute top-6 drop-shadow-md mix-blend-difference  text-success left-[18px] font-primayRegular font-bold text-xl">
-              N
-            </h1>
+           
           </div>
+
+
+
           {/* menu   */}
           <div className="lg:p-2  ">
             <div className="relative inline-block  text-left">
               {/* Dropdown Button */}
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="rounded-full backdrop-blur-sm border border-accentBlack p-4 w-space30  flex items-center justify-center"
+                className="rounded-full backdrop-blur-sm border bg-success border-accentBlack p-4 w-space30  flex items-center justify-center"
               >
                 <HiOutlineMenuAlt4 className=" text-primaryBlack " />
               </button>
@@ -182,11 +183,11 @@ useEffect(()=>{
           <div className="fixed  bottom-0 md:static lg:static flex w-full gap-2  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")} 
-              className="md:p-3.5 backdrop-blur-sm border border-accentBlack lg:p-3.5 p-2 rounded-full  border-success  transition-all"
+              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack lg:p-3.5 p-2 rounded-full  border-success  transition-all"
             >
               <HiArrowLongLeft />
             </button>
-            <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-space300   border-success rounded-full">
+            <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-space300 bg-success  border-success rounded-full">
               {/* dynamic number  */}
               <div className="bg-accentBlack md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
               {currentPlace.id}
@@ -196,11 +197,11 @@ useEffect(()=>{
               {/* dropdown  */}
               <button
                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="mr-3   ml-2 md:ml-0 lg:ml-0"
+                className="mr-3 ml-2 md:ml-0 lg:ml-0"
               >
                 {/* <span> {title} (Day {dayNo})</span> */}
-                <IoIosArrowDown className="text-gray-300 lg:block md:block hidden" />
-                <IoIosArrowUp className="text-gray-300 lg:hidden md:hidden" />
+                <IoIosArrowDown className="lg:block md:block hidden" />
+                <IoIosArrowUp className=" lg:hidden md:hidden" />
               </button>
             
               {dropdownOpen && (
@@ -235,7 +236,7 @@ useEffect(()=>{
             </div>
             <button
            onClick={() => handleNavigate("next")}
-              className="md:p-3.5 border border-accentBlack lg:p-3.5 p-2 backdrop-blur-sm  rounded-full  border-success  transition-all"
+              className="md:p-3.5 border border-accentBlack lg:p-3.5 p-2 backdrop-blur-sm  rounded-full  border-success bg-success transition-all"
             >
               <HiArrowLongRight className="text-lg" />
             </button>
