@@ -95,7 +95,7 @@ useEffect(()=>{
         <div className=" flex  ">
           {/* logo  */}
           <div className=" flex justify-center items-center ">
-          <div className="w-fit bg-primaryBlack  border-box ">
+          <div className="w-fit  border-box ">
             <img
               src="/logo.svg"
               className="w-14 text-primaryBlack  mix-blend-difference"
@@ -180,7 +180,7 @@ useEffect(()=>{
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed  bottom-0 md:static lg:static flex w-full gap-2  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed  bottom-spacelg md:static lg:static flex w-full gap-2  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")} 
               className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack lg:p-3.5 p-2 rounded-full  border-success  transition-all"

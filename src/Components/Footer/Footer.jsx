@@ -24,7 +24,7 @@ const Footer = () => {
             <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
 
             {/* travel list section  */}
-            <div className="border-2 flex flex-col border-red-400 py-space15 mb-space60">
+            <div className="flex flex-col  py-space15 mb-space60">
               {Object.entries(travellist).map(([day, places], index) => (
                 <div
                   key={index}
@@ -98,7 +98,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <footer className="mt-space240 md:mt-space120 flex items-center text-primaryWhite font-primaryLight justify-between">
+        <footer className="mt-space240 md:mt-space120 flex items-center md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
           <h5>@2025</h5>
           <h5 className="hidden md:block">Instagram</h5>
           <h5>Designed by Chaitanya</h5>
