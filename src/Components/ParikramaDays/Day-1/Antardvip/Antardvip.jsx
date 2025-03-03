@@ -4,51 +4,51 @@ const Antardvip = () => {
   return (
     <div className="pt-space120 md:pt-space300 ">
       <div className="w-11/12 mx-auto ">
-        <p className="text-center mb-space60 md:mb-space120 font-primaryLight">
+        <p className="text-center mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           1
         </p>
-        <h2 className="font-primaryLight md:ml-space60 md:text-heading1 text-heading2 text-center mb-space120 md:mb-space240">
+        <h2 className="font-primaryLight md:ml-space60 md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
           Antardvip
         </h2>
-        <h4 className="font-primaryLight md:text-heading2 text-[32px] md:w-[80%] ">
+        <h4 className="font-primaryLight md:text-heading2 text-mobileheading2 md:w-[80%] ">
           The island of Simantadvip, now known as Simuliya, was once surrounded
           by the Ganges.
         </h4>
         {/* top text with left right sticky  */}
-        <div className="flex md:flex-row flex-col justify-start  mt-space120 ">
+        <div className="flex md:flex-row flex-col justify-start  my-space60 ">
           {/* left */}
-          <div className="md:mt-space60 md:mr-[330px]  md:w-auto w-full md:border-b-0 border-b-2 border-accentBlack">
+          <div className="md:mt-space60 md:mr-[330px]  md:w-auto w-full ">
             <div className="">
-              <div className="text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between items-center">
+              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
-                <p className="font-primaryLight md:block flex flex-col md:flex-row text-right md:text-left">
+                <p className="font-primaryLight text-mobiletextSmall md:block flex flex-col md:flex-row text-right md:text-left">
                   <span>Shravanam</span>
                   <span> [hearing]</span>
                 </p>
               </div>
-              <div className="text-textRegular md:block md:border-b-0 border-b-2  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b-2  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Embodies
                 </h4>
-                <p className="font-primaryLight  md:block flex flex-col md:flex-row text-right md:text-left">
+                <p className="font-primaryLight text-mobiletextSmall   md:block flex flex-col md:flex-row text-right md:text-left">
                   <span>Mathura,</span>
                   <span> Talavan</span>
                 </p>
               </div>
-              <div className="text-textRegular md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2 border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2 border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Visit on
                 </h4>
-                <p className="font-primaryLight md:block flex flex-col md:flex-row text-right md:text-left ">
+                <p className="font-primaryLight text-mobiletextSmall md:block flex flex-col md:flex-row text-right md:text-left ">
                   <span> Day One</span> <span> of Parikrama</span>
                 </p>
               </div>
             </div>
           </div>
           {/* right   */}
-          <div className=" self-center  mt-space60 md:mb-space300 text-textSmall md:text-textRegular  md:w-[49%] font-primaryLight">
+          <div className=" self-center md:mb-space300 text-mobileTextRegular md:text-textRegular  md:w-[49%] font-primaryLight">
             <p>
               During ancient times, Parvati Devi came here to overcome her grief
               and despondency, performing meditation and austerities. As a
@@ -88,16 +88,16 @@ const Antardvip = () => {
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.1</p>
+          <p className="self-start text-mobileTextRegular">I1.1</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Sri Chaitanya Gaudiya Math
             </h4>
-            <p>The Place of Unity and Service</p>
+            <p className="text-mobileTextRegular">The Place of Unity and Service</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
               Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita Madhav Goswami Maharaj, a distinguished disciple of the world-renowned spiritual master, Srila Prabhupad Bhakti Siddhanta Sarasvati Goswami Thakur—the foremost preacher of Sri Chaitanya’s message.
               </p>
@@ -112,7 +112,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -137,7 +137,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:block hidden">
               <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight">Open Full Gallery</p>
+                <p className="font-primaryLight ">Open Full Gallery</p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
               </div>
@@ -152,7 +152,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -169,16 +169,16 @@ const Antardvip = () => {
           className=" pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.2</p>
+          <p className="self-start text-mobileTextRegular">I1.2</p>
 
           {/* Second Box (Centered by default) */}
           <article className="md:w-[50%] w-full mr-space30 ">
-            <h2 className="text-[36px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h2 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Nanda Acaraya Bahavan
             </h2>
-            <h3 className="text-textRegular">The Place Where Sri Caitanya and Nityananda Prabhu First Met</h3>
+            <h3 className="text-mobileTextRegular md:text-textRegular">The Place Where Sri Caitanya and Nityananda Prabhu First Met</h3>
             {/* description  */}
-            <div className="my-space60 text-textRegular md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
               Nanda Acharya Bhavan is the home of Nanda Acharya, a close associate of Sri Chaitanya. Sri Chaitanya met Nityananda Prabhu at this very place for the first time.  
               </p>
@@ -248,7 +248,7 @@ const Antardvip = () => {
           </article>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -280,7 +280,7 @@ const Antardvip = () => {
           <div>
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -296,16 +296,16 @@ const Antardvip = () => {
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.3</p>
+          <p className="self-start text-mobileTextRegular">I1.3</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Yogapith
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -328,7 +328,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -368,7 +368,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -384,16 +384,16 @@ const Antardvip = () => {
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.4</p>
+          <p className="self-start text-mobileTextRegular">I1.4</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Srivas Angan
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -416,7 +416,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className="  md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -456,7 +456,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLighttext-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -472,16 +472,16 @@ const Antardvip = () => {
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.5</p>
+          <p className="self-start text-mobileTextRegular">I1.5</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Advaita Bhavan
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -504,7 +504,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -544,7 +544,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -560,16 +560,16 @@ const Antardvip = () => {
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.6</p>
+          <p className="self-start text-mobileTextRegular">I1.6</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Gadadhar Angan
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -592,7 +592,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className="  md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -632,7 +632,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -642,22 +642,22 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-        {/* yogapith  */}
+        {/* Murari gupta Angan  */}
         <div
           id="7"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.7</p>
+          <p className="self-start text-mobileTextRegular">I1.7</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Murari Gupta Angan
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -680,7 +680,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className="  md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -720,7 +720,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -730,22 +730,22 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-        {/* yogapith  */}
+        {/* Pritha Kunda  */}
         <div
           id="8"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.8</p>
+          <p className="self-start text-mobileTextRegular">I1.8</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Pritha-kunda
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -768,7 +768,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -808,7 +808,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLight text-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
@@ -818,22 +818,22 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-        {/* yogapith  */}
+        {/* Sri Chaitanya math  */}
         <div
           id="9"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
-          <p className="self-start">I1.9</p>
+          <p className="self-start text-mobileTextRegular">I1.9</p>
 
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Sri Chaitanya Math
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
                 A Neem tree marks the exact birthplace of Sri Chaitanya. Near
                 this sacred tree, there is a small shrine depicting Jagannath
@@ -856,7 +856,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* images   */}
-        <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+        <div className="  md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
           <div className="">
             <img
@@ -896,7 +896,7 @@ const Antardvip = () => {
             />
             <div className="relative group md:hidden block mt-spacelg">
               <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                <p className="font-primaryLight text-textSmall">
+                <p className="font-primaryLighttext-mobileTextRegular">
                   Open Full Gallery
                 </p>
                 <img src="/public/Day Images/1stDay/→.svg" alt="" />
