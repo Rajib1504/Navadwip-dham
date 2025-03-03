@@ -1,9 +1,9 @@
-import React from "react";
+
 
 const IlandImages = () => {
   return (
-    <div className="  ">
-      <div className="  lg:flex md:pt-space240 py-space60 pt-space120 md:py-space120 md:mb-[2rem]  justify-between">
+    <div className="mt-mobilespace285 mb-mobilespace314 border-2 border-blue-500 ">
+      <div className="lg:flex flex justify-center md:pt-space240 border-2 border-blue-500  md:py-space120  md:justify-between">
 
       <div className="hidden lg:flex justify-center items-center gap-space15 ">
         <img src="/public/ilandImages/left/IMG_8584.svg" alt="img" />
@@ -13,7 +13,7 @@ const IlandImages = () => {
       </div>
       {/* text  */}
       <div>
-        <h2 className="text-heading4  md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-32 md:w-72 text-center md:ml-[17rem] mix-blend-difference text-success">Islands of Navadvip</h2>
+        <h2 className="text-mobileheading2 border-2 border-blue-500  md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-32 md:w-72 text-center md:ml-[17rem] mix-blend-difference text-success">Islands of Navadvip</h2>
 
       </div>
       <div className=" hidden lg:flex gap-space15 justify-center items-center  ">

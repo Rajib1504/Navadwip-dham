@@ -44,6 +44,9 @@ export default {
         spacelg: "0.75rem",
         spacemd: "0.5rem",
         spacesm: "0.25rem",
+        mobilespace285:" 17.8125rem",
+        mobilespace314:"19.625rem",
+        mobilespace194:"12.125rem",
       },
       screens: {
         smMobile:'320px', //sm Mobile(custom)
