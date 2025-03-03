@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Antardvip = () => {
   return (
@@ -93,28 +93,20 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Sri Chaitanya Gaudiya Math
+              Sri Chaitanya Gaudiya Math
             </h4>
-            <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p>The Place of Unity and Service</p>
             {/* description  */}
             <div className="my-space60 md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
-                A Neem tree marks the exact birthplace of Sri Chaitanya. Near
-                this sacred tree, there is a small shrine depicting Jagannath
-                Mishra and Sachi Devi holding baby Nimai in her arms.
+              Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita Madhav Goswami Maharaj, a distinguished disciple of the world-renowned spiritual master, Srila Prabhupad Bhakti Siddhanta Sarasvati Goswami Thakur—the foremost preacher of Sri Chaitanya’s message.
               </p>
               <p className="mb-space15 md:mb-space30">
-                Behind this shrine is the temple of Gopeshwar Mahadeva. Lord
-                Shiva, as the guardian of the Holy Dhama, reveals the Dhama to
-                devotees through His grace. The Shiva linga worshipped here was
-                originally discovered near a place called Shiva-Doba, adjacent
-                to Vrddha Shiva Ghat. Today, this linga resides in Yogapith
-                alongside a smaller linga of Gopeshwar Mahadeva.
+              Srila Madhav Maharaj was a saintly personality known for his unwavering devotion to his spiritual master, strict adherence to Vaishnava principles, and tireless dedication to serving the Vaishnavas.
               </p>
               <p className="mb-space15 md:mb-space30">
-                The temple complex also includes the deities of Lakshmi Nrisimha
-                and Gaura-Gadadhara, located behind the main temple hall.
-                Nearby, the sacred Gaura Kund adds to the sanctity of the site.
+              Srila Prabhupad recognized his boundless enthusiasm and praised him as “volcanic energy.” After Srila Prabhupad’s departure, Srila Madhav Maharaj played a crucial role in uniting his godbrothers to continue spreading Sri Chaitanya’s teachings.
+
               </p>
             </div>
           </div>
@@ -174,31 +166,78 @@ const Antardvip = () => {
         {/* Nanda Acaraya Bahavan  */}
         <div
           id="2"
-          className=" md:mt-0 mt-space120  gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
+          className=" pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
           {/* First Box (Starts from top) */}
           <p className="self-start">I1.2</p>
 
           {/* Second Box (Centered by default) */}
-          <div className="md:w-[50%] w-full mr-space30 ">
-            <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
+          <article className="md:w-[50%] w-full mr-space30 ">
+            <h2 className="text-[36px] md:text-[62px] font-primaryLight mb-spacelg">
               Nanda Acaraya Bahavan
-            </h4>
-            <p>House of Nanda Acharya</p>
+            </h2>
+            <h3 className="text-textRegular">The Place Where Sri Caitanya and Nityananda Prabhu First Met</h3>
             {/* description  */}
-            <div className="my-space60 md:my-space120 ">
+            <div className="my-space60 text-textRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
-                A Neem tree marks the exact birthplace of Sri Chaitanya. Near
-                this sacred tree, there is a small shrine depicting Jagannath
-                Mishra and Sachi Devi holding baby Nimai in her arms.
+              Nanda Acharya Bhavan is the home of Nanda Acharya, a close associate of Sri Chaitanya. Sri Chaitanya met Nityananda Prabhu at this very place for the first time.  
               </p>
               <p className="mb-space15 md:mb-space30">
-                Behind this shrine is the temple of Gopeshwar Mahadeva. Lord
-                Shiva, as the guardian of the Holy Dhama, reveals the Dhama to
-                devotees through His grace. The Shiva linga worshipped here was
-                originally discovered near a place called Shiva-Doba, adjacent
-                to Vrddha Shiva Ghat. Today, this linga resides in Yogapith
-                alongside a smaller linga of Gopeshwar Mahadeva.
+              One day, Sri Chaitanya understood that Nityananda had arrived in Navadvip. Overwhelmed with joy, He urged His devotees to find Him. But no one knew whom He was speaking about.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Gathering His associates, Chaitanya shared a dream He had the night before:
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              "I saw a chariot stop before my house, carrying an extraordinary personality. He wore blue cloth, a turban, and a single dazzling earring. A club rested on His shoulder, and a kamandalu pot hung from His stick. The moment I saw Him, I felt He was my brother—Balaram."
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              "He asked repeatedly, ‘Is this the house of Nimai Pandit?’ Though I had never seen Him before, I was drawn to Him with deep reverence. I asked, ‘Who are You?’ He smiled and said, ‘I am Your brother. Tomorrow, we shall meet.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              "I believe a great soul has arrived in Navadvip. Haridas! Shrivas! Go find Him at once."
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Haridas Thakur and Shrivas Pandit searched everywhere but found no one like the person Chaitanya described. After nine hours, they returned, exhausted: "We searched every corner of Navadvip but could not find Him."
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Chaitanya smiled. "Nityananda is the embodiment of Sri Guru. He cannot be found unless Bhagavan Himself reveals Him."
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Then, with all His devotees, Chaitanya set out in search of Nityananda. Chanting “Haribol! Haribol!”, they arrived at Nandana Acharya’s house.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              There, they saw Him. A divine jewel among men—lost in deep meditation, effulgent like a million suns. The moment Chaitanya beheld Him, He recognized His eternal brother, Balarama. Nityananda, too, saw His Lord.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Stunned with ecstasy, He gazed at Chaitanya with unwavering devotion—as if drinking Him with His eyes, smelling Him with His nose, embracing Him with His very soul. He stood motionless, silent.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Understanding this divine moment, Chaitanya asked Srivasa to recite a verse from Srimad Bhagavatam (10.21.5):
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              "Wearing a peacock-feather ornament upon His head, blue karnikara flowers on His ears, a golden-yellow garment, and the Vaijayanti garland, Lord Krishna entered Vrindavan, filling the forest with the nectar of His flute…"
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Upon hearing this, Nityananda collapsed in divine ecstasy, losing all external awareness. As Shrivas recited more and more, His bliss intensified—He roared, tears streaming down His face.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              The Lord and His brother had reunited.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Today, this sacred site is home to a beautiful temple, established by Srila Bhakti Saranga Goswami Maharaj, a prominent disciple of Srila Prabhupad. Here, he installed the deities of Sri Sri Gaura-Nityananda, Sri Sri Radha Vinod Bihari, Sriman Sri Chaitanya, and Sri Narasimhadev.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Srila Bhakti Saranga Maharaj was a distinguished scholar, a brilliant orator, and an exceptional preacher. His deep wisdom and divine qualities made him a master at dispelling misconceptions and defending the mission of Sri Chaitanya. Recognizing his abilities, Srila Prabhupad often entrusted him with clarifying doubts and upholding the integrity of the Gaudiya mission—a task he fulfilled with great success.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+              Later, he became the editor of The Gaudiya magazine and was sent to London to spread the message of Sri Chaitanya, where his preaching made a lasting impact.
+              </p>
+              <p className="mb-space15 md:mb-space30">
+           
+              </p>
+              <p className="mb-space15 md:mb-space30">
+           
               </p>
               <p className="mb-space15 md:mb-space30">
                 The temple complex also includes the deities of Lakshmi Nrisimha
@@ -206,7 +245,7 @@ const Antardvip = () => {
                 Nearby, the sacred Gaura Kund adds to the sanctity of the site.
               </p>
             </div>
-          </div>
+          </article>
         </div>
         {/* images   */}
         <div className=" pb-space120 md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
@@ -251,8 +290,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............ */}
-                {/* yogapith  */}
-                <div
+        {/* yogapith  */}
+        <div
           id="3"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -339,8 +378,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* Srivas Angan  */}
-                <div
+        {/* Srivas Angan  */}
+        <div
           id="4"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -350,7 +389,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Srivas Angan
+              Srivas Angan
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
@@ -427,8 +466,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* Advaita Bhavan  */}
-                <div
+        {/* Advaita Bhavan  */}
+        <div
           id="5"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -438,7 +477,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Advaita Bhavan
+              Advaita Bhavan
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
@@ -515,8 +554,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* Gadadhar Angan  */}
-                <div
+        {/* Gadadhar Angan  */}
+        <div
           id="6"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -526,7 +565,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Gadadhar Angan
+              Gadadhar Angan
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
@@ -603,8 +642,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* yogapith  */}
-                <div
+        {/* yogapith  */}
+        <div
           id="7"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -614,7 +653,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Murari Gupta Angan
+              Murari Gupta Angan
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
@@ -691,8 +730,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* yogapith  */}
-                <div
+        {/* yogapith  */}
+        <div
           id="8"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -702,7 +741,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Pritha-kunda
+              Pritha-kunda
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}
@@ -779,8 +818,8 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-                {/* yogapith  */}
-                <div
+        {/* yogapith  */}
+        <div
           id="9"
           className=" md:mt-0 mt-space120 gap-spacelg flex flex-col md:flex-row md:justify-between md:w-[82%] md:items-start font-primaryLight md:gap-4"
         >
@@ -790,7 +829,7 @@ const Antardvip = () => {
           {/* Second Box (Centered by default) */}
           <div className="md:w-[50%] w-full mr-space30 ">
             <h4 className="text-[34px] md:text-[62px] font-primaryLight mb-spacelg">
-            Sri Chaitanya Math
+              Sri Chaitanya Math
             </h4>
             <p>The birthplace of Sri Chaitanya Mahaprabhu</p>
             {/* description  */}

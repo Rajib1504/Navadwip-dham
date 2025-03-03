@@ -22,13 +22,17 @@ export default {
         accentWhite: "rgba(233,228,221,0.1)", //white 10%
       },
       fontSize: {
+        mobileHero:["5.1475rem",{lineHeight:'110%'}],
         heading1: ["10rem", { lineHeight: "110%" }],
-        heading: ["8rem", { lineHeight: "110%" }],
+        mobileheading1: ["2.5rem", { lineHeight: "110%" }],
         heading2: ["4rem", { lineHeight: "130%" }],
+        mobileheading2:["2.25rem", { lineHeight: "130%" }],
         heading3: ["3rem", { lineHeight: "130%" }],
         heading4: ["1.5rem", { lineHeight: "150%" }],
         textRegular: ["1.5rem", { lineHeight: "150%" }],
+        mobileTextRegular: ["1.25rem", { lineHeight: "150%" }],
         textSmall: ["1rem", { lineHeight: "150%" }],
+        mobiletextSmall: ["0.875rem", { lineHeight: "150%" }],
       },
       spacing: {
         space300: "30rem",
