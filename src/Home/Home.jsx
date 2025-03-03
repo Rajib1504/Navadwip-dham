@@ -5,6 +5,9 @@ import IslandList from '../Components/IslandList/IslandList';
 import DayList from '../Components/ParikramaDays/DayList';
 import Antardvip from '../Components/ParikramaDays/Day-1/Antardvip/Antardvip';
 import Books from './../Components/Books/Books';
+import Simantavip from '../Components/ParikramaDays/Day-1/SimantaDvip/Simantavip';
+import Godrumdvip from '../Components/ParikramaDays/Day-2/Godrumdvip/Godrumdvip';
+import Madhyadvip from '../Components/ParikramaDays/Day-2/Madhyadvip/Madhyadvip';
 
 const Home = () => {
       return (
@@ -16,6 +19,11 @@ const Home = () => {
                  {/* Daylist  */}
                  <DayList/>
                  <Antardvip/>
+                 <Simantavip/>
+                 <Godrumdvip/>
+                 <Madhyadvip/>
+                 
+
                  {/* books  */}
                  <Books/>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Antardvip = () => {
   return (
-    <div className="  pt-space120 md:pt-space300 ">
+    <div className="pt-space120 md:pt-space300 ">
       <div className="w-11/12 mx-auto ">
         <p className="text-center mb-space60 md:mb-space120 font-primaryLight">
           1
