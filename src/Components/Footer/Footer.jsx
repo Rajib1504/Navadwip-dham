@@ -12,72 +12,97 @@ const Footer = () => {
   }, []);
   return (
     <div className="bg-primaryBlack">
-      <div className="border-2 flex justify-end mx-auto w-11/12 border-blue-500 pt-space60">
-        <div className="w-2/3 font-primaryLight  flex flex-col justify-end">
-          <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
-            Menu
-          </p>
-          <h3 className="my-space15 text-heading2 text-success  border-b border-secondaryWhite ">
-            Intro
-          </h3>
-          <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
+      <div className="mx-auto w-11/12">
+        <div className=" flex md:justify-end justify-start  pt-space60">
+          <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
+            <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
+              Menu
+            </p>
+            <h3 className="my-space15 text-heading2 text-success  border-b border-secondaryWhite">
+              Intro
+            </h3>
+            <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
 
-          {/* travel list section  */}
-          <div className="border-2 flex flex-col border-red-400 py-space15 mb-space60">
-            {Object.entries(travellist).map(([day, places], index) => (
-              <div
-                key={index}
-                className="mb-6 grid grid-cols-4 gap-4 border-2 border-green-500 items-start"
-              >
-                {/* Day Name */}
-                <h2 className="text-xl col-span-1 row-span-full border-2 border-yellow-200 font-bold text-gray-400 mb-2">
-                  {day}
-                </h2>
-                <div className="col-span-3 grid grid-cols-3">
-                  {Object.entries(places).map(([placeName, locations], idx) => {
-                    // Convert odd length to even by subtracting 1 if needed
-                    let adjustedLength =
-                      locations.length % 2 !== 0
-                        ? locations.length + 1
-                        : locations.length;
-                    let halfLength = adjustedLength / 2; // Divide into 2 equal columns
+            {/* travel list section  */}
+            <div className="border-2 flex flex-col border-red-400 py-space15 mb-space60">
+              {Object.entries(travellist).map(([day, places], index) => (
+                <div
+                  key={index}
+                  className="mb-6 grid grid-rows-2 md:grid-cols-4 md:gap-4  my-space15 md:items-start"
+                >
+                  {/* Day Name */}
+                  <h2 className="text-textSmall row-span-full md:text-textRegular md:col-span-1  font-bold text-gray-400 md:mb-spacemd">
+                    {day}
+                  </h2>
+                  <div className="col-span-3 my-space15 md:my-auto grid-cols-2 grid  md:grid ">
+                    {Object.entries(places).map(
+                      ([placeName, locations], idx) => {
+                        // Convert odd length to even by subtracting 1 if needed
+                        let adjustedLength =
+                          locations.length % 2 !== 0
+                            ? locations.length + 1
+                            : locations.length;
+                        let halfLength = adjustedLength / 2; // Divide into 2 equal columns
 
-                    return (
-                      <React.Fragment key={idx}>
-                        {/* Place Name - Same row for first item, new row for others */}
-                        <div
-                          className={`col-span-1 text-blue-600 border-2 border-green-500 font-semibold`}
-                        >
-                          {placeName}
-                        </div>
-
-                        {/* First Column (First half of locations) */}
-                        <div className="text-gray-100 mb-space30 col-span-1">
-                          {locations.slice(0, halfLength).map((location, i) => (
-                            <div key={i} className="text-gray-100">
-                              {location}
+                        return (
+                          <React.Fragment key={idx}>
+                            {/* Place Name - Same row for first item, new row for others */}
+                            <div
+                              className={`col-span-1 text-success `}
+                            >
+                              {placeName}
                             </div>
-                          ))}
-                        </div>
+                            {/* mobile  */}
+                            <div className="text-success md:hidden block mb-space30 col-span-1">
+                              {locations.map((location, i) => (
+                                <div key={i} className="text-success">
+                                  {location}
+                                </div>
+                              ))}
+                            </div>
+                            {/* laptop  */}
+                            {/* First Column (First half of locations) */}
+                            <div className="text-gray-100 md:bock hidden mb-space30 col-span-1">
+                              {locations
+                                .slice(0, halfLength)
+                                .map((location, i) => (
+                                  <div key={i} className="text-gray-100">
+                                    {location}
+                                  </div>
+                                ))}
+                            </div>
 
-                        {/* Second Column (Remaining half of locations) */}
-                        <div className="text-gray-100 mb-space30 col-span-1">
-                          {locations
-                            .slice(halfLength, adjustedLength)
-                            .map((location, i) => (
-                              <div key={i} className="text-gray-100">
-                                {location}
-                              </div>
-                            ))}
-                        </div>
-                      </React.Fragment>
-                    );
-                  })}
+                            {/* Second Column (Remaining half of locations) */}
+                            <div className="text-gray-100 hidden md:block mb-space30 col-span-1">
+                              {locations
+                                .slice(halfLength, adjustedLength)
+                                .map((location, i) => (
+                                  <div key={i} className="text-gray-100">
+                                    {location}
+                                  </div>
+                                ))}
+                            </div>
+                          </React.Fragment>
+                        );
+                      }
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <div className="py-space15 border-y border-secondaryWhite">
+              <h2 className="text-heading2  text-success">Books</h2>
+            </div>
+            <div className="py-space15 border-b border-secondaryWhite">
+              <h2 className="text-heading2  text-success">Ask a Question</h2>
+            </div>
           </div>
         </div>
+        <footer className="mt-space240 md:mt-space120 flex items-center text-primaryWhite font-primaryLight justify-between">
+          <h5>@2025</h5>
+          <h5 className="hidden md:block">Instagram</h5>
+          <h5>Designed by Chaitanya</h5>
+        </footer>
       </div>
     </div>
   );
