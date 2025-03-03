@@ -19,7 +19,7 @@ const IslandList = () => {
   return (
     <div className="w-11/12 mx-auto  my-space120 ">
     {loading ? (
-      <p className="text-center text-lg font-bold">Loading...</p>
+      <p className="text-center text-lg text-success">Loading...</p>
     ) : (
       <>
       <hr className=" border border-accentBlack"/>
@@ -30,7 +30,7 @@ const IslandList = () => {
        >
             {/* Left Section */}
             <div className="text-left md:col-start-2 md:col-span-3  col-span-6 ">
-            <h1 className="  smMobile:text-heading3 text-heading1  row-start-2 row-span-3   font-primaryLight relative">
+            <h1 className="  smMobile:text-mobileheading2 text-mobileheading2   row-start-2 row-span-3   font-primaryLight relative">
               <span className="absolute lg:top-0 lg:-left-6 md:-right-20 md:-top-10 lgMobile:-top-4 right-2 text-sm">{item.id}</span>
              <span className="text-left"> {item.title}</span>
             </h1>
@@ -38,15 +38,15 @@ const IslandList = () => {
             {/* Right Section */}
             <div className="flex md:col-start-6 md:col-span-12 mt-spacelg  col-span-6 lgMobile:gap-6 md:gap-space60  flex-row justify-start items-center">
               <div className="smMobile:w-[323px] w-48 md:w-36  min-h-[5rem]  text-left ">
-                <h3 className="text-secondaryBlack font-primaryLight">{item.represents.label}</h3>
-                <p className="font-primaryLight text-sm">{item.represents.value}</p>
-                <p className="font-primaryLight text-sm">{item.represents.personal}</p>
+                <h3 className="text-secondaryBlack text-mobiletextSmall md:text-textSmall font-primaryLight">{item.represents.label}</h3>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall">{item.represents.value}</p>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall">{item.represents.personal}</p>
               </div>
   
               <div className="w-64 md:w-40 min-h-[5rem]  text-left ">
-                <h3 className="text-secondaryBlack font-primaryLight">{item.embodies.label}</h3>
-                <p className="font-primaryLight text-sm">{item.embodies.value}</p>
-                <p className="font-primaryLight text-sm">{item.embodies.place}</p>
+                <h3 className="text-secondaryBlack font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.embodies.label}</h3>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.embodies.value}</p>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall m">{item.embodies.place}</p>
               </div>
   
               <div className="w-32 md:w-space60 min-h-[5rem]  text-left ">
