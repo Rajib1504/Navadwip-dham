@@ -2,7 +2,7 @@ import React from 'react';
 
 const DayThree = () => {
       return (
-            <div className=" w-full md:py-space300 py-space120  bg-primaryBlack">
+            <div className=" w-full  md:py-space300 py-space120  bg-primaryBlack">
             <div className="w-11/12 mx-auto">
               <div className="lg:ml-40 mb-spacelg">
                 <p className="text-success font-primaryLight mb-space60 md:mb-space120 text-center text-heading4">

@@ -36,20 +36,20 @@ const IslandList = () => {
             </h1>
             </div>
             {/* Right Section */}
-            <div className="flex md:col-start-6 md:col-span-12 mt-spacelg  col-span-6 lgMobile:gap-6 md:gap-space60 border-2 border-red-500 flex-row justify-start items-center">
-              <div className="smMobile:w-[323px] w-48 md:w-36 border-2 border-red-300 min-h-[5rem]  text-left ">
+            <div className="flex md:col-start-6 md:col-span-12 mt-spacelg  col-span-6 lgMobile:gap-6 md:gap-space60  flex-row justify-start items-center">
+              <div className="smMobile:w-[323px] w-48 md:w-36  min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.represents.label}</h3>
                 <p className="font-primaryLight text-sm">{item.represents.value}</p>
                 <p className="font-primaryLight text-sm">{item.represents.personal}</p>
               </div>
   
-              <div className="w-64 md:w-40 min-h-[5rem] border-2 border-red-300 text-left ">
+              <div className="w-64 md:w-40 min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.embodies.label}</h3>
                 <p className="font-primaryLight text-sm">{item.embodies.value}</p>
                 <p className="font-primaryLight text-sm">{item.embodies.place}</p>
               </div>
   
-              <div className="w-32 md:w-space60 min-h-[5rem] border-2 border-red-300 text-left ">
+              <div className="w-32 md:w-space60 min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.visit_on.label}</h3>
                 <p className="font-primaryLight text-sm">{item.visit_on.value}</p>
               </div>
