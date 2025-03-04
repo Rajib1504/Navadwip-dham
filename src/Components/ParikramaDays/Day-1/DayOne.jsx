@@ -3,8 +3,8 @@ import React from "react";
 const DayOne = () => {
   return (
     <div className=" w-full md:py-space300 py-space120  bg-primaryBlack">
-      <div className="w-11/12 flex flex-col  border-2 border-red-500 mx-auto">
-        <div className="grid grid-cols-12">
+      <div className="w-11/12 flex flex-col   mx-auto">
+        <div className="md:grid md:grid-cols-12">
           <div className=" mb-spacelg  col-start-4 col-span-6 ">
             <p className="text-success font-primaryLight mb-spacelg pb-space60 md:mb-space120 text-center text-textRegular">
               Parikama

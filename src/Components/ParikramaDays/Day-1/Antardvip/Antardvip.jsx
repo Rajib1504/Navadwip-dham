@@ -1,19 +1,20 @@
-
-
 const Antardvip = () => {
   return (
     <div className="pt-space120 md:pt-space300 ">
-      <div className="w-11/12 mx-auto ">
-        <p className="text-center mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
-          1
-        </p>
-        <h2 className="font-primaryLight md:ml-space60 md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
-          Antardvip
-        </h2>
-        <h4 className="font-primaryLight md:text-heading2 text-mobileheading2 md:w-[80%] ">
-          The island of Simantadvip, now known as Simuliya, was once surrounded
-          by the Ganges.
-        </h4>
+      <article className="w-11/12 mx-auto  ">
+        <div className="md:grid grid-cols-12 ">
+          <p className="text-center col-start-7 col-span-1 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
+            1
+          </p>
+          <h2 className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
+            Antardvip
+          </h2>
+          <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
+            The island of Simantadvip, now known as Simuliya, was once
+            surrounded by the Ganges.
+          </h4>
+        </div>
+
         {/* top text with left right sticky  */}
         <div className="flex md:flex-row flex-col justify-start  my-space60 ">
           {/* left */}
@@ -95,18 +96,29 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Sri Chaitanya Gaudiya Math
             </h4>
-            <p className="text-mobileTextRegular">The Place of Unity and Service</p>
+            <p className="text-mobileTextRegular">
+              The Place of Unity and Service
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
-              Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita Madhav Goswami Maharaj, a distinguished disciple of the world-renowned spiritual master, Srila Prabhupad Bhakti Siddhanta Sarasvati Goswami Thakur—the foremost preacher of Sri Chaitanya’s message.
+                Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita
+                Madhav Goswami Maharaj, a distinguished disciple of the
+                world-renowned spiritual master, Srila Prabhupad Bhakti
+                Siddhanta Sarasvati Goswami Thakur—the foremost preacher of Sri
+                Chaitanya’s message.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Srila Madhav Maharaj was a saintly personality known for his unwavering devotion to his spiritual master, strict adherence to Vaishnava principles, and tireless dedication to serving the Vaishnavas.
+                Srila Madhav Maharaj was a saintly personality known for his
+                unwavering devotion to his spiritual master, strict adherence to
+                Vaishnava principles, and tireless dedication to serving the
+                Vaishnavas.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Srila Prabhupad recognized his boundless enthusiasm and praised him as “volcanic energy.” After Srila Prabhupad’s departure, Srila Madhav Maharaj played a crucial role in uniting his godbrothers to continue spreading Sri Chaitanya’s teachings.
-
+                Srila Prabhupad recognized his boundless enthusiasm and praised
+                him as “volcanic energy.” After Srila Prabhupad’s departure,
+                Srila Madhav Maharaj played a crucial role in uniting his
+                godbrothers to continue spreading Sri Chaitanya’s teachings.
               </p>
             </div>
           </div>
@@ -176,69 +188,110 @@ const Antardvip = () => {
             <h2 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Nanda Acaraya Bahavan
             </h2>
-            <h3 className="text-mobileTextRegular md:text-textRegular">The Place Where Sri Caitanya and Nityananda Prabhu First Met</h3>
+            <h3 className="text-mobileTextRegular md:text-textRegular">
+              The Place Where Sri Caitanya and Nityananda Prabhu First Met
+            </h3>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
-              Nanda Acharya Bhavan is the home of Nanda Acharya, a close associate of Sri Chaitanya. Sri Chaitanya met Nityananda Prabhu at this very place for the first time.  
+                Nanda Acharya Bhavan is the home of Nanda Acharya, a close
+                associate of Sri Chaitanya. Sri Chaitanya met Nityananda Prabhu
+                at this very place for the first time.
               </p>
               <p className="mb-space15 md:mb-space30">
-              One day, Sri Chaitanya understood that Nityananda had arrived in Navadvip. Overwhelmed with joy, He urged His devotees to find Him. But no one knew whom He was speaking about.
+                One day, Sri Chaitanya understood that Nityananda had arrived in
+                Navadvip. Overwhelmed with joy, He urged His devotees to find
+                Him. But no one knew whom He was speaking about.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Gathering His associates, Chaitanya shared a dream He had the night before:
+                Gathering His associates, Chaitanya shared a dream He had the
+                night before:
               </p>
               <p className="mb-space15 md:mb-space30">
-              "I saw a chariot stop before my house, carrying an extraordinary personality. He wore blue cloth, a turban, and a single dazzling earring. A club rested on His shoulder, and a kamandalu pot hung from His stick. The moment I saw Him, I felt He was my brother—Balaram."
+                "I saw a chariot stop before my house, carrying an extraordinary
+                personality. He wore blue cloth, a turban, and a single dazzling
+                earring. A club rested on His shoulder, and a kamandalu pot hung
+                from His stick. The moment I saw Him, I felt He was my
+                brother—Balaram."
               </p>
               <p className="mb-space15 md:mb-space30">
-              "He asked repeatedly, ‘Is this the house of Nimai Pandit?’ Though I had never seen Him before, I was drawn to Him with deep reverence. I asked, ‘Who are You?’ He smiled and said, ‘I am Your brother. Tomorrow, we shall meet.
+                "He asked repeatedly, ‘Is this the house of Nimai Pandit?’
+                Though I had never seen Him before, I was drawn to Him with deep
+                reverence. I asked, ‘Who are You?’ He smiled and said, ‘I am
+                Your brother. Tomorrow, we shall meet.
               </p>
               <p className="mb-space15 md:mb-space30">
-              "I believe a great soul has arrived in Navadvip. Haridas! Shrivas! Go find Him at once."
+                "I believe a great soul has arrived in Navadvip. Haridas!
+                Shrivas! Go find Him at once."
               </p>
               <p className="mb-space15 md:mb-space30">
-              Haridas Thakur and Shrivas Pandit searched everywhere but found no one like the person Chaitanya described. After nine hours, they returned, exhausted: "We searched every corner of Navadvip but could not find Him."
+                Haridas Thakur and Shrivas Pandit searched everywhere but found
+                no one like the person Chaitanya described. After nine hours,
+                they returned, exhausted: "We searched every corner of Navadvip
+                but could not find Him."
               </p>
               <p className="mb-space15 md:mb-space30">
-              Chaitanya smiled. "Nityananda is the embodiment of Sri Guru. He cannot be found unless Bhagavan Himself reveals Him."
+                Chaitanya smiled. "Nityananda is the embodiment of Sri Guru. He
+                cannot be found unless Bhagavan Himself reveals Him."
               </p>
               <p className="mb-space15 md:mb-space30">
-              Then, with all His devotees, Chaitanya set out in search of Nityananda. Chanting “Haribol! Haribol!”, they arrived at Nandana Acharya’s house.
+                Then, with all His devotees, Chaitanya set out in search of
+                Nityananda. Chanting “Haribol! Haribol!”, they arrived at
+                Nandana Acharya’s house.
               </p>
               <p className="mb-space15 md:mb-space30">
-              There, they saw Him. A divine jewel among men—lost in deep meditation, effulgent like a million suns. The moment Chaitanya beheld Him, He recognized His eternal brother, Balarama. Nityananda, too, saw His Lord.
+                There, they saw Him. A divine jewel among men—lost in deep
+                meditation, effulgent like a million suns. The moment Chaitanya
+                beheld Him, He recognized His eternal brother, Balarama.
+                Nityananda, too, saw His Lord.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Stunned with ecstasy, He gazed at Chaitanya with unwavering devotion—as if drinking Him with His eyes, smelling Him with His nose, embracing Him with His very soul. He stood motionless, silent.
+                Stunned with ecstasy, He gazed at Chaitanya with unwavering
+                devotion—as if drinking Him with His eyes, smelling Him with His
+                nose, embracing Him with His very soul. He stood motionless,
+                silent.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Understanding this divine moment, Chaitanya asked Srivasa to recite a verse from Srimad Bhagavatam (10.21.5):
+                Understanding this divine moment, Chaitanya asked Srivasa to
+                recite a verse from Srimad Bhagavatam (10.21.5):
               </p>
               <p className="mb-space15 md:mb-space30">
-              "Wearing a peacock-feather ornament upon His head, blue karnikara flowers on His ears, a golden-yellow garment, and the Vaijayanti garland, Lord Krishna entered Vrindavan, filling the forest with the nectar of His flute…"
+                "Wearing a peacock-feather ornament upon His head, blue
+                karnikara flowers on His ears, a golden-yellow garment, and the
+                Vaijayanti garland, Lord Krishna entered Vrindavan, filling the
+                forest with the nectar of His flute…"
               </p>
               <p className="mb-space15 md:mb-space30">
-              Upon hearing this, Nityananda collapsed in divine ecstasy, losing all external awareness. As Shrivas recited more and more, His bliss intensified—He roared, tears streaming down His face.
+                Upon hearing this, Nityananda collapsed in divine ecstasy,
+                losing all external awareness. As Shrivas recited more and more,
+                His bliss intensified—He roared, tears streaming down His face.
               </p>
               <p className="mb-space15 md:mb-space30">
-              The Lord and His brother had reunited.
+                The Lord and His brother had reunited.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Today, this sacred site is home to a beautiful temple, established by Srila Bhakti Saranga Goswami Maharaj, a prominent disciple of Srila Prabhupad. Here, he installed the deities of Sri Sri Gaura-Nityananda, Sri Sri Radha Vinod Bihari, Sriman Sri Chaitanya, and Sri Narasimhadev.
+                Today, this sacred site is home to a beautiful temple,
+                established by Srila Bhakti Saranga Goswami Maharaj, a prominent
+                disciple of Srila Prabhupad. Here, he installed the deities of
+                Sri Sri Gaura-Nityananda, Sri Sri Radha Vinod Bihari, Sriman Sri
+                Chaitanya, and Sri Narasimhadev.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Srila Bhakti Saranga Maharaj was a distinguished scholar, a brilliant orator, and an exceptional preacher. His deep wisdom and divine qualities made him a master at dispelling misconceptions and defending the mission of Sri Chaitanya. Recognizing his abilities, Srila Prabhupad often entrusted him with clarifying doubts and upholding the integrity of the Gaudiya mission—a task he fulfilled with great success.
+                Srila Bhakti Saranga Maharaj was a distinguished scholar, a
+                brilliant orator, and an exceptional preacher. His deep wisdom
+                and divine qualities made him a master at dispelling
+                misconceptions and defending the mission of Sri Chaitanya.
+                Recognizing his abilities, Srila Prabhupad often entrusted him
+                with clarifying doubts and upholding the integrity of the
+                Gaudiya mission—a task he fulfilled with great success.
               </p>
               <p className="mb-space15 md:mb-space30">
-              Later, he became the editor of The Gaudiya magazine and was sent to London to spread the message of Sri Chaitanya, where his preaching made a lasting impact.
+                Later, he became the editor of The Gaudiya magazine and was sent
+                to London to spread the message of Sri Chaitanya, where his
+                preaching made a lasting impact.
               </p>
-              <p className="mb-space15 md:mb-space30">
-           
-              </p>
-              <p className="mb-space15 md:mb-space30">
-           
-              </p>
+              <p className="mb-space15 md:mb-space30"></p>
+              <p className="mb-space15 md:mb-space30"></p>
               <p className="mb-space15 md:mb-space30">
                 The temple complex also includes the deities of Lakshmi Nrisimha
                 and Gaura-Gadadhara, located behind the main temple hall.
@@ -303,7 +356,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Yogapith
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -391,7 +446,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Srivas Angan
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -479,7 +536,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Advaita Bhavan
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -567,7 +626,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Gadadhar Angan
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -655,7 +716,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Murari Gupta Angan
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -743,7 +806,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Pritha-kunda
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -831,7 +896,9 @@ const Antardvip = () => {
             <h4 className="text-mobileheading2 md:text-[62px] font-primaryLight mb-spacelg">
               Sri Chaitanya Math
             </h4>
-            <p className="text-mobileTextRegular">The birthplace of Sri Chaitanya Mahaprabhu</p>
+            <p className="text-mobileTextRegular">
+              The birthplace of Sri Chaitanya Mahaprabhu
+            </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:my-space120 ">
               <p className="mb-space15 md:mb-space30">
@@ -906,7 +973,7 @@ const Antardvip = () => {
           </div>
         </div>
         {/* ............................... */}
-      </div>
+      </article>
     </div>
   );
 };
