@@ -17,7 +17,7 @@ const IslandList = () => {
       });
   }, []);
   return (
-    <div className="w-11/12 mx-auto  md:my-space120 ">
+    <div className="w-11/12 mx-auto md:mb-space240  md:mt-space120 ">
     {loading ? (
       <p className="text-center text-lg text-success">Loading...</p>
     ) : (
@@ -31,8 +31,8 @@ const IslandList = () => {
             {/* Left Section */}
             <div className="text-left md:col-start-2 md:col-span-3  col-span-6 ">
             <h1 className="  smMobile:text-mobileheading2 text-mobileheading2   row-start-2 row-span-3   font-primaryLight relative">
-              <span className="absolute lg:top-0 lg:-left-6 md:-right-20 md:-top-10 lgMobile:-top-4 right-2 text-sm">{item.id}</span>
-             <span className="text-left"> {item.title}</span>
+              <span className="absolute lg:top-0 lg:-left-6 md:-right-20 md:-top-10 lgMobile:-top-4 right-2 text-textSmall">{item.id}</span>
+             <span className="text-left md:text-heading2"> {item.title}</span>
             </h1>
             </div>
             {/* Right Section */}

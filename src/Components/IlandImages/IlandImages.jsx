@@ -13,7 +13,7 @@ const IlandImages = () => {
       </div>
       {/* text  */}
       <div>
-        <h2 className="text-mobileheading2 md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-48 md:w-72 text-center md:pr-spacelg mix-blend-difference text-success">Islands of Navadvip</h2>
+        <h2 className="text-mobileheading2 md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-48 md:w-72 text-center md:pr-space15 mix-blend-difference text-success">Islands of Navadvip</h2>
       </div>
       <div className=" hidden lg:flex gap-space15 justify-center items-center  ">
             <img src="/public/ilandImages/right/1986-01-16 1.svg" alt="" />
