@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
@@ -25,7 +25,7 @@ const Navbar = () => {
       title: "Simantadwip",
       places: [
         { id: "10", idx: "I1.10", name: "Sardanga" },
-        { id: "11", idx: "I1.1", name: "Sridhar Angan" },
+        { id: "11", idx: "I1.11", name: "Sridhar Angan" },
         { id: "12", idx: "I1.12", name: "Samadhi of Chand Kazi" },
         { id: "13", idx: "I1.13", name: "Belvapaksha" },
       ],
@@ -108,8 +108,9 @@ const Navbar = () => {
   ];
 
   // all place
-  const allPlaces = placesData.flatMap((day) => day.places);
+  const allPlaces = useMemo(() => placesData.flatMap((day) => day.places), [placesData]);
   const [isOpen, setIsOpen] = useState(false);
+  const [firstLoad,setFirstLoad]=useState(true)
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
 
@@ -122,38 +123,77 @@ const Navbar = () => {
     console.log(newIndex);
     if (newIndex >= 0 && newIndex < allPlaces.length) {
       setCurrentPlace(allPlaces[newIndex]);
-      document
-        .getElementById(allPlaces[newIndex].id)
-        ?.scrollIntoView({ behavior: "smooth" });
+      setFirstLoad(false)
     }
   };
+  useEffect(() => {
+    if (!firstLoad && currentPlace) {
+      document.getElementById(currentPlace.id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [currentPlace,firstLoad]);
+
   const handleSelectPlace = (place) => {
     setCurrentPlace(place);
-    document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
     setDropdownOpen(false);
+    setTimeout(() => {
+      document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   };
   // select section acording to the scroll
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSection = entries.find((entry) => entry.isIntersecting);
-        if (visibleSection) {
-          const foundPlace = allPlaces.find(
-            (place) => place.id === visibleSection.target.id
-          );
-          if (foundPlace) {
-            setCurrentPlace(foundPlace);
-          }
+  // const observerref=useRef(null)
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const visibleSection = entries.find((entry) => entry.isIntersecting);
+  //       if (visibleSection) {
+  //         const foundPlace = allPlaces.find(
+  //           (place) => place.id === visibleSection.target.id
+  //         );
+  //         if (foundPlace) {
+  //           setCurrentPlace(foundPlace);
+  //         }
+  //       }
+  //     },
+  //     { threshold: 0.3 }
+  //   );
+  //   allPlaces.forEach((place) => {
+  //     const section = document.getElementById(place.id);
+  //     if (section)observerref.current.observe(section);
+  //   });
+  //   return () => observer.disconnect();
+  // }, [allPlaces]);
+
+  const observerRef = useRef(null);
+
+useEffect(() => {
+  observerRef.current = new IntersectionObserver(
+    (entries) => {
+      const visibleSection = entries.find((entry) => entry.isIntersecting);
+      if (visibleSection) {
+        const foundPlace = allPlaces.find(
+          (place) => place.id === visibleSection.target.id
+        );
+        if (foundPlace) {
+          setCurrentPlace(foundPlace);
+          setFirstLoad(false)
         }
-      },
-      { threshold: 0.4 }
-    );
-    allPlaces.forEach((place) => {
-      const section = document.getElementById(place.id);
-      if (section) observer.observe(section);
-    });
-    return () => observer.disconnect();
-  }, [allPlaces]);
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  allPlaces.forEach((place) => {
+    const section = document.getElementById(place.id);
+    if (section) observerRef.current.observe(section);
+  });
+
+  return () => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+  };
+}, []);
+
   return (
     <div className="w-full fixed z-50 t-0  ">
       <div className="w-11/12   mx-auto pt-2">
