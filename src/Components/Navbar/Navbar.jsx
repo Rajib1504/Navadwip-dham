@@ -155,8 +155,8 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, [allPlaces]);
   return (
-    <div className="w-full fixed z-50 t-0 ">
-      <div className="w-11/12 sm:p-2 lg:p-0 md:p-0 mx-auto pt-2">
+    <div className="w-full fixed z-50 t-0  ">
+      <div className="w-11/12   mx-auto pt-2">
         {/* left content  */}
         <div className=" flex  ">
           {/* logo  */}
@@ -269,17 +269,17 @@ const Navbar = () => {
           <div className="fixed   bottom-spacelg md:static flex  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
-              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack  p-2 rounded-full  border-success  transition-all"
+              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack  p-2 rounded-full   transition-all"
             >
               <HiArrowLongLeft />
             </button>
-            <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-[100%] max-w-space300 bg-success  border-success rounded-full">
+            <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-[100%] max-w-space300 bg-success rounded-full">
               {/* dynamic number  */}
-              <div className="bg-accentBlack md:text-xl  text-mobiletextSmall tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
+              <div className="bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
                 {currentPlace.idx}
               </div>
               {/* center content  */}
-              <span className="md:text-xl  text-center  text-mobiletextSmall">
+              <span className="md:text-textSmall  text-center  text-mobiletextSmall">
                 {" "}
                 {currentPlace.name}
               </span>
@@ -299,7 +299,7 @@ const Navbar = () => {
               {dropdownOpen && (
                 <ul
                   className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px] backdrop-blur-none lg:h-[482px] border-2 ml-0 lg:top-16 md:top-12 bottom-10 left-auto shadow-md rounded-md p-4"
+                w-full h-[320px] md:h-[320px]  lg:h-[482px] border-2 ml-0 lg:top-16 md:top-12 bottom-10 left-auto shadow-md rounded-md p-4"
                   style={{
                     scrollbarWidth: "none",
                     msOverflowStyle: "none",
@@ -312,13 +312,13 @@ const Navbar = () => {
                       <div key={idx}>
                         <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
                           <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
-                          <h5 className="text-accentBlack opacity-55 text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
+                          <h5 className="text-secondaryBlack opacity-55 text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
                         </div>
                         <div className="py-spacelg  ">
                           {day.places.map((place) => (
                             <div
                               key={place.id}
-                              className={`py-spacesm  mb-1 flex w-full  cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
+                              className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
                                 currentPlace.id === place.id
                                   ? "bg-primaryBlack text-white"
                                   : "hover:bg-accentBlack"
@@ -331,10 +331,10 @@ const Navbar = () => {
                                 setDropdownOpen(false);
                               }}
                             >
-                              <span className=" md:w-1/4 w-1/5 pl-2 text-left">
+                              <span className=" md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
                                 {place.idx}
                               </span>
-                              <span className="w-full text-center mix-blend-difference text-success z-20  ">
+                              <span className="w-full text-center mix-blend-difference text-success z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                 {" "}
                                 {place.name}
                               </span>
@@ -349,7 +349,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => handleNavigate("next")}
-              className="md:p-3.5 border border-accentBlack  p-2 backdrop-blur-sm  rounded-full  border-success bg-success transition-all"
+              className="md:p-3.5 border border-accentBlack  p-2 backdrop-blur-sm  rounded-full   bg-success transition-all"
             >
               <HiArrowLongRight className="text-lg" />
             </button>
