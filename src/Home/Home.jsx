@@ -31,7 +31,7 @@ const Home = () => {
                  <DayOne/>
                  <Antardvip/>
                  <Simantavip/>
-                 <DayTwo/>
+                 {/* <DayTwo/>
                  <Godrumdvip/>
                  <Madhyadvip/>
                 <DayThree/>
@@ -41,7 +41,7 @@ const Home = () => {
                  <Modrumadvip/>
                  <DayFour/>
                  <Simantadvip/>
-                 <Rudradvip/>
+                 <Rudradvip/> */}
 
                  {/* books  */}
                  <Books/>

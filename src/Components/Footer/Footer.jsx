@@ -15,13 +15,13 @@ const Footer = () => {
       <div className="mx-auto w-11/12">
         <div className=" flex md:justify-end justify-start  pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
-            <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
+            <p className="font-primaryLight text-mobiletextSmall border-b border-secondaryWhite md:text-textSmall mb-spacelg text-success">
               Menu
             </p>
-            <h3 className="my-space15 text-heading2 text-success  border-b border-secondaryWhite">
+            <h3 className="my-space15 text-mobileheading2 md:text-heading2 text-success  border-b border-secondaryWhite">
               Intro
             </h3>
-            <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
+            <h3 className="my-space15 text-mobileheading2 md:text-heading2 text-success">Parikarma</h3>
 
             {/* travel list section  */}
             <div className="flex flex-col  py-space15 mb-space60">
@@ -31,7 +31,7 @@ const Footer = () => {
                   className="mb-6 grid grid-rows-2 md:grid-cols-4 md:gap-4  my-space15 md:items-start"
                 >
                   {/* Day Name */}
-                  <h2 className="text-textSmall row-span-full md:text-textRegular md:col-span-1  font-bold text-gray-400 md:mb-spacemd">
+                  <h2 className="text-mobiletextSmall tracking-wider row-span-full md:text-textRegular md:col-span-1  font-bold text-gray-400 md:mb-spacemd">
                     {day}
                   </h2>
                   <div className="col-span-3 my-space15 md:my-auto grid-cols-2 grid  md:grid ">
@@ -48,14 +48,14 @@ const Footer = () => {
                           <React.Fragment key={idx}>
                             {/* Place Name - Same row for first item, new row for others */}
                             <div
-                              className={`col-span-1 text-success `}
+                              className={`col-span-1 text-success tracking-wide text-mobiletextSmall`}
                             >
                               {placeName}
                             </div>
                             {/* mobile  */}
                             <div className="text-success md:hidden block mb-space30 col-span-1">
                               {locations.map((location, i) => (
-                                <div key={i} className="text-success">
+                                <div key={i} className="text-mobiletextSmall tracking-wide text-success">
                                   {location}
                                 </div>
                               ))}
@@ -91,10 +91,10 @@ const Footer = () => {
               ))}
             </div>
             <div className="py-space15 border-y border-secondaryWhite">
-              <h2 className="text-heading2  text-success">Books</h2>
+              <h2 className="text-mobileheading2 md:text-heading2  text-success">Books</h2>
             </div>
             <div className="py-space15 border-b border-secondaryWhite">
-              <h2 className="text-heading2  text-success">Ask a Question</h2>
+              <h2 className="text-mobileheading2 md:text-heading2  text-success">Ask a Question</h2>
             </div>
           </div>
         </div>

@@ -266,7 +266,7 @@ const Navbar = () => {
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed  bottom-spacelg md:static lg:static flex w-full gap-2  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed border-2 border-red-500  bottom-spacelg md:static flex  gap-3 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
               className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack lg:p-3.5 p-2 rounded-full  border-success  transition-all"
@@ -275,11 +275,11 @@ const Navbar = () => {
             </button>
             <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-[100%] max-w-space300 bg-success  border-success rounded-full">
               {/* dynamic number  */}
-              <div className="bg-accentBlack md:text-xl lg:text-xl text-sm tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
+              <div className="bg-accentBlack md:text-xl  text-mobiletextSmall tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
                 {currentPlace.idx}
               </div>
               {/* center content  */}
-              <span className="md:text-xl  text-center  lg:text-xl text-xs">
+              <span className="md:text-xl  text-center  text-mobiletextSmall">
                 {" "}
                 {currentPlace.name}
               </span>
@@ -311,14 +311,14 @@ const Navbar = () => {
                     {placesData.map((day, idx) => (
                       <div key={idx}>
                         <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
-                          <h3 className="font-primaryLight text-lg md:text-heading4">{`${day.title}`}</h3>
-                          <h5 className="text-accentBlack opacity-55 text-sm md:text-lg lg:text-xl text-center font-primaryLight">{`${day.day}`}</h5>
+                          <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
+                          <h5 className="text-accentBlack opacity-55 text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
                         </div>
-                        <div className=" p-4  ">
+                        <div className="py-spacelg  ">
                           {day.places.map((place) => (
                             <div
                               key={place.id}
-                              className={`p-3  mb-1 flex w-full cursor-pointer text-xs lg:text-xl md:text-xl rounded-full ${
+                              className={`py-spacesm  mb-1 flex w-full  cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
                                 currentPlace.id === place.id
                                   ? "bg-primaryBlack text-white"
                                   : "hover:bg-accentBlack"
