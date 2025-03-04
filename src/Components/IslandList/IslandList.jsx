@@ -17,7 +17,7 @@ const IslandList = () => {
       });
   }, []);
   return (
-    <div className="w-11/12 mx-auto  my-space120 ">
+    <div className="w-11/12 mx-auto  md:my-space120 ">
     {loading ? (
       <p className="text-center text-lg text-success">Loading...</p>
     ) : (
