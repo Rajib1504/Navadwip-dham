@@ -241,7 +241,7 @@ const Navbar = () => {
                   //   </li>
                   // </ul>
                   <div className="bg-primaryBlack absolute  mt-2 -left-space30 md:-left-spacesm top-space30 rounded-lg  ">
-                    <div className=" font-primaryLight border-2 border-red-500 grid 
+                    <div className=" font-primaryLight  grid 
                     md:h-[70vh] h-[50vh] w-[80vw] md:w-[60vw]  grid-cols-12">
                       <div className="md:col-start-5 col-start-1 col-span-12">
                       <h3 className="my-space15 text-heading3 md:text-heading2 text-success ">Intro</h3>
@@ -266,7 +266,7 @@ const Navbar = () => {
           </div>
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed border-2 border-red-500  bottom-spacelg md:static flex  gap-3 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed   bottom-spacelg md:static flex  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
               className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack  p-2 rounded-full  border-success  transition-all"
