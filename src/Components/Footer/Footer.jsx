@@ -3,12 +3,12 @@ import { useEffect } from "react";
 
 const Footer = () => {
   const [travellist, setTravelList] = useState([]);
-  console.log(travellist);
+  // console.log(travellist);
   useEffect(() => {
     fetch("/public/Travel.json")
       .then((res) => res.json())
       .then((data) => setTravelList(data))
-      .catch((error) => console.log(error.message));
+      // .catch((error) => console.log(error.message));
   }, []);
   return (
     <div className="bg-primaryBlack">

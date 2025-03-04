@@ -116,11 +116,11 @@ const Navbar = () => {
 
   const handleNavigate = (direction) => {
     let allPlaces = placesData.flatMap((day) => day.places);
-    console.log(allPlaces);
+    // console.log(allPlaces);
     let currentIndex = allPlaces.findIndex((p) => p.id === currentPlace.id);
-    console.log(currentIndex);
+    // console.log(currentIndex);
     let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1;
-    console.log(newIndex);
+    // console.log(newIndex);
     if (newIndex >= 0 && newIndex < allPlaces.length) {
       setCurrentPlace(allPlaces[newIndex]);
       setFirstLoad(false)

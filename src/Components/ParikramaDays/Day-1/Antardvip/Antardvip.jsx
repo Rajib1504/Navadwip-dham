@@ -130,27 +130,20 @@ const Antardvip = () => {
             </div>
           </div>
           {/* images   */}
-          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+         <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
-            <div className="col-start-1 col-span-2">
+            <div className="col-start-1 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/public/Day Images/1stDay/chaitanyaGaudiya1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
-              <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-                The central altar of the main temple with Sri Gaura Narayana
-                accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-                Additionally, the unique four-armed deity Adhokshaja Vishnu,
-                which was discovered during the excavation of the temple, is
-                also present here alongside His consorts, Bhu Devi and Lakshmi
-                Devi.
-              </p>
+             
             </div>
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/public/Day Images/1stDay/chaitanyaGaudiya2.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -165,23 +158,22 @@ const Antardvip = () => {
               </div>
             </div>
             {/* 3rd img  */}
-            <div className="col-start-10 col-span-3">
+            <div className="col-start-11 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/public/Day Images/1stDay/chaitanyaGaudiya3.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
-              <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
-                  <p className="font-primaryLight text-mobileTextRegular">
-                    Open Full Gallery
-                  </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                </div>
-              </div>
+             
+              <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
+              The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+              </p>
+              
             </div>
           </div>
+
+
+
         </div>
         {/* ............................... */}
 
@@ -349,6 +341,14 @@ const Antardvip = () => {
               </div>
             </div>
           </div>
+        
+
+
+
+
+
+
+
         </div>
 
         {/* ........................... */}

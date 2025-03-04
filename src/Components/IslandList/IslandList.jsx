@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const IslandList = () => {
   const [ilands, setIlands] = useState([]);
   const [loading, setLoading] = useState(true);
-  console.log(ilands);
+  // console.log(ilands);
   useEffect(() => {
     fetch("/Ilandlist.json")
       .then((res) => res.json())
@@ -12,7 +12,7 @@ const IslandList = () => {
         setLoading(false);
       })
       .catch((error) => {
-        console.log("ilandlist fetch error:", error);
+        // console.log("ilandlist fetch error:", error);
         setLoading(false);
       });
   }, []);
