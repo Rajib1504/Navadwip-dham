@@ -20,7 +20,7 @@ const DayOne = () => {
               className="w-[242px] md:w-auto"
             />
           </div>
-          <div className="mb-space30 md:mb-space120 col-start-5 col-span-3  w-fit lg:mx-auto text-success font-primaryLight text-mobileheading2 md:text-heading2  text-left">
+          <div className="mb-space30 md:mb-space120 col-start-5 col-span-4  md:w-auto w-fit  lg:mx-auto text-success font-primaryLight text-mobileheading2 md:text-heading2  text-left">
             <h3 className=" tracking-wider ">
               Antardvip <br />& Simantadvip
             </h3>
