@@ -2,7 +2,7 @@
 
 const IlandImages = () => {
   return (
-    <article className="mt-mobilespace285 mb-[230px] ">
+    <article className=" md: w-full mt-mobilespace285 mb-[230px] md:mt-space240 md:mb-space30 ">
       <div className="lg:flex flex justify-center md:pt-space240  md:py-space120  md:justify-between">
 
       <div className="hidden lg:flex justify-center items-center gap-space15 ">
@@ -13,7 +13,7 @@ const IlandImages = () => {
       </div>
       {/* text  */}
       <div>
-        <h2 className="text-mobileheading2 md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-48 md:w-72 text-center md:ml-[17rem] mix-blend-difference text-success">Islands of Navadvip</h2>
+        <h2 className="text-mobileheading2 md:text-heading2 mx-auto lg:ml-space15 font-primaryLight w-48 md:w-72 text-center md:pr-spacelg mix-blend-difference text-success">Islands of Navadvip</h2>
       </div>
       <div className=" hidden lg:flex gap-space15 justify-center items-center  ">
             <img src="/public/ilandImages/right/1986-01-16 1.svg" alt="" />
