@@ -269,7 +269,7 @@ const Navbar = () => {
           <div className="fixed border-2 border-red-500  bottom-spacelg md:static flex  gap-3 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
-              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack lg:p-3.5 p-2 rounded-full  border-success  transition-all"
+              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack  p-2 rounded-full  border-success  transition-all"
             >
               <HiArrowLongLeft />
             </button>
@@ -286,7 +286,7 @@ const Navbar = () => {
               {/* dropdown  */}
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="mr-3 ml-2 md:ml-0 lg:ml-0"
+                className="mr-3 ml-2 md:ml-0 "
               >
                 <span className="hidden md:block">
                   {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -331,7 +331,7 @@ const Navbar = () => {
                                 setDropdownOpen(false);
                               }}
                             >
-                              <span className="lg:w-1/4 md:w-1/4 w-1/5 pl-2 text-left">
+                              <span className=" md:w-1/4 w-1/5 pl-2 text-left">
                                 {place.idx}
                               </span>
                               <span className="w-full text-center mix-blend-difference text-success z-20  ">
@@ -349,7 +349,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => handleNavigate("next")}
-              className="md:p-3.5 border border-accentBlack lg:p-3.5 p-2 backdrop-blur-sm  rounded-full  border-success bg-success transition-all"
+              className="md:p-3.5 border border-accentBlack  p-2 backdrop-blur-sm  rounded-full  border-success bg-success transition-all"
             >
               <HiArrowLongRight className="text-lg" />
             </button>
