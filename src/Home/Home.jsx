@@ -14,9 +14,10 @@ import Modrumadvip from '../Components/ParikramaDays/Day-3/Modrumadvip/Modrumadv
 import Rudradvip from '../Components/ParikramaDays/Day-4/Rudradvip/Rudradvip';
 import Simantadvip from '../Components/ParikramaDays/Day-4/Simantadvip/Simantadvip';
 import DayOne from '../Components/ParikramaDays/Day-1/DayOne';
-import DayTwo from '../Components/ParikramaDays/Day-2/DayTwo';
+
 import DayThree from '../Components/ParikramaDays/Day-3/DayThree';
 import DayFour from '../Components/ParikramaDays/Day-4/DayFour';
+import DayTwo from './../Components/ParikramaDays/Day-2/DayTwo';
 
 
 
@@ -31,9 +32,9 @@ const Home = () => {
                  <DayOne/>
                  <Antardvip/>
                  <Simantavip/>
-                 {/* <DayTwo/>
+                  <DayTwo/>
                  <Godrumdvip/>
-                 <Madhyadvip/>
+                 {/*<Madhyadvip/>
                 <DayThree/>
                  <Koladvip/>
                  <Ritudvip/>
