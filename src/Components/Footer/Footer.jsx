@@ -15,26 +15,26 @@ const Footer = () => {
       <div className="mx-auto w-11/12">
         <div className=" flex md:justify-end justify-start  pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
-            <p className="font-primaryLight text-mobiletextSmall border-b border-secondaryWhite md:text-textSmall mb-spacelg text-success">
+            <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
               Menu
             </p>
-            <h3 className="my-space15 text-mobileheading2 md:text-heading2 text-success  border-b border-secondaryWhite">
+            <h3 className="my-space15 text-heading2 text-success  border-b border-secondaryWhite">
               Intro
             </h3>
-            <h3 className="my-space15 text-mobileheading2 md:text-heading2 text-success">Parikarma</h3>
+            <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
 
             {/* travel list section  */}
-            <div className="flex flex-col  py-space15 mb-space60">
+            <div className="flex flex-col text-textSmall  py-space15 mb-space60">
               {Object.entries(travellist).map(([day, places], index) => (
                 <div
                   key={index}
-                  className="mb-6 grid grid-rows-2 md:grid-cols-4 md:gap-4  my-space15 md:items-start"
+                  className=" grid grid-rows-2 tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4  my-space15 md:items-start"
                 >
                   {/* Day Name */}
-                  <h2 className="text-mobiletextSmall tracking-wider row-span-full md:text-textRegular md:col-span-1  font-bold text-gray-400 md:mb-spacemd">
+                  <h2 className="text-mobiletextSmall tracking-wider row-span-full md:text-textSmall  text-primaryWhite font-primaryLight md:col-span-1  font-bold  ">
                     {day}
                   </h2>
-                  <div className="col-span-3 my-space15 md:my-auto grid-cols-2 grid  md:grid ">
+                  <div className="col-span-3 my-space15 md:my-auto grid-cols-6 grid  md:grid ">
                     {Object.entries(places).map(
                       ([placeName, locations], idx) => {
                         // Convert odd length to even by subtracting 1 if needed
@@ -48,12 +48,15 @@ const Footer = () => {
                           <React.Fragment key={idx}>
                             {/* Place Name - Same row for first item, new row for others */}
                             <div
-                              className={`col-span-1 text-success tracking-wide text-mobiletextSmall`}
+                              className={`col-span-2 text-success tracking-wide text-mobiletextSmall`}
                             >
                               {placeName}
                             </div>
+                            <div className="  grid-flow-col col-span-4 md:grid grid-cols-4  ">
+
+                            
                             {/* mobile  */}
-                            <div className="text-success md:hidden block mb-space30 col-span-1">
+                            <div className="col-span-4 text-success md:hidden block mb-space30 ">
                               {locations.map((location, i) => (
                                 <div key={i} className="text-mobiletextSmall tracking-wide text-success">
                                   {location}
@@ -62,7 +65,7 @@ const Footer = () => {
                             </div>
                             {/* laptop  */}
                             {/* First Column (First half of locations) */}
-                            <div className="text-gray-100 md:bock hidden mb-space30 col-span-1">
+                            <div className="text-gray-100 md:block hidden mb-space30 col-start-1 col-span-2">
                               {locations
                                 .slice(0, halfLength)
                                 .map((location, i) => (
@@ -73,7 +76,7 @@ const Footer = () => {
                             </div>
 
                             {/* Second Column (Remaining half of locations) */}
-                            <div className="text-gray-100 hidden md:block mb-space30 col-span-1">
+                            <div className="text-gray-100 hidden md:block mb-space30  col-start-3 col-span-2">
                               {locations
                                 .slice(halfLength, adjustedLength)
                                 .map((location, i) => (
@@ -81,6 +84,7 @@ const Footer = () => {
                                     {location}
                                   </div>
                                 ))}
+                            </div>
                             </div>
                           </React.Fragment>
                         );
@@ -90,15 +94,16 @@ const Footer = () => {
                 </div>
               ))}
             </div>
+            {/* next section  */}
             <div className="py-space15 border-y border-secondaryWhite">
-              <h2 className="text-mobileheading2 md:text-heading2  text-success">Books</h2>
+              <h2 className="text-heading2  text-success">Books</h2>
             </div>
             <div className="py-space15 border-b border-secondaryWhite">
-              <h2 className="text-mobileheading2 md:text-heading2  text-success">Ask a Question</h2>
+              <h2 className="text-heading2  text-success">Ask a Question</h2>
             </div>
           </div>
         </div>
-        <footer className="mt-space240 md:mt-space120 flex items-center md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
+        <footer className="mt-space240 md:mt-space120 flex items-center md:text-textSmall text-textSmall text-primaryWhite font-primaryLight justify-between">
           <h5>@2025</h5>
           <h5 className="hidden md:block">Instagram</h5>
           <h5>Designed by Chaitanya</h5>
@@ -106,6 +111,32 @@ const Footer = () => {
       </div>
     </div>
   );
+
+  {
+    /* mobile  */
+  }
+  //    <div className="text-success  md:hidden block mb-space30 col-span-1">
+  //    {locations.map((location, i) => (
+  //      <div key={i} className="text-mobiletextSmall tracking-wide text-success">
+  //        {location}
+  //      </div>
+  //    ))}
+  //  </div>
+
+  // <div className="text-gray-100 hidden md:block mb-space30 col-span-2">
+  //   {locations.slice(halfLength, adjustedLength).map((location, i) => (
+  //     <div key={i} className="text-gray-100">
+  //       {location}
+  //     </div>
+  //   ))}
+  // </div>;
+  // <div className="text-gray-100 md:block hidden mb-space30 col-span-1">
+  //   {locations.slice(0, halfLength).map((location, i) => (
+  //     <div key={i} className="text-gray-100">
+  //       {location}
+  //     </div>
+  //   ))}
+  // </div>;
 };
 
 export default Footer;
