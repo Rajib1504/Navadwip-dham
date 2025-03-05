@@ -90,12 +90,12 @@ const Ritudvip = () => {
         {/* Radha Kunda"  */}
         <div>
           <div
-            id="30"
+            id="29"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I3.7
+              I3.6
             </p>
 
             {/* Second Box (Centered by default) */}
@@ -184,12 +184,12 @@ const Ritudvip = () => {
         {/*Vidyanagar  */}
         <div>
           <div
-            id="31"
+            id="30"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I3.8
+              I3.7
             </p>
 
             {/* Second Box (Centered by default) */}

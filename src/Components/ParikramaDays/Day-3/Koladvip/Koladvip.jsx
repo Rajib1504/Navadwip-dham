@@ -259,7 +259,8 @@ const Koladvip = () => {
         </div>
         {/* ............................... */}
 
-        {/* Sri Chaitanya Saraswat Math"  */}
+      
+        {/* Samudra Garh"  */}
         <div>
           <div
             id="26"
@@ -268,93 +269,6 @@ const Koladvip = () => {
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
               I3.3
-            </p>
-
-            {/* Second Box (Centered by default) */}
-            <div className="col-start-5 col-span-6  w-full mr-space30 ">
-              <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                Sri Chaitanya Saraswat Math (Data Due)
-              </h4>
-              <p className="text-mobileTextRegular md:text-textRegular">
-                The Place of Unity and Service😔😔😔😔😔😔
-              </p>
-              {/* description  */}
-              <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                <p className="mb-space15 md:mb-space30">
-                  Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita
-                  Madhav Goswami Maharaj, a distinguished disciple of the
-                  world-renowned spiritual master, Srila Prabhupad Bhakti
-                  Siddhanta Saraswati Goswami Thakur—the foremost preacher of
-                  Sri Chaitanya’s message.{" "}
-                </p>
-                <p className="mb-space15 md:mb-space30">
-                  Srila Madhav Maharaj was a saintly personality known for his
-                  unwavering devotion to his spiritual master, strict adherence
-                  to Vaishnava principles, and tireless dedication to serving
-                  the Vaishnavas.
-                </p>
-                <p className="mb-space15 md:mb-space30">
-                  Srila Prabhupad recognized his boundless enthusiasm and
-                  praised him as “volcanic energy.” After Srila Prabhupad’s
-                  departure, Srila Madhav Maharaj played a crucial role in
-                  uniting his godbrothers to continue spreading Sri Chaitanya’s
-                  teachings.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* images   */}
-          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
-            {/* 1st img  */}
-            <div className="col-start-1 col-span-3">
-              <img
-                src="/chaitanyaGaudiya1.svg"
-                className="md:w-auto w-[100vw]"
-                alt=""
-              />
-            </div>
-            {/* 2nd img  */}
-            <div className=" col-start-5 col-span-4">
-              <img
-                src="/chaitanyaGaudiya2.svg"
-                alt=""
-                className="md:mb-space60 md:w-[30rem]"
-              />
-              <div className="relative group md:block hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
-                  <p className="font-primaryLight md:text-textSmall">
-                    Open Full Gallery
-                  </p>
-                  <img src="/→.svg" alt="" />
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                </div>
-              </div>
-            </div>
-            {/* 3rd img  */}
-            <div className="col-start-11 col-span-2">
-              <img
-                src="/chaitanyaGaudiya3.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
-
-              <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-                The central altar of the main temple with Sri Gaura Narayana
-                accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* ............................... */}
-        {/* Samudra Garh"  */}
-        <div>
-          <div
-            id="27"
-            className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
-          >
-            {/* First Box (Starts from top) */}
-            <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I3.4
             </p>
 
             {/* Second Box (Centered by default) */}
@@ -474,12 +388,12 @@ const Koladvip = () => {
         {/*Ganga Sagar  */}
         <div>
           <div
-            id="28"
+            id="27"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I3.5
+              I3.4
             </p>
 
             {/* Second Box (Centered by default) */}
@@ -563,12 +477,12 @@ const Koladvip = () => {
         {/* Champahatti  */}
         <div>
           <div
-            id="29"
+            id="28"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I3.6
+              I3.5
             </p>
 
             {/* Second Box (Centered by default) */}
