@@ -1,3 +1,6 @@
+import React from "react";
+import { RxCross2 } from "react-icons/rx";
+
 const Antardvip = () => {
   return (
     <div className="pt-space120 md:pt-space300 ">
@@ -140,9 +143,10 @@ const Antardvip = () => {
               />
             </div>
             {/* 2nd img  */}
-            <div  onClick={() =>
-                      document.getElementById("my_modal_3").showModal()
-                    } className=" col-start-5 col-span-4">
+            <div
+              onClick={() => document.getElementById("my_modal_3").showModal()}
+              className=" col-start-5 col-span-4"
+            >
               <img
                 src="/chaitanyaGaudiya2.svg"
                 alt=""
@@ -150,10 +154,7 @@ const Antardvip = () => {
               />
               <div className="relative group md:block hidden">
                 <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
-                  <p
-                   
-                    className="font-primaryLight md:text-textSmall"
-                  >
+                  <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
                   <img src="/→.svg" alt="" />
@@ -163,20 +164,24 @@ const Antardvip = () => {
             </div>
 
             {/* model   */}
-            <dialog id="my_modal_3" className="modal">
-  <div className="modal-box w-full max-w-none h-full flex flex-col justify-center items-center">
-    <form method="dialog">
-      {/* Close Button */}
-      <button className="absolute right-2 top-2 text-2xl">
-        ✕
-      </button>
-    </form>
-    <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">
-      Press ESC key or click on ✕ button to close
-    </p>
-  </div>
-</dialog>
+            <dialog id="my_modal_3" className="modal font-primaryLight">
+              <div className="modal-box w-11/12 max-w-none grid grid-cols-12">
+                
+                  {/* Close Button */}
+                  <button className="col-start-12 col-span-1 text-left ">   <RxCross2 className="" />
+                  </button>
+                <section className="col-start-1 col-span-12 border-2 border-red-400 grid grid-cols-12">
+                <h1 className=" text-heading2 col-start-1 col-span-3 text-left mt-space120">01</h1>
+                <div className="col-start-5 col-span-8">
+                  <img src="/NMP1-111 1 (3).svg" alt="" />
+                </div>
+                <p className="mt-[17rem] col-span-3 col-start-1 text-mobiletextSmall md:text-textSmall ">
+                Description for the photo. Hearing this revelation, Parvati Devi was also inspired to travel to Navadvipa. She arrived with great eagerness to offer obeisances to the Supreme Lord in His divine form as Sri Chaitanya Mhaprabhu and performed austerities to obtain His mercy.
+                </p>
+
+                </section>
+              </div>
+            </dialog>
 
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">
@@ -331,11 +336,7 @@ const Antardvip = () => {
             </div>
             {/* 2nd img  */}
             <div className=" ">
-              <img
-                src="/IMG_8584 (1).svg"
-                alt=""
-                className="md:mb-space60  "
-              />
+              <img src="/IMG_8584 (1).svg" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
                 <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
@@ -354,7 +355,7 @@ const Antardvip = () => {
                     Open Full Gallery
                   </p>
                   <img src="/→.svg" alt="" />
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-[263px] group-focus:w-[263px]"></span>
                 </div>
               </div>
             </div>
@@ -466,11 +467,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -573,11 +570,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -680,11 +673,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -794,11 +783,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -892,11 +877,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -1006,11 +987,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -1122,11 +1099,7 @@ const Antardvip = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img
-                src="/IMG_8434.svg"
-                className="w-[100vw] md:w-auto"
-                alt=""
-              />
+              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
