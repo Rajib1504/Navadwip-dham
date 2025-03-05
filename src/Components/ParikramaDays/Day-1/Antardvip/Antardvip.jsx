@@ -164,24 +164,24 @@ const Antardvip = () => {
             </div>
 
             {/* model   */}
-            <dialog id="my_modal_3" className="modal font-primaryLight">
-              <div className="modal-box w-11/12 max-w-none grid grid-cols-12">
+            {/* <dialog id="my_modal_3" className="modal mt-space15 font-primaryLight">
+              <div className="modal-box m-0 p-0 w-11/12 max-w-none h-full bg-primaryBlack grid grid-cols-12">
                 
-                  {/* Close Button */}
-                  <button className="col-start-12 col-span-1 text-left ">   <RxCross2 className="" />
+                 
+                  <button className="col-start-12 dialog my-space15 col-span-1 text-left justify-end ">   <RxCross2 className="text-heading4 text-primaryWhite border-2 border-primaryWhite rounded-full" />
                   </button>
                 <section className="col-start-1 col-span-12 border-2 border-red-400 grid grid-cols-12">
-                <h1 className=" text-heading2 col-start-1 col-span-3 text-left mt-space120">01</h1>
+                <h1 className=" text-heading2 col-start-1 col-span-3 text-left mt-space15">01</h1>
                 <div className="col-start-5 col-span-8">
                   <img src="/NMP1-111 1 (3).svg" alt="" />
                 </div>
-                <p className="mt-[17rem] col-span-3 col-start-1 text-mobiletextSmall md:text-textSmall ">
+                <p className=" col-span-3 col-start-1 text-mobiletextSmall md:text-textSmall mb-space60 ">
                 Description for the photo. Hearing this revelation, Parvati Devi was also inspired to travel to Navadvipa. She arrived with great eagerness to offer obeisances to the Supreme Lord in His divine form as Sri Chaitanya Mhaprabhu and performed austerities to obtain His mercy.
                 </p>
 
                 </section>
               </div>
-            </dialog>
+            </dialog> */}
 
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">
