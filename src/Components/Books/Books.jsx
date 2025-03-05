@@ -2,7 +2,7 @@ import React from "react";
 
 const Books = () => {
   return (
-    <div className=" py-space120 md:py-space240 font-primaryLight bg-primaryBlack">
+    <section id="Books" className=" py-space120 md:py-space240 font-primaryLight bg-primaryBlack">
       <div className="w-11/12 mx-auto">
         <div>
           <p className="mb-space60 text-mobileTextRegular md:mb-space120 text-center text-success">Books</p>
@@ -12,7 +12,7 @@ const Books = () => {
           </h5>
         </div>
         {/* books images  */}
-        <div className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
+        <article className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
           <div className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
             <img src="/public/Books/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
@@ -41,9 +41,9 @@ const Books = () => {
               The Excellence <br /> of Navadvip
             </h6>
           </div>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -3,6 +3,8 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const placesData = [
     {
@@ -203,9 +205,9 @@ useEffect(() => {
           <div className=" flex justify-center items-center ">
             <div className="w-fit  border-box ">
               <img
-                src="/public/Vector.svg"
-                className="w-14 bg-success  mix-blend-difference"
+                src="/public/logo.svg"
                 alt=""
+                className="w-14 bg-primaryBlack  mix-blend-difference"
               />
             </div>
 
@@ -280,15 +282,15 @@ useEffect(() => {
                   //     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accentBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                   //   </li>
                   // </ul>
-                  <div className="bg-primaryBlack absolute  mt-2 -left-space30 md:-left-spacesm top-space30 rounded-lg  ">
+                  <div className="bg-primaryBlack absolute min-h-fit mt-2 -left-space30 md:-left-spacesm top-space30 rounded-lg  ">
                     <div className=" font-primaryLight  grid 
-                    md:h-[70vh] h-[50vh] w-[80vw] md:w-[60vw]  grid-cols-12">
-                      <div className="md:col-start-5 col-start-1 col-span-12">
-                      <h3 className="my-space15 text-heading3 md:text-heading2 text-success ">Intro</h3>
-                      <h3 className="my-space15 text-heading3 md:text-heading2 text-success">Parikarma</h3>
-                      <h2 className="md:text-heading2 text-heading3  text-success">Books</h2>
+                    md: w-[100vw] md:w-[100vw]  grid-cols-12">
+                      <div className="md:col-start-5 col-start-1 col-span-12 grid gird-cols-6">
+                      <Link to="topContainer" smooth={true} duration={800} onClick={() => setIsOpen(!isOpen)} className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3  cursor-pointer md:text-heading2 text-success ">Intro</Link>
+                      <Link to="DayOne" smooth={true} duration={800} onClick={() => setIsOpen(!isOpen)}className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg">Parikarma</Link>
+                      <Link onClick={() => setIsOpen(!isOpen)} to="Books" smooth={true} duration={800}  className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3  text-success md:my-space15 my-spacelg">Books</Link>
                         <div className="py-space15 ">
-                          <h2 className="md:text-heading2 text-heading3  text-success">
+                          <h2 onClick={() => setIsOpen(!isOpen)} className="col-start-1 col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success">
                             Ask a Question
                           </h2>
                         </div>
@@ -296,7 +298,7 @@ useEffect(() => {
                       <footer className="col-start-1 col-span-3  md:col-span-5 flex items-center mb-spacelg md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
                         <h5>@2025</h5>
                         <h5 className="hidden md:block">Instagram</h5>
-                        {/* <h5>Designed by Chaitanya</h5> */}
+                        
                       </footer>
                     </div>
                   </div>

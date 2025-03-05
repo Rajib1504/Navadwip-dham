@@ -4,7 +4,7 @@ import IlandImages from '../IlandImages/IlandImages';
 
 const Banner = () => {
       return (
-            <section className=' md:pt-space120 flex flex-col justify-center items-center lg:pt-space120 '>
+            <section id='topContainer' className=' md:pt-space120 flex flex-col justify-center items-center lg:pt-space120 '>
                   <img src="/public/Vector.svg" className=' bg-success/0 sticky -z-20 lg:top-24   w-56 md:w-space240 top-[50%] md:-translate-y-[15%] -translate-y-1/2 block' alt="" />
                   <div className=' w-11/12 mx-auto min-h-screen md:min-h-0 flex justify-center items-center flex-col'>
                   <h1 className='absolute uppercase text-mobileHero md:text-heading1 font-primaryLight  md:tracking-normal  z-20 mix-blend-difference text-success  top-[50%] -translate-y-1/2 block text-center '>Navadvip</h1>
