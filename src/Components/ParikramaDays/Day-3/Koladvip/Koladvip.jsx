@@ -88,24 +88,280 @@ const Koladvip = () => {
             </div>
           </div>
           {/* ...................................................................................... */}
-          {/* Sri Chaitanya Gaudiya Math"  */}
+          {/* Prayudha Maya"  */}
           <div>
             <div
-              id="1"
+              id="24"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
               {/* First Box (Starts from top) */}
               <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-                I1.1
+                I3.1
               </p>
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-6  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Sri Chaitanya Gaudiya Math
+                Prayudha Maya
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
-                  The Place of Unity and Service
+                The Guardian of Navadvip
+                </p>
+                {/* description  */}
+                <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+                  <p className="mb-space15 md:mb-space30">
+                  Prayudha Maya and Vriddha Shiva eternally reside in Antardvip as the guardians of Navadvip. However, due to the shifting course of the Ganges, this sacred site is now worshiped in Koladvip.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Prayudha Maya is distinct from ordinary Maya as she serves Bhagavan and His eternal energies by facilitating His divine pastimes. In this form, her role is to bewilder those who are averse to Bhagavan. Due to this material covering, non-devotees are unable to perceive the glories of this holy abode.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* images   */}
+           <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+              {/* 1st img  */}
+              <div className="col-start-1 col-span-3">
+                <img
+                  src="/chaitanyaGaudiya1.svg"
+                  className="md:w-auto w-[100vw]"
+                  alt=""
+                />
+               
+              </div>
+              {/* 2nd img  */}
+              <div className=" col-start-5 col-span-4">
+                <img
+                  src="/chaitanyaGaudiya2.svg"
+                  alt=""
+                  className="md:mb-space60 md:w-[30rem]"
+                />
+                <div className="relative group md:block hidden">
+                  <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                    <p className="font-primaryLight md:text-textSmall">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  </div>
+                </div>
+              </div>
+              {/* 3rd img  */}
+              <div className="col-start-11 col-span-2">
+                <img
+                  src="/chaitanyaGaudiya3.svg"
+                  className="w-[100vw] md:w-auto"
+                  alt=""
+                />
+               
+                <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
+                The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                </p>
+                
+              </div>
+            </div>
+  
+  
+  
+          </div>
+          {/* ............................... */}
+          {/* Devananda Gaudiya Math"  */}
+          <div>
+            <div
+              id="25"
+              className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            >
+              {/* First Box (Starts from top) */}
+              <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+                I3.2
+              </p>
+  
+              {/* Second Box (Centered by default) */}
+              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                Devananda Gaudiya Math
+                </h4>
+                <p className="text-mobileTextRegular md:text-textRegular">
+                To the north and west of Koladvip lies a region comparable to Bahulavan, the pastime place of the divine couple in Vrindavan.
+                </p>
+                {/* description  */}
+                <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+                  <p className="mb-space15 md:mb-space30">
+                  In this sacred area, Srila Bhakti Prajnana Keshav Goswami Maharaj established the Devananda Gaudiya Math to fulfill the cherished desire of his spiritual master, Srila Prabhupad Bhakti Siddhanta Saraswati Thakur.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  The temple’s main altar is divided into three sections. The first section houses the murti of Srila Prabhupad, the second enshrines the deities of Sri Sri Radha-Vinod, and the third contains the deity of Lord Varahadeva. 
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Srila Prabhupad had expressed a desire for the installation of Kola Deva at this location, and this was realized through the dedicated efforts of Srila Keshav Maharaj.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  The temple’s nine towers symbolize the nine types of devotional service. Additionally, its samadhi mandir is situated near the main hall, directly in front of the temple.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+            {/* images   */}
+           <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+              {/* 1st img  */}
+              <div className="col-start-1 col-span-3">
+                <img
+                  src="/chaitanyaGaudiya1.svg"
+                  className="md:w-auto w-[100vw]"
+                  alt=""
+                />
+               
+              </div>
+              {/* 2nd img  */}
+              <div className=" col-start-5 col-span-4">
+                <img
+                  src="/chaitanyaGaudiya2.svg"
+                  alt=""
+                  className="md:mb-space60 md:w-[30rem]"
+                />
+                <div className="relative group md:block hidden">
+                  <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                    <p className="font-primaryLight md:text-textSmall">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  </div>
+                </div>
+              </div>
+              {/* 3rd img  */}
+              <div className="col-start-11 col-span-2">
+                <img
+                  src="/chaitanyaGaudiya3.svg"
+                  className="w-[100vw] md:w-auto"
+                  alt=""
+                />
+               
+                <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
+                The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                </p>
+                
+              </div>
+            </div>
+  
+  
+  
+          </div>
+          {/* ............................... */}
+          {/* Samudra Garh"  */}
+          <div>
+            <div
+              id="26"
+              className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            >
+              {/* First Box (Starts from top) */}
+              <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+                I3.3
+              </p>
+  
+              {/* Second Box (Centered by default) */}
+              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                Samudra Garh
+                </h4>
+                <p className="text-mobileTextRegular md:text-textRegular">
+                The Palace of the King Samudrasen
+                </p>
+                {/* description  */}
+                <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+                  <p className="mb-space15 md:mb-space30">
+                  This sacred place is considered non-different from Dvaraka and associated with Ganga Sagar. In ancient times, a pious king named Samudrasen ruled this land and became renowned for his devotion to Sri Krishna.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  During this period, Bhima, one of the five Pandavas, arrived to collect tribute on behalf of Maharaj Yudhishthira. Known for his strength, Bhima would challenge any kingdom that refused to pay. However, King Samudrasen, aware of Bhima’s deep devotion to Sri Krishna, saw an opportunity to meet Sri Krishna by engaging Bhima in battle.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  A fierce fight ensued, with the king displaying remarkable strength and determination—so much so that Bhima began to fear defeat and dishonor. Seeking help, he prayed to Sri Krishna. Responding to Bhima’s plea and wishing to pacify Samudrasen’s resolve, Sri Krishna appeared before the king in His original form, adorned with yellow garments and brilliant jewels.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  A fierce fight ensued, with the king displaying remarkable strength and determination—so much so that Bhima began to fear defeat and dishonor. Seeking help, he prayed to Sri Krishna. Responding to Bhima’s plea and wishing to pacify Samudrasen’s resolve, Sri Krishna appeared before the king in His original form, adorned with yellow garments and brilliant jewels.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Overjoyed, the king revealed his long-cherished desire to see Krishna in His Vrindavan pastimes. However, bound by his vow to remain in Navadvip, he had been unable to do so. He eagerly requested Krishna to reveal the form He would assume in His future incarnation.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Hearing the king’s heartfelt plea, Sri Krishna first granted him visions of His Vrindavan pastimes, including His divine sports with Srimati Radharani and the gopis in Kumudvan forest. Then, He revealed His radiant form as Sri Chaitanya—immersed in the ecstatic chanting of the Holy Name, surrounded by His loving associates.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Overwhelmed with bliss, the king offered prayers of glorification. But suddenly, Bhagavan disappeared from his vision, leaving him grief-stricken and tormented by separation. 
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Unaware of the divine encounter, Bhima misinterpreted the king’s tears as a sign of fear and launched a full-force attack. In the end, King Samudrasen submitted to Bhima and paid the required tribute, allowing Bhima to fulfill his mission.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* images   */}
+           <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+              {/* 1st img  */}
+              <div className="col-start-1 col-span-3">
+                <img
+                  src="/chaitanyaGaudiya1.svg"
+                  className="md:w-auto w-[100vw]"
+                  alt=""
+                />
+               
+              </div>
+              {/* 2nd img  */}
+              <div className=" col-start-5 col-span-4">
+                <img
+                  src="/chaitanyaGaudiya2.svg"
+                  alt=""
+                  className="md:mb-space60 md:w-[30rem]"
+                />
+                <div className="relative group md:block hidden">
+                  <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                    <p className="font-primaryLight md:text-textSmall">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  </div>
+                </div>
+              </div>
+              {/* 3rd img  */}
+              <div className="col-start-11 col-span-2">
+                <img
+                  src="/chaitanyaGaudiya3.svg"
+                  className="w-[100vw] md:w-auto"
+                  alt=""
+                />
+               
+                <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
+                The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                </p>
+                
+              </div>
+            </div>
+  
+  
+  
+          </div>
+          {/* ............................... */}
+          {/* Sri Chaitanya Saraswat Math"  */}
+          <div>
+            <div
+              id="27"
+              className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            >
+              {/* First Box (Starts from top) */}
+              <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+                I3.4
+              </p>
+  
+              {/* Second Box (Centered by default) */}
+              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                Sri Chaitanya Saraswat Math (Data Due)
+                </h4>
+                <p className="text-mobileTextRegular md:text-textRegular">
+                  The Place of Unity and Service😔😔😔😔😔😔
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
@@ -180,122 +436,35 @@ const Koladvip = () => {
           </div>
           {/* ............................... */}
   
-          {/* Nanda Acaraya Bahavan  */}
+          {/*Ganga Sagar  */}
           <div>
             <div
-              id="2"
+              id="28"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
               {/* First Box (Starts from top) */}
               <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-                I1.2
+                I3.5
               </p>
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-6  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Nandan Acharya Bhavan
+                Ganga Sagar
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
-                  The Place Where Sri Caitanya and Nityananda Prabhu First Met
+                Where the Ganga Meets the Ocean
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                   <p className="mb-space15 md:mb-space30">
-                    Nanda Acharya Bhavan is the home of Nanda Acharya, a close
-                    associate of Sri Chaitanya. Sri Chaitanya met Nityananda
-                    Prabhu at this very place for the first time.
+                  Ganga Sagar is the sacred confluence where the Ganga River meets the ocean. According to ancient accounts, a dialogue once took place between the personified Ganga and the ocean. The ocean praised Ganga for her unparalleled fortune, as Sri Chaitanya Bhagavan himself had bathed in her waters.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    One day, Sri Chaitanya understood that Nityananda had arrived
-                    in Navadvip. Overwhelmed with joy, He urged His devotees to
-                    find Him. But no one knew whom He was speaking about.
+                  In response, Ganga expressed her sorrow, lamenting that Sri Chaitanya would soon leave her and journey to Nilachal (Jagannath Puri), situated on the ocean’s shore. Hearing this, the ocean reassured Ganga, explaining that Sri Chaitanya never truly leaves His eternal abode, Navadvip Dham, even if it appears so to the external eye. The ocean then revealed his deep longing to remain near Ganga and continuously serve Navadvip.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Gathering His associates, Chaitanya shared a dream He had the
-                    night before:
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "I saw a chariot stop before my house, carrying an
-                    extraordinary personality. He wore blue cloth, a turban, and a
-                    single dazzling earring. A club rested on His shoulder, and a
-                    kamandalu pot hung from His stick. The moment I saw Him, I
-                    felt He was my brother—Balaram."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "He asked repeatedly, ‘Is this the house of Nimai Pandit?’
-                    Though I had never seen Him before, I was drawn to Him with
-                    deep reverence. I asked, ‘Who are You?’ He smiled and said, ‘I
-                    am Your brother. Tomorrow, we shall meet.’
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "I believe a great soul has arrived in Navadvip. Haridas!
-                    Shrivas! Go find Him at once."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Haridas Thakur and Shrivas Pandit searched everywhere but
-                    found no one like the person Chaitanya described. After nine
-                    hours, they returned, exhausted: "We searched every corner of
-                    Navadvip but could not find Him."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Chaitanya smiled. "Nityananda is the embodiment of Sri Guru.
-                    He cannot be found unless Bhagavan Himself reveals Him."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Then, with all His devotees, Chaitanya set out in search of
-                    Nityananda. Chanting “Haribol! Haribol!”, they arrived at
-                    Nandana Acharya’s house.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    There, they saw Him. A divine jewel among men—lost in deep
-                    meditation, effulgent like a million suns. The moment
-                    Chaitanya beheld Him, He recognized His eternal brother,
-                    Balarama. Nityananda, too, saw His Lord.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Stunned with ecstasy, He gazed at Chaitanya with unwavering
-                    devotion—as if drinking Him with His eyes, smelling Him with
-                    His nose, embracing Him with His very soul. He stood
-                    motionless, silent.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Understanding this divine moment, Chaitanya asked Srivasa to
-                    recite a verse from Srimad Bhagavatam (10.21.5):
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "Wearing a peacock-feather ornament upon His head, blue
-                    karnikara flowers on His ears, a golden-yellow garment, and
-                    the Vaijayanti garland, Lord Krishna entered Vrindavan,
-                    filling the forest with the nectar of His flute…"
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Upon hearing this, Nityananda collapsed in divine ecstasy,
-                    losing all external awareness. As Shrivas recited more and
-                    more, His bliss intensified—He roared, tears streaming down
-                    His face. The Lord and His brother had reunited.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Today, this sacred site is home to a beautiful temple,
-                    established by Srila Bhakti Saranga Goswami Maharaj, a
-                    prominent disciple of Srila Prabhupad. Here, he installed the
-                    deities of Sri Sri Gaura-Nityananda, Sri Sri Radha Vinod
-                    Bihari, Sriman Sri Chaitanya, and Sri Narasimha Dev.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Srila Bhakti Saranga Maharaj was a distinguished scholar, a
-                    brilliant orator, and an exceptional preacher. His deep wisdom
-                    and divine qualities made him a master at dispelling
-                    misconceptions and defending the mission of Sri Chaitanya.
-                    Recognizing his abilities, Srila Prabhupad often entrusted him
-                    with clarifying doubts and upholding the integrity of the
-                    Gaudiya mission—a task he fulfilled with great success.
-                  </p>
-  
-                  <p className="mb-space15 md:mb-space30">
-                    Later, he became the editor of The Gaudiya magazine and was
-                    sent to London to spread the message of Sri Chaitanya, where
-                    his preaching made a lasting impact.
+                  To this day, it is said that the ocean remains at this sacred confluence, absorbed in meditation on Sri Chaitanya's divine pastimes.
                   </p>
                 </div>
               </div>
@@ -355,70 +524,50 @@ const Koladvip = () => {
           </div>
   
           {/* ........................... */}
-          {/* yogapith  */}
+          {/* Champahatti  */}
           <div>
             <div
-              id="3"
+              id="29"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
               {/* First Box (Starts from top) */}
               <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-                I1.3
+                I3.6
               </p>
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-6  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Yogapith
+                Champahatti
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
-                  The Birthplace of Sri Chaitanya Mahaprabhu
+                The Garden of Champaka Blossoms
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                   <p className="mb-space15 md:mb-space30">
-                    Upon entering Yogapith, the first sacred site to visit is the
-                    Pushpa Samadhi of Srila Bhakti Vinod Thakur, located on the
-                    right. Thanks to his tireless efforts, we now know Sri
-                    Chaitanya’s exact birthplace. Seeking his blessings is the
-                    first step in honoring this holy place.
+                  Champahatti, located in the northern part of Koladvip within the village of Champahatta in Navadvip, represents Khadiravan Forest in Vrindavan, where Krishna and Balarama would rest together.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    The main temple houses a grand altar divided into three
-                    sections:
+                  In a conversation between Shrinivas Acharya and Ishan Thakur, Ishan recounted the story of a great devotee of Sri Krishna—an elderly brahman who lived in Satya-yuga. This brahman worshiped Bhagavan with champaka flowers, offering them with deep devotion while meditating on the golden form that Bhagavan would assume in the future. Though his heart was filled with devotion, he was also sorrowful, knowing he would not personally witness this golden form.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Center: Sri Gaura Narayana stands with His two consorts,
-                    Vishnupriya and Lakshmipriya. This altar also features a rare
-                    four-armed deity of Adhokshaja Vishnu, discovered during the
-                    temple’s excavation, worshipped alongside His consorts, Bhu
-                    Devi and Lakshmi Devi.
+                  Moved by the brahman’s pure devotion, Sri Krishna Bhagavan appeared before him in His effulgent golden form as Sri Chaitanya, radiating the beauty of champaka flowers. Bhagavan informed the brahman that in the age of Kali, He would descend in this golden form to distribute the unconditional love of Godhead and inspire all to chant the Holy Names. He also assured the brahman that he would take birth again to witness these divine pastimes.
+                  </p>
+                 
+                  <p className="mb-space15 md:mb-space30">
+                  Overwhelmed with ecstasy, the brahman glorified the champaka flowers for their great fortune. From that moment, the place became known as Champakhatta. In his next life, this brahman was known as Dvija Vaninath, the younger brother of Gadadhar Pandit.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Left: The deities of Sri Sri Radha Madhava and Sri Chaitanya.
+                  At this sacred location, Sri Chaitanya, surrounded by His associates, once performed congregational chanting of the Holy Name during a festival at His home. Today, a temple stands here, housing the deities of Sri Sri Gaura-Gadadhara, which Dvija Vaninath personally worshiped over 500 years ago. Devotees from the Gaudiya Math, established by Srila Prabhupad, continue to serve these deities today.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Right: The Pancha-Tattva deities, along with Lord Jagannath.
+                  According to Nityananda Prabhu’s explanations to Sri Jiva Goswami, this area was once home to a beautiful garden of champaka flowers, part of Khadiravan Forest. The gopi Champakalata would gather flowers from here to make garlands, which she offered to Sri Sri Radha-Krishna.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    A sacred Neem tree marks the very birthplace of Sri Chaitanya.
-                    Beside it stands a small shrine depicting Jagannath Mishra and
-                    Sachi Devi lovingly holding baby Nimai in her arms.
+                  In the age of Kali, this garden became a place where local gardeners collected champaka flowers and sold them, leading to the establishment of a bustling market, or “hatta.” As a result, the area became known as Champakhatta, later simplified to Champahatti.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Behind this tree is the temple of Gopeshwar Mahadev. As the
-                    guardian of the Holy Dham, Lord Shiva reveals its spiritual
-                    essence to sincere devotees. The Shiva-lingam worshipped here
-                    was originally discovered near Shiva-doba, adjacent to Vriddha
-                    Shiva-ghat, and now resides in Yogapith alongside a smaller
-                    linga of Gopeshwar Mahadev.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    The Yogapith complex also features the deities of Lakshmi
-                    Narasimha and Gaura-Gadadhara, located behind the main temple
-                    hall. Nearby, the sacred Gaura-kunda further enhances the
-                    sanctity of this divine place.
-                  </p>
+                  
                 </div>
               </div>
             </div>
