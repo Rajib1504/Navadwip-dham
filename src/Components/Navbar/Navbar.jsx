@@ -60,51 +60,50 @@ const Navbar = () => {
       places: [
         { id: "24", idx: "I3.1", name: "Prayudha Maya" },
         { id: "25", idx: "I3.2", name: "Devananda Gaudiya Math" },
-        { id: "26", idx: "I3.3", name: "Sri Chaitanya Saraswat Math" },
-        { id: "27", idx: "I3.4", name: "Samudragarh" },
-        { id: "28", idx: "I3.5", name: "Ganga Sagar" },
-        { id: "29", idx: "I3.6", name: "Champahati" },
+        { id: "26", idx: "I3.4", name: "Samudragarh" },
+        { id: "27", idx: "I3.5", name: "Ganga Sagar" },
+        { id: "28", idx: "I3.6", name: "Champahati" },
       ],
     },
     {
       day: "Day Three",
       title: "Ritudvip",
       places: [
-        { id: "30", idx: "I3.7", name: "Radha Kunda" },
-        { id: "31", idx: "I3.8", name: "Vidya Nagar" },
-        { id: "32", idx: "I3.9", name: "" },
+        { id: "29", idx: "I3.7", name: "Radha Kunda" },
+        { id: "30", idx: "I3.8", name: "Vidya Nagar" },
+
       ],
     },
     {
       day: "Day Three",
       title: "Jahnudvip",
-      places: [{ id: "33", idx: "I3.10", name: "Jahnu Muni's Asram" }],
+      places: [{ id: "31", idx: "I3.10", name: "Jahnu Muni's Asram" }],
     },
     {
       day: "Day Three",
       title: "Modrumadvip",
       places: [
-        { id: "34", idx: "I3.11", name: "Vaikunthapur" },
-        { id: "35", idx: "I3.12", name: "Vrindavan Thakur’s Sripat" },
-        { id: "36", idx: "I3.13", name: "Mahatpur" },
+        { id: "32", idx: "I3.11", name: "Vaikunthapur" },
+        { id: "33", idx: "I3.12", name: "Vrindavan Thakur’s Sripat" },
+        { id: "34", idx: "I3.13", name: "Mahatpur" },
       ],
     },
     {
       day: "Day Four",
       title: "Simantadvip",
       places: [
-        { id: "37", idx: "I4.1", name: "Jagai-Madhai Ghat" },
-        { id: "38", idx: "I4.2", name: "Barakona Ghat" },
-        { id: "39", idx: "I4.3", name: "Nagariya Ghat" },
+        { id: "35", idx: "I4.1", name: "Jagai-Madhai Ghat" },
+        { id: "36", idx: "I4.2", name: "Barakona Ghat" },
+        { id: "37", idx: "I4.3", name: "Nagariya Ghat" },
       ],
     },
     {
       day: "Day Four",
       title: "Rudradvip",
       places: [
-        { id: "40", idx: "I4.4", name: "Bharadvaja Tila" },
-        { id: "41", idx: "I4.5", name: "Jayadev's Sripat" },
-        { id: "42", idx: "I4.16", name: "Nidaya Ghat" },
+        { id: "38", idx: "I4.4", name: "Bharadvaja Tila" },
+        { id: "39", idx: "I4.5", name: "Jayadev's Sripat" },
+        { id: "40", idx: "I4.16", name: "Nidaya Ghat" },
       ],
     },
   ];
