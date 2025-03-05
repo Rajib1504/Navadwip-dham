@@ -17,16 +17,16 @@ const IslandList = () => {
       });
   }, []);
   return (
-    <div className="w-11/12 mx-auto md:mb-space240  md:mt-space120 ">
+    <div className="w-11/12 mx-auto border-t border-accentBlack md:mb-space240">
     {loading ? (
       <p className="text-center text-lg text-success">Loading...</p>
     ) : (
       <>
-      <hr className=" border border-accentBlack"/>
+      <hr className=" "/>
         {ilands?.map((item) => (
          <div
          key={item.id}
-         className="py-space15 md:py-space border-b-2 border-accentBlack mx-auto md:grid justify-center grid-cols-12 md:grid-flow-col flex flex-col"
+         className="py-space15 md:py-space border-b border-accentBlack mx-auto md:grid justify-center grid-cols-12 md:grid-flow-col flex flex-col"
        >
             {/* Left Section */}
             <div className="text-left md:col-start-2 md:col-span-3  col-span-6 ">
@@ -46,12 +46,12 @@ const IslandList = () => {
               <div className="w-64 md:w-40 min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.embodies.label}</h3>
                 <p className="font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.embodies.value}</p>
-                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall m">{item.embodies.place}</p>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.embodies.place}</p>
               </div>
   
               <div className="w-32 md:w-space60 min-h-[5rem]  text-left ">
                 <h3 className="text-secondaryBlack font-primaryLight">{item.visit_on.label}</h3>
-                <p className="font-primaryLight text-sm">{item.visit_on.value}</p>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textSmall ">{item.visit_on.value}</p>
               </div>
             </div>
           </div>

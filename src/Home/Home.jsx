@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../Components/Banner/Banner';
-import Extra from '../Components/IlandImages/Extra';
+
 import IslandList from '../Components/IslandList/IslandList';
 import Antardvip from '../Components/ParikramaDays/Day-1/Antardvip/Antardvip';
 import Books from './../Components/Books/Books';
@@ -14,7 +14,6 @@ import Modrumadvip from '../Components/ParikramaDays/Day-3/Modrumadvip/Modrumadv
 import Rudradvip from '../Components/ParikramaDays/Day-4/Rudradvip/Rudradvip';
 import Simantadvip from '../Components/ParikramaDays/Day-4/Simantadvip/Simantadvip';
 import DayOne from '../Components/ParikramaDays/Day-1/DayOne';
-
 import DayThree from '../Components/ParikramaDays/Day-3/DayThree';
 import DayFour from '../Components/ParikramaDays/Day-4/DayFour';
 import DayTwo from './../Components/ParikramaDays/Day-2/DayTwo';
@@ -25,7 +24,7 @@ const Home = () => {
       return (
             <div>
                  <Banner/> 
-                 <Extra/>
+                 
                  {/* ilandlist  */}
                  <IslandList/>
            
