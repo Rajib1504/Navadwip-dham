@@ -233,7 +233,7 @@ const Navbar = () => {
                 {/* Dropdown Button */}
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="rounded-full md:w-[2.5rem] md:h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack  w-space30  flex items-center justify-center"
+                  className="rounded-full w-[2.5rem] h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack   flex items-center justify-center"
                 >
                   {isOpen ? (
                     <RxCross2 className="text-primaryBlack text-textSmall" />
@@ -360,17 +360,17 @@ const Navbar = () => {
             >
               <HiArrowLongLeft className="" />
             </button>
-            <div  onClick={() => setDropdownOpen(!dropdownOpen)} className="flex border relative border-accentBlack backdrop-blur-sm items-center md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full">
+            <div  onClick={() => setDropdownOpen(!dropdownOpen)} className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full">
               {/* dynamic number  */}
-              <div className="absolute bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide font-primaryLight px-6  rounded-full flex items-center justify-center">
+              <div className="md:absolute bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide font-primaryLight px-6  rounded-full flex items-center justify-center">
                <p className="leading-10"> {currentPlace.idx}</p>
               </div>
               {/* center content  */}
-              
-              <span className="md:text-textSmall w-[100%] block  text-center  text-mobiletextSmall">
-                {" "}
+              <div>
+              <span className="md:text-textSmall truncate whitespace-nowrap w-full md:w-[100%] block  text-mobiletextSmall">
                 {currentPlace.name}
               </span>
+              </div>
               {/* dropdown  */}
               <button
                
