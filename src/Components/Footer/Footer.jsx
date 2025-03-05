@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const [travellist, setTravelList] = useState([]);
@@ -18,10 +19,10 @@ const Footer = () => {
             <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
               Menu
             </p>
-            <h3 className="my-space15 text-heading2 text-success  border-b border-secondaryWhite">
+            <Link to="topContainer" smooth={true} duration={800} className=" cursor-pointermy-space15 text-heading2 text-success  border-b border-secondaryWhite">
               Intro
-            </h3>
-            <h3 className="my-space15 text-heading2 text-success">Parikarma</h3>
+            </Link>
+            <Link to="DayOne" smooth={true} duration={800} className=" cursor-pointer my-space15 text-heading2 text-success">Parikarma</Link>
 
             {/* travel list section  */}
             <div className="flex flex-col text-textSmall  py-space15 mb-space60">
@@ -95,11 +96,11 @@ const Footer = () => {
               ))}
             </div>
             {/* next section  */}
-            <div className="py-space15 border-y border-secondaryWhite">
+            <Link to="Books" smooth={true} duration={800} className=" cursor-pointer py-space15 border-y border-secondaryWhite">
               <h2 className="text-heading2  text-success">Books</h2>
-            </div>
+            </Link>
             <div className="py-space15 border-b border-secondaryWhite">
-              <h2 className="text-heading2  text-success">Ask a Question</h2>
+              <a  href="mailto:example@email.com?subject=Hello&body=I have some questions !" className="text-heading2 cursor-pointer text-success">Ask a Question</a>
             </div>
           </div>
         </div>

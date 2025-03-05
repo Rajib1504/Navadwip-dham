@@ -290,9 +290,9 @@ useEffect(() => {
                       <Link to="DayOne" smooth={true} duration={800} onClick={() => setIsOpen(!isOpen)}className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg">Parikarma</Link>
                       <Link onClick={() => setIsOpen(!isOpen)} to="Books" smooth={true} duration={800}  className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3  text-success md:my-space15 my-spacelg">Books</Link>
                         <div className="py-space15 ">
-                          <h2 onClick={() => setIsOpen(!isOpen)} className="col-start-1 col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success">
+                          <a href="mailto:example@email.com?subject=Hello&body=I have some questions !" onClick={() => setIsOpen(!isOpen)}  className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success">
                             Ask a Question
-                          </h2>
+                          </a>
                         </div>
                       </div>
                       <footer className="col-start-1 col-span-3  md:col-span-5 flex items-center mb-spacelg md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
