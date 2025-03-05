@@ -71,7 +71,6 @@ const Navbar = () => {
       places: [
         { id: "29", idx: "I3.7", name: "Radha Kunda" },
         { id: "30", idx: "I3.8", name: "Vidya Nagar" },
-
       ],
     },
     {
@@ -109,9 +108,12 @@ const Navbar = () => {
   ];
 
   // all place
-  const allPlaces = useMemo(() => placesData.flatMap((day) => day.places), [placesData]);
+  const allPlaces = useMemo(
+    () => placesData.flatMap((day) => day.places),
+    [placesData]
+  );
   const [isOpen, setIsOpen] = useState(false);
-  const [firstLoad,setFirstLoad]=useState(true)
+  const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
 
@@ -124,14 +126,16 @@ const Navbar = () => {
     // console.log(newIndex);
     if (newIndex >= 0 && newIndex < allPlaces.length) {
       setCurrentPlace(allPlaces[newIndex]);
-      setFirstLoad(false)
+      setFirstLoad(false);
     }
   };
   useEffect(() => {
     if (!firstLoad && currentPlace) {
-      document.getElementById(currentPlace.id)?.scrollIntoView({ behavior: "smooth" });
+      document
+        .getElementById(currentPlace.id)
+        ?.scrollIntoView({ behavior: "smooth" });
     }
-  }, [currentPlace,firstLoad]);
+  }, [currentPlace, firstLoad]);
 
   const handleSelectPlace = (place) => {
     setCurrentPlace(place);
@@ -166,34 +170,34 @@ const Navbar = () => {
 
   const observerRef = useRef(null);
 
-useEffect(() => {
-  observerRef.current = new IntersectionObserver(
-    (entries) => {
-      const visibleSection = entries.find((entry) => entry.isIntersecting);
-      if (visibleSection) {
-        const foundPlace = allPlaces.find(
-          (place) => place.id === visibleSection.target.id
-        );
-        if (foundPlace) {
-          setCurrentPlace(foundPlace);
-          setFirstLoad(false)
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries.find((entry) => entry.isIntersecting);
+        if (visibleSection) {
+          const foundPlace = allPlaces.find(
+            (place) => place.id === visibleSection.target.id
+          );
+          if (foundPlace) {
+            setCurrentPlace(foundPlace);
+            setFirstLoad(false);
+          }
         }
+      },
+      { threshold: 0.3 }
+    );
+
+    allPlaces.forEach((place) => {
+      const section = document.getElementById(place.id);
+      if (section) observerRef.current.observe(section);
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
       }
-    },
-    { threshold: 0.3 }
-  );
-
-  allPlaces.forEach((place) => {
-    const section = document.getElementById(place.id);
-    if (section) observerRef.current.observe(section);
-  });
-
-  return () => {
-    if (observerRef.current) {
-      observerRef.current.disconnect();
-    }
-  };
-}, []);
+    };
+  }, []);
 
   return (
     <div className="w-full fixed z-50 t-0  ">
@@ -202,26 +206,39 @@ useEffect(() => {
         <div className=" flex  ">
           {/* logo  */}
           <div className=" flex justify-center items-center ">
-            <div className="w-fit  border-box ">
+            <div className="w-fit mix-blend-difference  border-box ">
               <img
                 src="/logo.svg"
                 alt=""
                 className="w-14 bg-primaryBlack  mix-blend-difference"
               />
+              {/* <svg
+                viewBox="0 0 52 62"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="rgb(233,228,221)"
+                
+                className="w-14 "
+
+              >
+                  <path
+                    d="M48.4418 19.1728C48.3159 19.7492 49.6212 21.8633 50.0212 22.3775V22.3766C50.1876 22.5906 50.4322 22.8208 50.693 23.0662C51.4742 23.8013 52.4015 24.6739 51.8151 25.6651C51.5698 26.0791 50.504 26.1409 49.6455 26.1906C49.2837 26.2115 48.9588 26.2303 48.7476 26.2725C47.9782 26.4257 47.4269 26.651 46.908 26.8632C46.8049 26.9053 46.7032 26.9469 46.6013 26.9873C46.3738 27.2039 46.1547 27.4299 45.9868 27.6757C45.7696 27.994 45.7425 28.414 45.8125 28.8076C45.8279 28.8415 45.8431 28.8762 45.8584 28.9109C45.9143 29.038 45.9702 29.1652 46.0325 29.254C46.1296 29.3921 46.2932 29.5688 46.4654 29.7547C46.7711 30.0849 47.1037 30.444 47.1383 30.6675C47.1514 30.7538 47.1456 30.8493 47.1398 30.9442C47.1324 31.0647 47.1251 31.184 47.157 31.2815C47.1819 31.3583 47.2589 31.4026 47.3416 31.4502C47.4537 31.5147 47.5761 31.5852 47.5933 31.7505C47.6446 32.2496 46.4204 33.1772 45.9402 33.1452C45.8296 33.1378 45.7273 33.0776 45.6215 33.0154C45.498 32.9427 45.3697 32.8672 45.2176 32.8693C45.0746 32.8714 44.9795 32.9411 44.887 33.009C44.8178 33.0598 44.75 33.1095 44.6647 33.1292C44.5392 33.158 44.4119 33.1546 44.2827 33.1512C44.1337 33.1472 43.9822 33.1431 43.8284 33.1885C43.7067 33.2244 43.5259 33.3471 43.3316 33.479C43.1386 33.61 42.9322 33.75 42.7571 33.8232C42.4846 33.9372 42.1987 33.9986 41.9237 34.0576C41.2849 34.1947 40.7055 34.3191 40.4923 35.0597C40.3432 35.5805 39.9544 37.1108 40.1427 37.5525C40.2429 37.7879 40.7343 38.0059 41.2231 38.2227C41.7257 38.4457 42.2256 38.6675 42.2946 38.9057C42.4447 39.4262 42.1019 39.7721 41.824 40.0527C41.684 40.194 41.5604 40.3187 41.5245 40.4407C41.4738 40.6131 41.4797 40.9274 41.4863 41.2803C41.4996 41.9991 41.516 42.8782 41.0639 43.0455C40.9318 43.0947 40.7744 43.1144 40.6155 43.1343C40.4334 43.1571 40.2492 43.1801 40.0989 43.248C39.4108 43.5592 39.5027 44.2346 39.5879 44.8606C39.6275 45.1515 39.6657 45.4318 39.6234 45.6598C39.5936 45.8192 39.4749 45.962 39.3566 46.1042C39.2116 46.2787 39.0671 46.4524 39.0882 46.6552C39.1092 46.8578 39.4399 47.123 39.7383 47.3623C39.9156 47.5045 40.0814 47.6376 40.1642 47.7429C40.3184 47.939 40.3991 48.0631 40.4656 48.1653C40.5885 48.3542 40.6628 48.4684 41.062 48.824C41.6841 49.3779 41.7173 50.1717 41.7493 50.9371C41.7764 51.586 41.8027 52.2144 42.1865 52.6587C42.3038 52.7945 42.4218 52.8724 42.5181 52.9359C42.7411 53.0831 42.848 53.1537 42.5622 53.6889C42.4242 53.9479 41.7184 55.0007 41.5114 55.0667C41.1967 55.1673 40.8213 55.0652 40.4583 54.9665C40.0332 54.8508 39.6252 54.7399 39.3521 54.965C39.0251 55.2343 39.3046 55.5996 39.607 55.9949C39.9125 56.3943 40.2414 56.8242 39.9917 57.2166C39.8652 57.4158 39.6237 57.3634 39.4305 57.3215C39.3487 57.3038 39.2755 57.288 39.2234 57.2938C39.1139 57.3061 39.0093 57.3388 38.905 57.3714C38.8006 57.404 38.6966 57.4365 38.5884 57.4483C38.4226 57.4667 38.2612 57.4708 38.1032 57.4749C37.6373 57.4869 37.201 57.4982 36.7694 57.8702C36.425 58.1674 36.2167 58.862 36.0372 59.4604C35.8994 59.9198 35.7786 60.3225 35.6263 60.4449C35.5275 60.5249 35.2412 60.6181 35.1079 60.6275C34.6603 60.6594 33.5814 59.9504 33.1117 59.6418C33.0961 59.6315 33.0812 59.6217 33.0669 59.6124C32.9816 59.5564 32.9066 59.4765 32.8337 59.3988C32.7544 59.3144 32.6778 59.2328 32.5933 59.1876C31.8511 58.791 31.3415 59.6472 30.907 60.3772C30.6205 60.8587 30.3666 61.2853 30.1001 61.2613C29.9489 61.2477 29.9041 61.1294 29.8568 61.0042C29.8288 60.9303 29.7999 60.8539 29.7477 60.7952C29.6793 60.7182 29.5807 60.6503 29.4793 60.5804C29.2308 60.4092 28.9648 60.226 29.082 59.8676C29.1199 59.7522 29.3736 59.6591 29.6688 59.5508C30.1712 59.3665 30.794 59.1379 30.6801 58.6801C30.6432 58.5332 30.5423 58.5773 30.4166 58.6322C30.307 58.6801 30.1785 58.7363 30.0572 58.681C29.9444 58.6301 29.1305 57.6988 29.0307 57.5434C28.8289 57.2288 28.7633 56.9058 28.6968 56.5781C28.6468 56.332 28.5963 56.0832 28.4871 55.8332C28.1883 55.147 27.9231 55.1284 27.5883 55.1049C27.3883 55.0909 27.1635 55.0751 26.8918 54.9141C26.7277 54.8162 26.0583 54.1457 25.9399 53.978C25.7697 53.7381 25.6652 53.4141 25.5572 53.0793C25.3366 52.3957 25.1014 51.6668 24.2635 51.5145C23.9397 51.4554 23.7604 51.52 23.5911 51.581C23.4933 51.6162 23.3988 51.6503 23.2817 51.6586C23.2742 51.6595 23.2677 51.6576 23.2612 51.6576L23.2136 51.7198L21.6444 52.7585C21.6323 52.7613 21.6183 52.7604 21.6034 52.7585C21.486 53.1679 21.4001 53.588 21.3144 54.0075C21.1727 54.7008 21.0313 55.3925 20.7484 56.0319C20.7487 56.0399 20.7497 56.0479 20.7507 56.0557C20.7527 56.072 20.7547 56.0877 20.7503 56.1016C20.3895 57.1818 19.7927 57.7242 18.9611 57.728C18.9483 57.7272 18.9353 57.7279 18.9223 57.7287C18.9051 57.7297 18.8881 57.7307 18.8716 57.728L18.424 57.4568C18.4116 57.4512 18.3955 57.4541 18.3795 57.457C18.3631 57.46 18.3468 57.463 18.3345 57.4568L17.0814 56.6431C17.0693 56.6375 17.0533 56.6403 17.0371 56.6431C17.0209 56.6459 17.0045 56.6488 16.9919 56.6431L16.5444 56.3719C16.5069 56.3577 16.4636 56.3447 16.4213 56.332C16.3657 56.3153 16.3119 56.2991 16.2758 56.2815C15.6633 55.8662 15.0973 55.384 14.5761 54.8359C14.5639 54.8307 14.5484 54.8331 14.5325 54.8356C14.5167 54.8381 14.5005 54.8406 14.4866 54.8359L14.3076 54.7455C14.2941 54.7413 14.2785 54.7434 14.2628 54.7455C14.2472 54.7477 14.2316 54.7498 14.2181 54.7455L13.8601 54.6551C13.8465 54.6504 13.8309 54.6528 13.8153 54.6551C13.7997 54.6575 13.7841 54.6598 13.7705 54.6551L13.5915 54.5647C13.5784 54.5595 13.5623 54.5621 13.5463 54.5647C13.5304 54.5673 13.5146 54.5699 13.502 54.5647L13.2335 54.3839C13.2223 54.3773 13.2052 54.3806 13.1883 54.3839C13.1714 54.3872 13.1547 54.3905 13.144 54.3839C12.7431 54.0722 12.386 53.6993 12.0699 53.3C12.0629 53.2896 12.0664 53.2722 12.0699 53.2548C12.0734 53.2374 12.0769 53.2199 12.0699 53.2096C11.5338 52.0842 10.9371 51.8441 10.2807 52.4863C10.2229 52.4958 10.0606 52.4995 10.0122 52.4863L9.83314 52.3055C9.8266 52.2961 9.82942 52.2805 9.83246 52.2637C9.83549 52.2471 9.83872 52.2292 9.83314 52.2151L9.74363 52.0343C9.7371 51.9561 9.73244 51.8356 9.74363 51.7631C9.97206 51.3506 10.3217 51.022 10.7935 50.7771C11.2121 50.4814 11.2802 50.2978 10.9958 50.2271C10.8786 50.2112 10.7489 50.218 10.6186 50.2248C10.5032 50.2308 10.3875 50.2369 10.2797 50.2271C10.0168 50.1622 9.74922 50.0783 9.56368 49.8655C9.55759 49.8532 9.56068 49.8361 9.56373 49.8193C9.56674 49.8027 9.56971 49.7864 9.56368 49.7751C9.42476 49.3419 9.24574 49.2515 9.02664 49.5039C9.01312 49.5081 8.9975 49.506 8.98188 49.5039C8.96626 49.5018 8.95065 49.4997 8.93713 49.5039C8.12783 50.1132 7.71572 49.4286 7.42482 48.6846L7.23741 48.42C7.23142 48.4083 7.23454 48.3916 7.23766 48.375C7.24084 48.358 7.24401 48.341 7.23741 48.3296C6.83649 47.8926 6.47939 47.5319 6.16332 47.2456C6.10871 47.2608 6.05809 47.279 6.00777 47.2972C5.97046 47.3106 5.9333 47.324 5.8948 47.336C5.74748 47.3775 5.64772 47.3549 5.53676 47.2456C5.53062 47.2366 5.5331 47.2212 5.53583 47.2043C5.53848 47.1879 5.54136 47.1701 5.53676 47.1552V46.884C5.53171 46.8256 5.53435 46.7657 5.537 46.7059C5.53972 46.6442 5.54244 46.5826 5.53676 46.5224L5.44726 46.3416C5.44219 46.3276 5.44509 46.3107 5.44786 46.2945C5.45069 46.2779 5.45339 46.2621 5.44726 46.2512L5.11813 46.0129C3.88553 45.5515 3.07064 44.7567 2.67345 43.6304C2.6715 43.6151 2.67235 43.5993 2.67321 43.5834C2.67399 43.5689 2.67478 43.5543 2.67345 43.54C2.73032 42.9938 2.5858 42.5954 2.24176 42.344C2.22777 42.3458 2.21192 42.3468 2.19701 42.3458C2.11309 42.3393 1.69632 42.1114 1.60588 42.0426C0.86278 41.4804 0.771408 40.5001 0.905669 39.6299C0.940215 39.407 1.05079 39.1747 1.16251 38.94C1.35232 38.5413 1.54545 38.1356 1.37465 37.7568C1.31852 37.6319 1.2316 37.5622 1.14157 37.4899C0.987859 37.3666 0.82509 37.236 0.790987 36.8113C0.760219 36.4356 0.909399 34.9486 0.99238 34.5663C1.02242 34.426 1.11432 34.299 1.21252 34.1633C1.33987 33.9873 1.47781 33.7966 1.50518 33.5435C1.53152 33.2981 1.47605 33.0606 1.42059 32.823C1.37985 32.6486 1.33912 32.4742 1.33083 32.2967C1.32897 32.2967 1.32524 32.2948 1.32524 32.2948C1.26899 32.254 1.25562 32.1612 1.24202 32.0668C1.22835 31.9719 1.21445 31.8754 1.15648 31.8287C1.13667 31.8127 1.09045 31.82 1.0259 31.8301C0.850377 31.8577 0.539386 31.9066 0.255806 31.5678C-0.219705 30.9999 0.0422922 30.1995 0.436686 29.6683C0.61234 29.4319 1.03174 29.1188 1.42633 28.8241C1.82556 28.526 2.19939 28.2468 2.26973 28.0853C2.32359 27.9618 2.34005 27.7571 2.35762 27.5384C2.37503 27.3218 2.39354 27.0914 2.45061 26.9129C2.85353 25.6587 3.91981 25.975 4.96003 26.2835C5.45072 26.4291 5.93561 26.5729 6.34233 26.5494C6.1265 25.8705 5.69321 25.8091 5.2395 25.7448C4.85238 25.6899 4.45039 25.633 4.15592 25.1886C3.91108 24.8189 3.93382 24.6593 3.9637 24.4495C3.9782 24.3478 3.99438 24.2343 3.9825 24.0792C3.97094 23.9293 3.92179 23.7666 3.873 23.605C3.7998 23.3627 3.7274 23.123 3.7839 22.9331C3.86251 22.6673 4.28913 22.3879 4.64924 22.1521C4.75473 22.083 4.85452 22.0177 4.93818 21.9575C4.7932 21.8835 4.61385 21.8456 4.42583 21.8059C4.18581 21.7551 3.93165 21.7015 3.71677 21.5657C2.92053 21.0638 2.95596 19.655 3.60862 19.0466C3.77721 18.8896 3.94774 18.8235 4.12076 18.7564C4.24244 18.7092 4.36536 18.6615 4.48971 18.5814C4.60515 18.507 4.75408 18.3852 4.91288 18.2554C5.21836 18.0056 5.56037 17.7259 5.77079 17.6962C5.95421 17.6705 6.01749 17.791 6.09311 17.935C6.14511 18.034 6.20295 18.1441 6.3097 18.2255C6.4292 18.3167 6.59082 18.3713 6.75522 18.4267C6.94868 18.492 7.146 18.5585 7.2831 18.6878C7.3821 18.7812 7.44371 18.9178 7.5047 19.0529C7.60916 19.2844 7.71181 19.5118 7.9973 19.5118C8.3777 19.5118 8.40847 19.1455 8.39169 18.8395C8.3544 18.1341 8.00289 15.9305 7.82201 15.2515C7.75491 14.9996 7.64137 14.778 7.53346 14.5674C7.265 14.0436 7.0314 13.5877 7.6346 12.9019C8.00103 12.4847 10.5604 10.896 11.062 10.8414C11.442 10.8001 11.4352 11.2249 11.4307 11.5018C11.429 11.6101 11.4276 11.6957 11.4499 11.7219C11.5105 11.7925 11.9888 11.8019 12.1044 11.7266L12.6706 11.353C12.7238 11.1866 12.8385 11.0475 13.0508 10.9619C13.3538 10.8395 14.606 10.7321 14.9752 10.7312C15.2381 10.7303 16.8987 10.961 17.542 11.1079C18.044 11.0429 18.5334 10.8909 19.0168 10.7408C19.0585 10.7279 19.1003 10.7149 19.1419 10.702C19.5979 10.5608 20.0547 10.4148 20.465 10.1633C20.8575 9.92255 21.0616 9.61515 21.3027 9.25225C21.3227 9.22202 21.3431 9.1914 21.3638 9.16041C21.4132 9.08695 21.4654 9.01915 21.5204 8.95511C21.5582 8.8701 21.5964 8.78355 21.6353 8.69538C21.7519 8.43098 21.875 8.15203 22.0127 7.85612C22.0197 7.84102 22.027 7.82513 22.0347 7.80854C22.2033 7.44234 22.5281 6.73682 22.9358 6.72511C23.1633 6.71885 23.3624 6.7858 23.5617 6.85279C23.9325 6.97743 24.3038 7.10225 24.8593 6.75619C24.9851 6.67802 26.6643 4.89251 26.7809 4.72018C26.9273 4.50271 27.0033 4.26429 27.0744 4.04145C27.2283 3.55889 27.3589 3.14943 28.13 3.18422C28.4908 3.20023 29.0745 3.44131 29.3412 3.6824C29.4138 3.74797 29.516 3.891 29.6295 4.04984C29.8469 4.35404 30.1058 4.71622 30.2773 4.70323C30.3582 4.69719 30.6505 4.27963 30.925 3.88757C31.122 3.60628 31.3097 3.33812 31.4036 3.24449C31.6798 2.96939 32.0143 2.7679 32.3466 2.56772C32.5706 2.43281 32.7935 2.29851 32.997 2.14268C33.1699 2.01054 33.3456 1.84182 33.5271 1.66749C34.0779 1.13861 34.6825 0.558048 35.4258 0.790359C35.5564 0.830853 35.8165 1.04368 35.8538 1.17647C35.8923 1.3138 35.812 1.81119 35.7306 2.31592C35.6602 2.75257 35.5888 3.19473 35.5927 3.414C35.6002 3.82365 35.7531 4.2173 36.2025 4.25402C36.3546 4.26644 36.505 4.25918 36.6573 4.25182C36.9785 4.23631 37.3081 4.22039 37.6794 4.38775C37.8231 4.45231 37.9013 4.56471 37.9782 4.67533C38.0685 4.80515 38.1571 4.93252 38.3479 4.97727C38.5768 5.03088 38.7877 4.99432 39.0014 4.95725C39.2683 4.91098 39.5397 4.86392 39.8565 4.99045C40.0488 5.06772 40.14 5.19912 40.2327 5.33271C40.3028 5.43357 40.3736 5.53568 40.4896 5.6167C40.6433 5.72439 40.857 5.77764 41.0618 5.82867C41.2743 5.8816 41.4772 5.93214 41.5935 6.03859C41.6737 6.112 41.7145 6.22936 41.7551 6.34577C41.8102 6.50412 41.8647 6.66072 42.0168 6.70251C42.1138 6.72918 42.2335 6.69859 42.356 6.66729C42.4455 6.64445 42.5364 6.62122 42.621 6.61964C42.6763 6.61862 42.7396 6.61649 42.809 6.61415C43.4483 6.59261 44.6009 6.55379 44.7263 7.21386C44.7841 7.51884 44.6312 8.11616 44.4678 8.75489C44.2305 9.68215 43.9709 10.6967 44.3011 11.0307C44.4586 11.1903 45.0982 11.2698 45.727 11.348C46.2186 11.4091 46.7036 11.4694 46.9462 11.5665C47.9122 11.9526 47.9457 13.7946 47.7238 14.6657C47.6921 14.7902 47.6293 14.9345 47.5693 15.0724C47.5059 15.2183 47.4455 15.357 47.4283 15.4577C47.39 15.6856 47.7406 17.0907 47.8721 17.3186C48.0271 17.5873 48.2483 17.696 48.4586 17.7992C48.6012 17.8693 48.7388 17.9369 48.8473 18.0503C49.1848 18.4031 48.9667 18.593 48.7393 18.791C48.6085 18.9048 48.4748 19.0212 48.4418 19.1728ZM32 24.2801V23.7377H26.6223V24.2801C28.3124 24.2801 28.7734 24.8038 28.7734 25.9447V32.8088L22.7618 23.7377H17.1152V24.2801C17.749 24.2801 18.402 24.5045 19.1319 25.5893V36.4933C19.1319 37.6342 18.6901 38.1579 17 38.1579V38.7003H22.5506V38.1579C20.7068 38.1579 20.2266 37.6342 20.2266 36.4933V27.2352L27.8899 38.7377H29.8489V25.9447C29.8489 24.8038 30.3099 24.2801 32 24.2801Z"
+                  />
+                
+              </svg> */}
             </div>
 
             {/* menu   */}
-            <div className="lg:p-2  ">
+            <div className="md:p-2   ">
               <div className="relative inline-block  text-left">
                 {/* Dropdown Button */}
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="rounded-full backdrop-blur-sm border bg-success border-accentBlack p-4 w-space30  flex items-center justify-center"
+                  className="rounded-full md:w-[2.5rem] md:h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack  w-space30  flex items-center justify-center"
                 >
                   {isOpen ? (
-                    <RxCross2 className="text-primaryBlack" />
+                    <RxCross2 className="text-primaryBlack text-textSmall" />
                   ) : (
-                    <HiOutlineMenuAlt4 className=" text-primaryBlack " />
+                    <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
                   )}
                 </button>
                 {/* Dropdown Menu */}
@@ -282,14 +299,44 @@ useEffect(() => {
                   //   </li>
                   // </ul>
                   <div className="bg-primaryBlack absolute min-h-fit mt-2 -left-space30 md:-left-spacesm top-space30 rounded-lg  ">
-                    <div className=" font-primaryLight  grid 
-                    md: w-[100vw] md:w-[100vw]  grid-cols-12">
+                    <div
+                      className=" font-primaryLight  grid 
+                    md: w-[100vw] md:w-[100vw]  grid-cols-12"
+                    >
                       <div className="md:col-start-5 col-start-1 col-span-12 grid gird-cols-6">
-                      <Link to="topContainer" smooth={true} duration={800} onClick={() => setIsOpen(!isOpen)} className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3  cursor-pointer md:text-heading2 text-success ">Intro</Link>
-                      <Link to="DayOne" smooth={true} duration={800} onClick={() => setIsOpen(!isOpen)}className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg">Parikarma</Link>
-                      <Link onClick={() => setIsOpen(!isOpen)} to="Books" smooth={true} duration={800}  className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3  text-success md:my-space15 my-spacelg">Books</Link>
+                        <Link
+                          to="topContainer"
+                          smooth={true}
+                          duration={800}
+                          onClick={() => setIsOpen(!isOpen)}
+                          className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3  cursor-pointer md:text-heading2 text-success "
+                        >
+                          Intro
+                        </Link>
+                        <Link
+                          to="DayOne"
+                          smooth={true}
+                          duration={800}
+                          onClick={() => setIsOpen(!isOpen)}
+                          className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg"
+                        >
+                          Parikarma
+                        </Link>
+                        <Link
+                          onClick={() => setIsOpen(!isOpen)}
+                          to="Books"
+                          smooth={true}
+                          duration={800}
+                          className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3  text-success md:my-space15 my-spacelg"
+                        >
+                          Books
+                        </Link>
                         <div className="py-space15 ">
-                          <a href="mailto:example@email.com?subject=Hello&body=I have some questions !" onClick={() => setIsOpen(!isOpen)}  className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success">
+                          <a
+                            href="mailto:example@email.com?subject=Hello&body=I have some questions !"
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success"
+                          >
                             Ask a Question
                           </a>
                         </div>
@@ -297,7 +344,6 @@ useEffect(() => {
                       <footer className="col-start-1 col-span-3  md:col-span-5 flex items-center mb-spacelg md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
                         <h5>@2025</h5>
                         <h5 className="hidden md:block">Instagram</h5>
-                        
                       </footer>
                     </div>
                   </div>
@@ -310,23 +356,24 @@ useEffect(() => {
           <div className="fixed   bottom-spacelg md:static flex  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
-              className="md:p-3.5 bg-success backdrop-blur-sm border border-accentBlack  p-2 rounded-full   transition-all"
+              className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
             >
-              <HiArrowLongLeft />
+              <HiArrowLongLeft className="" />
             </button>
-            <div className="flex border border-accentBlack backdrop-blur-sm items-center justify-between w-[100%] max-w-space300 bg-success rounded-full">
+            <div  onClick={() => setDropdownOpen(!dropdownOpen)} className="flex border relative border-accentBlack backdrop-blur-sm items-center md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full">
               {/* dynamic number  */}
-              <div className="bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide	 font-primaryLight px-6 py-2 rounded-full md:mr-4">
-                {currentPlace.idx}
+              <div className="absolute bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide font-primaryLight px-6  rounded-full flex items-center justify-center">
+               <p className="leading-10"> {currentPlace.idx}</p>
               </div>
               {/* center content  */}
-              <span className="md:text-textSmall  text-center  text-mobiletextSmall">
+              
+              <span className="md:text-textSmall w-[100%] block  text-center  text-mobiletextSmall">
                 {" "}
                 {currentPlace.name}
               </span>
               {/* dropdown  */}
               <button
-                onClick={() => setDropdownOpen(!dropdownOpen)}
+               
                 className="mr-3 ml-2 md:ml-0 "
               >
                 <span className="hidden md:block">
@@ -340,12 +387,14 @@ useEffect(() => {
               {dropdownOpen && (
                 <ul
                   className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px]  lg:h-[482px] border-2 ml-0 lg:top-16 md:top-12 bottom-10 left-auto shadow-md rounded-md p-4"
+                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
                   style={{
                     scrollbarWidth: "none",
                     msOverflowStyle: "none",
                     WebkitOverflowScrolling: "touch",
                     WebkitScrollbar: "none",
+                    boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)" 
+                 
                   }}
                 >
                   <div className="mx-auto text-center">
@@ -372,7 +421,7 @@ useEffect(() => {
                                 setDropdownOpen(false);
                               }}
                             >
-                              <span className=" md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
+                              <span className=" absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
                                 {place.idx}
                               </span>
                               <span className="w-full text-center mix-blend-difference text-success z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
@@ -390,9 +439,9 @@ useEffect(() => {
             </div>
             <button
               onClick={() => handleNavigate("next")}
-              className="md:p-3.5 border border-accentBlack  p-2 backdrop-blur-sm  rounded-full   bg-success transition-all"
+              className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]   bg-success transition-all"
             >
-              <HiArrowLongRight className="text-lg" />
+              <HiArrowLongRight />
             </button>
           </div>
         </div>

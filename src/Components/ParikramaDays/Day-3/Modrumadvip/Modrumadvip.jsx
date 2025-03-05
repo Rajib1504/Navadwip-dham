@@ -88,46 +88,39 @@ const Modrumadvip = () => {
             </div>
           </div>
           {/* ...................................................................................... */}
-          {/* Sri Chaitanya Gaudiya Math"  */}
+          {/* Vaikunthapur"  */}
           <div>
             <div
-              id="1"
+              id="32"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
               {/* First Box (Starts from top) */}
               <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-                I1.1
+                I3.9
               </p>
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-6  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Sri Chaitanya Gaudiya Math
+                Vaikunthapur
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
-                  The Place of Unity and Service
+                The Highest Transcendental Reality
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                   <p className="mb-space15 md:mb-space30">
-                    Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita
-                    Madhav Goswami Maharaj, a distinguished disciple of the
-                    world-renowned spiritual master, Srila Prabhupad Bhakti
-                    Siddhanta Saraswati Goswami Thakur—the foremost preacher of
-                    Sri Chaitanya’s message.{" "}
+                  Vaikunthapur is a sacred village on the northern outskirts of Navadvip, representing the highest transcendental reality—the spiritual kingdom of Narayana, which lies beyond the Viraja River.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Srila Madhav Maharaj was a saintly personality known for his
-                    unwavering devotion to his spiritual master, strict adherence
-                    to Vaishnava principles, and tireless dedication to serving
-                    the Vaishnavas.
+                  Here, Bhagavan is eternally present, worshiped in all His splendor and surrounded by His three divine energies: Bhu, Lila, and Sri. The effulgence of Brahman, which emanates from Bhagavan, is merely a reflection of these transcendental realities.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    Srila Prabhupad recognized his boundless enthusiasm and
-                    praised him as “volcanic energy.” After Srila Prabhupad’s
-                    departure, Srila Madhav Maharaj played a crucial role in
-                    uniting his godbrothers to continue spreading Sri Chaitanya’s
-                    teachings.
+                  It is said that after visiting Vaikuntha, Narada Muni realized that Bhagavan was also present in the holy land of Navadvip. Drawn by this revelation, he came to this sacred place, where Narayana appeared before him and granted him divine darshan. As Narada worshiped Him, Bhagavan mercifully revealed His form as Sri Chaitanya, demonstrating His connection to the pastimes of Navadvip.
+
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Narada remained in Vaikunthapur for some time, deeply engaged in the worship. His devotion sanctified the area, and since then, this place has been known as Vaikunthapur.
                   </p>
                 </div>
               </div>
@@ -180,123 +173,208 @@ const Modrumadvip = () => {
           </div>
           {/* ............................... */}
   
-          {/* Nanda Acaraya Bahavan  */}
+          {/* Vrindavan Das Thakur’s Shripat  */}
           <div>
             <div
-              id="2"
+              id="33"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
               {/* First Box (Starts from top) */}
               <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-                I1.2
+                I3.10
               </p>
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-6  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Nandan Acharya Bhavan
+                Vrindavan Das Thakur’s Shripat
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
-                  The Place Where Sri Caitanya and Nityananda Prabhu First Met
+                The Residence of Vrindavan Das Thakur
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                   <p className="mb-space15 md:mb-space30">
-                    Nanda Acharya Bhavan is the home of Nanda Acharya, a close
-                    associate of Sri Chaitanya. Sri Chaitanya met Nityananda
-                    Prabhu at this very place for the first time.
+                  Modrumadvip is the sacred residence of Vrindavan Das Thakur, the incarnation of Vedavyasa. A disciple of Nityananda Prabhu, he composed Sri Chaitanya-Bhagavata, which narrates the divine pastimes of Sri Chaitanya and Nityananda.
                   </p>
                   <p className="mb-space15 md:mb-space30">
-                    One day, Sri Chaitanya understood that Nityananda had arrived
-                    in Navadvip. Overwhelmed with joy, He urged His devotees to
-                    find Him. But no one knew whom He was speaking about.
+                  Vrindavan Das worshiped the deities of Nitai-Gauranga and Sri Jagannatha, which are still revered today in the Mamagachi Gaudiya Math, established by Srila Prabhupad Bhaktisiddhanta Saraswati Goswami Thakur. Near his home, Malini Devi, the wife of Shrinivas Pandit, was also born.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Gathering His associates, Chaitanya shared a dream He had the
-                    night before:
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "I saw a chariot stop before my house, carrying an
-                    extraordinary personality. He wore blue cloth, a turban, and a
-                    single dazzling earring. A club rested on His shoulder, and a
-                    kamandalu pot hung from His stick. The moment I saw Him, I
-                    felt He was my brother—Balaram."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "He asked repeatedly, ‘Is this the house of Nimai Pandit?’
-                    Though I had never seen Him before, I was drawn to Him with
-                    deep reverence. I asked, ‘Who are You?’ He smiled and said, ‘I
-                    am Your brother. Tomorrow, we shall meet.’
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "I believe a great soul has arrived in Navadvip. Haridas!
-                    Shrivas! Go find Him at once."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Haridas Thakur and Shrivas Pandit searched everywhere but
-                    found no one like the person Chaitanya described. After nine
-                    hours, they returned, exhausted: "We searched every corner of
-                    Navadvip but could not find Him."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Chaitanya smiled. "Nityananda is the embodiment of Sri Guru.
-                    He cannot be found unless Bhagavan Himself reveals Him."
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Then, with all His devotees, Chaitanya set out in search of
-                    Nityananda. Chanting “Haribol! Haribol!”, they arrived at
-                    Nandana Acharya’s house.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    There, they saw Him. A divine jewel among men—lost in deep
-                    meditation, effulgent like a million suns. The moment
-                    Chaitanya beheld Him, He recognized His eternal brother,
-                    Balarama. Nityananda, too, saw His Lord.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Stunned with ecstasy, He gazed at Chaitanya with unwavering
-                    devotion—as if drinking Him with His eyes, smelling Him with
-                    His nose, embracing Him with His very soul. He stood
-                    motionless, silent.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Understanding this divine moment, Chaitanya asked Srivasa to
-                    recite a verse from Srimad Bhagavatam (10.21.5):
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    "Wearing a peacock-feather ornament upon His head, blue
-                    karnikara flowers on His ears, a golden-yellow garment, and
-                    the Vaijayanti garland, Lord Krishna entered Vrindavan,
-                    filling the forest with the nectar of His flute…"
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Upon hearing this, Nityananda collapsed in divine ecstasy,
-                    losing all external awareness. As Shrivas recited more and
-                    more, His bliss intensified—He roared, tears streaming down
-                    His face. The Lord and His brother had reunited.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Today, this sacred site is home to a beautiful temple,
-                    established by Srila Bhakti Saranga Goswami Maharaj, a
-                    prominent disciple of Srila Prabhupad. Here, he installed the
-                    deities of Sri Sri Gaura-Nityananda, Sri Sri Radha Vinod
-                    Bihari, Sriman Sri Chaitanya, and Sri Narasimha Dev.
-                  </p>
-                  <p className="mb-space15 md:mb-space30">
-                    Srila Bhakti Saranga Maharaj was a distinguished scholar, a
-                    brilliant orator, and an exceptional preacher. His deep wisdom
-                    and divine qualities made him a master at dispelling
-                    misconceptions and defending the mission of Sri Chaitanya.
-                    Recognizing his abilities, Srila Prabhupad often entrusted him
-                    with clarifying doubts and upholding the integrity of the
-                    Gaudiya mission—a task he fulfilled with great success.
-                  </p>
+                 
+                </div>
+              </div>
+            </div>
+            {/* images   */}
+            <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+              {/* 1st img  */}
+              <div className="">
+                <img
+                  src="/NMP1-111 1 (2).svg"
+                  className="md:w-auto w-[100vw]"
+                  alt=""
+                />
+                <p className="md:block hidden md:text-textSmall mt-space30 w-[200px] font-primaryLight">
+                  The central altar of the main temple with Sri Gaura Narayana
+                  accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                </p>
+              </div>
+              {/* 2nd img  */}
+              <div className=" ">
+                <img
+                  src="/IMG_8584 (1).svg"
+                  alt=""
+                  className="md:mb-space60  "
+                />
+                <div className="relative group md:block hidden">
+                  <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                    <p className="font-primaryLight md:text-textSmall">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
+                  </div>
+                </div>
+              </div>
+              {/* array for gallery  */}
+              <div>
+                <div className="relative group md:hidden block mt-spacelg">
+                  <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                    <p className="font-primaryLight text-mobileTextRegular ">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
   
+  
+  
+  
+  
+  
+  
+          </div>
+          {/* Mahatpur  */}
+          <div>
+            <div
+              id="34"
+              className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            >
+              {/* First Box (Starts from top) */}
+              <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+                I3.11
+              </p>
+  
+              {/* Second Box (Centered by default) */}
+              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                Mahatpur
+                </h4>
+                <p className="text-mobileTextRegular md:text-textRegular">
+                The Land of Saints and Divine Revelations
+                </p>
+                {/* description  */}
+                <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                   <p className="mb-space15 md:mb-space30">
-                    Later, he became the editor of The Gaudiya magazine and was
-                    sent to London to spread the message of Sri Chaitanya, where
-                    his preaching made a lasting impact.
+                  Mahatpur, also known as Matapur, is compared to the Kamyavan forest in Vrindavan. This sacred place takes its name from the many saints (mahatmas) who have lived here, sanctifying the land with their presence.
                   </p>
+                  <p className="mb-space15 md:mb-space30">
+                  One day, the five Pandavas—Yudhishthira, Bhima, Arjuna, Nakula, and Sahadev—along with Draupadi, visited this village near Ekachakra. According to Ishan Thakur’s account to Shrinivas Acharya, their visit was to slay a demon and free the local villagers from his tyranny.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+             .
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  One day, the five Pandavas—Yudhishthira, Bhima, Arjuna, Nakula, and Sahadev—along with Draupadi, visited this village near Ekachakra. According to Ishan Thakur’s account to Shrinivas Acharya, their visit was to slay a demon and free the local villagers from his tyranny.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+            {/* images   */}
+            <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+              {/* 1st img  */}
+              <div className="">
+                <img
+                  src="/NMP1-111 1 (2).svg"
+                  className="md:w-auto w-[100vw]"
+                  alt=""
+                />
+                <p className="md:block hidden md:text-textSmall mt-space30 w-[200px] font-primaryLight">
+                  The central altar of the main temple with Sri Gaura Narayana
+                  accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                </p>
+              </div>
+              {/* 2nd img  */}
+              <div className=" ">
+                <img
+                  src="/IMG_8584 (1).svg"
+                  alt=""
+                  className="md:mb-space60  "
+                />
+                <div className="relative group md:block hidden">
+                  <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                    <p className="font-primaryLight md:text-textSmall">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
+                  </div>
+                </div>
+              </div>
+              {/* array for gallery  */}
+              <div>
+                <div className="relative group md:hidden block mt-spacelg">
+                  <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                    <p className="font-primaryLight text-mobileTextRegular ">
+                      Open Full Gallery
+                    </p>
+                    <img src="/→.svg" alt="" />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+  
+  
+  
+  
+  
+  
+  
+          </div>
+          {/* Vrindavan Das Thakur’s Shripat  */}
+          <div>
+            <div
+              id="33"
+              className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            >
+              {/* First Box (Starts from top) */}
+              <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+                I3.10
+              </p>
+  
+              {/* Second Box (Centered by default) */}
+              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                Vrindavan Das Thakur’s Shripat
+                </h4>
+                <p className="text-mobileTextRegular md:text-textRegular">
+                The Residence of Vrindavan Das Thakur
+                </p>
+                {/* description  */}
+                <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+                  <p className="mb-space15 md:mb-space30">
+                  Modrumadvip is the sacred residence of Vrindavan Das Thakur, the incarnation of Vedavyasa. A disciple of Nityananda Prabhu, he composed Sri Chaitanya-Bhagavata, which narrates the divine pastimes of Sri Chaitanya and Nityananda.
+                  </p>
+                  <p className="mb-space15 md:mb-space30">
+                  Vrindavan Das worshiped the deities of Nitai-Gauranga and Sri Jagannatha, which are still revered today in the Mamagachi Gaudiya Math, established by Srila Prabhupad Bhaktisiddhanta Saraswati Goswami Thakur. Near his home, Malini Devi, the wife of Shrinivas Pandit, was also born.
+                  </p>
+                 
                 </div>
               </div>
             </div>
