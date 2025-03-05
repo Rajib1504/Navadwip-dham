@@ -50,7 +50,7 @@ const Navbar = () => {
       places: [
         { id: "20", idx: "I2.7", name: "Naimisharanya" },
         { id: "21", idx: "I2.8", name: "Pushkar" },
-        { id: "22", idx: "I2.9", name: "Uchchahata" },
+        { id: "22", idx: "I2.9", name: "Uchahatt" },
         { id: "23", idx: "I2.10", name: "Panchaveni" },
       ],
     },
