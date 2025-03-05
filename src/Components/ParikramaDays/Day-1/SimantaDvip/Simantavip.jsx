@@ -136,7 +136,7 @@ const Simantavip = () => {
               {/* 1st img  */}
               <div className="col-start-1 col-span-3">
                 <img
-                  src="/public/Day Images/1stDay/chaitanyaGaudiya1.svg"
+                  src="/chaitanyaGaudiya1.svg"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -145,7 +145,7 @@ const Simantavip = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/public/Day Images/1stDay/chaitanyaGaudiya2.svg"
+                  src="/chaitanyaGaudiya2.svg"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -154,7 +154,7 @@ const Simantavip = () => {
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
-                    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                    <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ const Simantavip = () => {
               {/* 3rd img  */}
               <div className="col-start-11 col-span-2">
                 <img
-                  src="/public/Day Images/1stDay/chaitanyaGaudiya3.svg"
+                  src="/chaitanyaGaudiya3.svg"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />
@@ -304,7 +304,7 @@ const Simantavip = () => {
               {/* 1st img  */}
               <div className="">
                 <img
-                  src="/public/Day Images/1stDay/NMP1-111 1 (2).svg"
+                  src="/NMP1-111 1 (2).svg"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -316,7 +316,7 @@ const Simantavip = () => {
               {/* 2nd img  */}
               <div className=" ">
                 <img
-                  src="/public/Day Images/1stDay/IMG_8584 (1).svg"
+                  src="/IMG_8584 (1).svg"
                   alt=""
                   className="md:mb-space60  "
                 />
@@ -325,7 +325,7 @@ const Simantavip = () => {
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
-                    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                    <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ const Simantavip = () => {
                     <p className="font-primaryLight text-mobileTextRegular ">
                       Open Full Gallery
                     </p>
-                    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                    <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                   </div>
                 </div>
@@ -426,7 +426,7 @@ const Simantavip = () => {
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                  src="/IMG20240326083954 1.svg"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -442,7 +442,7 @@ const Simantavip = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                  src="/Yogapith,_Mayapur 1.svg"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -451,7 +451,7 @@ const Simantavip = () => {
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
-                    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                    <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                   </div>
                 </div>
@@ -459,7 +459,7 @@ const Simantavip = () => {
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
                 <img
-                  src="/public/Day Images/1stDay/IMG_8434.svg"
+                  src="/IMG_8434.svg"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />
@@ -468,7 +468,7 @@ const Simantavip = () => {
                     <p className="font-primaryLight text-mobileTextRegular">
                       Open Full Gallery
                     </p>
-                    <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                    <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                   </div>
                 </div>

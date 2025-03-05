@@ -15,7 +15,7 @@ const DayOne = () => {
           </div>
           <div className="my-space60 md:my-space120 col-start-5 col-span-4 flex justify-center w-full items-center">
             <img
-              src="/public/Day Images/dayOne.svg"
+              src="/dayOne.svg"
               alt=""
               className="w-[242px] md:w-auto"
             />

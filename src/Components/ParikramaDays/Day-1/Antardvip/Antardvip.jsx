@@ -130,50 +130,68 @@ const Antardvip = () => {
             </div>
           </div>
           {/* images   */}
-         <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
             <div className="col-start-1 col-span-3">
               <img
-                src="/public/Day Images/1stDay/chaitanyaGaudiya1.svg"
+                src="/chaitanyaGaudiya1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
-             
             </div>
             {/* 2nd img  */}
-            <div className=" col-start-5 col-span-4">
+            <div  onClick={() =>
+                      document.getElementById("my_modal_3").showModal()
+                    } className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/chaitanyaGaudiya2.svg"
+                src="/chaitanyaGaudiya2.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className="relative group md:block hidden">
                 <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
-                  <p className="font-primaryLight md:text-textSmall">
+                  <p
+                   
+                    className="font-primaryLight md:text-textSmall"
+                  >
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
             </div>
+
+            {/* model   */}
+            <dialog id="my_modal_3" className="modal">
+  <div className="modal-box w-full max-w-none h-full flex flex-col justify-center items-center">
+    <form method="dialog">
+      {/* Close Button */}
+      <button className="absolute right-2 top-2 text-2xl">
+        ✕
+      </button>
+    </form>
+    <h3 className="font-bold text-lg">Hello!</h3>
+    <p className="py-4">
+      Press ESC key or click on ✕ button to close
+    </p>
+  </div>
+</dialog>
+
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">
               <img
-                src="/public/Day Images/1stDay/chaitanyaGaudiya3.svg"
+                src="/chaitanyaGaudiya3.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
-             
+
               <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-              The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
+                The central altar of the main temple with Sri Gaura Narayana
+                accompanied by His two consorts, Vishnupriya and Lakshmipriya.
               </p>
-              
             </div>
           </div>
-
-
-
         </div>
         {/* ............................... */}
 
@@ -302,7 +320,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="">
               <img
-                src="/public/Day Images/1stDay/NMP1-111 1 (2).svg"
+                src="/NMP1-111 1 (2).svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -314,7 +332,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" ">
               <img
-                src="/public/Day Images/1stDay/IMG_8584 (1).svg"
+                src="/IMG_8584 (1).svg"
                 alt=""
                 className="md:mb-space60  "
               />
@@ -323,7 +341,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
                 </div>
               </div>
@@ -335,20 +353,12 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
             </div>
           </div>
-        
-
-
-
-
-
-
-
         </div>
 
         {/* ........................... */}
@@ -424,7 +434,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -440,7 +450,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -449,7 +459,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -457,7 +467,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -466,7 +476,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -531,7 +541,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -547,7 +557,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -556,7 +566,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -564,7 +574,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -573,7 +583,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -638,7 +648,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -654,7 +664,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -663,7 +673,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -671,7 +681,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -680,7 +690,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -752,7 +762,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -768,7 +778,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -777,7 +787,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -785,7 +795,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -794,7 +804,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -850,7 +860,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -866,7 +876,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -875,7 +885,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -883,7 +893,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -892,7 +902,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -964,7 +974,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -980,7 +990,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -989,7 +999,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -997,7 +1007,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -1006,7 +1016,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -1028,27 +1038,49 @@ const Antardvip = () => {
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-6  w-full mr-space30 ">
               <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-              Chandra Shekhara Bhavan (Sri Chaitanya Math)
+                Chandra Shekhara Bhavan (Sri Chaitanya Math)
               </h4>
               <p className="text-mobileTextRegular md:text-textRegular">
-              The headquarters of Sri Chaitanya’s preaching mission               </p>
+                The headquarters of Sri Chaitanya’s preaching mission{" "}
+              </p>
               {/* description  */}
               <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
                 <p className="mb-space15 md:mb-space30">
-                During the time of Sri Chaitanya, this was the residence of Chandra Shekhar Acharya, Sri Chaitanya’s maternal uncle. Chandra Shekhar was a great devotee, and his wife was the sister of Sachi Devi, Sri Chaitanya's mother.
+                  During the time of Sri Chaitanya, this was the residence of
+                  Chandra Shekhar Acharya, Sri Chaitanya’s maternal uncle.
+                  Chandra Shekhar was a great devotee, and his wife was the
+                  sister of Sachi Devi, Sri Chaitanya's mother.
                 </p>
                 <p className="mb-space15 md:mb-space30">
-                Sri Chaitanya would organize theatrical performances here, where He would play various divine roles—sometimes as Rukmini, other times as Maha Lakshmi, the Universal Mother—bringing delight to His close associates.
+                  Sri Chaitanya would organize theatrical performances here,
+                  where He would play various divine roles—sometimes as Rukmini,
+                  other times as Maha Lakshmi, the Universal Mother—bringing
+                  delight to His close associates.
                 </p>
                 <p className="mb-space15 md:mb-space30">
-                This place was also chosen by Srila Prabhupad Bhakti Siddhanta Saraswati Goswami Thakur, who took an extraordinary vow to chant one billion Holy Names. He lived here in a simple hut for nearly nine years, observing strict austerities, eating frugally, and sleeping on the floor.
+                  This place was also chosen by Srila Prabhupad Bhakti Siddhanta
+                  Saraswati Goswami Thakur, who took an extraordinary vow to
+                  chant one billion Holy Names. He lived here in a simple hut
+                  for nearly nine years, observing strict austerities, eating
+                  frugally, and sleeping on the floor.
                 </p>
                 <p className="mb-space15 md:mb-space30">
-                Later, this place became the headquarters of Sri Chaitanya’s preaching mission, known as Sri Chaitanya Math or Adi Math.                 </p>
+                  Later, this place became the headquarters of Sri Chaitanya’s
+                  preaching mission, known as Sri Chaitanya Math or Adi Math.{" "}
+                </p>
                 <p className="mb-space15 md:mb-space30">
-                Srila Prabhupad used to call this place Vraj-pattana, the place where Vrindavan is manifested. To embody this spirit, he established a replica of Govardhan Hill, along with two sacred ponds representing Radha-kunda and Shyama-kunda, evoking the mood of Vrindavan.                </p>
+                  Srila Prabhupad used to call this place Vraj-pattana, the
+                  place where Vrindavan is manifested. To embody this spirit, he
+                  established a replica of Govardhan Hill, along with two sacred
+                  ponds representing Radha-kunda and Shyama-kunda, evoking the
+                  mood of Vrindavan.{" "}
+                </p>
                 <p className="mb-space15 md:mb-space30">
-                The presiding deities here are Sri Sri Guru-Gauranga Gandharvika Giridhari, personally installed by Srila Prabhupad. His samadhi is also located here, alongside the samadhi of his revered spiritual master, Srila Gaura Kishor Das Babaji Maharaj.
+                  The presiding deities here are Sri Sri Guru-Gauranga
+                  Gandharvika Giridhari, personally installed by Srila
+                  Prabhupad. His samadhi is also located here, alongside the
+                  samadhi of his revered spiritual master, Srila Gaura Kishor
+                  Das Babaji Maharaj.
                 </p>
               </div>
             </div>
@@ -1058,7 +1090,7 @@ const Antardvip = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/public/Day Images/1stDay/IMG20240326083954 1.svg"
+                src="/IMG20240326083954 1.svg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -1074,7 +1106,7 @@ const Antardvip = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/public/Day Images/1stDay/Yogapith,_Mayapur 1.svg"
+                src="/Yogapith,_Mayapur 1.svg"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -1083,7 +1115,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
@@ -1091,7 +1123,7 @@ const Antardvip = () => {
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
               <img
-                src="/public/Day Images/1stDay/IMG_8434.svg"
+                src="/IMG_8434.svg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -1100,7 +1132,7 @@ const Antardvip = () => {
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
-                  <img src="/public/Day Images/1stDay/→.svg" alt="" />
+                  <img src="/→.svg" alt="" />
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>

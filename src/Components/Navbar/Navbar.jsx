@@ -139,7 +139,7 @@ const Navbar = () => {
     setDropdownOpen(false);
     setTimeout(() => {
       document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+    }, 200);
   };
   // select section acording to the scroll
   // const observerref=useRef(null)
@@ -205,7 +205,7 @@ useEffect(() => {
           <div className=" flex justify-center items-center ">
             <div className="w-fit  border-box ">
               <img
-                src="/public/logo.svg"
+                src="/logo.svg"
                 alt=""
                 className="w-14 bg-primaryBlack  mix-blend-difference"
               />

@@ -14,7 +14,7 @@ const Books = () => {
         {/* books images  */}
         <article className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
           <div className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
-            <img src="/public/Books/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
+            <img src="/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
               The Life of <br /> Chaitanya Mahaprabhu
             </h6>
@@ -22,7 +22,7 @@ const Books = () => {
 
           <div className="bg-accentWhite w-full flex flex-col items-center py-space60">
             <img
-              src="/public/Books/sri chaitanya.svg"
+              src="/sri chaitanya.svg"
               alt=""
               className="pb-space30"
             />
@@ -33,7 +33,7 @@ const Books = () => {
 
           <div className="bg-accentWhite w-full flex flex-col items-center py-space60 ">
             <img
-              src="/public/Books/sri navadvipa dhama.svg"
+              src="/sri navadvipa dhama.svg"
               alt=""
               className="pb-space30"
             />
