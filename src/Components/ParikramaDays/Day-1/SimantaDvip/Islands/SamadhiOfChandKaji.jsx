@@ -13,7 +13,7 @@ const SamadhiOfChandKaji = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-6  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Samadhi of Chand Kazi
                 </h4>
