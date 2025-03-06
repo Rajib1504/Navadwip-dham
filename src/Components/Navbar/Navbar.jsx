@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 
 import { Link } from "react-scroll";
 import { useLoaderData } from "react-router-dom";
+import AnimateMenu from "../AnimateMenu/AnimateMenu";
 const Navbar = () => {
   const placesData = [
     {
@@ -117,8 +118,8 @@ const Navbar = () => {
   const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
-  const [activeId,setActiveId]=useState(null)
-  const location = useLoaderData()
+  const [activeId, setActiveId] = useState(null);
+  const location = useLoaderData();
 
   const handleNavigate = (direction) => {
     let allPlaces = placesData.flatMap((day) => day.places);
@@ -141,9 +142,10 @@ const Navbar = () => {
   }, [currentPlace, firstLoad]);
 
   const handleSelectPlace = (place) => {
+    console.log(place);
     setCurrentPlace(place);
     setDropdownOpen(false);
-      document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
   };
   // select section acording to the scroll
   // const observerref=useRef(null)
@@ -174,15 +176,16 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: "auto", block: "start" });
     }
-  }
+  };
   // Intersection Observer to track active section
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            
             setActiveId(entry.target.id);
-            setCurrentPlace(entry.target.id)
+            setCurrentPlace(entry.target.id);
           }
         });
       },
@@ -198,23 +201,27 @@ const Navbar = () => {
   }, []);
 
   return (
+    <>
+    <div className="fixed mix-blend-difference w-full z-50 border-2 border-red-500 ">
+    <div className=" w-11/12 mx-auto border-box ">
+              <img
+                src="/logo.svg"
+                alt=""
+                className="w-14 "
+              />
+            </div>
+    </div>
     <div className="w-full fixed z-50 t-0  ">
       <div className="w-11/12   mx-auto pt-2">
+
         {/* left content  */}
         <div className=" flex  ">
           {/* logo  */}
           <div className=" flex justify-center items-center ">
-            <div className="w-fit mix-blend-difference  border-box ">
-              <img
-                src="/logo.svg"
-                alt=""
-                className="w-14 bg-primaryBlack  mix-blend-difference"
-              />
-             
-            </div>
+        
 
             {/* menu   */}
-            <div className="md:p-2   ">
+            <div className="md:p-2 ml-[4rem]  ">
               <div className="relative inline-block  text-left">
                 {/* Dropdown Button */}
                 <button
@@ -227,113 +234,7 @@ const Navbar = () => {
                     <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
                   )}
                 </button>
-                {/* Dropdown Menu */}
-                {isOpen && (
-                  // <ul className="absolute  mt-2 -left-[68px] top-20 lg:w-96 bg-white border border-gray-300 rounded-lg shadow-lg">
-                  //   <li className="relative group">
-                  //     <a
-                  //       href="#"
-                  //       className="block font-primayRegular text-xl border-b-2 border-gray-200  px-4 py-2 text-gray-700 transition-all "
-                  //     >
-                  //       <p className="flex justify-between items-center">
-                  //         {" "}
-                  //         Open Full Gallery{" "}
-                  //         <img
-                  //           src="https://imgur.com/u3sADDQ.png"
-                  //           className="w-4"
-                  //           alt=""
-                  //         />
-                  //       </p>
-                  //     </a>
-                  //     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accentBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                  //   </li>
-
-                  //   <li className="relative group">
-                  //     <a
-                  //       href="#"
-                  //       className="block px-4 font-primayRegular text-xl py-2 border-b-2 border-gray-200 text-gray-700 transition-all"
-                  //     >
-                  //       <p className="flex justify-between items-center">
-                  //         {" "}
-                  //         Open Full Gallery{" "}
-                  //         <img
-                  //           src="https://imgur.com/u3sADDQ.png"
-                  //           className="w-4"
-                  //           alt=""
-                  //         />
-                  //       </p>
-                  //     </a>
-                  //     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accentBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                  //   </li>
-
-                  //   <li className="relative group">
-                  //     <a
-                  //       href="#"
-                  //       className="block font-primayRegular text-xl px-4 py-2 border-b-2 border-gray-200 text-gray-700 transition-all"
-                  //     >
-                  //       <p className="flex justify-between items-center">
-                  //         {" "}
-                  //         Open Full Gallery{" "}
-                  //         <img
-                  //           src="https://imgur.com/u3sADDQ.png"
-                  //           className="w-4"
-                  //           alt=""
-                  //         />
-                  //       </p>
-                  //     </a>
-                  //     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-accentBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                  //   </li>
-                  // </ul>
-                  <div className="bg-primaryBlack absolute min-h-fit mt-2 -left-space30 md:-left-spacesm top-space30 rounded-lg  ">
-                    <div
-                      className=" font-primaryLight  grid 
-                    md: w-[100vw] md:w-[100vw]  grid-cols-12"
-                    >
-                      <div className="md:col-start-5 col-start-1 col-span-12 grid gird-cols-6">
-                        <Link
-                          to="topContainer"
-                          smooth={true}
-                          duration={800}
-                          onClick={() => setIsOpen(!isOpen)}
-                          className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3  cursor-pointer md:text-heading2 text-success "
-                        >
-                          Intro
-                        </Link>
-                        <Link
-                          to="DayOne"
-                          smooth={true}
-                          duration={800}
-                          onClick={() => setIsOpen(!isOpen)}
-                          className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg"
-                        >
-                          Parikarma
-                        </Link>
-                        <Link
-                          onClick={() => setIsOpen(!isOpen)}
-                          to="Books"
-                          smooth={true}
-                          duration={800}
-                          className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3  text-success md:my-space15 my-spacelg"
-                        >
-                          Books
-                        </Link>
-                        <div className="py-space15 ">
-                          <a
-                            href="mailto:example@email.com?subject=Hello&body=I have some questions !"
-                            onClick={() => setIsOpen(!isOpen)}
-                            className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 my-spacelg  text-success"
-                          >
-                            Ask a Question
-                          </a>
-                        </div>
-                      </div>
-                      <footer className="col-start-1 col-span-3  md:col-span-5 flex items-center mb-spacelg md:text-textSmall text-textRegular text-primaryWhite font-primaryLight justify-between">
-                        <h5>@2025</h5>
-                        <h5 className="hidden md:block">Instagram</h5>
-                      </footer>
-                    </div>
-                  </div>
-                )}
+               
               </div>
             </div>
           </div>
@@ -346,22 +247,22 @@ const Navbar = () => {
             >
               <HiArrowLongLeft className="" />
             </button>
-            <div  onClick={() => setDropdownOpen(!dropdownOpen)} className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full">
+            <div
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
+            >
               {/* dynamic number  */}
               <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide font-primaryLight px-6  rounded-full flex items-center justify-center">
-               <p className="leading-10"> {currentPlace.idx}</p>
+                <p className="leading-10"> {currentPlace.idx}</p>
               </div>
               {/* center content  */}
-             
+
               <span className=" md:absolute md:text-textSmall truncate text-center w-full md:w-[100%] block  text-mobiletextSmall">
                 {currentPlace.name}
               </span>
-             
+
               {/* dropdown  */}
-              <button
-               
-                className="mr-3 ml-2 md:ml-0 "
-              >
+              <button className="mr-3 ml-2 md:ml-0 ">
                 <span className="hidden md:block">
                   {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </span>
@@ -379,8 +280,7 @@ const Navbar = () => {
                     msOverflowStyle: "none",
                     WebkitOverflowScrolling: "touch",
                     WebkitScrollbar: "none",
-                    boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)" 
-                 
+                    boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)",
                   }}
                 >
                   <div className="mx-auto text-center">
@@ -400,14 +300,14 @@ const Navbar = () => {
                                   : "hover:bg-accentBlack"
                               }`}
                               onClick={() => {
-                                handleSelectPlace(place)
+                                handleSelectPlace(place);
                                 setDropdownOpen(false);
                               }}
                             >
                               <span className=" absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
                                 {place.idx}
                               </span>
-                              <span className="w-full text-center mix-blend-difference text-success z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                              <span className="w-full text-center text-success z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                 {" "}
                                 {place.name}
                               </span>
@@ -429,7 +329,16 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+       {/* Dropdown Menu */}
+       {isOpen && (
+                 
+                 <AnimateMenu />
+               
+             )}
     </div>
+    
+    
+    </>
   );
 };
 
