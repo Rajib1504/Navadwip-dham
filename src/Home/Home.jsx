@@ -27,7 +27,6 @@ const Home = () => {
                  
                  {/* ilandlist  */}
                  <IslandList/>
-           
                  <DayOne/>
                  <Antardvip/>
                  <Simantavip/>
