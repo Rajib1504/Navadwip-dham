@@ -8,8 +8,8 @@ const Godrumdvip = () => {
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           03
         </p>
-        <h2 id="Antardvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
-        GODRUMDVIP
+        <h2 id="Godrumdvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        Godrumdvip
         </h2>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         Today, it's called Gadigacha. In this sacred place, the celestial cow Surabhi resides beneath a massive banyan tree, making the island known as Godrumvip—meaning cow and tree. It is believed that Sri Chaitanya fulfills the desires of those who worship Him here.
@@ -22,7 +22,7 @@ const Godrumdvip = () => {
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
             <div className="sticky top-[4.5rem]">
-              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between ">
+              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
@@ -31,7 +31,7 @@ const Godrumdvip = () => {
                   <span> [chanting]</span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b-2  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Embodies
                 </h4>
@@ -40,7 +40,7 @@ const Godrumdvip = () => {
                   <span> Mahavanavasi </span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b-2  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Visit on
                 </h4>
@@ -148,7 +148,7 @@ const Godrumdvip = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className="relative group md:block hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -235,7 +235,7 @@ const Godrumdvip = () => {
             <div className=" ">
               <img src="/assets/images/islands" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
-                <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -247,7 +247,7 @@ const Godrumdvip = () => {
             {/* array for gallery  */}
             <div>
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>
@@ -341,7 +341,7 @@ const Godrumdvip = () => {
                   className="md:mb-space60 md:w-[30rem]"
                 />
                 <div className="relative group md:block hidden">
-                  <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
@@ -358,7 +358,7 @@ const Godrumdvip = () => {
                   alt=""
                 />
                 <div className="relative group md:hidden block mt-spacelg">
-                  <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight text-mobileTextRegular">
                       Open Full Gallery
                     </p>
@@ -436,7 +436,7 @@ const Godrumdvip = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className="relative group md:block hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -449,7 +449,7 @@ const Godrumdvip = () => {
             <div className="col-start-10 col-span-3">
               <img src="/assets/images/islands" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>
@@ -526,7 +526,7 @@ const Godrumdvip = () => {
                   className="md:mb-space60 md:w-[30rem]"
                 />
                 <div className="relative group md:block hidden">
-                  <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
@@ -543,7 +543,7 @@ const Godrumdvip = () => {
                   alt=""
                 />
                 <div className="relative group md:hidden block mt-spacelg">
-                  <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight text-mobileTextRegular">
                       Open Full Gallery
                     </p>
@@ -650,7 +650,7 @@ const Godrumdvip = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className="relative group md:block hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -663,7 +663,7 @@ const Godrumdvip = () => {
             <div className="col-start-10 col-span-3">
               <img src="/assets/images/islands" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>

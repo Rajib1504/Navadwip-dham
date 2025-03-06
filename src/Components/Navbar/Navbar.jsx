@@ -7,104 +7,106 @@ import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-scroll";
 import { useLoaderData } from "react-router-dom";
 import AnimateMenu from "../AnimateMenu/AnimateMenu";
+
 const Navbar = () => {
   const placesData = [
     {
       day: "Day One",
-      title: "Antardwip",
+      title: "Antardvip",
       places: [
-        { id: "1", idx: "I1.1", name: "Sri Chaitanya Gaudiya Math" },
-        { id: "2", idx: "I1.2", name: "Nanda Acharya Bhavan" },
-        { id: "3", idx: "I1.3", name: "Yogapith" },
-        { id: "4", idx: "I1.4", name: "Srivas Angan" },
-        { id: "5", idx: "I1.5", name: "Advaita Bhavan" },
-        { id: "6", idx: "I1.6", name: "Gadadhar Angan" },
-        { id: "7", idx: "I1.7", name: "Murari Gupta Angan" },
-        { id: "8", idx: "I1.8", name: "Pritha-kunda" },
-        { id: "9", idx: "I1.9", name: "Sri Chaitanya Math" },
+        { id: "1", idx: "I 1.1", name: "Sri Chaitanya Gaudiya Math" },
+        { id: "2", idx: "I 1.2", name: "Nanda Acharya Bhavan" },
+        { id: "3", idx: "I 1.3", name: "Yogapith" },
+        { id: "4", idx: "I 1.4", name: "Srivas Angan" },
+        { id: "5", idx: "I 1.5", name: "Advaita Bhavan" },
+        { id: "6", idx: "I 1.6", name: "Gadadhar Angan" },
+        { id: "7", idx: "I 1.7", name: "Murari Gupta Angan" },
+        { id: "8", idx: "I 1.8", name: "Pritha-kunda" },
+        { id: "9", idx: "I 1.9", name: "Sri Chaitanya Math" },
       ],
     },
     {
       day: "Day One",
-      title: "Simantadwip",
+      title: "Simantadvip",
       places: [
-        { id: "10", idx: "I1.10", name: "Sardanga" },
-        { id: "11", idx: "I1.11", name: "Sridhar Angan" },
-        { id: "12", idx: "I1.12", name: "Samadhi of Chand Kazi" },
-        { id: "13", idx: "I1.13", name: "Belvapaksha" },
+        { id: "10", idx: "I 2.1", name: "Sardanga" },
+        { id: "11", idx: "I 2.2", name: "Sridhar Angan" },
+        { id: "12", idx: "I 2.3", name: "Samadhi of Chand Kazi" },
+        { id: "13", idx: "I 2.4", name: "Belvapaksha" },
       ],
     },
     {
       day: "Day Two",
       title: "Godrumdvip",
       places: [
-        { id: "14", idx: "I2.1", name: "Svananda Sukhada Kunja" },
-        { id: "15", idx: "I2.2", name: "Surabhi Kunja" },
-        { id: "16", idx: "I2.3", name: "Suvarna Vihar" },
-        { id: "17", idx: "I2.4", name: "Amra Ghat" },
-        { id: "18", idx: "I2.5", name: "Narashima Pally" },
-        { id: "19", idx: "I2.6", name: "Harihara Ksetra" },
+        { id: "14", idx: "II 3.1", name: "Svananda Sukhada Kunja" },
+        { id: "15", idx: "II 3.2", name: "Surabhi Kunja" },
+        { id: "16", idx: "II 3.3", name: "Suvarna Vihar" },
+        { id: "17", idx: "II 3.4", name: "Amra Ghat" },
+        { id: "18", idx: "II 3.5", name: "Narashima Pally" },
+        { id: "19", idx: "II 3.6", name: "Harihara Ksetra" },
       ],
     },
     {
       day: "Day Two",
       title: "Madhyadvip",
       places: [
-        { id: "20", idx: "I2.7", name: "Naimisharanya" },
-        { id: "21", idx: "I2.8", name: "Pushkar" },
-        { id: "22", idx: "I2.9", name: "Uchahatt" },
-        { id: "23", idx: "I2.10", name: "Panchaveni" },
+        { id: "20", idx: "II 4.1", name: "Naimisharanya" },
+        { id: "21", idx: "II 4.2", name: "Pushkar" },
+        { id: "22", idx: "II 4.3", name: "Uchahatt" },
+        { id: "23", idx: "II 4.4", name: "Panchaveni" },
       ],
     },
     {
       day: "Day Three",
       title: "Koladvip",
       places: [
-        { id: "24", idx: "I3.1", name: "Prayudha Maya" },
-        { id: "25", idx: "I3.2", name: "Devananda Gaudiya Math" },
-        { id: "26", idx: "I3.4", name: "Samudragarh" },
-        { id: "27", idx: "I3.5", name: "Ganga Sagar" },
-        { id: "28", idx: "I3.6", name: "Champahati" },
+        { id: "24", idx: "III 5.1", name: "Prayudha Maya" },
+        { id: "25", idx: "III 5.2", name: "Devananda Gaudiya Math" },
+        { id: "26", idx: "III 5.3", name: "Samudragarh" },
+        { id: "27", idx: "III 5.4", name: "Ganga Sagar" },
+        { id: "28", idx: "III 5.5", name: "Champahati" },
       ],
     },
     {
       day: "Day Three",
       title: "Ritudvip",
       places: [
-        { id: "29", idx: "I3.7", name: "Radha Kunda" },
-        { id: "30", idx: "I3.8", name: "Vidya Nagar" },
+        { id: "29", idx: "III 6.1", name: "Radha Kunda" },
+        { id: "30", idx: "III 6.2", name: "Vidya Nagar" },
       ],
     },
     {
       day: "Day Three",
       title: "Jahnudvip",
-      places: [{ id: "31", idx: "I3.10", name: "Jahnu Muni's Asram" }],
+      places: [{ id: "31", idx: "III 7.1", name: "Jahnu Muni's Asram" }],
     },
     {
       day: "Day Three",
       title: "Modrumadvip",
       places: [
-        { id: "32", idx: "I3.11", name: "Vaikunthapur" },
-        { id: "33", idx: "I3.12", name: "Vrindavan Thakur’s Sripat" },
-        { id: "34", idx: "I3.13", name: "Mahatpur" },
+        { id: "32", idx: "III 8.1", name: "Vaikunthapur" },
+        { id: "33", idx: "III 8.2", name: "Vrindavan Thakur’s Sripat" },
+        { id: "34", idx: "III 8.3", name: "Mahatpur" },
       ],
     },
     {
       day: "Day Four",
-      title: "Simantadvip",
+      title: "Modrumadvip",
       places: [
-        { id: "35", idx: "I4.1", name: "Jagai-Madhai Ghat" },
-        { id: "36", idx: "I4.2", name: "Barakona Ghat" },
-        { id: "37", idx: "I4.3", name: "Nagariya Ghat" },
+        { id: "36", idx: "IV 8.4", name: "Barakona Ghat" },
+        { id: "37", idx: "IV 8.5", name: "Nagariya Ghat" },
+        { id: "35", idx: "IV 8.6", name: "Jagai-Madhai Ghat" },
+        { id: "38", idx: "IV 8.7", name: "Bharadvaja Tila" },
       ],
     },
     {
       day: "Day Four",
       title: "Rudradvip",
       places: [
-        { id: "38", idx: "I4.4", name: "Bharadvaja Tila" },
-        { id: "39", idx: "I4.5", name: "Jayadev's Sripat" },
-        { id: "40", idx: "I4.16", name: "Nidaya Ghat" },
+        { id: "39", idx: "IV 9.1", name: "Jayadev's Sripat" },
+        { id: "40", idx: "IV 9.2", name: "Nidaya Ghat" },
+        { id: "40", idx: "IV 9.3", name: "Rudra Gaudiya Math" },
       ],
     },
   ];
@@ -115,6 +117,7 @@ const Navbar = () => {
     [placesData]
   );
   const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen)
   const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
@@ -212,10 +215,10 @@ const Navbar = () => {
        
     </div>
      {/* menu  */}
-     <div className="fixed left-[4.1666665%]  z-50 ">
+     <div className="fixed hidden left-[4.1666665%]   z-50 ">
     
         <div className="md:p-4">
-          <div className="relative  pl-[4rem] inline-block ">
+          <div className="relative  pl-[4rem] pt-4 md:pt-0 inline-block ">
             {/* Dropdown Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -240,7 +243,7 @@ const Navbar = () => {
        
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed  bottom-spacelg md:static flex  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed  bottom-spacelg  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
               className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
@@ -249,11 +252,11 @@ const Navbar = () => {
             </button>
             <div
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
+              className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
             >
               {/* dynamic number  */}
-              <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall tracking-wide font-primaryLight px-6  rounded-full flex items-center justify-center">
-                <p className="leading-10"> {currentPlace.idx}</p>
+              <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
+                <p className="leading-[2.125rem] md:leading-10"> {currentPlace.idx}</p>
               </div>
               {/* center content  */}
 

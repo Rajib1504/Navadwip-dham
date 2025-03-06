@@ -62,7 +62,7 @@ const Belvapaksha = () => {
             <div className=" ">
               <img src="/assets/images/islands/02-simantadvip/04-belpukur/2.163040243_277267814019790_3537408500026510899_n.jpg" alt="" className="md:mb-space60  " />
               {/* <div className="relative group md:block hidden">
-                <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -74,7 +74,7 @@ const Belvapaksha = () => {
             {/* array for gallery  */}
             {/* <div>
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>

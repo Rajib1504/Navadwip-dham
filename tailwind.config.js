@@ -4,11 +4,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primayRegular: ["Regular"],
-        primaryItalic: ["Italic"],
-        primaryBoldItalic: ["UltraBoldItalic"],
-        primaryLightItalic: ["UltraLightItalic"],
-        primaryBold: ["UltraBold"],
         primaryLight: ["UltraLight"],
       },
       colors: {

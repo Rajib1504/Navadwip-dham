@@ -94,7 +94,7 @@ const Yogapith = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               {/* <div className="relative group  hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -107,7 +107,7 @@ const Yogapith = () => {
             <div className="col-start-10 col-span-3">
               <img src="/assets/images/islands/01-antardvip/03-yogapith/1.6053707A-EF1C-4F53-AB11-A0146A77C947-min.JPG" className="w-[100vw] md:w-auto" alt="" />
               {/* <div className="relative group md:hidden hidden mt-spacelg">
-                <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
                     Open Full Gallery
                   </p>

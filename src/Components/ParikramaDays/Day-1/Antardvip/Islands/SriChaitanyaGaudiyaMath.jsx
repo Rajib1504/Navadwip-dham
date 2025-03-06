@@ -67,12 +67,12 @@ const SriChaitanyaGaudiyaMath = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className=" relative group  hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
                   <img src="/→.svg" alt="" />
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all  duration-700 group-hover:w-full group-focus:w-full"></span>
                 </div>
               </div>
             </div>

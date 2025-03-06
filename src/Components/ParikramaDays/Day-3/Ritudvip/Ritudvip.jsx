@@ -23,7 +23,7 @@ const Ritudvip = () => {
             {/* left */}
             <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
               <div className="sticky top-[4.5rem]">
-                <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between items-center">
+                <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between items-center">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Represents
                   </h4>
@@ -32,7 +32,7 @@ const Ritudvip = () => {
                     <span> [hearing]</span>
                   </p>
                 </div>
-                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b-2  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
+                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Embodies
                   </h4>
@@ -41,7 +41,7 @@ const Ritudvip = () => {
                     <span> Talavan</span>
                   </p>
                 </div>
-                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2 border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
+                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0 mb-[108px] border-b border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Visit on
                   </h4>
@@ -155,7 +155,7 @@ const Ritudvip = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className="relative group md:block hidden">
-                <div className="flex border-b-2 justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -291,7 +291,7 @@ const Ritudvip = () => {
             <div className=" ">
               <img src="/assets/images/islands" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
-                <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -303,7 +303,7 @@ const Ritudvip = () => {
             {/* array for gallery  */}
             <div>
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>

@@ -5,7 +5,7 @@ const NandanAcharyaBhavan = () => {
             <div>
           <div
             id="2"
-            className="  md:pt-space60   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
+            className="  pt-space60  mt-space30  gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
@@ -139,7 +139,7 @@ const NandanAcharyaBhavan = () => {
             <div className=" ">
               <img src="/assets/images/islands/01-antardvip/02-nanda-acharya-bhavan/2.nanda acharya deities.JPG" alt="" className="md:mb-space60  " />
               {/* <div className="relative group  hidden">
-                <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -151,7 +151,7 @@ const NandanAcharyaBhavan = () => {
             {/* array for gallery  */}
             <div>
               {/* <div className="relative group hidden  mt-spacelg">
-                <div className="flex border-b-2 border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>
