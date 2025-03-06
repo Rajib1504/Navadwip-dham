@@ -9,7 +9,7 @@ const Antardvip = () => {
           <p className="text-center col-start-7 col-span-1 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             1
           </p>
-          <h2 className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
+          <h2 id="Antardvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
             Antardvip
           </h2>
           <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
@@ -164,7 +164,7 @@ const Antardvip = () => {
             </div>
 
             {/* model   */}
-            {/* <dialog id="my_modal_3" className="modal mt-space15 font-primaryLight">
+            <dialog id="my_modal_3" className="modal mt-space15 font-primaryLight">
               <div className="modal-box m-0 p-0 w-11/12 max-w-none h-full bg-primaryBlack grid grid-cols-12">
                 
                  
@@ -181,7 +181,7 @@ const Antardvip = () => {
 
                 </section>
               </div>
-            </dialog> */}
+            </dialog>
 
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">

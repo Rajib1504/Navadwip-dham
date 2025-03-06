@@ -8,7 +8,10 @@ const Koladvip = () => {
           <p className="text-center col-start-7 col-span-1 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             5
           </p>
-          <h2 className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
+          <h2
+            id="Koladvip"
+            className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240"
+          >
             Koladvip
           </h2>
           <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
@@ -259,7 +262,6 @@ const Koladvip = () => {
         </div>
         {/* ............................... */}
 
-      
         {/* Samudra Garh"  */}
         <div>
           <div

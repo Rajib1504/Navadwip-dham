@@ -3,13 +3,13 @@ import React from 'react';
 const Simantadvip = () => {
       return (
             
-        <div className="pt-space120 md:pt-space300 ">
+        <div id='Simantadvip' className="pt-space120 md:pt-space300 ">
         <article className="w-11/12 mx-auto  ">
-          <section className="md:grid grid-cols-12 ">
+          <section  className="md:grid grid-cols-12 ">
             <p className="text-center col-start-7 col-span-1 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
               9
             </p>
-            <h2 className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
+            <h2  className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
              Simantadvip 
             </h2>
             <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">

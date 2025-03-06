@@ -32,9 +32,11 @@ const Footer = () => {
                   className=" grid grid-rows-2 tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4  my-space15 md:items-start"
                 >
                   {/* Day Name */}
-                  <h2 className="text-mobiletextSmall tracking-wider row-span-full md:text-textSmall  text-primaryWhite font-primaryLight md:col-span-1  font-bold  ">
+                  <Link to={`${day}`}
+                          smooth={true}
+                          duration={800} className="text-mobiletextSmall cursor-pointer tracking-wider row-span-full md:text-textSmall  text-primaryWhite font-primaryLight md:col-span-1  font-bold  ">
                     {day}
-                  </h2>
+                  </Link>
                   <div className="col-span-3 my-space15 md:my-auto grid-cols-6 grid  md:grid ">
                     {Object.entries(places).map(
                       ([placeName, locations], idx) => {
@@ -48,44 +50,52 @@ const Footer = () => {
                         return (
                           <React.Fragment key={idx}>
                             {/* Place Name - Same row for first item, new row for others */}
-                            <div
-                              className={`col-span-2 text-success tracking-wide text-mobiletextSmall`}
+                            <Link to={`${placeName}`}
+                          smooth={true}
+                          duration={800}
+                              className={` cursor-pointer col-span-2 text-success tracking-wide text-mobiletextSmall`}
                             >
                               {placeName}
-                            </div>
+                            </Link>
                             <div className="  grid-flow-col col-span-4 md:grid grid-cols-4  ">
 
                             
                             {/* mobile  */}
-                            <div className="col-span-4 text-success md:hidden block mb-space30 ">
+                            <div  className="  col-span-4 text-success md:hidden block mb-space30 ">
                               {locations.map((location, i) => (
-                                <div key={i} className="text-mobiletextSmall tracking-wide text-success">
+                                <Link to={`${location}`}
+                                smooth={true}
+                                duration={800} key={i} className="cursor-pointer text-mobiletextSmall tracking-wide text-success">
                                   {location}
-                                </div>
+                                </Link>
                               ))}
                             </div>
                             {/* laptop  */}
                             {/* First Column (First half of locations) */}
-                            <div className="text-gray-100 md:block hidden mb-space30 col-start-1 col-span-2">
+                            <div className=" text-gray-100 md:block hidden mb-space30 col-start-1 col-span-2">
                               {locations
                                 .slice(0, halfLength)
                                 .map((location, i) => (
-                                  <div key={i} className="text-gray-100">
+                                  <Link  to={`${location}`}
+                                  smooth={true}
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100">
                                     {location}
-                                  </div>
+                                  </Link>
                                 ))}
                             </div>
 
                             {/* Second Column (Remaining half of locations) */}
-                            <div className="text-gray-100 hidden md:block mb-space30  col-start-3 col-span-2">
+                            <section className="text-gray-100  hidden md:block mb-space30  col-start-3 col-span-2">
                               {locations
                                 .slice(halfLength, adjustedLength)
                                 .map((location, i) => (
-                                  <div key={i} className="text-gray-100">
+                                  <Link  to={`${location}`}
+                                  smooth={true}
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100">
                                     {location}
-                                  </div>
+                                  </Link>
                                 ))}
-                            </div>
+                            </section>
                             </div>
                           </React.Fragment>
                         );
