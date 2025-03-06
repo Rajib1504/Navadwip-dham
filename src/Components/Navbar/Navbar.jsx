@@ -211,33 +211,33 @@ const Navbar = () => {
               />
             </div>
     </div>
-    <div className="w-full fixed z-50 t-0  ">
-      <div className="w-11/12   mx-auto pt-2">
+     {/* menu  */}
+     <div className="fixed w-full z-50 ">
+    
+        <div className="md:p-4 w-11/12 mx-auto  ">
+          <div className="relative  pl-[4rem] inline-block ">
+            {/* Dropdown Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="rounded-full w-[2.5rem] h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack   flex items-center justify-center"
+            >
+              {isOpen ? (
+                <RxCross2 className="text-primaryBlack text-textSmall" />
+              ) : (
+                <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
+              )}
+            </button>
+           
+          </div>
+        </div>
+      </div>
+   
+    <div className="w-full fixed z-30 t-0  ">
+      <div className="w-11/12   mx-auto pt-4">
 
         {/* left content  */}
         <div className=" flex  ">
-          {/* logo  */}
-          <div className=" flex justify-center items-center ">
-        
-
-            {/* menu   */}
-            <div className="md:p-2 ml-[4rem]  ">
-              <div className="relative inline-block  text-left">
-                {/* Dropdown Button */}
-                <button
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="rounded-full w-[2.5rem] h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack   flex items-center justify-center"
-                >
-                  {isOpen ? (
-                    <RxCross2 className="text-primaryBlack text-textSmall" />
-                  ) : (
-                    <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
-                  )}
-                </button>
-               
-              </div>
-            </div>
-          </div>
+       
           {/* center content   */}
           {/* main container  */}
           <div className="fixed  bottom-spacelg md:static flex  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
@@ -307,7 +307,7 @@ const Navbar = () => {
                               <span className=" absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
                                 {place.idx}
                               </span>
-                              <span className="w-full text-center text-success z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                              <span className="w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                 {" "}
                                 {place.name}
                               </span>
@@ -329,13 +329,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+    </div>
        {/* Dropdown Menu */}
        {isOpen && (
                  
                  <AnimateMenu />
                
              )}
-    </div>
     
     
     </>

@@ -24,7 +24,7 @@ export default {
       fontSize: {
         mobileHero:["5rem",{lineHeight:'110%'}],
         heading1: ["10rem", { lineHeight: "110%" }],
-        mobileheading1: ["2.5rem", { lineHeight: "110%" }],
+        mobileheading1: ["3rem", { lineHeight: "110%" }],
         heading2: ["4rem", { lineHeight: "130%" }],
         mobileheading2:["2.25rem", { lineHeight: "130%" }],
         heading3: ["3rem", { lineHeight: "130%" }],

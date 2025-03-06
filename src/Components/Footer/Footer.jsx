@@ -19,10 +19,10 @@ const Footer = () => {
             <p className="font-primaryLight border-b border-secondaryWhite text-textSmall mb-spacelg text-success">
               Menu
             </p>
-            <Link to="topContainer" smooth={true} duration={800} className=" cursor-pointermy-space15 text-heading2 text-success  border-b border-secondaryWhite">
+            <Link to="topContainer"  className=" cursor-pointermy-space15 text-heading2 text-success  border-b border-secondaryWhite">
               Intro
             </Link>
-            <Link to="DayOne" smooth={true} duration={800} className=" cursor-pointer my-space15 text-heading2 text-success">Parikarma</Link>
+            <Link to="DayOne"  className=" cursor-pointer my-space15 text-heading2 text-success">Parikarma</Link>
 
             {/* travel list section  */}
             <div className="flex flex-col text-textSmall  py-space15 mb-space60">
@@ -106,18 +106,18 @@ const Footer = () => {
               ))}
             </div>
             {/* next section  */}
-            <Link to="Books" smooth={true} duration={800} className=" cursor-pointer py-space15 border-y border-secondaryWhite">
+            <Link to="Books"  className=" cursor-pointer py-space15 border-y border-secondaryWhite">
               <h2 className="text-heading2  text-success">Books</h2>
             </Link>
             <div className="py-space15 border-b border-secondaryWhite">
-              <a  href="mailto:example@email.com?subject=Hello&body=I have some questions !" className="text-heading2 cursor-pointer text-success">Ask a Question</a>
+              <a  href="mailto:hello@dhama.info?subject=Navadvip" className="text-heading2 cursor-pointer text-success">Ask a Question</a>
             </div>
           </div>
         </div>
         <footer className="mt-space240 md:mt-space120 flex items-center md:text-textSmall text-textSmall text-primaryWhite font-primaryLight justify-between">
-          <h5>@2025</h5>
-          <h5 className="hidden md:block">Instagram</h5>
-          <h5>Designed by Chaitanya</h5>
+          <p>@2025</p>
+          <a href="https://www.instagram.com/bsvtrust" target="_blank"  className="hidden md:block">Instagram</a>
+          <p >Designed by <a href="https://www.instagram.com/chaitanya_agency" target="_blank"></a>Chaitanya</p>
         </footer>
       </div>
     </div>
