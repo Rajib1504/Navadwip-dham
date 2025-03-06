@@ -10,7 +10,7 @@ const IlandImages = () => {
         </div>
         {/* text  */}
 
-        <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight w-48 md:w-72 text-center  mix-blend-difference text-success">
+        <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight w-48 md:w-72 text-center text-primaryBlack">
           Islands of Navadvip
         </h2>
 

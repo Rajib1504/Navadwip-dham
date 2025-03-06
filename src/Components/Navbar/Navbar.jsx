@@ -202,7 +202,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="fixed mix-blend-difference w-full z-50 border-2 border-red-500 ">
+    <div className="fixed mix-blend-difference w-full z-50 ">
     <div className=" w-11/12 mx-auto border-box ">
               <img
                 src="/logo.svg"
