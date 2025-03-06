@@ -4,7 +4,7 @@ import { RxCross2 } from 'react-icons/rx';
 const SriChaitanyaGaudiyaMath = () => {
       return (
             <div>
-          <div
+          <div 
             id="1"
             className="  md:pt-space60 gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
@@ -51,7 +51,7 @@ const SriChaitanyaGaudiyaMath = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-3">
               <img
-                src="/dist/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1.SCGM.jpg"
+                src="/assets/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1.SCGM.jpg"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -62,7 +62,7 @@ const SriChaitanyaGaudiyaMath = () => {
               className=" col-start-5 col-span-4"
             >
               <img
-                src="/dist/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2.dayita madhava maharaj.JPG"
+                src="/assets/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2.dayita madhava maharaj.JPG"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -100,7 +100,7 @@ const SriChaitanyaGaudiyaMath = () => {
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">
               <img
-                src="/dist/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/8.2020-03-01-040-min-min.jpg"
+                src="/assets/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/8.2020-03-01-040-min-min.jpg"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />

@@ -133,11 +133,11 @@ const Rudradvip = () => {
               </div>
             </div>
             {/* images   */}
-           <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+           <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="col-start-1 col-span-3">
                 <img
-                  src="/chaitanyaGaudiya1.svg"
+                  src="/assets/images/islands"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -146,7 +146,7 @@ const Rudradvip = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/chaitanyaGaudiya2.svg"
+                  src="/assets/images/islands"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -163,7 +163,7 @@ const Rudradvip = () => {
               {/* 3rd img  */}
               <div className="col-start-11 col-span-2">
                 <img
-                  src="/chaitanyaGaudiya3.svg"
+                  src="/assets/images/islands"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />
@@ -301,11 +301,11 @@ const Rudradvip = () => {
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+            <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="">
                 <img
-                  src="/NMP1-111 1 (2).svg"
+                  src="/assets/images/islands"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -317,7 +317,7 @@ const Rudradvip = () => {
               {/* 2nd img  */}
               <div className=" ">
                 <img
-                  src="/IMG_8584 (1).svg"
+                  src="/assets/images/islands"
                   alt=""
                   className="md:mb-space60  "
                 />
@@ -423,11 +423,11 @@ const Rudradvip = () => {
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/IMG20240326083954 1.svg"
+                  src="/assets/images/islands"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -443,7 +443,7 @@ const Rudradvip = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/Yogapith,_Mayapur 1.svg"
+                  src="/assets/images/islands"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -460,7 +460,7 @@ const Rudradvip = () => {
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
                 <img
-                  src="/IMG_8434.svg"
+                  src="/assets/images/islands"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />

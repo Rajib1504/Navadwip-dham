@@ -13,14 +13,14 @@ const Books = () => {
         </div>
         {/* books images  */}
         <article className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
-          <div className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
+          <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
             <img src="/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
               The Life of <br /> Chaitanya Mahaprabhu
             </h6>
-          </div>
+          </a>
 
-          <div className="bg-accentWhite w-full flex flex-col items-center py-space60">
+          <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60">
             <img
               src="/sri chaitanya.svg"
               alt=""
@@ -29,9 +29,9 @@ const Books = () => {
             <h6 className="text-center font-primaryLight text-mobiletextSmall text-success">
               Sri Chaitanya <br /> and His Associates
             </h6>
-          </div>
+          </a>
 
-          <div className="bg-accentWhite w-full flex flex-col items-center py-space60 ">
+          <a href="https://www.amazon.com/Navadvipa-dhama-mahatmya-Bhaktivedanta-Narayana-Gosvami-Maharaja/dp/1935428098" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60 ">
             <img
               src="/sri navadvipa dhama.svg"
               alt=""
@@ -40,7 +40,7 @@ const Books = () => {
             <h6 className="text-center font-primaryLight text-mobiletextSmall text-success">
               The Excellence <br /> of Navadvip
             </h6>
-          </div>
+          </a>
         </article>
       </div>
     </section>

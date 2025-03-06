@@ -3,90 +3,65 @@ import React from "react";
 const Godrumdvip = () => {
   return (
     <div className="pt-space120 md:pt-space300 ">
-      <article className="w-11/12 mx-auto  ">
-        <section className="md:grid grid-cols-12 ">
-          <p className="text-center col-start-7 col-span-1 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
-            3
-          </p>
-          <h2 id="
-Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading1 text-mobileheading1 text-center mb-space120 md:mb-space240">
-            Godrumdvip
-          </h2>
-          <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
-            The island of Simantadvip, now known as Simuliya, was once
-            surrounded by the Ganges.
-          </h4>
-        </section>
+    <article className="w-11/12 mx-auto  ">
+      <section className="md:grid grid-cols-12 ">
+        <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
+          03
+        </p>
+        <h2 id="Antardvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        GODRUMDVIP
+        </h2>
+        <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
+        Today, it's called Gadigacha. In this sacred place, the celestial cow Surabhi resides beneath a massive banyan tree, making the island known as Godrumvip—meaning cow and tree. It is believed that Sri Chaitanya fulfills the desires of those who worship Him here.
+        </h4>
+      </section>
 
-        {/* top text with left right sticky  */}
-        <div className="flex  flex-col justify-start h-[50%] my-space60 ">
-          <div className="md:grid md:mb-space300 grid-cols-12">
-            {/* left */}
-            <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
-              <div className="sticky top-[4.5rem]">
-                <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between items-center">
-                  <h4 className="text-secondaryBlack font-primaryLight">
-                    Represents
-                  </h4>
-                  <p className="font-primaryLight text-mobiletextSmall md:block flex flex-col md:flex-row text-right md:text-left">
-                    <span>Shravanam</span>
-                    <span> [hearing]</span>
-                  </p>
-                </div>
-                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b-2  py-spacelg md:py-0 border-accentBlack flex justify-between items-center">
-                  <h4 className="text-secondaryBlack font-primaryLight">
-                    Embodies
-                  </h4>
-                  <p className="font-primaryLight text-mobiletextSmall   md:block flex flex-col md:flex-row text-right md:text-left">
-                    <span>Mathura,</span>
-                    <span> Talavan</span>
-                  </p>
-                </div>
-                <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0 mb-[108px] border-b-2 border-accentBlack py-spacelg md:py-0 flex justify-between items-center">
-                  <h4 className="text-secondaryBlack font-primaryLight">
-                    Visit on
-                  </h4>
-                  <p className="font-primaryLight text-mobiletextSmall md:block flex flex-col md:flex-row text-right md:text-left ">
-                    <span> Day One</span> <span> of Parikrama</span>
-                  </p>
-                </div>
+      {/* top text with left right sticky  */}
+      <div className="flex  flex-col justify-start mt-space60 mb-space120 md:my-space120 ">
+        <div className="md:grid  grid-cols-12">
+          {/* left */}
+          <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
+            <div className="sticky top-[4.5rem]">
+              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b-2 border-accentBlack  py-spacelg md:py-0 justify-between ">
+                <h4 className="text-secondaryBlack font-primaryLight">
+                  Represents
+                </h4>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textRegular md:block flex flex-col md:flex-row text-right md:text-left">
+                  <span>Kirtanam</span>
+                  <span> [chanting]</span>
+                </p>
+              </div>
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b-2  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+                <h4 className="text-secondaryBlack font-primaryLight">
+                  Embodies
+                </h4>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textRegular   md:block flex flex-col md:flex-row text-right md:text-left">
+                  <span>Sri Nandishvar,  </span>
+                  <span> Mahavanavasi </span>
+                </p>
+              </div>
+              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b-2  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+                <h4 className="text-secondaryBlack font-primaryLight">
+                  Visit on
+                </h4>
+                <p className="font-primaryLight text-mobiletextSmall md:text-textRegular md:block flex flex-col md:flex-row text-right md:text-left ">
+                  <span> Day Two</span> <span> of Parikrama</span>
+                </p>
               </div>
             </div>
-            {/* right   */}
-            <div className=" self-center  col-start-5 col-span-6 text-mobileTextRegular md:text-textRegular overflow-y-scroll   font-primaryLight">
-              <p>
-                During ancient times, Parvati Devi came here to overcome her
-                grief and despondency, performing meditation and austerities. As
-                a result, she was granted the divine vision of Sri Chaitanya’s
-                transcendental beauty. Overwhelmed with devotion, she placed the
-                dust of His lotus feet on the central part of her
-                hair—simanta—giving this island its name.
-              </p>
-              <p className="mt-space15 md:mt-space30">
-                In Satya-yuga, Lord Shiva revealed a great secret to his
-                consort, Parvati. She had observed his ecstatic chanting of the
-                name Gaura and his blissful dancing, and she inquired about the
-                reason for his joy. Lord Shiva then spoke of the future advent
-                of Sri Chaitanya in Navadvipa, describing how the
-                golden-complexioned Lord would chant the Holy Names and spread
-                devotion and divine love throughout the world. He explained that
-                only the most unfortunate would fail to drown in this ocean of
-                bliss. Even Mahadev himself could not contain his ecstasy upon
-                hearing Sri Chaitanya’s name. Finally, he resolved to leave
-                Kashi and come to Mayapur to engage in devotional service.
-              </p>
-              <p className="mt-space15 md:mt-space30">
-                Hearing this revelation, Parvati Devi was also inspired to
-                travel to Navadvipa. She arrived with great eagerness to offer
-                obeisances to the Supreme Lord in His divine form as Sri
-                Chaitanya and performed austerities to obtain His mercy. In due
-                course, her devotion was rewarded—she was blessed with the
-                vision of Sri Chaitanya. Overcome with ecstasy, she fell at His
-                lotus feet and reverently placed their dust upon her forehead.
-              </p>
-            </div>
+          </div>
+          {/* right   */}
+          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+            <p>
+            Once, Indra was troubled by the offense he had committed at Krishna’s feet in Vrindavan. When he heard that Sri Chaitanya had appeared in Navadvip, he feared making the same mistake again. Seeing his distress, Surabhi advised him to come to Godrumdvip. She assured him that by worshiping Sri Chaitanya here, he would be freed from offenses and receive Bhagavan’s mercy.
+            </p>
+            <p className="mt-space15 md:mt-space30">
+            Following her guidance, Indra and Surabhi engaged in devotional service. Pleased with their sincerity, Sri Chaitanya appeared before them, blessing them with His darshan. He reassured them that they would soon join His eternal pastimes, free from illusion.
+            </p>
+            
           </div>
         </div>
+      </div>
         {/* ...................................................................................... */}
         {/* Svananda Sukhada Kunja"  */}
         <div>
@@ -96,7 +71,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
           >
             {/* First Box (Starts from top) */}
             <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
-              I2.1
+            II 3.1
             </p>
 
             {/* Second Box (Centered by default) */}
@@ -156,11 +131,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
           </div>
           {/* images   */}
-          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+          <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
             <div className="col-start-1 col-span-3">
               <img
-                src="/chaitanyaGaudiya1.svg"
+                src="/assets/images/islands/"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -168,7 +143,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/chaitanyaGaudiya2.svg"
+                src="/assets/images/islands"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -185,7 +160,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             {/* 3rd img  */}
             <div className="col-start-11 col-span-2">
               <img
-                src="/chaitanyaGaudiya3.svg"
+                src="/assets/images/islands"
                 className="w-[100vw] md:w-auto"
                 alt=""
               />
@@ -243,11 +218,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
           </div>
           {/* images   */}
-          <div className=" md:pb-space240 flex md:flex-row flex-col justify-between gap-4 items-start ">
+          <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
             <div className="">
               <img
-                src="/NMP1-111 1 (2).svg"
+                src="/assets/images/islands"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -258,7 +233,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
             {/* 2nd img  */}
             <div className=" ">
-              <img src="/IMG_8584 (1).svg" alt="" className="md:mb-space60  " />
+              <img src="/assets/images/islands" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
                 <div className=" w-space240 flex border-b-2 border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
                   <p className="font-primaryLight md:text-textSmall">
@@ -341,11 +316,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/IMG20240326083954 1.svg"
+                  src="/assets/images/islands"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -361,7 +336,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/Yogapith,_Mayapur 1.svg"
+                  src="/assets/images/islands"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -378,7 +353,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
                 <img
-                  src="/IMG_8434.svg"
+                  src="/assets/images/islands"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />
@@ -436,11 +411,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
           </div>
           {/* images   */}
-          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+          <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/IMG20240326083954 1.svg"
+                src="/assets/images/islands"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -456,7 +431,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/Yogapith,_Mayapur 1.svg"
+                src="/assets/images/islands"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -472,7 +447,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
+              <img src="/assets/images/islands" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">
@@ -526,11 +501,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/IMG20240326083954 1.svg"
+                  src="/assets/images/islands"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -546,7 +521,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/Yogapith,_Mayapur 1.svg"
+                  src="/assets/images/islands"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -563,7 +538,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
                 <img
-                  src="/IMG_8434.svg"
+                  src="/assets/images/islands"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />
@@ -650,11 +625,11 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
           </div>
           {/* images   */}
-          <div className=" md:pb-space240 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+          <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/IMG20240326083954 1.svg"
+                src="/assets/images/islands"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -670,7 +645,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/Yogapith,_Mayapur 1.svg"
+                src="/assets/images/islands"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -686,7 +661,7 @@ Godrumdvip" className="font-primaryLight col-start-4 col-span-6  md:text-heading
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img src="/IMG_8434.svg" className="w-[100vw] md:w-auto" alt="" />
+              <img src="/assets/images/islands" className="w-[100vw] md:w-auto" alt="" />
               <div className="relative group md:hidden block mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">

@@ -117,7 +117,7 @@ const Sardanga = () => {
               {/* 1st img  */}
               <div className="col-start-1 col-span-3">
                 <img
-                  src="/dist/images/islands/02-simantadvip/01-satdanga-jagannath/1.IMG_1588.JPG"
+                  src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/1.IMG_1588.JPG"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -125,7 +125,7 @@ const Sardanga = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/dist/images/islands/02-simantadvip/01-satdanga-jagannath/2.DSC00933-min.JPG"
+                  src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/2.DSC00933-min.JPG"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -142,7 +142,7 @@ const Sardanga = () => {
               {/* 3rd img  */}
               <div className="col-start-11 col-span-2">
                 <img
-                  src="/dist/images/islands/02-simantadvip/01-satdanga-jagannath/3.IMG_1586.JPG"
+                  src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/3.IMG_1586.JPG"
                   className="w-[100vw] md:w-auto"
                   alt=""
                 />

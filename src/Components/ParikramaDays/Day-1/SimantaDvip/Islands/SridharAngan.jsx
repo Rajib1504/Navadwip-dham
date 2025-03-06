@@ -69,7 +69,7 @@ const SridharAngan = () => {
               {/* 1st img  */}
               <div className="">
                 <img
-                  src="/dist/images/islands/02-simantadvip/02-sridhar-angan/Sridhar Angan.jpg"
+                  src="/assets/images/islands/02-simantadvip/02-sridhar-angan/Sridhar Angan.jpg"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />

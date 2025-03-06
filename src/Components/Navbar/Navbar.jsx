@@ -202,19 +202,19 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="fixed mix-blend-difference w-full z-50 ">
-    <div className=" w-11/12 mx-auto border-box ">
+    <div className="fixed left-[4.1666665%] mix-blend-difference  z-50 ">
+   
               <img
                 src="/logo.svg"
                 alt=""
                 className="w-14 "
               />
-            </div>
+       
     </div>
      {/* menu  */}
-     <div className="fixed w-full z-50 ">
+     <div className="fixed left-[4.1666665%]  z-50 ">
     
-        <div className="md:p-4 w-11/12 mx-auto  ">
+        <div className="md:p-4">
           <div className="relative  pl-[4rem] inline-block ">
             {/* Dropdown Button */}
             <button

@@ -75,7 +75,7 @@ const SamadhiOfChandKaji = () => {
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/dist/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00931-min.JPG"
+                  src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00931-min.JPG"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -91,7 +91,7 @@ const SamadhiOfChandKaji = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/dist/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00932-min.JPG"
+                  src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00932-min.JPG"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -107,7 +107,7 @@ const SamadhiOfChandKaji = () => {
               </div>
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
-                <img src="/dist/images/islands/02-simantadvip/03-chand-kazi-samadhi/IMG20230227100859-min.jpg" className="w-[100vw] md:w-auto" alt="" />
+                <img src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/IMG20230227100859-min.jpg" className="w-[100vw] md:w-auto" alt="" />
                 {/* <div className="relative group md:hidden block mt-spacelg">
                   <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight text-mobileTextRegular">

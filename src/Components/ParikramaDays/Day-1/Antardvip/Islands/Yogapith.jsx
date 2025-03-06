@@ -73,7 +73,7 @@ const Yogapith = () => {
             {/* 1st img  */}
             <div className="col-start-1 col-span-2">
               <img
-                src="/dist/images/islands/01-antardvip/03-yogapith/12.DSC01094.JPG"
+                src="/assets/images/islands/01-antardvip/03-yogapith/12.DSC01094.JPG"
                 className="md:w-auto w-[100vw]"
                 alt=""
               />
@@ -89,7 +89,7 @@ const Yogapith = () => {
             {/* 2nd img  */}
             <div className=" col-start-5 col-span-4">
               <img
-                src="/dist/images/islands/01-antardvip/03-yogapith/10.IMG_1546 (1).JPG"
+                src="/assets/images/islands/01-antardvip/03-yogapith/10.IMG_1546 (1).JPG"
                 alt=""
                 className="md:mb-space60 md:w-[30rem]"
               />
@@ -105,7 +105,7 @@ const Yogapith = () => {
             </div>
             {/* 3rd img  */}
             <div className="col-start-10 col-span-3">
-              <img src="/dist/images/islands/01-antardvip/03-yogapith/1.6053707A-EF1C-4F53-AB11-A0146A77C947-min.JPG" className="w-[100vw] md:w-auto" alt="" />
+              <img src="/assets/images/islands/01-antardvip/03-yogapith/1.6053707A-EF1C-4F53-AB11-A0146A77C947-min.JPG" className="w-[100vw] md:w-auto" alt="" />
               {/* <div className="relative group md:hidden hidden mt-spacelg">
                 <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                   <p className="font-primaryLight text-mobileTextRegular">

@@ -67,7 +67,7 @@ const SriChaitanyaMath = () => {
               {/* 1st img  */}
               <div className="col-start-1 col-span-2">
                 <img
-                  src="/dist/images/islands/01-antardvip/09-adi-math/1.adimath.jpg"
+                  src="/assets/images/islands/01-antardvip/09-adi-math/1.adimath.jpg"
                   className="md:w-auto w-[100vw]"
                   alt=""
                 />
@@ -83,7 +83,7 @@ const SriChaitanyaMath = () => {
               {/* 2nd img  */}
               <div className=" col-start-5 col-span-4">
                 <img
-                  src="/dist/images/islands/01-antardvip/09-adi-math/8.IMG_8710.JPG"
+                  src="/assets/images/islands/01-antardvip/09-adi-math/8.IMG_8710.JPG"
                   alt=""
                   className="md:mb-space60 md:w-[30rem]"
                 />
@@ -99,7 +99,7 @@ const SriChaitanyaMath = () => {
               </div>
               {/* 3rd img  */}
               <div className="col-start-10 col-span-3">
-                <img src="/dist/images/islands/01-antardvip/09-adi-math/4.prabhuoad samadi.JPG" className="w-[100vw] md:w-auto" alt="" />
+                <img src="/assets/images/islands/01-antardvip/09-adi-math/4.prabhuoad samadi.JPG" className="w-[100vw] md:w-auto" alt="" />
                 {/* <div className="relative group md:hidden block mt-spacelg">
                   <div className="flex border-b-2 justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
                     <p className="font-primaryLight text-mobileTextRegular">
