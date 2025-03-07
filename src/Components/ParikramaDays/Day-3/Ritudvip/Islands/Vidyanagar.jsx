@@ -15,7 +15,7 @@ const Vidyanagar = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Nandan Acharya BhavanVidyanagar
+                 Vidyanagar
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   The Abode of All Wisdom{" "}
