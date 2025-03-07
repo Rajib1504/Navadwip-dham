@@ -1,18 +1,18 @@
 import React from 'react';
-import Vaikunthapur from './Islands/Vaikunthapur';
-import VrindavanDasThakurShripat from './Islands/VrindavanDasThakurShripat';
-import Mahatpur from './Islands/Mahatpur';
+import NagariyaGhat from './Islands/NagariyaGhat';
+import BarakonaGhat from './Islands/BarakonaGhat';
+import JagaiMadhaiGhat from './Islands/JagaiMadhaiGhat';
+import BharadvajaTila from './Islands/BharadvajaTila';
 
-const Modrumadvip = () => {
+const Modrumadvip2 = () => {
       return (
-            
         <div className="pt-space120 md:pt-space300 ">
         <article className="w-11/12 mx-auto  ">
           <section className="md:grid grid-cols-12 ">
             <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
               08
             </p>
-            <h2 id="Modrumdvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+            <h2 id="Modrumdvip-2" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
             Modrumdvip
             </h2>
             <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
@@ -52,7 +52,7 @@ const Modrumadvip = () => {
                       Visit on
                     </h4>
                     <p className="font-primaryLight text-mobiletextSmall md:text-textRegular md:block flex flex-col md:flex-row text-right md:text-left ">
-                      <span> Day Three</span> <span> of Parikrama</span>
+                      <span> Day Four</span> <span> of Parikrama</span>
                     </p>
                   </div>
                 </div>
@@ -72,15 +72,22 @@ const Modrumadvip = () => {
             </div>
           </div>
           {/* ...................................................................................... */}
-          {/* Vaikunthapur"  */}
-         <Vaikunthapur/>
+
+   {/* Barakona Ghat */}
+  <BarakonaGhat/>
+  
+          {/* ........................... */}
+          {/* Nagariya Ghat  */}
+         <NagariyaGhat/>
+
+
+          {/* Jagai & Madhai Ghat"  */}
+         <JagaiMadhaiGhat/>
           {/* ............................... */}
   
-          {/* Vrindavan Das Thakur’s Shripat  */}
-       <VrindavanDasThakurShripat/>
-          {/* Mahatpur  */}
-         <Mahatpur/>
-       
+          {/* Bharadvaja Tila */}
+        <BharadvajaTila/>
+
 
           {/* ............................... */}
         </article>
@@ -88,4 +95,4 @@ const Modrumadvip = () => {
       );
 };
 
-export default Modrumadvip;
+export default Modrumadvip2;

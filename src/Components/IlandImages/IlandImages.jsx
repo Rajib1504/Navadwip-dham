@@ -1,7 +1,7 @@
 const IlandImages = () => {
   return (
     <div className="md:h-screen   flex-col justify-center items-center md:w-full    ">
-      <div className="  flex-col flex md:flex-row justify-center items-center mx-auto w-full h-[55vh] md:h-auto  md:justify-between">
+      <div className="  flex-col flex md:flex-row justify-center items-center mx-auto w-full h-[50vh] md:h-auto  md:justify-between">
         <div className="hidden lg:flex justify-center items-center gap-space15 ">
           <img src="/IMG_8584.svg" alt="img" />
           <img src="/Yogapith,_Mayapur 2.svg" alt="img" />

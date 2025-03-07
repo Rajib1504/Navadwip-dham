@@ -94,9 +94,9 @@ const Navbar = () => {
       day: "Day Four",
       title: "Modrumadvip",
       places: [
-        { id: "36", idx: "IV 8.4", name: "Barakona Ghat" },
-        { id: "37", idx: "IV 8.5", name: "Nagariya Ghat" },
-        { id: "35", idx: "IV 8.6", name: "Jagai-Madhai Ghat" },
+        { id: "35", idx: "IV 8.4", name: "Barakona Ghat" },
+        { id: "36", idx: "IV 8.5", name: "Nagariya Ghat" },
+        { id: "37", idx: "IV 8.6", name: "Jagai-Madhai Ghat" },
         { id: "38", idx: "IV 8.7", name: "Bharadvaja Tila" },
       ],
     },
@@ -106,7 +106,7 @@ const Navbar = () => {
       places: [
         { id: "39", idx: "IV 9.1", name: "Jayadev's Sripat" },
         { id: "40", idx: "IV 9.2", name: "Nidaya Ghat" },
-        { id: "40", idx: "IV 9.3", name: "Rudra Gaudiya Math" },
+        { id: "41", idx: "IV 9.3", name: "Rudra Gaudiya Math" },
       ],
     },
   ];
@@ -260,7 +260,7 @@ const Navbar = () => {
               </div>
               {/* center content  */}
 
-              <span className=" md:absolute md:text-textSmall truncate text-center w-full md:w-[100%] block  text-mobiletextSmall">
+              <span className=" md:absolute md:text-textSmall truncate text-center w-full md:w-[100%] block leading-[2.125rem] md:leading-10 text-mobiletextSmall">
                 {currentPlace.name}
               </span>
 
