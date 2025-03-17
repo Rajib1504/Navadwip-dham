@@ -76,7 +76,7 @@ const Footer = () => {
                                 .map((location, i) => (
                                   <Link  to={`${location}`}
                                   smooth={true}
-                                  duration={800} key={i} className=" cursor-pointer text-gray-100">
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100 mr-spacemd">
                                     {location}
                                   </Link>
                                 ))}
@@ -89,7 +89,8 @@ const Footer = () => {
                                 .map((location, i) => (
                                   <Link  to={`${location}`}
                                   smooth={true}
-                                  duration={800} key={i} className=" cursor-pointer text-gray-100">
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100 mr-spacemd">
+
                                     {location}
                                   </Link>
                                 ))}

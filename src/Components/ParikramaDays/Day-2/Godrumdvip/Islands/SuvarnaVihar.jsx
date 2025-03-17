@@ -2,7 +2,7 @@ import React from 'react';
 
 const SuvarnaVihar = () => {
       return (
-            <div>
+            <div id='Suvarna Vihar'>
             <div
               id="16"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

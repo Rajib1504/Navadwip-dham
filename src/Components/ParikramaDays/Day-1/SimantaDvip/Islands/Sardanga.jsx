@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sardanga = () => {
       return (
-            <div>
+            <div id='Sardanga'>
             <div
               id="10"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

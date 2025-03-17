@@ -2,7 +2,7 @@ import React from 'react';
 
 const BrahmanPushkar = () => {
       return (
-            <div>
+            <div id='Pushkar'>
           <div
             id="21"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
