@@ -24,9 +24,8 @@ import Modrumadvip2 from '../Components/ParikramaDays/Day-4/Modrumadvip/Modrumad
 
 const Home = () => {
       return (
-            <div>
+            <div >
                  <Banner/> 
-                 
                  {/* ilandlist  */}
                  <IslandList/>
                  <DayOne/>
