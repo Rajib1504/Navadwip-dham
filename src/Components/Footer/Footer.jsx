@@ -58,8 +58,6 @@ const Footer = () => {
                               {placeName}
                             </Link>
                             <div className="  grid-flow-col col-span-4 md:grid grid-cols-4  ">
-
-                            
                             {/* mobile  */}
                             <div  className="  col-span-4 text-success md:hidden block mb-space30 ">
                               {locations.map((location, i) => (

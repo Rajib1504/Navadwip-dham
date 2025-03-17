@@ -2,7 +2,7 @@ import React from 'react';
 
 const NandanAcharyaBhavan = () => {
       return (
-            <div>
+            <div id= "Nandan Acharya Bhavan">
           <div
             id="2"
             className="  pt-space60  mt-space30  gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
