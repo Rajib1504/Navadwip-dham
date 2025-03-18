@@ -2,7 +2,7 @@ import React from 'react';
 
 const VrindavanDasThakurShripat = () => {
       return (
-            <div>
+            <div id="Vrindavan Thakur’s Sripat">
             <div
               id="33"
               className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

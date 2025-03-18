@@ -2,7 +2,7 @@ import React from 'react';
 
 const JahnuMuniAsram = () => {
       return (
-            <div>
+            <div id="Jahnu Muni's Asram">
           <div
             id="31"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

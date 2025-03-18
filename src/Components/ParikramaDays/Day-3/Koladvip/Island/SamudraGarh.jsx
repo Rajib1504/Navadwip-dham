@@ -2,7 +2,7 @@ import React from 'react';
 
 const SamudraGarh = () => {
       return (
-            <div>
+            <div id='Samudragarh'>
           <div
             id="26"
             className="  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
