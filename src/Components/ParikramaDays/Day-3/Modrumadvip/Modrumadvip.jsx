@@ -6,13 +6,13 @@ import Mahatpur from './Islands/Mahatpur';
 const Modrumadvip = () => {
       return (
             
-        <div className="pt-space120 md:pt-space300 ">
-        <article className="w-11/12 mx-auto  ">
-          <section className="md:grid grid-cols-12 ">
+        <div  className="pt-space120 md:pt-space300 ">
+        <article id="Modrumadvip" className="w-11/12 mx-auto  ">
+          <section  className="md:grid grid-cols-12 ">
             <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
               08
             </p>
-            <h2 id="Modrumdvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+            <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
             Modrumdvip
             </h2>
             <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">

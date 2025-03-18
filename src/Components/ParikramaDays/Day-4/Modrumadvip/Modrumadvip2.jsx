@@ -7,12 +7,12 @@ import BharadvajaTila from './Islands/BharadvajaTila';
 const Modrumadvip2 = () => {
       return (
         <div className="pt-space120 md:pt-space300 ">
-        <article className="w-11/12 mx-auto  ">
+        <article id="Modrumadvip-2" className="w-11/12 mx-auto  ">
           <section className="md:grid grid-cols-12 ">
             <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
               08
             </p>
-            <h2 id="Modrumdvip-2" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+            <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
             Modrumdvip
             </h2>
             <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
