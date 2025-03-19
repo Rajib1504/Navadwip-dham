@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
@@ -117,10 +117,9 @@ const Navbar = () => {
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
   const [activeId, setActiveId] = useState(null);
   // const location = useLoaderData();
-
+  const allPlaces = useMemo(() => placesData.flatMap((day) => day.places), [placesData]);
   const handleNavigate = (direction) => {
-    let allPlaces = placesData.flatMap((day) => day.places);
-    // console.log(allPlaces);
+
     let currentIndex = allPlaces.findIndex((p) => p.id === currentPlace.id);
     // console.log(currentIndex);
     let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1;
@@ -138,94 +137,74 @@ const Navbar = () => {
         ?.scrollIntoView({ behavior: "smooth" });
     }
   }, [currentPlace, firstLoad]);
-
+// select place and go 
   const handleSelectPlace = (place) => {
     console.log(place);
     setCurrentPlace(place);
     setDropdownOpen(false);
     document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
   };
+   // close on outside click 
+   const handleClickOutside=useCallback((event)=>{
+    if(dropdownOpen && !event.target.closest(".dropdownMenu")){
+      // console.log('clicked',event.target)// find the place where the event is click
+      setDropdownOpen(false)
+    }
+  },[dropdownOpen])
+  useEffect(()=>{
+      // add event listner 
+  document.addEventListener("click",handleClickOutside)
+  // clean up the event listner 
+  return()=>{
+    document.removeEventListener("click",handleClickOutside)
+  }
+  },[handleClickOutside])
   // select section acording to the scroll
-  // const observerref=useRef(null)
   // useEffect(() => {
   //   const observer = new IntersectionObserver(
   //     (entries) => {
-  //       const visibleSection = entries.find((entry) => entry.isIntersecting);
-  //       if (visibleSection) {
+  //       let mostVisibleSection = null;
+  //       let maxVisibility = 0;
+  
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting && entry.intersectionRatio > maxVisibility) {
+  //           mostVisibleSection = entry.target;
+  //           maxVisibility = entry.intersectionRatio;
+  //         }
+  //       });
+  
+  //       if (mostVisibleSection) {
   //         const foundPlace = allPlaces.find(
-  //           (place) => place.id === visibleSection.target.id
+  //           (place) => place.id === mostVisibleSection.id
   //         );
   //         if (foundPlace) {
   //           setCurrentPlace(foundPlace);
   //         }
   //       }
   //     },
-  //     { threshold: 0.3 }
+  //     { threshold: [0.3, 0.6, 0.9] } // Smooth detection
   //   );
+  
   //   allPlaces.forEach((place) => {
   //     const section = document.getElementById(place.id);
-  //     if (section)observerref.current.observe(section);
+  //     if (section) observer.observe(section);
   //   });
+  
   //   return () => observer.disconnect();
   // }, [allPlaces]);
+  
 
-  // close on outside click 
-  useEffect(()=>{
-    const handleClickOutside=(event)=>{
-      if(dropdownOpen && !event.target.closest(".dropdownMenu")){
-        // console.log('clicked',event.target)// find the place where the event is click
-        setDropdownOpen(false)
-      }
-    }
-    // add event listner 
-    document.addEventListener("click",handleClickOutside)
-    // clean up the event listner 
-    return()=>{
-      document.removeEventListener("click",handleClickOutside)
-    }
-  },[dropdownOpen])
-
-  const scrollToPlace = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "auto", block: "start" });
-    }
-  };
-  // Intersection Observer to track active section
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            
-            setActiveId(entry.target.id);
-            const foundPlace = allPlaces.find((place) => place.id === entry.target.id);
-          if (foundPlace) {
-            setCurrentPlace(foundPlace);
-          }
-          }
-        });
-      },
-      { rootMargin: "-50% 0px -50% 0px", threshold: 0.1 }
-    );
-
-    const sections = document.querySelectorAll(".place-section");
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
 
   return (
     <>
     <div className="fixed left-[4.1666665%] mix-blend-difference  z-50 ">
-   
+   <a href="#topContainer">
               <img
                 src="/logo.svg"
                 alt=""
                 className="w-14 "
               />
+              </a>
        
     </div>
      {/* menu  */}
@@ -249,7 +228,7 @@ const Navbar = () => {
         </div>
       </div>
    
-    <div className="w-full fixed z-30 t-0  ">
+    <div  className="w-full fixed z-30 t-0  ">
       <div className="w-11/12   mx-auto pt-4">
 
         {/* left content  */}
@@ -257,7 +236,7 @@ const Navbar = () => {
        
           {/* center content   */}
           {/* main container  */}
-          <div className="fixed  bottom-spacelg  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+          <div className="fixed  bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
             <button
               onClick={() => handleNavigate("prev")}
               className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
