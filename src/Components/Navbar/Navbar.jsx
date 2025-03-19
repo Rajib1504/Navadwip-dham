@@ -111,18 +111,12 @@ const Navbar = () => {
     },
   ];
 
-  // all place
-  const allPlaces = useMemo(
-    () => placesData.flatMap((day) => day.places),
-    [placesData]
-  );
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen)
   const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
   const [activeId, setActiveId] = useState(null);
-  const location = useLoaderData();
+  // const location = useLoaderData();
 
   const handleNavigate = (direction) => {
     let allPlaces = placesData.flatMap((day) => day.places);
@@ -136,6 +130,7 @@ const Navbar = () => {
       setFirstLoad(false);
     }
   };
+  // when first load 
   useEffect(() => {
     if (!firstLoad && currentPlace) {
       document
@@ -174,6 +169,22 @@ const Navbar = () => {
   //   return () => observer.disconnect();
   // }, [allPlaces]);
 
+  // close on outside click 
+  useEffect(()=>{
+    const handleClickOutside=(event)=>{
+      if(dropdownOpen && !event.target.closest(".dropdownMenu")){
+        // console.log('clicked',event.target)// find the place where the event is click
+        setDropdownOpen(false)
+      }
+    }
+    // add event listner 
+    document.addEventListener("click",handleClickOutside)
+    // clean up the event listner 
+    return()=>{
+      document.removeEventListener("click",handleClickOutside)
+    }
+  },[dropdownOpen])
+
   const scrollToPlace = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -188,7 +199,10 @@ const Navbar = () => {
           if (entry.isIntersecting) {
             
             setActiveId(entry.target.id);
-            setCurrentPlace(entry.target.id);
+            const foundPlace = allPlaces.find((place) => place.id === entry.target.id);
+          if (foundPlace) {
+            setCurrentPlace(foundPlace);
+          }
           }
         });
       },
@@ -252,7 +266,7 @@ const Navbar = () => {
             </button>
             <div
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
+              className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
             >
               {/* dynamic number  */}
               <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
@@ -265,7 +279,7 @@ const Navbar = () => {
               </span>
 
               {/* dropdown  */}
-              <button className="mr-3 ml-2 md:ml-0 ">
+              <button className=" mr-3 ml-2 md:ml-0 ">
                 <span className="hidden md:block">
                   {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 </span>
@@ -277,7 +291,7 @@ const Navbar = () => {
               {dropdownOpen && (
                 <ul
                   className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
+                w-full h-[320px] md:h-[320px]   lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
                   style={{
                     scrollbarWidth: "none",
                     msOverflowStyle: "none",
