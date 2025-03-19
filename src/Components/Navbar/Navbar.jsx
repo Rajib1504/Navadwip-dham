@@ -303,9 +303,9 @@ const Navbar = () => {
                   <div className="mx-auto text-center">
                     {placesData.map((day, idx) => (
                       <div key={idx}>
-                        <div className="flex sticky -top-4 justify-between items-center bg-success z-2 p-2.5 ">
+                        <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
                           <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
-                          <h5 className="text-secondaryBlack opacity-55 text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
+                          <h5 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
                         </div>
                         <div className="py-spacelg  ">
                           {day.places.map((place) => (
