@@ -171,9 +171,7 @@ const Navbar = () => {
   }, [handleClickOutside]);
 
   // select section acording to the scroll
-  // Intersection Observer - Active Section Handle
   const previousSectionId = useRef(null); // Store previous section ID
-
   useEffect(() => {
     const handleScroll = () => {
       let scrollPosition = window.scrollY + window.innerHeight / 3;
@@ -304,12 +302,13 @@ const Navbar = () => {
                             <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
                             <h5 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
                           </div>
-                          <div className="py-spacelg  ">
+                          <div className="py-spacelg">
                             {day.places.map((place) => (
                               <div
                                 key={place.id}
                                 className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
-                                  currentPlace.id === place.id
+                                  
+                                  (active?.id ??currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
                                 }`}
