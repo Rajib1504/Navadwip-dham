@@ -1,11 +1,14 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
-
-import { Link } from "react-scroll";
-import { useLoaderData } from "react-router-dom";
 import AnimateMenu from "../AnimateMenu/AnimateMenu";
 
 const Navbar = () => {
@@ -116,10 +119,14 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
   const [activeId, setActiveId] = useState(null);
+  const [active, setActive] = useState({});
+  // console.log(active);
   // const location = useLoaderData();
-  const allPlaces = useMemo(() => placesData.flatMap((day) => day.places), [placesData]);
+  const allPlaces = useMemo(
+    () => placesData.flatMap((day) => day.places),
+    [placesData]
+  );
   const handleNavigate = (direction) => {
-
     let currentIndex = allPlaces.findIndex((p) => p.id === currentPlace.id);
     // console.log(currentIndex);
     let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1;
@@ -129,7 +136,7 @@ const Navbar = () => {
       setFirstLoad(false);
     }
   };
-  // when first load 
+  // when first load
   useEffect(() => {
     if (!firstLoad && currentPlace) {
       document
@@ -137,79 +144,88 @@ const Navbar = () => {
         ?.scrollIntoView({ behavior: "smooth" });
     }
   }, [currentPlace, firstLoad]);
-// select place and go 
+  // select place and go
   const handleSelectPlace = (place) => {
     console.log(place);
     setCurrentPlace(place);
     setDropdownOpen(false);
     document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
   };
-   // close on outside click 
-   const handleClickOutside=useCallback((event)=>{
-    if(dropdownOpen && !event.target.closest(".dropdownMenu")){
-      // console.log('clicked',event.target)// find the place where the event is click
-      setDropdownOpen(false)
-    }
-  },[dropdownOpen])
-  useEffect(()=>{
-      // add event listner 
-  document.addEventListener("click",handleClickOutside)
-  // clean up the event listner 
-  return()=>{
-    document.removeEventListener("click",handleClickOutside)
-  }
-  },[handleClickOutside])
-  // select section acording to the scroll
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       let mostVisibleSection = null;
-  //       let maxVisibility = 0;
-  
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting && entry.intersectionRatio > maxVisibility) {
-  //           mostVisibleSection = entry.target;
-  //           maxVisibility = entry.intersectionRatio;
-  //         }
-  //       });
-  
-  //       if (mostVisibleSection) {
-  //         const foundPlace = allPlaces.find(
-  //           (place) => place.id === mostVisibleSection.id
-  //         );
-  //         if (foundPlace) {
-  //           setCurrentPlace(foundPlace);
-  //         }
-  //       }
-  //     },
-  //     { threshold: [0.3, 0.6, 0.9] } // Smooth detection
-  //   );
-  
-  //   allPlaces.forEach((place) => {
-  //     const section = document.getElementById(place.id);
-  //     if (section) observer.observe(section);
-  //   });
-  
-  //   return () => observer.disconnect();
-  // }, [allPlaces]);
-  
+  // close on outside click
+  const handleClickOutside = useCallback(
+    (event) => {
+      if (dropdownOpen && !event.target.closest(".dropdownMenu")) {
+        // console.log('clicked',event.target)// find the place where the event is click
+        setDropdownOpen(false);
+      }
+    },
+    [dropdownOpen]
+  );
+  useEffect(() => {
+    // add event listner
+    document.addEventListener("click", handleClickOutside);
+    // clean up the event listner
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [handleClickOutside]);
 
+  // select section acording to the scroll
+  // Intersection Observer - Active Section Handle
+  const previousSectionId = useRef(null); // Store previous section ID
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollPosition = window.scrollY + window.innerHeight / 3;
+      let mostVisibleSection = null;
+      let maxVisibility = 0;
+
+      for (const section of document.getElementsByClassName("place")) {
+        const rect = section.getBoundingClientRect();
+        const visibleHeight =
+          Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+
+        if (visibleHeight > maxVisibility) {
+          maxVisibility = visibleHeight;
+          mostVisibleSection = section;
+        }
+      }
+
+      if (mostVisibleSection) {
+        const sectionId = mostVisibleSection.id;
+
+        // ✅ Check if section ID has changed
+        if (previousSectionId.current !== sectionId) {
+          previousSectionId.current = sectionId; // Update previous section ID
+
+          // ✅ Find the corresponding place from `placesData`
+          const foundPlace = placesData
+            .flatMap((day) => day.places)
+            .find((place) => place.id === sectionId);
+
+          if (foundPlace) {
+            // console.log("New Active Section:", foundPlace);
+            setActive(foundPlace); // ✅ Update active title only when it changes
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-    <div className="fixed left-[4.1666665%] mix-blend-difference  z-50 ">
-   <a href="#topContainer">
-              <img
-                src="/logo.svg"
-                alt=""
-                className="w-14 "
-              />
-              </a>
-       
-    </div>
-     {/* menu  */}
-     <div className="fixed hidden left-[4.1666665%]   z-50 ">
-    
+      <div className="fixed left-[4.1666665%] mix-blend-difference  z-50 ">
+        <a href="#topContainernp">
+          <img src="/logo.svg" alt="" className="w-14 " />
+        </a>
+      </div>
+      {/* menu  */}
+      <div className="fixed hidden left-[4.1666665%]   z-50 ">
         <div className="md:p-4">
           <div className="relative  pl-[4rem] pt-4 md:pt-0 inline-block ">
             {/* Dropdown Button */}
@@ -223,117 +239,113 @@ const Navbar = () => {
                 <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
               )}
             </button>
-           
           </div>
         </div>
       </div>
-   
-    <div  className="w-full fixed z-30 t-0  ">
-      <div className="w-11/12   mx-auto pt-4">
 
-        {/* left content  */}
-        <div className=" flex  ">
-       
-          {/* center content   */}
-          {/* main container  */}
-          <div className="fixed  bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
-            <button
-              onClick={() => handleNavigate("prev")}
-              className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
-            >
-              <HiArrowLongLeft className="" />
-            </button>
-            <div
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
-            >
-              {/* dynamic number  */}
-              <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
-                <p className="leading-[2.125rem] md:leading-10"> {currentPlace.idx}</p>
-              </div>
-              {/* center content  */}
-
-              <span className=" md:absolute md:text-textSmall truncate text-center w-full md:w-[100%] block leading-[2.125rem] md:leading-10 text-mobiletextSmall">
-                {currentPlace.name}
-              </span>
-
-              {/* dropdown  */}
-              <button className=" mr-3 ml-2 md:ml-0 ">
-                <span className="hidden md:block">
-                  {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </span>
-                <span className="md:hidden block">
-                  {dropdownOpen ? <IoIosArrowDown /> : <IoIosArrowUp />}
-                </span>
+      <div className="w-full fixed z-30 t-0  ">
+        <div className="w-11/12   mx-auto pt-4">
+          {/* left content  */}
+          <div className=" flex  ">
+            {/* center content   */}
+            {/* main container  */}
+            <div className="fixed  bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+              <button
+                onClick={() => handleNavigate("prev")}
+                className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
+              >
+                <HiArrowLongLeft className="" />
               </button>
+              <div
+                onClick={() => setDropdownOpen(!dropdownOpen)}
+                className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
+              >
+                {/* dynamic number  */}
+                <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
+                  <p className="leading-[2.125rem] md:leading-10">
+                    {" "}
+                    
+                    {active?.idx ?? currentPlace.idx ?? "..."}
+                  </p>
+                </div>
+                {/* center content  */}
 
-              {dropdownOpen && (
-                <ul
-                  className="absolute overflow-y-auto  bg-success 
+                <span className=" md:absolute md:text-textSmall truncate text-center w-full md:w-[100%] block leading-[2.125rem] md:leading-10 text-mobiletextSmall">
+                  {/* {currentPlace.name} */}
+                  {active?.name ?? currentPlace.name ?? "Loading..."}
+                </span>
+
+                {/* dropdown  */}
+                <button className=" mr-3 ml-2 md:ml-0 ">
+                  <span className="hidden md:block">
+                    {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                  </span>
+                  <span className="md:hidden block">
+                    {dropdownOpen ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                  </span>
+                </button>
+
+                {dropdownOpen && (
+                  <ul
+                    className="absolute overflow-y-auto  bg-success 
                 w-full h-[320px] md:h-[320px]   lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
-                  style={{
-                    scrollbarWidth: "none",
-                    msOverflowStyle: "none",
-                    WebkitOverflowScrolling: "touch",
-                    WebkitScrollbar: "none",
-                    boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)",
-                  }}
-                >
-                  <div className="mx-auto text-center">
-                    {placesData.map((day, idx) => (
-                      <div key={idx}>
-                        <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
-                          <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
-                          <h5 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
+                    style={{
+                      scrollbarWidth: "none",
+                      msOverflowStyle: "none",
+                      WebkitOverflowScrolling: "touch",
+                      WebkitScrollbar: "none",
+                      boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)",
+                    }}
+                  >
+                    <div className="mx-auto text-center">
+                      {placesData.map((day, idx) => (
+                        <div key={idx}>
+                          <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
+                            <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
+                            <h5 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
+                          </div>
+                          <div className="py-spacelg  ">
+                            {day.places.map((place) => (
+                              <div
+                                key={place.id}
+                                className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
+                                  currentPlace.id === place.id
+                                    ? "bg-primaryBlack text-white"
+                                    : "hover:bg-accentBlack"
+                                }`}
+                                onClick={() => {
+                                  handleSelectPlace(place);
+                                  setDropdownOpen(false);
+                                }}
+                              >
+                                <span className="absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
+                                  {place.idx}
+                                </span>
+                                <span className="w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                                  {" "}
+                                  {place.name}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
-                        <div className="py-spacelg  ">
-                          {day.places.map((place) => (
-                            <div
-                              key={place.id}
-                              className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
-                                currentPlace.id === place.id
-                                  ? "bg-primaryBlack text-white"
-                                  : "hover:bg-accentBlack"
-                              }`}
-                              onClick={() => {
-                                handleSelectPlace(place);
-                                setDropdownOpen(false);
-                              }}
-                            >
-                              <span className=" absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
-                                {place.idx}
-                              </span>
-                              <span className="w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
-                                {" "}
-                                {place.name}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </ul>
-              )}
+                      ))}
+                    </div>
+                  </ul>
+                )}
+              </div>
+              <button
+                onClick={() => handleNavigate("next")}
+                className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]   bg-success transition-all"
+              >
+                <HiArrowLongRight />
+              </button>
             </div>
-            <button
-              onClick={() => handleNavigate("next")}
-              className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]   bg-success transition-all"
-            >
-              <HiArrowLongRight />
-            </button>
           </div>
         </div>
       </div>
-    </div>
-       {/* Dropdown Menu */}
-       {isOpen && (
-                 
-                 <AnimateMenu />
-               
-             )}
-    
-    
+      {/* Dropdown Menu */}
+      {isOpen && <AnimateMenu />}
     </>
   );
 };
