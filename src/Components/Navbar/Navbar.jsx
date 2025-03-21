@@ -124,8 +124,32 @@ const Navbar = () => {
     () => placesData.flatMap((day) => day.places),
     [placesData]
   );
+  // dropdown functionality
+  const dropDownRef = useRef(null);
+  const activeRef = useRef(null);
+
+  useEffect(() => {
+    if (dropdownOpen && dropDownRef.current && activeRef.current) {
+      const dropdown = dropDownRef.current;
+      const active = activeRef.current;
+
+      // for make Active Item in Center Adjustment the Scroll Position
+      const dropdownHeight = dropdown.clientHeight;
+      const activeItemOffset = active.offsetTop;
+      const activeItemHeight = active.clientHeight;
+
+      dropdown.scrollTo({
+        top: activeItemOffset - dropdownHeight / 2 + activeItemHeight / 2,
+        behavior: "smooth",
+      });
+    }
+  }, [dropdownOpen, active?.id]);
+
+  // navigation
   const handleNavigate = (direction) => {
-    let currentIndex = allPlaces.findIndex((p) => p.id ===  (active?.id ??currentPlace.id));
+    let currentIndex = allPlaces.findIndex(
+      (p) => p.id === (active?.id ?? currentPlace.id)
+    );
     // console.log(currentIndex);
     let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1;
     // console.log(newIndex);
@@ -260,7 +284,6 @@ const Navbar = () => {
                 <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
                   <p className="leading-[2.125rem] md:leading-10">
                     {" "}
-                    
                     {active?.idx ?? currentPlace.idx ?? "..."}
                   </p>
                 </div>
@@ -283,6 +306,7 @@ const Navbar = () => {
 
                 {dropdownOpen && (
                   <ul
+                  ref={dropDownRef}
                     className="absolute overflow-y-auto  bg-success 
                 w-full h-[320px] md:h-[320px]   lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
                     style={{
@@ -304,8 +328,9 @@ const Navbar = () => {
                             {day.places.map((place) => (
                               <div
                                 key={place.id}
+                                ref={active?.id === place.id ? activeRef : null}
                                 className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
-                                  (active?.id ??currentPlace.id) === place.id
+                                  (active?.id ?? currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
                                 }`}
