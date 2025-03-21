@@ -118,16 +118,14 @@ const Navbar = () => {
   const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
-  const [activeId, setActiveId] = useState(null);
   const [active, setActive] = useState({});
   // console.log(active);
-  // const location = useLoaderData();
   const allPlaces = useMemo(
     () => placesData.flatMap((day) => day.places),
     [placesData]
   );
   const handleNavigate = (direction) => {
-    let currentIndex = allPlaces.findIndex((p) => p.id === currentPlace.id);
+    let currentIndex = allPlaces.findIndex((p) => p.id ===  (active?.id ??currentPlace.id));
     // console.log(currentIndex);
     let newIndex = direction === "next" ? currentIndex + 1 : currentIndex - 1;
     // console.log(newIndex);
@@ -307,7 +305,6 @@ const Navbar = () => {
                               <div
                                 key={place.id}
                                 className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
-                                  
                                   (active?.id ??currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
