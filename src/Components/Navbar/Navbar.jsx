@@ -9,7 +9,8 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
-import AnimateMenu from "../AnimateMenu/AnimateMenu";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Navbar = () => {
   const placesData = [
@@ -127,7 +128,6 @@ const Navbar = () => {
   // dropdown functionality
   const dropDownRef = useRef(null);
   const activeRef = useRef(null);
-
   useEffect(() => {
     if (dropdownOpen && dropDownRef.current && activeRef.current) {
       const dropdown = dropDownRef.current;
@@ -236,45 +236,65 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // menu animation
+  const menuopenAnimation = useGSAP(() => {
+    if (isOpen) {
+      gsap.fromTo(
+        ".menu",
+        { y: "100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" }
+      );
+    }
+  }, [isOpen]);
+  
+      gsap.to(".menu", {
+        y: "100%",
+        opacity: 0,
+        duration: 0.5,
+        ease: "power1.in",
+      });
 
   return (
     <>
-      <div className="fixed left-[4.1666665%] mix-blend-difference  z-50 ">
+      <div className="fixed left-[4.1666665%] mix-blend-difference   z-50 ">
         <a href="#topContainernp">
-          <img src="/logo.svg" alt="" className="w-14 " />
+          <img src="/logo.svg" alt="" className="w-20" />
         </a>
       </div>
       {/* menu  */}
-      <div className="fixed hidden left-[4.1666665%]   z-50 ">
-        <div className="md:p-4">
-          <div className="relative  pl-[4rem] pt-4 md:pt-0 inline-block ">
+      <div className="fixed   left-[4.1666665%] mix-blend-difference   z-50 ">
+        <div className="md:pl-4 md:py-4">
+          <div className="relative  pl-[5rem]  pt-4 md:pt-1 inline-block ">
             {/* Dropdown Button */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="rounded-full w-[2.5rem] h-[2.5rem] backdrop-blur-sm border bg-success border-accentBlack   flex items-center justify-center"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsOpen(!isOpen);
+              }}
+              className="rounded-full w-[2.5rem] h-[2.5rem]  border  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
             >
               {isOpen ? (
-                <RxCross2 className="text-primaryBlack text-textSmall" />
+                <RxCross2 className="text-success text-textSmall" />
               ) : (
-                <HiOutlineMenuAlt4 className=" text-primaryBlack text-textSmall " />
+                <HiOutlineMenuAlt4 className=" text-success text-textSmall " />
               )}
             </button>
           </div>
         </div>
       </div>
 
-      <div className="w-full fixed z-30 t-0  ">
-        <div className="w-11/12   mx-auto pt-4">
+      <div className="w-full fixed z-20 t-0  ">
+        <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
-          <div className=" flex  ">
+          <div className=" flex mix-blend-difference ">
             {/* center content   */}
             {/* main container  */}
             <div className="fixed  bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
-                className="bg-success flex justify-center items-center backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
+                className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
               >
-                <HiArrowLongLeft className="" />
+                <HiArrowLongLeft className="text-primaryBlack" />
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -306,7 +326,7 @@ const Navbar = () => {
 
                 {dropdownOpen && (
                   <ul
-                  ref={dropDownRef}
+                    ref={dropDownRef}
                     className="absolute overflow-y-auto  bg-success 
                 w-full h-[320px] md:h-[320px]   lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
                     style={{
@@ -366,7 +386,55 @@ const Navbar = () => {
         </div>
       </div>
       {/* Dropdown Menu */}
-      {isOpen && <AnimateMenu />}
+
+      {isOpen && (
+        <div className="menu overflow-hidden  z-40 bg-primaryBlack w-[100%] box-border   fixed min-h-screen flex justify-between ">
+          <div className="font-primaryLight grid md:w-[100%] grid-cols-12">
+            <div className="md:col-start-5 col-start-1 col-span-12 grid grid-cols-6">
+              <a
+                href="#topContainer"
+                onClick={() => setIsOpen(!isOpen)}
+                className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3 cursor-pointer md:text-heading2 text-success"
+              >
+                Intro
+              </a>
+              <a
+                href="#DayOne"
+                onClick={() => setIsOpen(!isOpen)}
+                className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg"
+              >
+                Parikarma
+              </a>
+              <a
+                href="#Books"
+                onClick={() => setIsOpen(!isOpen)}
+                className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3 text-success md:my-space15 my-spacelg"
+              >
+                Books
+              </a>
+
+              <a
+                href="mailto:hello@dhama.info?subject=Navadvip"
+                onClick={() => setIsOpen(!isOpen)}
+                className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 md:my-space15 my-spacelg text-success"
+              >
+                Ask a Question
+              </a>
+            </div>
+            <footer className="col-span-12 md:w-[100vw] grid gird-cols-6 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
+              <p className="col-span-2">@2025</p>
+              <a
+                onClick={() => setIsOpen(!isOpen)}
+                href="https://www.instagram.com/bsvtrust"
+                target="_blank"
+                className="hidden md:block col-start-5 col-span-9"
+              >
+                Instagram
+              </a>
+            </footer>
+          </div>
+        </div>
+      )}
     </>
   );
 };

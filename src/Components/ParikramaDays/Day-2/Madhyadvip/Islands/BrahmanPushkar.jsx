@@ -98,7 +98,7 @@ const BrahmanPushkar = () => {
               </div> */}
             {/* </div> */}
             {/* 3rd img  */}
-            /
+            
 
               {/* <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
                 The central altar of the main temple with Sri Gaura Narayana
