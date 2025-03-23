@@ -2,7 +2,7 @@ import React from 'react';
 
 const Yogapith = () => {
       return (
-            <a href='yogpith' id="Yogpith">
+            <div id="Yogpith">
           <div
             id="3"
             className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const Yogapith = () => {
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full mr-space30 ">
               <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                Yogapith
+                <a href="Yogpith">Yogpith</a>
               </h4>
               <p className="text-mobileTextRegular md:text-textRegular">
                 The Birthplace of Sri Chaitanya Mahaprabhu
@@ -117,7 +117,7 @@ const Yogapith = () => {
               </div> */}
             </div>
           </div>
-        </a>
+        </div>
       );
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrithaKunda = () => {
       return (
-            <a href='prithakunda' id="Pritha-kunda">
+            <div id="Pritha-kunda">
           <div
             id="8"
             className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const PrithaKunda = () => {
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full mr-space30 ">
               <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                Prithu-kunda
+               <a href="Pritha-kunda">Pritha-kunda</a>
               </h4>
               <p className="text-mobileTextRegular md:text-textRegular">
                 Lake of the King Prithu
@@ -100,7 +100,7 @@ const PrithaKunda = () => {
               </div> */}
             </div>
           </div>
-        </a>
+        </div>
       );
 };
 

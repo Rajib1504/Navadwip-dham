@@ -15,7 +15,7 @@ const AmraGhat = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Amra Ghat
+                  <a href="Amra Ghat">Amra Ghat</a>
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   The Mango Grove

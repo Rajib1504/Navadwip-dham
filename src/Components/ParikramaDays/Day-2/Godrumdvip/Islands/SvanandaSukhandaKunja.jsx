@@ -15,7 +15,7 @@ const SvanandaSukhandaKunja = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Svananda Sukhada Kunja
+                  <a href="Svananda Sukhada Kunja">Svananda Sukhada Kunja</a>
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   The Grove of Transcendental Joy

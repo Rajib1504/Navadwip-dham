@@ -2,7 +2,7 @@ import React from 'react';
 
 const GadadharAngan = () => {
       return (
-            <a href='gadadharAngan' id ="Gadadhar Angan">
+            <div id ="Gadadhar Angan">
             <div
               id="6"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const GadadharAngan = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Gadadhar Angan
+                 <a href=" Gadadhar Angan"> Gadadhar Angan</a>
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   Residence of Gadadhara Pandit{" "}
@@ -109,7 +109,7 @@ const GadadharAngan = () => {
                 </div> */}
               </div>
             </div>
-          </a>
+          </div>
       );
 };
 

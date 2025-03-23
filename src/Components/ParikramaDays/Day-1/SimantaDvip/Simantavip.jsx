@@ -12,7 +12,7 @@ const Simantavip = () => {
           02
         </p>
         <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
-         Simantadvip
+         <a href="Simantadvip"> Simantadvip</a>
         </h2>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         The island of Simantadvip, now known as Simuliya, was once surrounded by the Ganges. Its name comes from a story of deep devotion.

@@ -19,7 +19,7 @@ const Antardvip = () => {
             01
           </p>
           <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
-            Antardvip
+            <a href="Antardvip"> Antardvip</a>
           </h2>
           <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
           At the meeting point of the Yamuna and Ganga rivers lies Antardvip, the sacred island where Sri Chaitanya chose to appear in this world. At its center is Mayapur, and within it, the holy site of Yogapith—His birthplace and the eternal scene of His joyful pastimes.

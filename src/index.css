@@ -30,3 +30,8 @@
   font-family: "UltraLight";
   src: url(/src/assets/otf/PPEditorialOld-Ultralight.otf)format("opentype");
 }
+a:focus, a:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}

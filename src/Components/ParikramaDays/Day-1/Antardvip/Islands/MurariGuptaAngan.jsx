@@ -2,7 +2,7 @@ import React from 'react';
 
 const MurariGuptaAngan = () => {
       return (
-            <a a href='murariGuptaAngan' id="Murari Gupta Angan">
+            <div id="Murari Gupta Angan">
             <div
               id="7"
               className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const MurariGuptaAngan = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  Murari Gupta Angan{" "}
+                  <a href="Murari Gupta Angan">Murari Gupta Angan</a>
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   Residence of Murari Gupta
@@ -93,7 +93,7 @@ const MurariGuptaAngan = () => {
                 </div> */}
               </div>
             </div>
-          </a>
+          </div>
       );
 };
 
