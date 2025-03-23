@@ -2,7 +2,7 @@ import React from 'react';
 
 const Yogapith = () => {
       return (
-            <div id='"Yogpith"'>
+            <a href='yogpith' id="Yogpith">
           <div
             id="3"
             className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -117,7 +117,7 @@ const Yogapith = () => {
               </div> */}
             </div>
           </div>
-        </div>
+        </a>
       );
 };
 

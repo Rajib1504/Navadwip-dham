@@ -242,18 +242,19 @@ const Navbar = () => {
       gsap.fromTo(
         ".menu",
         { y: "100%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" }
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" },
       );
     }
   }, [isOpen]);
   
-      gsap.to(".menu", {
+  const handleClose=()=>{
+      gsap.to(".close", {
         y: "100%",
         opacity: 0,
         duration: 0.5,
         ease: "power1.in",
       });
-
+    }
   return (
     <>
       <div className="fixed left-[4.1666665%] mix-blend-difference   z-50 ">
@@ -274,9 +275,9 @@ const Navbar = () => {
               className="rounded-full w-[2.5rem] h-[2.5rem]  border  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
             >
               {isOpen ? (
-                <RxCross2 className="text-success text-textSmall" />
+                <RxCross2 type="button" onClick={handleClose} className="text-success text-textSmall" />
               ) : (
-                <HiOutlineMenuAlt4 className=" text-success text-textSmall " />
+                <HiOutlineMenuAlt4  className=" text-success text-textSmall " />
               )}
             </button>
           </div>

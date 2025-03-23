@@ -2,7 +2,7 @@ import React from 'react';
 
 const MurariGuptaAngan = () => {
       return (
-            <div id="Murari Gupta Angan">
+            <a a href='murariGuptaAngan' id="Murari Gupta Angan">
             <div
               id="7"
               className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -93,7 +93,7 @@ const MurariGuptaAngan = () => {
                 </div> */}
               </div>
             </div>
-          </div>
+          </a>
       );
 };
 

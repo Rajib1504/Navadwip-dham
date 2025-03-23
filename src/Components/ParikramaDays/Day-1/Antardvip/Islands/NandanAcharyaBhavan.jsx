@@ -2,7 +2,7 @@ import React from 'react';
 
 const NandanAcharyaBhavan = () => {
       return (
-            <div  id= "Nandan Acharya Bhavan">
+            <a a href='nandanAcharyaBhavan'  id= "Nandan Acharya Bhavan">
           <div
             id="2"
             className="place  pt-space60  mt-space30  gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -161,7 +161,7 @@ const NandanAcharyaBhavan = () => {
               </div> */}
             </div>
           </div>
-        </div>
+        </a>
       );
 };
 
