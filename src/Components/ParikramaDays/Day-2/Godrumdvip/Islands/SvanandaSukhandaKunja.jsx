@@ -2,6 +2,7 @@ import React from 'react';
 
 const SvanandaSukhandaKunja = () => {
       return (
+        <section id='Svananda_Sukhada_Kunja'>
             <div id='Svananda Sukhada Kunja'>
             <div
               id="14"
@@ -15,7 +16,7 @@ const SvanandaSukhandaKunja = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  <a href="Svananda Sukhada Kunja">Svananda Sukhada Kunja</a>
+                 Svananda Sukhada Kunja
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   The Grove of Transcendental Joy
@@ -110,6 +111,7 @@ const SvanandaSukhandaKunja = () => {
               </div>
             </div>
           </div>
+          </section>
       );
 };
 

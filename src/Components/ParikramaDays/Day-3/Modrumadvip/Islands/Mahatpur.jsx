@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mahatpur = () => {
       return (
-            <div id='Mahatpur'>
+            <section id='Mahatpur'>
             <div
               id="34"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -91,7 +91,7 @@ const Mahatpur = () => {
   
   
   
-          </div>
+          </section>
       );
 };
 

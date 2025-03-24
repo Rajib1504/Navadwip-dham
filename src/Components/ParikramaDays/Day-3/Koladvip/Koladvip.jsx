@@ -7,7 +7,7 @@ import Chapahati from "./Island/Chapahati";
 
 const Koladvip = () => {
   return (
-    <div className="pt-space120 md:pt-space300 ">
+    <section className="pt-space120 md:pt-space300 ">
     <article id="Koladvip" className="w-11/12 mx-auto  ">
       <section className="md:grid grid-cols-12 ">
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
@@ -95,7 +95,7 @@ const Koladvip = () => {
 
         {/* ............................... */}
       </article>
-    </div>
+    </section>
   );
 };
 

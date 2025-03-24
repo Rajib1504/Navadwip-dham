@@ -3,6 +3,7 @@ import { RxCross2 } from 'react-icons/rx';
 
 const SriChaitanyaGaudiyaMath = () => {
       return (
+        <section id='Sri_Chaitanya_Gaudiya_Math'>
             <div  id= "Sri Chaitanya Gaudiya Math">
           <div 
             id="1"
@@ -16,7 +17,7 @@ const SriChaitanyaGaudiyaMath = () => {
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full ">
               <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-               <a href="Sri Chaitanya Gaudiya Math">Sri Chaitanya Gaudiya Math</a>
+               Sri Chaitanya Gaudiya Math
               </h4>
               <p className="text-mobileTextRegular md:text-textRegular">
                 The Place of Unity and Service
@@ -112,6 +113,7 @@ const SriChaitanyaGaudiyaMath = () => {
             </div>
           </div>
         </div>
+        </section>
       );
 };
 

@@ -2,7 +2,8 @@ import React from 'react';
 
 const SrivasAngan = () => {
       return (
-            <div  id= "Shrivas Angan">
+        <section id='Shrivas_Angan'>
+            <div id= "Shrivas Angan">
             <div
               id="4"
               className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +16,7 @@ const SrivasAngan = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                <a href="Shrivas Angan">Shrivas Angan</a> 
+                Shrivas Angan
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   The Sacred Site of Sankirtan
@@ -103,6 +104,7 @@ const SrivasAngan = () => {
               </div>
             </div>
           </div>
+          </section>
       );
 };
 

@@ -2,7 +2,8 @@ import React from 'react';
 
 const NandanAcharyaBhavan = () => {
       return (
-            <div  id= "Nandan Acharya Bhavan">
+        <section id='Nandan_Acharya_Bhavan'>
+            <div id= "Nandan Acharya Bhavan">
           <div
             id="2"
             className="place  pt-space60  mt-space30  gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +16,7 @@ const NandanAcharyaBhavan = () => {
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full mr-space30 ">
               <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-               <a href="Nandan Acharya Bhavan">Nandan Acharya Bhavan</a>
+               Nandan Acharya Bhavan
               </h4>
               <p className="text-mobileTextRegular md:text-textRegular">
                 The Place Where Sri Caitanya and Nityananda Prabhu First Met
@@ -162,6 +163,7 @@ const NandanAcharyaBhavan = () => {
             </div>
           </div>
         </div>
+        </section>
       );
 };
 

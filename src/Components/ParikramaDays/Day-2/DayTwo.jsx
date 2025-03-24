@@ -2,7 +2,7 @@ import React from 'react';
 
 const DayTwo = () => {
       return (
-        <div className=" w-full md:py-space300 py-space120  bg-primaryBlack">
+        <section id='Day_Two' className=" w-full md:py-space300 py-space120  bg-primaryBlack">
         <div className="w-11/12 flex flex-col   mx-auto">
           <div className="md:grid md:grid-cols-12">
             <div id='Day Two' className=" mb-spacelg  col-start-4 col-span-6 ">
@@ -39,7 +39,7 @@ const DayTwo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       );
 };
 

@@ -11,6 +11,7 @@ import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const placesData = [
@@ -257,11 +258,11 @@ const Navbar = () => {
     }
   return (
     <>
-      <div className="fixed left-[4.1666665%] mix-blend-difference   z-50 ">
-        <a href="#topContainernp">
-          <img src="/logo.svg" alt="" className="w-20" />
-        </a>
+        <Link to="#topContainer">
+      <div className="fixed left-[4.1666665%] mix-blend-difference z-50 ">
+          <img src="/logo.svg" alt="logo" className="w-20" />
       </div>
+        </Link>
       {/* menu  */}
       <div className="fixed   left-[4.1666665%] mix-blend-difference   z-50 ">
         <div className="md:pl-4 md:py-4">

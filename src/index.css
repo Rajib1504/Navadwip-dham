@@ -35,3 +35,6 @@ a:focus, a:active {
   border: none;
   box-shadow: none;
 }
+html {
+  scroll-behavior: smooth;
+}

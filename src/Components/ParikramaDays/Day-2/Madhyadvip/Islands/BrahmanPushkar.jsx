@@ -2,7 +2,7 @@ import React from "react";
 
 const BrahmanPushkar = () => {
   return (
-    <div id="Pushkar">
+    <section id="Pushkar">
       <div
         id="21"
         className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const BrahmanPushkar = () => {
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
           <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-            <a href="Pushkar">Brahman Pushkar</a>
+            Brahman Pushkar
           </h4>
           <p className="text-mobileTextRegular md:text-textRegular">
             The Sacred Pond of Devotion
@@ -101,7 +101,7 @@ const BrahmanPushkar = () => {
               </p> */}
         {/* </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

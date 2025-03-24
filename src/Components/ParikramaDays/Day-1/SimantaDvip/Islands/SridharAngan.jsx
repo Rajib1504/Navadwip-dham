@@ -2,6 +2,7 @@ import React from 'react';
 
 const SridharAngan = () => {
       return (
+        <section id='Sridhar_Angan'>
             <div id='Sridhar Angan'>
             <div
               id="11"
@@ -15,7 +16,7 @@ const SridharAngan = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                  <a href="Sridhar Angan">Sridhar Angan</a>
+                  <a href="#Sridhar Angan">Sridhar Angan</a>
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                   House of Kalavecha Sridhar
@@ -81,6 +82,7 @@ const SridharAngan = () => {
            
             </div>
           </div>
+          </section> 
       );
 };
 

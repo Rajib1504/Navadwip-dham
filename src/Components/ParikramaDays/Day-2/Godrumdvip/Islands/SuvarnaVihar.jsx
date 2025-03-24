@@ -2,6 +2,7 @@ import React from 'react';
 
 const SuvarnaVihar = () => {
       return (
+        <section id='Suvarna Vihar'>
             <div id='Suvarna Vihar'>
             <div
               id="16"
@@ -15,7 +16,7 @@ const SuvarnaVihar = () => {
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
                 <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-                <a href="Suvarna Vihar">Suvarna Vihar</a>
+                Suvarna Vihar
                 </h4>
                 <p className="text-mobileTextRegular md:text-textRegular">
                 The Palace of the King Suvarnasen
@@ -109,6 +110,7 @@ const SuvarnaVihar = () => {
               </div>
             </div>
           </div>
+          </section>
       );
 };
 

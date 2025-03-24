@@ -15,7 +15,7 @@ const Godrumdvip = () => {
             03
           </p>
           <h2 className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
-            <a href="Godrumdvip">Godrumdvip</a>{" "}
+       Godrumdvip
           </h2>
           <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
             Today, it's called Gadigacha. In this sacred place, the celestial

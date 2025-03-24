@@ -2,6 +2,7 @@ import React from 'react';
 
 const BarakonaGhat = () => {
       return (
+        <section id='Barakona_Ghat'>
             <div id='Barakona Ghat'>
             <div
               id="35"
@@ -92,6 +93,7 @@ const BarakonaGhat = () => {
   
   
           </div>
+          </section>
       );
 };
 

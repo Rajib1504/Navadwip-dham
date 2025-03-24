@@ -2,6 +2,7 @@ import React from "react";
 
 const NarasimhaPalli = () => {
   return (
+    <section id="Narashima_Pally">
     <div id="Narashima Pally">
       <div
         id="18"
@@ -15,7 +16,7 @@ const NarasimhaPalli = () => {
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
           <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-            <a href="Narashima Pally">Narasimha Palli</a>
+           Narasimha Palli
           </h4>
           <p className="text-mobileTextRegular md:text-textRegular">
             The Abode of the Gods
@@ -112,6 +113,7 @@ const NarasimhaPalli = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 
 const JagaiMadhaiGhat = () => {
       return (
+        <section id='Jagai_Madhai_Ghat'>
             <div id='Jagai-Madhai Ghat'>
             <div
               id="37"
@@ -72,6 +73,7 @@ const JagaiMadhaiGhat = () => {
   
   
           </div>
+          </section>
       );
 };
 

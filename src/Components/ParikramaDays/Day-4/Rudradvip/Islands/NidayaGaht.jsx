@@ -2,6 +2,7 @@ import React from 'react';
 
 const NidayaGaht = () => {
       return (
+        <section id='Nidaya_Ghat'>
             <div id='Nidaya Ghat'>
             <div
               id="40"
@@ -75,6 +76,7 @@ const NidayaGaht = () => {
   
   
           </div>
+          </section>
       );
 };
 

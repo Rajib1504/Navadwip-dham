@@ -2,7 +2,7 @@ import React from "react";
 
 const Naimisharanya = () => {
   return (
-    <div id="Naimisharanya">
+    <section id="Naimisharanya">
       <div
         id="20"
         className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -15,7 +15,7 @@ const Naimisharanya = () => {
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
           <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-            <a href="Naimisharanya">Naimisharanya</a>{" "}
+            Naimisharanya
           </h4>
           <p className="text-mobileTextRegular md:text-textRegular">
             The forest where the glories of Sri Chaitanya are celebrated
@@ -100,7 +100,7 @@ const Naimisharanya = () => {
                 </div>
               </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 

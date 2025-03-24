@@ -2,6 +2,7 @@ import React from "react";
 
 const SamadhiOfChandKaji = () => {
   return (
+    <section id="Samadhi_of_Chand_Kazi">
     <div id="Samadhi of Chand Kazi">
       <div
         id="12"
@@ -15,7 +16,7 @@ const SamadhiOfChandKaji = () => {
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
           <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
-            <a href="amadhi of Chand Kazi">amadhi of Chand Kazi</a>{" "}
+            Samadhi of Chand Kazi
           </h4>
           <p className="text-mobileTextRegular md:text-textRegular">
             The Place of Unity and Transformation
@@ -123,6 +124,7 @@ const SamadhiOfChandKaji = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
