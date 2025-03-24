@@ -2,14 +2,14 @@ import React from 'react';
 
 const DayFour = () => {
       return (
-        <section id='Day_Four' className=" w-full md:py-space300 py-space120  bg-primaryBlack">
+        <section  className=" w-full md:py-space300 py-space120  bg-primaryBlack">
         <div className="w-11/12 flex flex-col   mx-auto">
-          <div className="md:grid md:grid-cols-12">
+          <div id='Day_Four' className="md:grid md:grid-cols-12">
             <div id='Day Four' className=" mb-spacelg  col-start-4 col-span-6 ">
               <p className="text-success font-primaryLight mb-spacelg pb-space60 md:mb-space120 text-center text-textRegular">
                 Parikama
               </p>
-              <h1 className="font-primaryLight text-mobileheading1  md:text-heading1 text-success text-center">
+              <h1  className="font-primaryLight text-mobileheading1  md:text-heading1 text-success text-center">
                 Day Four
               </h1>
             </div>
