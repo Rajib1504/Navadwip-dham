@@ -266,14 +266,14 @@ const Navbar = () => {
       {/* menu  */}
       <div className="fixed   left-[4.1666665%] mix-blend-difference   z-50 ">
         <div className="md:pl-4 md:py-4">
-          <div className="relative  pl-[5rem]  pt-4 md:pt-1 inline-block ">
+          <div className="relative pl-space60  md:pl-[5rem]  pt-4 md:pt-1 inline-block ">
             {/* Dropdown Button */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 setIsOpen(!isOpen);
               }}
-              className="rounded-full w-[2.5rem] h-[2.5rem]  border  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
+              className="rounded-full w-[2.5rem] h-[2.5rem]  border bg-secondaryBlack  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
             >
               {isOpen ? (
                 <RxCross2 type="button" onClick={handleClose} className="text-success text-textSmall" />
