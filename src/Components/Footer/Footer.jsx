@@ -6,7 +6,7 @@ const Footer = () => {
   const [travellist, setTravelList] = useState([]);
   // console.log(travellist);
   useEffect(() => {
-    fetch("/Travel.json")
+    fetch("/Json/Travel.json")
       .then((res) => res.json())
       .then((data) => setTravelList(data))
       // .catch((error) => console.log(error.message));

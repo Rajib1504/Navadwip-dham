@@ -14,7 +14,7 @@ const Books = () => {
         {/* books images  */}
         <article className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacesm">
           <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
-            <img src="/81O1l+TT5tL._SL1500_ 1.svg" alt="" className="pb-space30" />
+            <img src="/Images/Books/The Life of Chaitanya Mahaprabhu.svg" alt="" className="pb-space30" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
               The Life of <br /> Chaitanya Mahaprabhu
             </h6>
@@ -22,7 +22,7 @@ const Books = () => {
 
           <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60">
             <img
-              src="/sri chaitanya.svg"
+              src="/public/Images/Books/sri chaitanya.svg"
               alt=""
               className="pb-space30"
             />
@@ -33,7 +33,7 @@ const Books = () => {
 
           <a href="https://www.amazon.com/Navadvipa-dhama-mahatmya-Bhaktivedanta-Narayana-Gosvami-Maharaja/dp/1935428098" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60 ">
             <img
-              src="/sri navadvipa dhama.svg"
+              src="/Images/Books/sri navadvipa dhama.svg"
               alt=""
               className="pb-space30"
             />

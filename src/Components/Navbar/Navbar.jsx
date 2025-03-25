@@ -13,6 +13,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const placesData = [
     {
@@ -257,10 +258,10 @@ const Navbar = () => {
       });
     }
   return (
-    <>
+    <div className=" className='container mx-auto'">
         <Link to="#topContainer">
       <div className="fixed left-[4.1666665%] mix-blend-difference z-50 ">
-          <img src="/logo.svg" alt="logo" className="w-20" />
+          <img src="/Images/Logo/logo.svg" alt="logo" className="w-20" />
       </div>
         </Link>
       {/* menu  */}
@@ -437,7 +438,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

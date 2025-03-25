@@ -5,7 +5,7 @@ const IslandList = () => {
   const [loading, setLoading] = useState(true);
   // console.log(ilands);
   useEffect(() => {
-    fetch("/Ilandlist.json")
+    fetch("/Json/Ilandlist.json")
       .then((res) => res.json())
       .then((data) => {
         setIlands(data);
