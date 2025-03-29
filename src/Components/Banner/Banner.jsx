@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import NavadwipMeaning from "../NavadwipMeaning/NavadwipMeaning";
 import IlandImages from "../IlandImages/IlandImages";
 
+
 const Banner = () => {
+
+
+
   return (
     <section
       id="topContainer"
-      className=" md:pt-space120 flex flex-col justify-center items-center "
+      className=" md:pt-space120 border-2 border-red-600 flex flex-col justify-center items-center "
     >
       <svg
-        className="mix-blend-difference  sticky z-20  w-[50%] md:w-[30%] top-[50%] fill-success  -translate-y-1/2 block"
+  
+        className="mix-blend-difference  sticky z-20 place-content-center w-[50%] md:w-[30%] top-[50%] fill-success  -translate-y-1/2 block"
         viewBox="0 0 450 528"
         xmlns="http://www.w3.org/2000/svg"
       >
