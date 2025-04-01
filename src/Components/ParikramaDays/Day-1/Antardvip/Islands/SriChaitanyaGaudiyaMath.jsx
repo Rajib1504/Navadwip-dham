@@ -68,7 +68,7 @@ const SriChaitanyaGaudiyaMath = () => {
                 className="md:mb-space60 md:w-[30rem]"
               />
               <div className=" relative group  hidden">
-                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack  transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>

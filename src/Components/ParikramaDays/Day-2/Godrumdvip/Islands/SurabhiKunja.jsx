@@ -64,7 +64,7 @@ const SurabhiKunja = () => {
             <div className=" ">
               <img src="/assets/images/islands/03-godrumdvip/02-surabhi-kunja/2.IMG_1299-min.JPG" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
-                {/* <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                {/* <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -76,7 +76,7 @@ const SurabhiKunja = () => {
             {/* array for gallery  */}
             {/* <div>
               <div className="relative group md:hidden block mt-spacelg">
-                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2    transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>

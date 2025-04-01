@@ -17,7 +17,7 @@ const Antardvip = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 90%",
+          // start: "top 90%",
           toggleActions: "play none none reverse", 
         },
       });
@@ -26,10 +26,10 @@ const Antardvip = () => {
       tl.from(split.lines, {
         opacity: 0,
         y: 30,
-        duration: 0.7,
-        stagger: 0.7,
+        duration: 1,
+        stagger: 0.1,
         ease: "power4.out",
-        delay:2
+        // delay:2
       });
   
     

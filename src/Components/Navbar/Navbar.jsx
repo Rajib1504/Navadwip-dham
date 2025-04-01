@@ -297,7 +297,7 @@ const Navbar = () => {
                 onClick={() => handleNavigate("prev")}
                 className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
               >
-                <HiArrowLongLeft className="text-primaryBlack" />
+                <HiArrowLongLeft className="" />
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}

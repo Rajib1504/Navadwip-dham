@@ -79,7 +79,7 @@ const PrithaKunda = () => {
             <div className=" ">
               <img src="/assets/images/islands/01-antardvip/08-prithu-kunda/prithu-kunda.jpg" alt="" className="md:mb-space60  " />
               {/* <div className="relative group  hidden">
-                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2    text-primaryBlack transition-all">
+                <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">
                   <p className="font-primaryLight md:text-textSmall">
                     Open Full Gallery
                   </p>
@@ -91,7 +91,7 @@ const PrithaKunda = () => {
             {/* array for gallery  */}
             <div>
               {/* <div className="relative group hidden  mt-spacelg">
-                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2   text-primaryBlack transition-all">
+                <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2    transition-all">
                   <p className="font-primaryLight text-mobileTextRegular ">
                     Open Full Gallery
                   </p>

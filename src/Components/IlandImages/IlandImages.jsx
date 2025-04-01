@@ -10,8 +10,8 @@ const IlandImages = () => {
         </div>
         {/* text  */}
 
-        <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight w-48 md:w-72 text-center text-primaryBlack">
-          Islands of Navadvip
+        <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight  text-center text-primaryBlack">
+          Islands of <br />Navadvip
         </h2>
 
         <div className=" hidden lg:flex gap-space15 justify-center items-center   ">

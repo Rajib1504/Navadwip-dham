@@ -108,7 +108,7 @@ const Chapahati = () => {
                   className="md:mb-space60 md:w-[30rem]"
                 />
                 {/* <div className="relative group md:block hidden">
-                  <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack  transition-all">
                     <p className="font-primaryLight md:text-textSmall">
                       Open Full Gallery
                     </p>
@@ -121,7 +121,7 @@ const Chapahati = () => {
               <div className="col-start-10 col-span-3">
                 <img src="/assets/images/islands/05-koladvip/05-champahatti/4.IMG_0308-min.JPG" className="w-[100vw] md:w-auto" alt="" />
                 {/* <div className="relative group md:hidden block mt-spacelg">
-                  <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack text-primaryBlack transition-all">
+                  <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack  transition-all">
                     <p className="font-primaryLight text-mobileTextRegular">
                       Open Full Gallery
                     </p>
