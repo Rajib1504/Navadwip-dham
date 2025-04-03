@@ -14,7 +14,7 @@ const Simantavip = () => {
         <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Simantadvip
         </h2>
-        <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
+        <h4 className=" animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         The island of Simantadvip, now known as Simuliya, was once surrounded by the Ganges. Its name comes from a story of deep devotion.
         </h4>
       </section>
@@ -25,7 +25,7 @@ const Simantavip = () => {
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
             <div className="sticky top-[4.5rem]">
-              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
+              <div className=" animateLines text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
@@ -34,7 +34,7 @@ const Simantavip = () => {
                   <span> [hearing]</span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+              <div className=" animateLines text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Embodies
                 </h4>
@@ -43,7 +43,7 @@ const Simantavip = () => {
                   <span> Talavan</span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+              <div className=" animateLines text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Visit on
                 </h4>
@@ -55,13 +55,13 @@ const Simantavip = () => {
           </div>
           {/* right   */}
           <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
-            <p>
+            <p className="animateLines">
             Long ago, Parvati, the wife of Shiva, came here with a troubled heart. She prayed and meditated, hoping to see the Supreme Lord. At last, her wish was granted—Sri Chaitanya appeared before her, shining like gold. Overcome with joy, she bowed at His feet and placed their dust on the parting of her hair, called simanta. And so, this island became known as Simantadvip.
             </p>
-            <p className="mt-space15 md:mt-space30">
+            <p className=" animateLines mt-space15 md:mt-space30">
             But why was Parvati so eager to see Sri Chaitanya? The answer lies with Shiva. In ancient times, he danced and chanted in great ecstasy. When Parvati asked the reason, he revealed a secret: one day, Sri Chaitanya would come to Navadvip, spreading divine love through the chanting of the Holy Names. Just hearing this, Shiva was overwhelmed with bliss and longed to go there himself.
             </p>
-            <p className="mt-space15 md:mt-space30">
+            <p className=" animateLines mt-space15 md:mt-space30">
             Inspired, Parvati set out for Navadvip, determined to receive Bhagavan’s mercy. Her devotion was rewarded, and when she finally saw Sri Chaitanya, her heart overflowed. She placed the dust of His feet on her simanta, and from that moment, the island bore the name Simantadvip.
             </p>
           </div>

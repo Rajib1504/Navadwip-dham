@@ -25,45 +25,46 @@ useGSAP(() => {
     gsap.from(words.chars, {
       opacity: 0,
       y: 30,
-      duration: 1,
-      stagger: 0.1,
+      duration: 0.6,
+      stagger: 0.02,
       ease: "power4.out",
       scrollTrigger: {
         trigger: letterRef.current,
-        start: "top 80%",
-        end: "top 30%",
+        start: "top 85%",
+        end: "top 40%",
         scrub: true,
         // markers: true,
       },
     });
   }
-}, []);
+}, { scope: containerRef });
 // line animation 
 useGSAP(() => {
   if (containerRef.current) {
     const element =gsap.utils.toArray(".animateLines")
-    element.forEach((el)=>{
+    element.forEach((el,i)=>{
 
       const split = new SplitType(el, { types: "lines" });
       console.log(split.lines)
       gsap.from(split.lines, {
         opacity: 0,
-        y: 60,
-        duration: 2,
-        stagger: 0.3,
+        y: 30,
+        duration: 0.04,
+        stagger: 0.1,
         ease: "power4.out",
         scrollTrigger: {
           trigger: el,
           start: "top 70%",
           end: "top 50%",
           scrub: true,
+          id:`line-${i}`,
           // markers: true,
         },
       });
     })
    
   }
-}, [containerRef]);
+}, { scope: containerRef });
 
   
   
@@ -122,7 +123,7 @@ useGSAP(() => {
             </div>
           </div>
           {/* right   */}
-          <div className="self-center overflow-hidden md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+          <div className="self-center  md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular font-primaryLight">
             <p className="animateLines ">
             Long ago, Parvati, the wife of Shiva, came here with a troubled heart. She prayed and meditated, hoping to see the Supreme Lord. At last, her wish was granted—Sri Chaitanya appeared before her, shining like gold. Overcome with joy, she bowed at His feet and placed their dust on the parting of her hair, called simanta. And so, this island became known as Simantadvip.
             </p>

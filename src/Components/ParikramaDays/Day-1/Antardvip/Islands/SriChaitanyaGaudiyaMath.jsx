@@ -15,23 +15,23 @@ const SriChaitanyaGaudiyaMath = () => {
             </p>
 
             {/* Second Box (Centered by default) */}
-            <div className="col-start-5 col-span-5  w-full ">
-              <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <div className=" col-start-5 col-span-5  w-full ">
+              <h4 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Sri Chaitanya Gaudiya Math
               </h4>
-              <p className="text-mobileTextRegular md:text-textRegular">
+              <p className=" animateLines text-mobileTextRegular md:text-textRegular">
                 The Place of Unity and Service
               </p>
               {/* description  */}
               <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                <p className="mb-space15 md:mb-space30">
+                <p className=" animateLines mb-space15 md:mb-space30">
                   Sri Chaitanya Gaudiya Math was founded by Srila Bhakti Dayita
                   Madhav Goswami Maharaj, a distinguished disciple of the
                   world-renowned spiritual master, Srila Prabhupad Bhakti
                   Siddhanta Saraswati Goswami Thakur—the foremost preacher of
                   Sri Chaitanya’s message.{" "}
                 </p>
-                <p className="mb-space15 md:mb-space30">
+                <p className=" animateLines mb-space15 md:mb-space30">
                   Srila Madhav Maharaj was a saintly personality known for his
                   unwavering devotion to his spiritual master, strict adherence
                   to Vaishnava principles, and tireless dedication to serving
