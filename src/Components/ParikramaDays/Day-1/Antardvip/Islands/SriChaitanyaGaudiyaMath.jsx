@@ -31,13 +31,13 @@ const SriChaitanyaGaudiyaMath = () => {
                   Siddhanta Saraswati Goswami Thakur—the foremost preacher of
                   Sri Chaitanya’s message.{" "}
                 </p>
-                <p className=" animateLines mb-space15 md:mb-space30">
+                <p className=" paragraph mb-space15 md:mb-space30">
                   Srila Madhav Maharaj was a saintly personality known for his
                   unwavering devotion to his spiritual master, strict adherence
                   to Vaishnava principles, and tireless dedication to serving
                   the Vaishnavas.
                 </p>
-                <p className="mb-space15 md:mb-space30">
+                <p className=" paragraph mb-space15 md:mb-space30">
                   Srila Prabhupad recognized his boundless enthusiasm and
                   praised him as “volcanic energy.” After Srila Prabhupad’s
                   departure, Srila Madhav Maharaj played a crucial role in

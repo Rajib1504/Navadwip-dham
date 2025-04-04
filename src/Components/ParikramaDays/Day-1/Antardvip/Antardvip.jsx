@@ -25,6 +25,7 @@ const Antardvip = () => {
         const title = gsap.utils.toArray(".title");
         title.forEach((el) => {
           const words = new SplitType(el, { types: "chars" });
+          console.log(words.chars)
           gsap.from(words.chars, {
             opacity: 0,
             y: 30,
@@ -33,10 +34,10 @@ const Antardvip = () => {
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 75%",
-              end: "top 80%",
+              start: "top 70%",
+              end: "top 50%",
               scrub: true,
-              // markers: true,
+              markers: true,
             },
           });
         });
@@ -51,7 +52,7 @@ const Antardvip = () => {
         const element = gsap.utils.toArray(".animateLines");
         element.forEach((el, i) => {
           const split = new SplitType(el, { types: "lines" });
-          // console.log(split.lines)
+          console.log(split.lines)
           gsap.from(split.lines, {
             opacity: 0,
             y: 30,
@@ -64,7 +65,7 @@ const Antardvip = () => {
               end: "top 50%",
               scrub: true,
               id: `line-${i}`,
-              // markers: true,
+              markers: true,
             },
           });
         });
@@ -75,6 +76,7 @@ const Antardvip = () => {
   useGSAP(()=>{
     if(containerRef.current){
       const paragrpah = gsap.utils.toArray(".paragraph")
+      console.log(paragrpah)
       paragrpah.forEach((el,i)=>{
         gsap.from(el,{
           opacity: 0,
@@ -88,7 +90,7 @@ const Antardvip = () => {
               end: "top 50%",
               scrub: true,
               id: `line-${i}`,
-              // markers: true,
+              markers: true,
             },
         })
       })

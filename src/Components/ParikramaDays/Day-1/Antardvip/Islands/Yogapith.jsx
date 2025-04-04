@@ -15,14 +15,14 @@ const Yogapith = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h4 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Yogpith
           </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          <p className="animateLines text-mobileTextRegular md:text-textRegular">
             The Birthplace of Sri Chaitanya Mahaprabhu
           </p>
           {/* description  */}
-          <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+          <div className="animateLines my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
             <p className="mb-space15 md:mb-space30">
               Upon entering Yogapith, the first sacred site to visit is the
               Pushpa Samadhi of Srila Bhakti Vinod Thakur, located on the right.
@@ -30,28 +30,28 @@ const Yogapith = () => {
               birthplace. Seeking his blessings is the first step in honoring
               this holy place.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The main temple houses a grand altar divided into three sections:
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Center: Sri Gaura Narayana stands with His two consorts,
               Vishnupriya and Lakshmipriya. This altar also features a rare
               four-armed deity of Adhokshaja Vishnu, discovered during the
               temple’s excavation, worshipped alongside His consorts, Bhu Devi
               and Lakshmi Devi.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Left: The deities of Sri Sri Radha Madhava and Sri Chaitanya.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Right: The Pancha-Tattva deities, along with Lord Jagannath.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               A sacred Neem tree marks the very birthplace of Sri Chaitanya.
               Beside it stands a small shrine depicting Jagannath Mishra and
               Sachi Devi lovingly holding baby Nimai in her arms.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Behind this tree is the temple of Gopeshwar Mahadev. As the
               guardian of the Holy Dham, Lord Shiva reveals its spiritual
               essence to sincere devotees. The Shiva-lingam worshipped here was
@@ -59,7 +59,7 @@ const Yogapith = () => {
               Shiva-ghat, and now resides in Yogapith alongside a smaller linga
               of Gopeshwar Mahadev.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The Yogapith complex also features the deities of Lakshmi
               Narasimha and Gaura-Gadadhara, located behind the main temple
               hall. Nearby, the sacred Gaura-kunda further enhances the sanctity
