@@ -15,45 +15,45 @@ const GadadharAngan = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Gadadhar Angan
                 </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                <p className="animateLines text-mobileTextRegular md:text-textRegular">
                   Residence of Gadadhara Pandit{" "}
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="animateLines mb-space15 md:mb-space30">
                     The residence of Gadadhar Pandit is located near Advaita
                     Bhavan. He was born to Madhav Mishra and Ratnavati, who hailed
                     from the Chattamata district in present-day Bangladesh.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     From a young age, Gadadhar Pandit was closely connected with
                     Sri Chaitanya. Even as a child, he was known for his serene
                     nature and humble disposition.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     On one occasion, Sri Chaitanya asked Gadadhar Pandit about the
                     nature of liberation (moksha). Although Gadadhar gave the
                     correct answer, Sri Chaitanya continued to challenge him in
                     debate. Feeling overwhelmed by this, Gadadhar Pandit distanced
                     himself from Chaitanya’s association.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Later, Gadadhar Pandit moved to Puri to stay near Sri
                     Chaitanya. He is revered as the incarnation of Srimati
                     Radharani. With Sri Chaitanya’s blessings, he received
                     initiation from Pundarik Vidyanidhi, a great devotee of Sri
                     Krishna Bhagavan.{" "}
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     In the final years of his life, Gadadhar Pandit took the vow
                     of kshetra sannyasa, a form of renunciation that bound him to
                     remain in Puri. He devoted himself to the worship of his
                     beloved deity, Tota-Gopinath.{" "}
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Sri Chaitanya would frequently visit Gadadhar Pandit to listen
                     to his soulful and melodic recitations of the Srimad
                     Bhagavatam.

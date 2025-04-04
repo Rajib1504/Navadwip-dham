@@ -15,35 +15,35 @@ const AdvaitaBhavan = () => {
 
           {/* Second Box (Centered by default) */}
           <div className="col-start-5 col-span-5  w-full mr-space30 ">
-            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Adviata Bhavan
             </h4>
-            <p className="text-mobileTextRegular md:text-textRegular">
+            <p className="animateLines text-mobileTextRegular md:text-textRegular">
               The Center of Spiritual Discussions
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="mb-space15 md:mb-space30">
+              <p className="animateLines mb-space15 md:mb-space30">
                 After relocating from Shantipur to Navadvip, Advaita Bhavan
                 became the permanent residence of Advaita Acharya.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 As a revered teacher, he instructed many disciples in the sacred
                 scriptures, including the Srimad Bhagavad Gita. Among them was
                 Vishvarup, Sri Chaitanya’s elder brother.{" "}
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 During His childhood, Chaitanya often visited Advaita Acharya’s
                 home to call His brother for dinner at their mother’s request.
                 During these visits, Advaita Acharya first met Chaitanya and was
                 deeply moved by His divine presence and extraordinary qualities.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Advaita Bhavan became a center for spiritual discussions, where
                 Advaita Acharya and his associates deeply studied the nature of
                 the Absolute Truth.{" "}
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Here, with unwavering devotion, Advaita Acharya earnestly prayed
                 for Bhagavan to descend into this world. He worshipped Lord
                 Vishnu in the form of a shaligram, offering flowers and tulasi

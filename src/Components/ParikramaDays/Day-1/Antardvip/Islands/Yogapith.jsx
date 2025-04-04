@@ -22,8 +22,8 @@ const Yogapith = () => {
             The Birthplace of Sri Chaitanya Mahaprabhu
           </p>
           {/* description  */}
-          <div className="animateLines my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+          <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
+            <p className=" animateLines mb-space15 md:mb-space30">
               Upon entering Yogapith, the first sacred site to visit is the
               Pushpa Samadhi of Srila Bhakti Vinod Thakur, located on the right.
               Thanks to his tireless efforts, we now know Sri Chaitanya’s exact

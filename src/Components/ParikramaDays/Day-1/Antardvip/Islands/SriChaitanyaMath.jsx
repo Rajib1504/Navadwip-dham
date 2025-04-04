@@ -15,45 +15,45 @@ const SriChaitanyaMath = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Chandra Shekhara Bhavan (Sri Chaitanya Math)
           </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          <p className="animateLines text-mobileTextRegular md:text-textRegular">
             The headquarters of Sri Chaitanya’s preaching mission{" "}
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="animateLines mb-space15 md:mb-space30">
               During the time of Sri Chaitanya, this was the residence of
               Chandra Shekhar Acharya, Sri Chaitanya’s maternal uncle. Chandra
               Shekhar was a great devotee, and his wife was the sister of Sachi
               Devi, Sri Chaitanya's mother.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Sri Chaitanya would organize theatrical performances here, where
               He would play various divine roles—sometimes as Rukmini, other
               times as Maha Lakshmi, the Universal Mother—bringing delight to
               His close associates.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               This place was also chosen by Srila Prabhupad Bhakti Siddhanta
               Saraswati Goswami Thakur, who took an extraordinary vow to chant
               one billion Holy Names. He lived here in a simple hut for nearly
               nine years, observing strict austerities, eating frugally, and
               sleeping on the floor.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Later, this place became the headquarters of Sri Chaitanya’s
               preaching mission, known as Sri Chaitanya Math or Adi Math.{" "}
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Srila Prabhupad used to call this place Vraj-pattana, the place
               where Vrindavan is manifested. To embody this spirit, he
               established a replica of Govardhan Hill, along with two sacred
               ponds representing Radha-kunda and Shyama-kunda, evoking the mood
               of Vrindavan.{" "}
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The presiding deities here are Sri Sri Guru-Gauranga Gandharvika
               Giridhari, personally installed by Srila Prabhupad. His samadhi is
               also located here, alongside the samadhi of his revered spiritual

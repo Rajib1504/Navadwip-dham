@@ -37,7 +37,7 @@ const Antardvip = () => {
               start: "top 70%",
               end: "top 50%",
               scrub: true,
-              markers: true,
+              // markers: true,
             },
           });
         });
@@ -65,7 +65,7 @@ const Antardvip = () => {
               end: "top 50%",
               scrub: true,
               id: `line-${i}`,
-              markers: true,
+              // markers: true,
             },
           });
         });
@@ -90,7 +90,7 @@ const Antardvip = () => {
               end: "top 50%",
               scrub: true,
               id: `line-${i}`,
-              markers: true,
+              // markers: true,
             },
         })
       })

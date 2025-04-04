@@ -15,26 +15,26 @@ const MurariGuptaAngan = () => {
 
           {/* Second Box (Centered by default) */}
           <div className="col-start-5 col-span-5  w-full mr-space30 ">
-            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg animateLines ">
               Murari Gupta Angan
             </h4>
-            <p className="text-mobileTextRegular md:text-textRegular">
+            <p className=" animateLines text-mobileTextRegular md:text-textRegular">
               Residence of Murari Gupta
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="mb-space15 md:mb-space30">
+              <p className="animateLines mb-space15 md:mb-space30">
                 Murari Gupta’s residence is located on the eastern side of
                 Yogapith, where the deities of Sri Sita, Rama, Lakshmana, and
                 Hanuman are worshipped.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 A great scholar and a devoted follower of Lord Ramachandra,
                 Murari Gupta was also a renowned Ayurvedic physician. While he
                 treated physical ailments, his teachings and exemplary conduct
                 had the unique ability to heal the hearts of those around him.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 In his youth, Murari Gupta studied alongside Sri Chaitanya at
                 the school of Ganga Das Pandit, where he was deeply impressed by
                 Sri Chaitanya’s vast knowledge and sharp intellect. Their
