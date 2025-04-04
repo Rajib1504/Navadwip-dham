@@ -58,7 +58,7 @@ const Koladvip = () => {
             </div>
           </div>
           {/* right   */}
-          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
             <p>
             Here lived a brahman named Vasudev, a devoted servant of Varahadev. He worshiped his deity with deep devotion, offering prayers and service each day. Seeing Vasudev’s sincerity, Bhagavan appeared before him in a magnificent, radiant form as Koladev, shining with divine splendor.
             </p>

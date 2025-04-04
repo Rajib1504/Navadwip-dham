@@ -8,3 +8,10 @@ createRoot(document.getElementById('root')).render(
  <RouterProvider router={Router}/>
   </StrictMode>,
 )
+// Hide the preloader after full window load
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.style.display = "none";
+  }
+});

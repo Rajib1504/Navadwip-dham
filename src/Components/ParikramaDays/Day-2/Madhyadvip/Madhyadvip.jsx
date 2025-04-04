@@ -55,7 +55,7 @@ const Madhyadvip = () => {
             </div>
           </div>
           {/* right   */}
-          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
             <p>
             Brahma advised them to go to Navadvip, explaining that devotion to this holy land leads one to the transcendental realm of Vrindavan. Following his guidance, the sages came to Madhyadvip and engaged in intense worship, fasting completely and chanting the Holy Names.
             </p>

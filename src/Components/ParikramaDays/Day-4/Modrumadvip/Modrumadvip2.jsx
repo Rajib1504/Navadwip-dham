@@ -58,7 +58,7 @@ const Modrumadvip2 = () => {
                 </div>
               </div>
               {/* right   */}
-              <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+              <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
                 <p>
                 The great city of Ayodhya is hiddenly present in Modrumdvip. When Ramachandra was exiled from His kingdom, He, along with Sita Devi and Lakshman, came to this island. They built a simple hut under a majestic banyan tree and resided here for some time.
                 </p>

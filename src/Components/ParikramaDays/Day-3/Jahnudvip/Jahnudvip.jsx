@@ -53,7 +53,7 @@ const Jahnudvip = () => {
             </div>
           </div>
           {/* right   */}
-          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
             <p>
             Ganga, in her ecstasy, unknowingly swept away Jahnu Muni’s ashram utensils, leading the sage to drink the entire river. After King Bhagiratha’s sincere prayers, Jahnu Muni released Ganga, who, in gratitude, divided the land into nine islands, forming Navadvip. 
             </p>

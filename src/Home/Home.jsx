@@ -51,7 +51,7 @@ const Home = () => {
       <Banner />
       {/* ilandlist  */}
       <IslandList />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="min-h-screen"></div>}>
         <DayOne />
         <Antardvip />
         <Simantavip />

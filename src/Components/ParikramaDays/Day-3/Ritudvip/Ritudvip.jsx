@@ -55,7 +55,7 @@ const Ritudvip = () => {
             </div>
           </div>
           {/* right   */}
-          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+          <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
             <p>
             Sri Chaitanya visits this place daily, chanting the Holy Names and distributing His love, making it non-different from Radha-kunda in Vrindavan. It is also home to sixty-four types of knowledge, including Ayurveda, philosophy, and yoga. During the great flood, Bhagavan, in the form of Matsyadev (the fish incarnation), brought all the Vedas here, establishing it as a seat of all knowledge.
             </p>

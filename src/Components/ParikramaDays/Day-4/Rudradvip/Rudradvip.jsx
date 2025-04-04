@@ -57,7 +57,7 @@ const Rudradvip = () => {
                 </div>
               </div>
               {/* right   */}
-              <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+              <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
                 <p>
                 Rudradvip is the abode of the eleven Rudras, who continuously glorify the name of Gaura. Here, the devatas shower flowers upon Nila Lohita Rudra as he dances in ecstasy. 
                 </p>

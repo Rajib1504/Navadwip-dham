@@ -60,7 +60,7 @@ const Godrumdvip = () => {
               </div>
             </div>
             {/* right   */}
-            <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular overflow-y-scroll font-primaryLight">
+            <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
               <p>
                 Once, Indra was troubled by the offense he had committed at
                 Krishna’s feet in Vrindavan. When he heard that Sri Chaitanya
