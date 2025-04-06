@@ -9,9 +9,9 @@ const Jahnudvip = () => {
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           07
         </p>
-        <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        <h1  className=" title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Jahnudvip
-        </h2>
+        </h1>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         This sacred island, north of Vidyanagar, is non-different from Bhadravan forest in Vraja and is named after the great sage Jahnu Muni, who meditated here.
         </h4>

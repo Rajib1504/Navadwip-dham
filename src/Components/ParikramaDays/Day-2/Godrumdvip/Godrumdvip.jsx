@@ -14,9 +14,9 @@ const Godrumdvip = () => {
           <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             03
           </p>
-          <h2 className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+          <h1 className=" title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
        Godrumdvip
-          </h2>
+          </h1>
           <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
             Today, it's called Gadigacha. In this sacred place, the celestial
             cow Surabhi resides beneath a massive banyan tree, making the island

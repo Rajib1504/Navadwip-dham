@@ -13,9 +13,9 @@ const Koladvip = () => {
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           05
         </p>
-        <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        <h1  className="title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Koladvip
-        </h2>
+        </h1>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         This sacred island is where the Lord once appeared in His divine form as a boar—Varahadev, or Koladev. In ancient times, it was known as Kulya Pahara.
         </h4>

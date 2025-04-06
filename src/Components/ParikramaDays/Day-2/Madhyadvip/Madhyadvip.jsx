@@ -12,9 +12,9 @@ const Madhyadvip = () => {
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           04
         </p>
-        <h2  className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        <h1  className="title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Madhyadvip
-        </h2>
+        </h1>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         Madhyadvip, now called Majida. Its history dates back to Satya-yuga when the seven great sages (Sapta Rishis) learned from their father, Brahma, about the future appearance of Sri Chaitanya. Eager to receive His mercy, they asked how to attain it.
         </h4>

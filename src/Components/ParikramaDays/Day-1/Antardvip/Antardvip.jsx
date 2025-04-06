@@ -36,8 +36,8 @@ const Antardvip = () => {
               trigger: el,
               start: "top 70%",
               end: "top 50%",
-              scrub: true,
-              // markers: true,
+              // scrub: true,
+              markers: true,
             },
           });
         });
@@ -63,9 +63,9 @@ const Antardvip = () => {
               trigger: el,
               start: "top 70%",
               end: "top 50%",
-              scrub: true,
+              // scrub: true,
               id: `line-${i}`,
-              // markers: true,
+              markers: true,
             },
           });
         });
@@ -105,12 +105,12 @@ const Antardvip = () => {
           <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             01
           </p>
-          <h2
+          <h1
             // ref={letterRef}
             className=" title font-primaryLight col-span-12 md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120"
           >
             Antardvip
-          </h2>
+          </h1>
           <h4 className="animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2">
             At the meeting point of the Yamuna and Ganga rivers lies Antardvip,
             the sacred island where Sri Chaitanya chose to appear in this world.

@@ -10,9 +10,9 @@ const Ritudvip = () => {
         <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           06
         </p>
-        <h2 id="Ritudvip" className="font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
+        <h1 id="Ritudvip" className=" title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Ritudvip
-        </h2>
+        </h1>
         <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         On this island, also known as Ratupur, the six seasons manifest in their personified forms to meditate on the pastimes of Sri Chaitanya and seek His blessings.
         </h4>
