@@ -18,12 +18,12 @@ const GadadharAngan = () => {
                 <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Gadadhar Angan
                 </h4>
-                <p className="animateLines text-mobileTextRegular md:text-textRegular">
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   Residence of Gadadhara Pandit{" "}
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="animateLines mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     The residence of Gadadhar Pandit is located near Advaita
                     Bhavan. He was born to Madhav Mishra and Ratnavati, who hailed
                     from the Chattamata district in present-day Bangladesh.

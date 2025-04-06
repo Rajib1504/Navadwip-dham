@@ -11,14 +11,13 @@ import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const Simantavip = () => {
   const containerRef = useRef();
-  // const letterRef = useRef();
-  // letter animation
   useGSAP(
     () => {
       if (containerRef.current) {
         const title = gsap.utils.toArray(".title");
         title.forEach((el) => {
           const words = new SplitType(el, { types: "chars" });
+          console.log(words.chars)
           gsap.from(words.chars, {
             opacity: 0,
             y: 30,
@@ -27,9 +26,9 @@ const Simantavip = () => {
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 75%",
-              end: "top 80%",
-              scrub: true,
+              start: "top 70%",
+              end: "top 50%",
+              // scrub: true,
               // markers: true,
             },
           });
@@ -45,7 +44,7 @@ const Simantavip = () => {
         const element = gsap.utils.toArray(".animateLines");
         element.forEach((el, i) => {
           const split = new SplitType(el, { types: "lines" });
-          // console.log(split.lines)
+          console.log(split.lines)
           gsap.from(split.lines, {
             opacity: 0,
             y: 30,
@@ -55,8 +54,8 @@ const Simantavip = () => {
             scrollTrigger: {
               trigger: el,
               start: "top 70%",
-              end: "top 90%",
-              scrub: true,
+              end: "top 50%",
+              // scrub: true,
               id: `line-${i}`,
               // markers: true,
             },
@@ -69,18 +68,19 @@ const Simantavip = () => {
   useGSAP(()=>{
     if(containerRef.current){
       const paragrpah = gsap.utils.toArray(".paragraph")
+      console.log(paragrpah)
       paragrpah.forEach((el,i)=>{
         gsap.from(el,{
           opacity: 0,
             y: 30,
-            duration: 0.04,
-            stagger: 0.1,
+            duration: 0.08,
+            stagger: 0.2,
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
               start: "top 70%",
-              end: "top 80%",
-              scrub: true,
+              end: "top 50%",
+              // scrub: true,
               id: `line-${i}`,
               // markers: true,
             },
@@ -89,6 +89,7 @@ const Simantavip = () => {
     }
 
   },{scope: containerRef})
+
 
   return (
     <div ref={containerRef} className="pt-space120 md:pt-space300 ">
@@ -100,9 +101,9 @@ const Simantavip = () => {
         <h1  className=" title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
         Simantadvip
         </h1>
-        <h4 className=" animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
+        <h2 className=" animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
         The island of Simantadvip, now known as Simuliya, was once surrounded by the Ganges. Its name comes from a story of deep devotion.
-        </h4>
+        </h2>
       </section>
 
       {/* top text with left right sticky  */}
@@ -111,7 +112,7 @@ const Simantavip = () => {
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
             <div className="sticky top-[4.5rem]">
-              <div className=" animateLines text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
+              <div className=" paragraph text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                 <h4 className="animateLines text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
@@ -141,7 +142,7 @@ const Simantavip = () => {
           </div>
           {/* right   */}
           <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
-            <p className="animateLines">
+            <p className="paragraph">
             Long ago, Parvati, the wife of Shiva, came here with a troubled heart. She prayed and meditated, hoping to see the Supreme Lord. At last, her wish was granted—Sri Chaitanya appeared before her, shining like gold. Overcome with joy, she bowed at His feet and placed their dust on the parting of her hair, called simanta. And so, this island became known as Simantadvip.
             </p>
             <p className=" paragraph mt-space15 md:mt-space30">

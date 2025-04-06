@@ -18,12 +18,12 @@ const NandanAcharyaBhavan = () => {
               <h4 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Nandan Acharya Bhavan
               </h4>
-              <p className="animateLines text-mobileTextRegular md:text-textRegular">
+              <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Place Where Sri Caitanya and Nityananda Prabhu First Met
               </p>
               {/* description  */}
               <div className=" paragraph my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                <p className="animateLines mb-space15 md:mb-space30">
+                <p className="paragraph mb-space15 md:mb-space30">
                   Nanda Acharya Bhavan is the home of Nanda Acharya, a close
                   associate of Sri Chaitanya. Sri Chaitanya met Nityananda
                   Prabhu at this very place for the first time.

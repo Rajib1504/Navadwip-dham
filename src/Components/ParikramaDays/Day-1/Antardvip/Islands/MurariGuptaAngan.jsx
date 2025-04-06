@@ -23,7 +23,7 @@ const MurariGuptaAngan = () => {
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="animateLines mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Murari Gupta’s residence is located on the eastern side of
                 Yogapith, where the deities of Sri Sita, Rama, Lakshmana, and
                 Hanuman are worshipped.

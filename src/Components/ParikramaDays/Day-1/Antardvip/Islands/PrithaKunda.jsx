@@ -18,12 +18,12 @@ const PrithaKunda = () => {
               <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Pritha-kunda
               </h4>
-              <p className="animateLines text-mobileTextRegular md:text-textRegular">
+              <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 Lake of the King Prithu
               </p>
               {/* description  */}
               <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                <p className="animateLines mb-space15 md:mb-space30">
+                <p className="paragraph mb-space15 md:mb-space30">
                   Prithu-kunda—a sacred spot on the way to Chaitanya Math—brims
                   with both historical and spiritual significance.
                 </p>

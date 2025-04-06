@@ -18,12 +18,12 @@ const SriChaitanyaMath = () => {
           <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Chandra Shekhara Bhavan (Sri Chaitanya Math)
           </h4>
-          <p className="animateLines text-mobileTextRegular md:text-textRegular">
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The headquarters of Sri Chaitanya’s preaching mission{" "}
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="animateLines mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               During the time of Sri Chaitanya, this was the residence of
               Chandra Shekhar Acharya, Sri Chaitanya’s maternal uncle. Chandra
               Shekhar was a great devotee, and his wife was the sister of Sachi

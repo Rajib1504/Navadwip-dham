@@ -18,12 +18,12 @@ const AdvaitaBhavan = () => {
             <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Adviata Bhavan
             </h4>
-            <p className="animateLines text-mobileTextRegular md:text-textRegular">
+            <p className="paragraph text-mobileTextRegular md:text-textRegular">
               The Center of Spiritual Discussions
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="animateLines mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 After relocating from Shantipur to Navadvip, Advaita Bhavan
                 became the permanent residence of Advaita Acharya.
               </p>

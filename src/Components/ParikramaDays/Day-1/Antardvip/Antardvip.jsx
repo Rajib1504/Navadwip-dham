@@ -17,8 +17,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Antardvip = () => {
   const containerRef = useRef();
-  // const letterRef = useRef();
-  // letter animation
   useGSAP(
     () => {
       if (containerRef.current) {
@@ -37,7 +35,7 @@ const Antardvip = () => {
               start: "top 70%",
               end: "top 50%",
               // scrub: true,
-              markers: true,
+              // markers: true,
             },
           });
         });
@@ -65,7 +63,7 @@ const Antardvip = () => {
               end: "top 50%",
               // scrub: true,
               id: `line-${i}`,
-              markers: true,
+              // markers: true,
             },
           });
         });
@@ -81,14 +79,14 @@ const Antardvip = () => {
         gsap.from(el,{
           opacity: 0,
             y: 30,
-            duration: 0.04,
-            stagger: 0.1,
+            duration: 0.08,
+            stagger: 0.2,
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
               start: "top 70%",
               end: "top 50%",
-              scrub: true,
+              // scrub: true,
               id: `line-${i}`,
               // markers: true,
             },
@@ -111,13 +109,13 @@ const Antardvip = () => {
           >
             Antardvip
           </h1>
-          <h4 className="animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2">
+          <h2 className="animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2">
             At the meeting point of the Yamuna and Ganga rivers lies Antardvip,
             the sacred island where Sri Chaitanya chose to appear in this world.
             At its center is Mayapur, and within it, the holy site of
             Yogapith—His birthplace and the eternal scene of His joyful
             pastimes.
-          </h4>
+          </h2>
         </section>
         {/* top text with left right sticky  */}
         <div className="flex flex-col justify-start mt-space60 mb-space120 md:my-space120 ">
@@ -125,7 +123,7 @@ const Antardvip = () => {
             {/* left */}
             <div className=" relative col-start-1 col-span-2  md:w-auto w-full ">
               <div className="sticky top-[4.5rem]">
-                <div className=" animateLines text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
+                <div className=" paragraph text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Represents
                   </h4>
@@ -155,7 +153,7 @@ const Antardvip = () => {
             </div>
             {/* right   */}
             <div className="self-center  md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular font-primaryLight">
-              <p className="animateLines ">
+              <p className="paragraph ">
                 Long ago, Parvati, the wife of Shiva, came here with a troubled
                 heart. She prayed and meditated, hoping to see the Supreme Lord.
                 At last, her wish was granted—Sri Chaitanya appeared before her,

@@ -1,11 +1,95 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import JayadevasShripat from './Islands/JayadevasShripat';
 import NidayaGaht from './Islands/NidayaGaht';
 import RudraGaudiyaMath from './Islands/RudraGaudiyaMath';
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
 const Rudradvip = () => {
+  const containerRef = useRef();
+  useGSAP(
+    () => {
+      if (containerRef.current) {
+        const title = gsap.utils.toArray(".title");
+        title.forEach((el) => {
+          const words = new SplitType(el, { types: "chars" });
+          console.log(words.chars)
+          gsap.from(words.chars, {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            stagger: 0.02,
+            ease: "power4.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 70%",
+              end: "top 50%",
+              // scrub: true,
+              // markers: true,
+            },
+          });
+        });
+      }
+    },
+    { scope: containerRef }
+  );
+  // line animation
+  useGSAP(
+    () => {
+      if (containerRef.current) {
+        const element = gsap.utils.toArray(".animateLines");
+        element.forEach((el, i) => {
+          const split = new SplitType(el, { types: "lines" });
+          console.log(split.lines)
+          gsap.from(split.lines, {
+            opacity: 0,
+            y: 30,
+            duration: 0.04,
+            stagger: 0.1,
+            ease: "power4.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 70%",
+              end: "top 50%",
+              // scrub: true,
+              id: `line-${i}`,
+              // markers: true,
+            },
+          });
+        });
+      }
+    },
+    { scope: containerRef }
+  );
+  useGSAP(()=>{
+    if(containerRef.current){
+      const paragrpah = gsap.utils.toArray(".paragraph")
+      console.log(paragrpah)
+      paragrpah.forEach((el,i)=>{
+        gsap.from(el,{
+          opacity: 0,
+            y: 30,
+            duration: 0.08,
+            stagger: 0.2,
+            ease: "power4.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 70%",
+              end: "top 50%",
+              // scrub: true,
+              id: `line-${i}`,
+              // markers: true,
+            },
+        })
+      })
+    }
+
+  },{scope: containerRef})
+
       return (
-        <section className="pt-space120 md:pt-space300 ">
+        <section ref={containerRef} className="pt-space120 md:pt-space300 ">
         <article id="Rudradvip" className="w-11/12 mx-auto  ">
           <section className="md:grid grid-cols-12 ">
             <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
@@ -14,9 +98,9 @@ const Rudradvip = () => {
             <h1 className="title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
             Rudradvip
             </h1>
-            <h4 className="font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
+            <h2 className="animateLines font-primaryLight col-start-1 col-span-10 md:text-heading2 text-mobileheading2 ">
             Vrindavan, Rasa Mandala, Dhira Samira,.
-            </h4>
+            </h2>
           </section>
     
           {/* top text with left right sticky  */}
