@@ -1,6 +1,8 @@
 import React from 'react';
+import usetextAnimation from '../../../../../Hooks/UsetextAnimation';
 
 const Sardanga = () => {
+  const containerRef = usetextAnimation()
       return (
             <section id='Sardanga'>
             <div
@@ -115,7 +117,7 @@ const Sardanga = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-3">
+              <div className="hiddencol-start-1 col-span-3">
                 <img
                   src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/1.IMG_1588.JPG"
                   className="md:w-auto w-[100vw]"
@@ -123,7 +125,7 @@ const Sardanga = () => {
                 />
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/2.DSC00933-min.JPG"
                   alt=""
@@ -140,7 +142,7 @@ const Sardanga = () => {
                 </div> */}
               </div>
               {/* 3rd img  */}
-              <div className="col-start-11 col-span-2">
+              <div className="hidden col-start-11 col-span-2">
                 <img
                   src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/3.IMG_1586.JPG"
                   className="w-[100vw] md:w-auto"

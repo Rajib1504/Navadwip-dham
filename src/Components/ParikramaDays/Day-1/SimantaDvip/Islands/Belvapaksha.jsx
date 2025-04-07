@@ -1,6 +1,8 @@
 import React from "react";
+import usetextAnimation from "../../../../../Hooks/UsetextAnimation";
 
 const Belvapaksha = () => {
+  const containerRef = usetextAnimation()
   return (
     <section id="Belvapaksha">
     <div id="Belvapaksha">
@@ -15,19 +17,19 @@ const Belvapaksha = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Belvapaksha
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className=" paragraph text-mobileTextRegular md:text-textRegular">
             The Place of Devotion and Divine Revelation
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Belvapaksha, also known as Belpukuriya, is often compared to
               Belavan forest in Vrindavan.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph paragraph mb-space15 md:mb-space30">
               Long ago, the brahmanas of this area worshipped Lord Shiva with
               great sincerity for two weeks, offering bel leaves and water.
               Pleased with their devotion, Lord Shiva granted them the highest
@@ -35,7 +37,7 @@ const Belvapaksha = () => {
               of pure love for Sri Krishna. From this, the place got its name:
               Belva from the bel leaves and paksha meaning two weeks.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               But the story doesn’t end there. Lord Shiva appeared to one of the
               brahmanas named Nimbaditya and gave him a special instruction.
               Shiva directed him to the outskirts of the village, where a forest
@@ -43,14 +45,14 @@ const Belvapaksha = () => {
               preceptors—the four Kumaras: Sanaka, Sanatana, Sanandana, and
               Sanat.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Following these instructions, Nimbaditya reached the forest and
               saw the four Kumaras deep in meditation. Overcome with devotion,
               he began loudly chanting the Holy Names. The sages, hearing his
               heartfelt prayers, emerged from their meditation, joyfully
               embraced him, and welcomed him as their disciple.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The Kumaras revealed a great truth to Nimbaditya. Just as Lakshmi
               Devi, Lord Brahma, and Lord Rudra had established their own
               spiritual lineages, he had been chosen to carry forward the path
@@ -58,7 +60,7 @@ const Belvapaksha = () => {
               upon his return, initiated him into the sacred Radha-Krishna
               Yugala-mantra.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               In that sacred moment, something extraordinary happened. Pleased
               with his devotion, Sri Sri Radha-Krishna revealed their combined
               form as Sri Chaitanya Mahaprabhu. Chaitanya then disclosed His
@@ -75,7 +77,7 @@ const Belvapaksha = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="">
+        <div className="hidden">
           <img
             src="/assets/images/islands/02-simantadvip/04-belpukur/1.IMG_8732.JPG"
             className="md:w-auto w-[100vw]"
@@ -87,7 +89,7 @@ const Belvapaksha = () => {
               </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" ">
+        <div className="hidden ">
           <img
             src="/assets/images/islands/02-simantadvip/04-belpukur/2.163040243_277267814019790_3537408500026510899_n.jpg"
             alt=""

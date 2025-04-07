@@ -1,6 +1,8 @@
 import React from 'react';
+import usetextAnimation from '../../../../../Hooks/UsetextAnimation';
 
 const SridharAngan = () => {
+  const containerRef = usetextAnimation()
       return (
         <section id='Sridhar_Angan'>
             <div id='Sridhar Angan'>
@@ -15,22 +17,22 @@ const SridharAngan = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   <a href="#Sridhar Angan">Sridhar Angan</a>
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   House of Kalavecha Sridhar
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Just southwest of the Jagannath temple, on the border between
                     Simantadvipa and Antardvipa, lies a special place—Sridhar
                     Angan. It sits by the Jalangi (Saraswati) River and holds
                     memories of one of Sri Chaitanya’s dearest devotees, Kalavecha
                     Sridhar.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Kalavecha Sridhar led a simple life in a dilapidated hut,
                     earning a living by selling banana leaves and vegetables. Half
                     of his meager earnings went directly to worshiping Ganga Devi.
@@ -38,7 +40,7 @@ const SridharAngan = () => {
                     vegetables at half price, teasing and testing the patience of
                     His devotee.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     This place became even more special after Sri Chaitanya
                     defeated Chand Kazi. On His way back, He stopped here to rest,
                     making it a Vishram-sthali, a “resting place,” just like the
@@ -46,7 +48,7 @@ const SridharAngan = () => {
                     water from Sridhar’s cracked iron pot—a moment that shows how
                     much He cherished His devotee’s love over wealth or grandeur.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Like many sacred spots in Navadvip, Sridhar Angan is adorned
                     with beautiful ponds (kundas). It is believed that
                     Vishvakarma, the celestial architect, created these ponds,
@@ -55,7 +57,7 @@ const SridharAngan = () => {
                     Chaitanya and all His associates always had cool, refreshing
                     water.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     This place is also considered non-different from Talavan, one
                     of Vrindavan’s twelve forests. Just as Lord Balaram killed the
                     demon Dhenukasura in Talavan, it is said that here in
@@ -68,7 +70,7 @@ const SridharAngan = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/02-simantadvip/02-sridhar-angan/Sridhar Angan.jpg"
                   className="md:w-auto w-[100vw]"

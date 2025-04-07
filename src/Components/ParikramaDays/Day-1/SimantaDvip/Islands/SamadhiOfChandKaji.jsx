@@ -1,6 +1,8 @@
 import React from "react";
+import usetextAnimation from "../../../../../Hooks/UsetextAnimation";
 
 const SamadhiOfChandKaji = () => {
+  const containerRef = usetextAnimation()
   return (
     <section id="Samadhi_of_Chand_Kazi">
     <div id="Samadhi of Chand Kazi">
@@ -15,20 +17,20 @@ const SamadhiOfChandKaji = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Samadhi of Chand Kazi
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The Place of Unity and Transformation
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Chand Kazi’s samadhi is considered non-different from Mathura
               because Chand Kazi himself is regarded as Kamsa in Krishna’s
               pastimes.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Back in the day, Chand Kazi was the powerful administrator of
               Navadvip, serving under the rule of Hossain Shah. He wasn’t too
               pleased with the loud kirtans happening every night at Srivas
@@ -36,32 +38,32 @@ const SamadhiOfChandKaji = () => {
               devotees’ mridanga, and ordered them to stop chanting. But that
               only set something much bigger in motion.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Word spread fast, and Sri Chaitanya didn’t take it lightly. He
               rallied the entire town for a massive sankirtan procession.
               Thousands of people flooded the streets, singing and dancing with
               unshakable determination. When they reached Kazi's house, he was
               so shaken that he locked himself inside.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               But Sri Chaitanya, always merciful, called out to him, assuring
               that no harm would come. He even addressed him as “uncle,”
               softening the tension. Kazi finally stepped out and revealed why
               he was so afraid.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The night he had broken the mridanga, he had a terrifying dream. A
               fierce, half-lion, half-man being sat on his chest, warning him
               never to stop the chanting of the Holy Name again—or else. When
               Kazi woke up, the creature’s claw marks were still on his body, a
               chilling reminder that this was no ordinary dream.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               That night changed everything. Realizing Sri Chaitanya’s divine
               power, Chand Kazi surrendered, embracing the Gaudiya philosophy
               along with his entire family.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               His samadhi remains a sacred place to this day, and an ancient
               champaka tree grows on top of it. What’s truly mysterious is that
               even though the trunk is completely hollow, the tree blooms all
@@ -73,7 +75,7 @@ const SamadhiOfChandKaji = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="col-start-1 col-span-2">
+        <div className="hidden paragraph col-start-1 col-span-2">
           <img
             src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00931-min.JPG"
             className="md:w-auto w-[100vw]"
@@ -89,7 +91,7 @@ const SamadhiOfChandKaji = () => {
                 </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" col-start-5 col-span-4">
+        <div className="hidden col-start-5 col-span-4">
           <img
             src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/DSC00932-min.JPG"
             alt=""
@@ -106,7 +108,7 @@ const SamadhiOfChandKaji = () => {
                 </div> */}
         </div>
         {/* 3rd img  */}
-        <div className="col-start-10 col-span-3">
+        <div className="hidden col-start-10 col-span-3">
           <img
             src="/assets/images/islands/02-simantadvip/03-chand-kazi-samadhi/IMG20230227100859-min.jpg"
             className="w-[100vw] md:w-auto"

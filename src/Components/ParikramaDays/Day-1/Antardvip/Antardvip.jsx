@@ -48,7 +48,7 @@ const Antardvip = () => {
                     <span> [hearing]</span>
                   </p>
                 </div>
-                <div className=" animateLines text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+                <div className=" paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Embodies
                   </h4>
@@ -57,7 +57,7 @@ const Antardvip = () => {
                     <span> Talavan</span>
                   </p>
                 </div>
-                <div className="animateLines text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+                <div className="paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
                   <h4 className="text-secondaryBlack font-primaryLight">
                     Visit on
                   </h4>
