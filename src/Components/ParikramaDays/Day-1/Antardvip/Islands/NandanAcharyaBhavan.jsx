@@ -15,9 +15,9 @@ const NandanAcharyaBhavan = () => {
 
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full mr-space30 ">
-              <h4 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+              <h2 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Nandan Acharya Bhavan
-              </h4>
+              </h2>
               <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Place Where Sri Caitanya and Nityananda Prabhu First Met
               </p>

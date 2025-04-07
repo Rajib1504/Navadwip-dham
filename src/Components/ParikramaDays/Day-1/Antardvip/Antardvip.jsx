@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-
+import React from "react";
 import SriChaitanyaGaudiyaMath from "./Islands/SriChaitanyaGaudiyaMath";
 import NandanAcharyaBhavan from "./Islands/NandanAcharyaBhavan";
 import Yogapith from "./Islands/Yogapith";
@@ -11,10 +10,8 @@ import PrithaKunda from "./Islands/PrithaKunda";
 import SriChaitanyaMath from "./Islands/SriChaitanyaMath";
 import usetextAnimation from "../../../../Hooks/UsetextAnimation";
 
-
-
 const Antardvip = () => {
-const containerRef = usetextAnimation()
+  const containerRef = usetextAnimation();
   return (
     <div ref={containerRef} className="pt-space120 md:pt-space300">
       <article id="Antardvip" className="w-11/12 mx-auto">

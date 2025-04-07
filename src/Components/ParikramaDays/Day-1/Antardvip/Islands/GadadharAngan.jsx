@@ -15,9 +15,9 @@ const GadadharAngan = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Gadadhar Angan
-                </h4>
+                </h2>
                 <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   Residence of Gadadhara Pandit{" "}
                 </p>

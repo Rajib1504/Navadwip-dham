@@ -15,9 +15,9 @@ const SriChaitanyaMath = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Chandra Shekhara Bhavan (Sri Chaitanya Math)
-          </h4>
+          </h2>
           <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The headquarters of Sri Chaitanya’s preaching mission{" "}
           </p>

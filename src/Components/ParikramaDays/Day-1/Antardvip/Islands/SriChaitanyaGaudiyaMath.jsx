@@ -16,9 +16,9 @@ const SriChaitanyaGaudiyaMath = () => {
 
             {/* Second Box (Centered by default) */}
             <div className=" col-start-5 col-span-5  w-full ">
-              <h4 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+              <h2 className=" animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Sri Chaitanya Gaudiya Math
-              </h4>
+              </h2>
               <p className=" paragraph text-mobileTextRegular md:text-textRegular">
                 The Place of Unity and Service
               </p>
