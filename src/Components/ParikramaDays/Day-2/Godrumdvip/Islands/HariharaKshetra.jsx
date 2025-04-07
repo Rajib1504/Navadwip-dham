@@ -15,16 +15,16 @@ const HariharaKshetra = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Harihara Kshetra
                 
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   The Abode of the Gods
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Harihara Kshetra is home to the presiding Deity Sri Harihara,
                     a unique form where Vishnu and Shiva are manifest in a single
                     deity. To His left stands Lakshmi Devi, and to His right,
@@ -32,33 +32,33 @@ const HariharaKshetra = () => {
                     here. This sacred temple is situated on the eastern bank of
                     the Alakananda River, also known as Maha-Varanasi.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Harihara Kshetra is considered even more auspicious than
                     Kashi, the traditional holy city where Shaivites (followers of
                     Shiva) and Shaktas (followers of Durga) gather in pursuit of
                     liberation.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Unlike the seekers at Kashi, who often engage in impersonal
                     meditation and austerities, the devotees of Harihara Kshetra
                     are immersed in ecstatic kirtan, chanting the Holy Names of
                     Sri Chaitanya.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     It is said that those who leave their bodies here receive a
                     special blessing—at the moment of death, Shiva himself
                     whispers the names of Sri Chaitanya in their ears, ensuring
                     their liberation and passage to the transcendental abode of
                     Bhagavan.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     This sacred land offers fearless refuge to all who take
                     shelter in its spiritual potency. Nityananda Prabhu once
                     visited this place, dancing in divine bliss and glorifying its
                     sanctity. During His visit, Shiva, unseen by most, humbly
                     bowed his head in obeisance to Nityananda Prabhu.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Harihara Kshetra stands as a living testament to Shiva’s
                     devotion to Sri Chaitanya. Revered as the greatest Vaishnava,
                     Shiva eternally resides here with Parvati Devi, chanting the
@@ -71,7 +71,7 @@ const HariharaKshetra = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-2">
+              <div className=" hidden col-start-1 col-span-2">
                 <img
                   src="/assets/images/islands/03-godrumdvip/07-harihara/1.Image 04.03.2025 at 16.34.JPG"
                   className="md:w-auto w-[100vw]"
@@ -87,7 +87,7 @@ const HariharaKshetra = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/03-godrumdvip/07-harihara/2.harihara_kshetra.jpg"
                   alt=""
@@ -96,7 +96,7 @@ const HariharaKshetra = () => {
               
               </div>
               {/* 3rd img  */}
-              <div className="col-start-10 col-span-3">
+              <div className="hidden col-start-10 col-span-3">
                 <img src="/assets/images/islands/03-godrumdvip/07-harihara/4.IMG20240318141117-min.jpg" className="w-[100vw] md:w-auto" alt="" />
                
               </div>

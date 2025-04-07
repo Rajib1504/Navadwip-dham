@@ -15,16 +15,16 @@ const SurabhiKunja = () => {
 
             {/* Second Box (Centered by default) */}
             <div className="col-start-5 col-span-5  w-full mr-space30 ">
-              <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+              <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                Surabhi Kunja
             
-              </h4>
-              <p className="text-mobileTextRegular md:text-textRegular">
+              </h2>
+              <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Place of Indra’s Atonement
               </p>
               {/* description  */}
               <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                <p className="mb-space15 md:mb-space30">
+                <p className="paragraph mb-space15 md:mb-space30">
                   After Indra became angry with the residents of Vrindavan for
                   worshiping Govardhan Hill instead of him, he sent torrential
                   rains to devastate the land. However, realizing his mistake,
@@ -33,12 +33,12 @@ const SurabhiKunja = () => {
                   forgiveness from Sri Krishna. Here, he performed worship as an
                   act of atonement.
                 </p>
-                <p className="mb-space15 md:mb-space30">
+                <p className="paragraph mb-space15 md:mb-space30">
                   This place is also where Markandeya Rishi performed intense
                   bhajan during the great flood and received the mercy of Sri
                   Chaitanya.
                 </p>
-                <p className="mb-space15 md:mb-space30">
+                <p className="paragraph mb-space15 md:mb-space30">
                   Today, Surabhi-kunja remains a revered pilgrimage site. A
                   Gaudiya Math temple now stands here, where the deities of Sri
                   Sri Radha-Krishna are worshiped with devotion.
@@ -49,7 +49,7 @@ const SurabhiKunja = () => {
           {/* images   */}
           <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
-            <div className="">
+            <div className="hidden">
               <img
                 src="/assets/images/islands/03-godrumdvip/02-surabhi-kunja/1.IMG_1286-min.JPG"
                 className="md:w-auto w-[100vw]"
@@ -61,7 +61,7 @@ const SurabhiKunja = () => {
               </p> */}
             </div>
             {/* 2nd img  */}
-            <div className=" ">
+            <div className="hidden ">
               <img src="/assets/images/islands/03-godrumdvip/02-surabhi-kunja/2.IMG_1299-min.JPG" alt="" className="md:mb-space60  " />
               <div className="relative group md:block hidden">
                 {/* <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">

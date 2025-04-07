@@ -15,15 +15,15 @@ const NarasimhaPalli = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
            Narasimha Palli
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The Abode of the Gods
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               This sacred place, also known as Deva Palli—the Abode of the
               Gods—is renowned for its ancient Sri Narasimha Dev Temple, which
               dates back to Satya-yuga. It is the only temple of its kind in
@@ -31,7 +31,7 @@ const NarasimhaPalli = () => {
               relief from life's struggles and offenses. The sweet rice offered
               here is considered especially auspicious.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               According to the scriptures, Sri Narasimha Dev once rested at this
               site on the banks of the Mandakini River after defeating
               Hiranyakashipu. Bhagavan had appeared in His half-man, half-lion
@@ -40,7 +40,7 @@ const NarasimhaPalli = () => {
               oppressive after receiving a boon of near-invincibility from
               Brahma.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               This site was once a celestial abode, where the denizens of
               heaven, led by Brahma and accompanied by Ganesha, Surya, and other
               devas, gathered to serve Bhagavan. Their palaces, crafted by the
@@ -51,7 +51,7 @@ const NarasimhaPalli = () => {
               scattered remnants of stones—faint echoes of the lost celestial
               splendor.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Today, Narasimha Palli marks the outermost boundary of Navadvip
               Dham and remains a cherished destination for devotees seeking the
               blessings and protection of Sri Narasimha Dev.
@@ -62,7 +62,7 @@ const NarasimhaPalli = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="col-start-1 col-span-2">
+        <div className="hidden col-start-1 col-span-2">
           <img
             src="/assets/images/islands/03-godrumdvip/06-nrisimhapali/1.VYM8MS_1640465331030_0.jpg"
             className="md:w-auto w-[100vw]"
@@ -78,7 +78,7 @@ const NarasimhaPalli = () => {
                 </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" col-start-5 col-span-4">
+        <div className="hidden col-start-5 col-span-4">
           <img
             src="/assets/images/islands/03-godrumdvip/06-nrisimhapali/2.DSC01408-min.JPG"
             alt=""
@@ -95,7 +95,7 @@ const NarasimhaPalli = () => {
                 </div> */}
         </div>
         {/* 3rd img  */}
-        <div className="col-start-10 col-span-3">
+        <div className="hidden col-start-10 col-span-3">
           <img
             src="/assets/images/islands/03-godrumdvip/06-nrisimhapali/4.IMG20240318103937-min.jpg"
             className="w-[100vw] md:w-auto"
