@@ -14,15 +14,15 @@ const BrahmanPushkar = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Brahman Pushkar
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The Sacred Pond of Devotion
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               In Satya-yuga, there lived a brahman named Jivan Das who had
               renounced his home to embark on a pilgrimage. During his journey,
               he reached Navadvip, where a sage appeared to him in a dream. The
@@ -32,7 +32,7 @@ const BrahmanPushkar = () => {
               dedicated himself to the path of devotion for the rest of his
               life.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               As he grew older, Jivan Das remembered his deep desire to live in
               Pushkar Tirtha. However, his advanced age made it impossible for
               him to travel there, and this filled him with sadness.sensing his
@@ -41,7 +41,7 @@ const BrahmanPushkar = () => {
               located in front of his house. By doing so, Jivan Das would
               experience the spiritual essence of Pushkar Tirtha.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Following the brahmana’s advice, Jivan Das bathed in the pond and
               was blessed with a divine vision of Pushkar Tirtha. Overcome with
               bliss, he listened as the personified Pushkar explained that all
@@ -51,13 +51,13 @@ const BrahmanPushkar = () => {
               would appear in Kali-yuga, along with His associates, to bestow
               the bliss of divine love upon all.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The brahman explained that even the most fallen sinner could
               attain love of God by worshiping Sri Chaitanya in Navadvip. He
               urged Jivan Das to continue practicing devotional service in this
               sacred land to receive the special mercy of Sri Chaitanya.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Hearing this, Jivan Das resolved to remain in Navadvip. He engaged
               wholeheartedly in service and worship of Sri Chaitanya. Later, a
               divine voice assured him that by chanting the Holy Names, he would
@@ -69,7 +69,7 @@ const BrahmanPushkar = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-center gap-4 items-start ">
         {/* 1st img  */}
-        <div className="col-start-1 col-span-3">
+        <div className=" hidden col-start-1 col-span-3">
           <img
             src="/assets/images/islands/04-madhyadvip/02-brahman-pushkar/Brahman-Pushkar-min-min.jpg"
             className="md:w-auto w-[100vw]"

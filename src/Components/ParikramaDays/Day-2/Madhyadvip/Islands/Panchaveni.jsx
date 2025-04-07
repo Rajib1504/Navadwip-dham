@@ -14,29 +14,29 @@ const Panchaveni = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Panchaveni{" "}
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The Gateway to Liberation
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Panchaveni, meaning “five rivers,” is the confluence of five
               sacred streams: three branches of the Ganga—Bhagirathi, Mandakini,
               and Alakananda—along with the Yamuna and the unmanifested
               Saraswati. This sacred site is also referred to as Maha-Prayag by
               saintly persons and sages.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               In ancient times, Brahma and great saintly personalities performed
               millions of fire sacrifices at this very spot. According to
               Navadvip-Bhava-Taranga, the waters of Panchaveni hold unparalleled
               sanctity, as Sri Chaitanya and His associates bathed here,
               purifying the waters by absorbing the immense sins of the world.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               It is said that anyone who bathes in Panchaveni will be liberated
               from the cycle of birth and death, never again returning to the
               material world. Even great scholars such as Vedavyasa affirm that
@@ -48,7 +48,7 @@ const Panchaveni = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="col-start-1 col-span-2">
+        <div className="hidden col-start-1 col-span-2">
           <img
             src="/assets/images/islands/04-madhyadvip/04-panchaveni/Pancaveni.jpg"
             className="md:w-auto w-[100vw]"
@@ -64,7 +64,7 @@ const Panchaveni = () => {
                 </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" col-start-5 col-span-4">
+        <div className="hidden col-start-5 col-span-4">
           <img
             src="/assets/images/islands/04-madhyadvip/04-panchaveni/panchaveni.jpg"
             alt=""
@@ -81,7 +81,7 @@ const Panchaveni = () => {
                 </div> */}
         </div>
         {/* 3rd img  */}
-        <div className="col-start-10 col-span-3">
+        <div className="hidden col-start-10 col-span-3">
           <img
             src="/assets/images/islands/00-general/DSC00867.JPG"
             className="w-[100vw] md:w-auto"

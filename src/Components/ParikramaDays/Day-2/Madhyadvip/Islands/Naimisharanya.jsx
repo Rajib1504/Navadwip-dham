@@ -14,22 +14,22 @@ const Naimisharanya = () => {
 
         {/* Second Box (Centered by default) */}
         <div className="col-start-5 col-span-5  w-full mr-space30 ">
-          <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+          <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Naimisharanya
-          </h4>
-          <p className="text-mobileTextRegular md:text-textRegular">
+          </h2>
+          <p className="paragraph text-mobileTextRegular md:text-textRegular">
             The forest where the glories of Sri Chaitanya are celebrated
           </p>
           {/* description  */}
           <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               To the south of the village of Marjida, the Gomati River flows
               gracefully, its banks home to the sacred site of Naimisharanya.
               This revered place is renowned for the unique deity of
               Hamsa-vahana—Lord Shiva seated upon a swan, the celestial carrier
               of Brahma.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               The history of this site dates back to ancient times. During the
               age of Kali, as its influence grew, many great sages, led by
               Shaunaka Rishi, gathered at Naimisharanya to hear the
@@ -40,13 +40,13 @@ const Naimisharanya = () => {
               arrived at Naimisharanya and participated in the transcendental
               discourse glorifying the pastimes of Sri Chaitanya.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               Upon hearing the Gaura-Bhagavata, Shiva was overcome with ecstasy,
               and along with his associates, he began to chant the Holy Name of
               Sri Chaitanya. In a state of rapture, they showered flowers upon
               him, celebrating his devotion.
             </p>
-            <p className="mb-space15 md:mb-space30">
+            <p className="paragraph mb-space15 md:mb-space30">
               A unique tradition of this temple is its annual festival, during
               which the Shiva-linga deity is bathed continuously for three days
               to prevent overheating. This phenomenon is attributed to Shiva’s
@@ -59,7 +59,7 @@ const Naimisharanya = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="">
+        <div className="hidden">
           <img
             src="/assets/images/islands/04-madhyadvip/01-naimisharanya/82760332_30564837bf_c.jpg"
             className="md:w-auto w-[100vw]"
@@ -71,7 +71,7 @@ const Naimisharanya = () => {
                 </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" ">
+        <div className=" hidden">
           <img
             src="/assets/images/islands/04-madhyadvip/01-naimisharanya/82760433_f683237268_c.jpg"
             alt=""

@@ -29,7 +29,7 @@ const Madhyadvip = () => {
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
             <div className="sticky top-[4.5rem]">
-              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
+              <div className=" paragraph text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
@@ -38,16 +38,16 @@ const Madhyadvip = () => {
                   <span> [remembering]</span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+              <div className="paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Embodies
                 </h4>
-                <p className="font-primaryLight text-mobiletextSmall md:text-textRegular   md:block flex flex-col md:flex-row text-right md:text-left">
+                <p className="paragraph font-primaryLight text-mobiletextSmall md:text-textRegular   md:block flex flex-col md:flex-row text-right md:text-left">
                   <span>Puskar Tirtha,   </span>
                   <span>Kurukshetra  </span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+              <div className="paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Visit on
                 </h4>
@@ -59,16 +59,16 @@ const Madhyadvip = () => {
           </div>
           {/* right   */}
           <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
-            <p>
+            <p className="paragraph ">
             Brahma advised them to go to Navadvip, explaining that devotion to this holy land leads one to the transcendental realm of Vrindavan. Following his guidance, the sages came to Madhyadvip and engaged in intense worship, fasting completely and chanting the Holy Names.
             </p>
-            <p className="mt-space15 md:mt-space30">
+            <p className="paragraph mt-space15 md:mt-space30">
             One day at noon, Sri Chaitanya appeared before them with His eternal associates. Overwhelmed by His divine beauty, the sages bowed in awe. Because Bhagavan granted them His darshan at midday, the island became known as Madhyadvip—madhya meaning “middle.”
             </p>
-            <p className="mt-space15 md:mt-space30">
+            <p className="paragraph mt-space15 md:mt-space30">
             Sri Chaitanya instructed them to give up fruitive work and speculative knowledge, which blocked the path of pure devotion. He blessed them with the practice of unalloyed devotional service and revealed mysteries of His upcoming appearance, allowing them to witness His future pastimes.
             </p>
-            <p className="mt-space15 md:mt-space30">
+            <p className="paragraph mt-space15 md:mt-space30">
             With renewed devotion, the sages left for Kumarahatt to continue their worship. Even today, the seven hills where they meditated remain a sacred landmark, and the constellation of the Seven Sages shines in the night sky. It is said that one who stays in Madhyadvip, even without strict rules, can receive Sri Chaitanya’s mercy.
             </p>
           </div>
