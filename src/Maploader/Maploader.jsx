@@ -1,56 +1,61 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
-const MapPreloader = ({ onComplete }) => {
-  const svgRef = useRef(null);
 
-  useEffect(() => {
-    // Enable body scroll when component unmounts
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Disable scroll during animation
-      document.body.style.overflow = 'hidden';
-
-      const tl = gsap.timeline({
-        onComplete: () => {
-          // Re-enable scroll when animation completes
-          document.body.style.overflow = 'auto';
-          
-          onComplete();
-          
-          // Optional fade out
-          gsap.to("#map-preloader", {
-            opacity: 0,
-            duration: 0.5,
+  const MapPreloader = ({ onComplete }) => {
+    const svgRef = useRef(null);
+    const revealRef = useRef(null);
+  
+    useGSAP(() => {
+      const ctx = gsap.context(() => {
+        // Initial setup
+        gsap.set(revealRef.current, { y: '100%' });
+    
+        // 1. SVG Drawing Animation
+        const drawAnimation = gsap.fromTo(
+          ".map-path",
+          { strokeDashoffset: 1 },
+          {
+            strokeDashoffset: 0,
+            duration: 4.5,
+            ease: "power3.inOut",
             onComplete: () => {
-              const preloader = document.getElementById('map-preloader');
-              if (preloader) preloader.style.display = 'none';
+              // 2. Reveal animation - Merge from all directions
+              gsap.set(revealRef.current, {
+                x: gsap.utils.random(-window.innerWidth, window.innerWidth),
+                y: gsap.utils.random(-window.innerHeight, window.innerHeight),
+                scale: 3,
+                opacity: 0,
+              });
+    
+              gsap.to(revealRef.current, {
+                x: 0,
+                y: 0,
+                scale: 1,
+                opacity: 1,
+                duration: 1.2,
+                ease: "power4.out",
+                onComplete: () => {
+                  onComplete();
+                }
+              });
             }
-          });
-        }
-      });
-
-      tl.fromTo(
-        ".map-path",
-        { strokeDashoffset: 1 },
-        { 
-          strokeDashoffset: 0,
-          duration: 5,
-          ease: "power3.inOut"
-        }
-      );
-    }, svgRef);
-
-    return () => ctx.revert(); // Cleanup GSAP context
-  }, []);
-
+          }
+        );
+    
+        drawAnimation.eventCallback("onUpdate", () => {
+          const progress = Math.floor(drawAnimation.progress() * 100);
+        });
+    
+      }, svgRef);
+    
+      return () => ctx.revert();
+    }, []);
+    
   return (
-    <div id="map-preloader" className="fixed inset-0 z-[9999] bg-[#1C1B1B] flex justify-center items-center">
+    <div id="map-preloader" className="fixed inset-0 z-[9999] bg-[#1C1B1B] overflow-hidden">
+      {/* Map Drawing Container */}
       <div class="container">
     <div class="loader">
 <svg ref={svgRef} aria-hidden="true" class="map" viewBox="0 0 460 530">
@@ -58,7 +63,12 @@ const MapPreloader = ({ onComplete }) => {
 	</svg>
     </div>
   </div>
- 
+
+      {/* Reveal Div (will slide up) */}
+      <div 
+        ref={revealRef}
+        className="absolute inset-0 bg-white z-[9998] transform translate-y-full w-screen h-screen flex items-center justify-center"
+      />
     </div>
   );
 };

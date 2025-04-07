@@ -78,6 +78,9 @@ a:focus, a:active {
   }
 }
 
-
+.reveal-div {
+  will-change: transform;
+  backface-visibility: hidden;
+}
 
 
