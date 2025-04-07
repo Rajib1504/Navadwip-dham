@@ -15,22 +15,22 @@ const GangaSagar = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Ganga Sagar
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   Where the Ganga Meets the Ocean
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Ganga Sagar is the sacred confluence where the Ganga River
                     meets the ocean. According to ancient accounts, a dialogue
                     once took place between the personified Ganga and the ocean.
                     The ocean praised Ganga for her unparalleled fortune, as Sri
                     Chaitanya Bhagavan himself had bathed in her waters.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     In response, Ganga expressed her sorrow, lamenting that Sri
                     Chaitanya would soon leave her and journey to Nilachal
                     (Jagannath Puri), situated on the ocean’s shore. Hearing this,
@@ -40,7 +40,7 @@ const GangaSagar = () => {
                     deep longing to remain near Ganga and continuously serve
                     Navadvip.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     To this day, it is said that the ocean remains at this sacred
                     confluence, absorbed in meditation on Sri Chaitanya's divine
                     pastimes.
@@ -51,7 +51,7 @@ const GangaSagar = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/05-koladvip/04-ganga-sagar/ganga-sagar.jpg"
                   className="md:w-auto w-[100vw]"
@@ -63,7 +63,7 @@ const GangaSagar = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" ">
+              <div className="hidden ">
                 <img src="/assets/images/islands/00-general/DSC01792.JPG" alt="" className="md:mb-space60  " />
                 {/* <div className="relative group md:block hidden">
                   <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">

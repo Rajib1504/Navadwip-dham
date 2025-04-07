@@ -15,33 +15,33 @@ const DevanandaGaudiyaMath = () => {
 
           {/* Second Box (Centered by default) */}
           <div className="col-start-5 col-span-5  w-full mr-space30 ">
-            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Devananda Gaudiya Math
-            </h4>
-            <p className="text-mobileTextRegular md:text-textRegular">
+            </h2>
+            <p className="paragraph text-mobileTextRegular md:text-textRegular">
               To the north and west of Koladvip lies a region comparable to
               Bahulavan, the pastime place of the divine couple in Vrindavan.
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 In this sacred area, Srila Bhakti Prajnana Keshav Goswami
                 Maharaj established the Devananda Gaudiya Math to fulfill the
                 cherished desire of his spiritual master, Srila Prabhupad Bhakti
                 Siddhanta Saraswati Thakur.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 The temple’s main altar is divided into three sections. The
                 first section houses the murti of Srila Prabhupad, the second
                 enshrines the deities of Sri Sri Radha-Vinod, and the third
                 contains the deity of Lord Varahadeva.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Srila Prabhupad had expressed a desire for the installation of
                 Kola Deva at this location, and this was realized through the
                 dedicated efforts of Srila Keshav Maharaj.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 The temple’s nine towers symbolize the nine types of devotional
                 service. Additionally, its samadhi mandir is situated near the
                 main hall, directly in front of the temple.
@@ -52,7 +52,7 @@ const DevanandaGaudiyaMath = () => {
         {/* images   */}
         <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
-          <div className="col-start-1 col-span-3">
+          <div className="hidden col-start-1 col-span-3">
             <img
               src="/assets/images/islands/05-koladvip/02-devananda-gaudiya-math/2.IMG_8364.JPG"
               className="md:w-auto w-[100vw]"
@@ -60,7 +60,7 @@ const DevanandaGaudiyaMath = () => {
             />
           </div>
           {/* 2nd img  */}
-          <div className=" col-start-5 col-span-4">
+          <div className="hidden col-start-5 col-span-4">
             <img
               src="/assets/images/islands/05-koladvip/02-devananda-gaudiya-math/3.IMG_8430.JPG"
               alt=""
@@ -77,7 +77,7 @@ const DevanandaGaudiyaMath = () => {
                 </div> */}
           </div>
           {/* 3rd img  */}
-          <div className="col-start-11 col-span-2">
+          <div className="hidden col-start-11 col-span-2">
             <img
               src="/assets/images/islands/05-koladvip/02-devananda-gaudiya-math/5.IMG20230301060723-min.jpg"
               className="w-[100vw] md:w-auto"

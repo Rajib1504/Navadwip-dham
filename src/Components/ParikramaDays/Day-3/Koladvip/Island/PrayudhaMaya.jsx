@@ -15,21 +15,21 @@ const PrayudhaMaya = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Prayudha Maya
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   The Guardian of Navadvip
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Prayudha Maya and Vriddha Shiva eternally reside in Antardvip
                     as the guardians of Navadvip. However, due to the shifting
                     course of the Ganges, this sacred site is now worshiped in
                     Koladvip.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Prayudha Maya is distinct from ordinary Maya as she serves
                     Bhagavan and His eternal energies by facilitating His divine
                     pastimes. In this form, her role is to bewilder those who are
@@ -43,7 +43,7 @@ const PrayudhaMaya = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-3">
+              <div className="hidden col-start-1 col-span-3">
                 <img
                   src="/assets/images/islands/05-koladvip/01-prauda-maya/1.Prauda Maya.jpg"
                   className="md:w-auto w-[100vw]"
@@ -51,7 +51,7 @@ const PrayudhaMaya = () => {
                 />
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/05-koladvip/01-prauda-maya/2.IMG_1405-min.JPG"
                   alt=""
@@ -68,7 +68,7 @@ const PrayudhaMaya = () => {
                 </div> */}
               </div>
               {/* 3rd img  */}
-              <div className="col-start-11 col-span-2">
+              <div className="hidden col-start-11 col-span-2">
                 <img
                   src="/assets/images/islands/05-koladvip/01-prauda-maya/4.IMG_8422.JPG"
                   className="w-[100vw] md:w-auto"

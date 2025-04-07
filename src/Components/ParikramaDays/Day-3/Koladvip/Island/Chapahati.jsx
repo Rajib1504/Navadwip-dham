@@ -14,21 +14,21 @@ const Chapahati = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Champahatti
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                   The Garden of Champaka Blossoms
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Champahatti, located in the northern part of Koladvip within
                     the village of Champahatta in Navadvip, represents Khadiravan
                     Forest in Vrindavan, where Krishna and Balarama would rest
                     together.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     In a conversation between Shrinivas Acharya and Ishan Thakur,
                     Ishan recounted the story of a great devotee of Sri Krishna—an
                     elderly brahman who lived in Satya-yuga. This brahman
@@ -38,7 +38,7 @@ const Chapahati = () => {
                     filled with devotion, he was also sorrowful, knowing he would
                     not personally witness this golden form.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Moved by the brahman’s pure devotion, Sri Krishna Bhagavan
                     appeared before him in His effulgent golden form as Sri
                     Chaitanya, radiating the beauty of champaka flowers. Bhagavan
@@ -49,14 +49,14 @@ const Chapahati = () => {
                     these divine pastimes.
                   </p>
   
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     Overwhelmed with ecstasy, the brahman glorified the champaka
                     flowers for their great fortune. From that moment, the place
                     became known as Champakhatta. In his next life, this brahman
                     was known as Dvija Vaninath, the younger brother of Gadadhar
                     Pandit.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     At this sacred location, Sri Chaitanya, surrounded by His
                     associates, once performed congregational chanting of the Holy
                     Name during a festival at His home. Today, a temple stands
@@ -65,14 +65,14 @@ const Chapahati = () => {
                     Devotees from the Gaudiya Math, established by Srila
                     Prabhupad, continue to serve these deities today.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     According to Nityananda Prabhu’s explanations to Sri Jiva
                     Goswami, this area was once home to a beautiful garden of
                     champaka flowers, part of Khadiravan Forest. The gopi
                     Champakalata would gather flowers from here to make garlands,
                     which she offered to Sri Sri Radha-Krishna.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                     In the age of Kali, this garden became a place where local
                     gardeners collected champaka flowers and sold them, leading to
                     the establishment of a bustling market, or “hatta.” As a
@@ -85,7 +85,7 @@ const Chapahati = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-2">
+              <div className="hidden col-start-1 col-span-2">
                 <img
                   src="/assets/images/islands/05-koladvip/05-champahatti/1.IMG_8367.JPG"
                   className="md:w-auto w-[100vw]"
@@ -101,7 +101,7 @@ const Chapahati = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/05-koladvip/05-champahatti/2.DSC01623-min.JPG"
                   alt=""
@@ -118,7 +118,7 @@ const Chapahati = () => {
                 </div> */}
               </div>
               {/* 3rd img  */}
-              <div className="col-start-10 col-span-3">
+              <div className="hidden col-start-10 col-span-3">
                 <img src="/assets/images/islands/05-koladvip/05-champahatti/4.IMG_0308-min.JPG" className="w-[100vw] md:w-auto" alt="" />
                 {/* <div className="relative group md:hidden block mt-spacelg">
                   <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack  transition-all">

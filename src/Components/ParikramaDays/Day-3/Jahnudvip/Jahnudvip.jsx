@@ -25,7 +25,7 @@ const Jahnudvip = () => {
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
             <div className="sticky top-[4.5rem]">
-              <div className="text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
+              <div className="paragraph text-mobiletextSmall md:text-textRegular md:block flex md:border-b-0 border-b border-accentBlack  py-spacelg md:py-0 justify-between ">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Represents
                 </h4>
@@ -34,7 +34,7 @@ const Jahnudvip = () => {
                   <span>[praying]</span>
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
+              <div className="paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 border-b  py-spacelg md:pb-0 border-accentBlack flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Embodies
                 </h4>
@@ -44,11 +44,11 @@ const Jahnudvip = () => {
                   
                 </p>
               </div>
-              <div className="text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
+              <div className="paragraph text-mobiletextSmall md:text-textRegular  md:block md:border-b-0 md:mb-0  border-b  border-accentBlack py-spacelg md:pb-0 flex justify-between items-center">
                 <h4 className="text-secondaryBlack font-primaryLight">
                   Visit on
                 </h4>
-                <p className="font-primaryLight text-mobiletextSmall md:text-textRegular md:block flex flex-col md:flex-row text-right md:text-left ">
+                <p className="paragraph font-primaryLight text-mobiletextSmall md:text-textRegular md:block flex flex-col md:flex-row text-right md:text-left ">
                   <span> Day Three</span> <span> of Parikrama</span>
                 </p>
               </div>
@@ -56,7 +56,7 @@ const Jahnudvip = () => {
           </div>
           {/* right   */}
           <div className=" self-center md:mt-0  mt-space60  col-start-5 col-span-5 text-mobileTextRegular md:text-textRegular  font-primaryLight">
-            <p>
+            <p className="paragraph ">
             Ganga, in her ecstasy, unknowingly swept away Jahnu Muni’s ashram utensils, leading the sage to drink the entire river. After King Bhagiratha’s sincere prayers, Jahnu Muni released Ganga, who, in gratitude, divided the land into nine islands, forming Navadvip. 
             </p>
           
