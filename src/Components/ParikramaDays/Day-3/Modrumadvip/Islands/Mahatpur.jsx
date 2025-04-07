@@ -14,25 +14,25 @@ const Mahatpur = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Mahatpur
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Land of Saints and Divine Revelations
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Mahatpur, also known as Matapur, is compared to the Kamyavan forest in Vrindavan. This sacred place takes its name from the many saints (mahatmas) who have lived here, sanctifying the land with their presence.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   One day, the five Pandavas—Yudhishthira, Bhima, Arjuna, Nakula, and Sahadev—along with Draupadi, visited this village near Ekachakra. According to Ishan Thakur’s account to Shrinivas Acharya, their visit was to slay a demon and free the local villagers from his tyranny.
                   </p>
                   <p className="mb-space15 md:mb-space30">
              .
                   </p>
                 
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   During their stay, Yudhishthira Maharaj had a divine dream in which Balaram revealed the glories of Navadvip. In this vision, Balaram explained that in the age of Kali, Sri Krishna would appear in Navadvip as Sri Chaitanya to perform His transcendental pastimes. He also revealed that he himself would take birth in the village of Ekachakra to participate in these divine pastimes.
                   </p>
                  
@@ -42,7 +42,7 @@ const Mahatpur = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/08-modrumdvip/Mahatpur.jpg"
                   className="md:w-auto w-[100vw]"
@@ -54,7 +54,7 @@ const Mahatpur = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" ">
+              <div className="hidden ">
                 <img
                   src="/assets/images/islands/00-general/P3194410.JPG"
                   alt=""

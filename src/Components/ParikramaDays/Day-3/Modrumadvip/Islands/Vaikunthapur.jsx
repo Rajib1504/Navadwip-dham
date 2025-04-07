@@ -14,25 +14,25 @@ const Vaikunthapur = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Vaikunthapur
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Highest Transcendental Reality
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Vaikunthapur is a sacred village on the northern outskirts of Navadvip, representing the highest transcendental reality—the spiritual kingdom of Narayana, which lies beyond the Viraja River.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Here, Bhagavan is eternally present, worshiped in all His splendor and surrounded by His three divine energies: Bhu, Lila, and Sri. The effulgence of Brahman, which emanates from Bhagavan, is merely a reflection of these transcendental realities.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   It is said that after visiting Vaikuntha, Narada Muni realized that Bhagavan was also present in the holy land of Navadvip. Drawn by this revelation, he came to this sacred place, where Narayana appeared before him and granted him divine darshan. As Narada worshiped Him, Bhagavan mercifully revealed His form as Sri Chaitanya, demonstrating His connection to the pastimes of Navadvip.
 
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Narada remained in Vaikunthapur for some time, deeply engaged in the worship. His devotion sanctified the area, and since then, this place has been known as Vaikunthapur.
                   </p>
                 </div>
@@ -41,7 +41,7 @@ const Vaikunthapur = () => {
             {/* images   */}
            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-3">
+              <div className="hidden col-start-1 col-span-3">
                 <img
                   src="/assets/images/islands/08-modrumdvip/Vaikunthapur.jpg"
                   className="md:w-auto w-[100vw]"
@@ -50,7 +50,7 @@ const Vaikunthapur = () => {
                
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/00-general/IMAG0704.jpg"
                   alt=""
@@ -67,7 +67,7 @@ const Vaikunthapur = () => {
                 </div> */}
               </div>
               {/* 3rd img  */}
-              <div className="col-start-11 col-span-2">
+              <div className="hidden col-start-11 col-span-2">
                 <img
                   src="/assets/images/islands/00-general/IMG_8525.JPG"
                   className="w-[100vw] md:w-auto"

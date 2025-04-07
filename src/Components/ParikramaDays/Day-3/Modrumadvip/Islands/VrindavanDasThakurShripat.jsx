@@ -15,18 +15,18 @@ const VrindavanDasThakurShripat = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Vrindavan Das Thakur’s Shripat
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Residence of Vrindavan Das Thakur
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Modrumadvip is the sacred residence of Vrindavan Das Thakur, the incarnation of Vedavyasa. A disciple of Nityananda Prabhu, he composed Sri Chaitanya-Bhagavata, which narrates the divine pastimes of Sri Chaitanya and Nityananda.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Vrindavan Das worshiped the deities of Nitai-Gauranga and Sri Jagannatha, which are still revered today in the Mamagachi Gaudiya Math, established by Srila Prabhupad Bhaktisiddhanta Saraswati Goswami Thakur. Near his home, Malini Devi, the wife of Shrinivas Pandit, was also born.
                   </p>
                  
@@ -36,7 +36,7 @@ const VrindavanDasThakurShripat = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/1.DSC01811-min.JPG"
                   className="md:w-auto w-[100vw]"
@@ -48,7 +48,7 @@ const VrindavanDasThakurShripat = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" ">
+              <div className="hidden ">
                 <img
                   src="/assets/images/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/2.NV5.jpg"
                   alt=""
