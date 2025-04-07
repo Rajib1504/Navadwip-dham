@@ -15,20 +15,20 @@ const BharadvajaTila = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Bharadvaja Tila
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Sacred Hill of Bharadvaja Muni                </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Saint Bharadvaja once sat atop a hill in deep meditation at this sacred site, now known as Bharua Danga. As Ishan Thakur explained to Srinivas Thakur, this village is near Chakadha, by the Ganges in Navadvip.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   After traveling to numerous holy places, Bharadvaja Muni arrived in Navadvip. Enchanted by the unparalleled beauty of this sacred land, he immersed himself in worshiping Sri Chaitanya. Pleased by the sage’s devotion, Sri Chaitanya mercifully appeared before him.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   Overwhelmed with joy, Bharadvaja Muni offered obeisances and recited heartfelt devotional prayers. His prayers pleased Bhagavan, who granted him a boon. With great humility, Bharadvaja expressed his desire to witness Bhagavan’s pastimes. Bhagavan mercifully agreed, blessing him and revealing that Bharadvaja would be surrounded by many of His eternal associates during His earthly pastimes.
                   </p>
                   
@@ -38,7 +38,7 @@ const BharadvajaTila = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/00-general/IMG_8589.JPG"
                   className="md:w-auto w-[100vw]"
@@ -50,7 +50,7 @@ const BharadvajaTila = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" ">
+              <div className="hidden ">
                 <img
                   src="/assets/images/islands/00-general/IMG_8589.JPG"
                   alt=""

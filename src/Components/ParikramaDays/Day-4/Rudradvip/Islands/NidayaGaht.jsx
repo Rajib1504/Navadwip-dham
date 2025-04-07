@@ -15,18 +15,18 @@ const NidayaGaht = () => {
   
               {/* Second Box (Centered by default) */}
               <div className="col-start-5 col-span-5  w-full mr-space30 ">
-                <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+                <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Nidaya Ghat
-                </h4>
-                <p className="text-mobileTextRegular md:text-textRegular">
+                </h2>
+                <p className="paragraph text-mobileTextRegular md:text-textRegular">
                 The Ghat of Separation
                 </p>
                 {/* description  */}
                 <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   From this ghat, Sri Chaitanya crossed the Ganges to journey to Katwa, where He accepted the vow of renunciation and became Sri Krishna Chaitanya. Before departing, He took the dust from the feet of His mother, Sachi Devi, and reverently circumambulated her three times.
                   </p>
-                  <p className="mb-space15 md:mb-space30">
+                  <p className="paragraph mb-space15 md:mb-space30">
                   The name “Nidaya” means “cruel,” signifying the perceived cruelty of His decision to leave His loving family and relatives to take sannyasa.
                   </p>
                   
@@ -36,7 +36,7 @@ const NidayaGaht = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="">
+              <div className="hidden">
                 <img
                   src="/assets/images/islands/09-rudradvip/02-nidaya-ghat/Nidaya Ghat.jpg"
                   className="md:w-auto w-[100vw]"
@@ -48,7 +48,7 @@ const NidayaGaht = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" ">
+              <div className="hidden ">
                 <img
                   src="/assets/images/islands/09-rudradvip/02-nidaya-ghat/2021-10-22.jpg"
                   alt=""

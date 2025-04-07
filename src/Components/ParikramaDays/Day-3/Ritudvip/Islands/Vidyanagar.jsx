@@ -15,15 +15,15 @@ const Vidyanagar = () => {
 
           {/* Second Box (Centered by default) */}
           <div className="col-start-5 col-span-5  w-full mr-space30 ">
-            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Vidya Nagar
-            </h4>
-            <p className="text-mobileTextRegular md:text-textRegular">
+            </h2>
+            <p className="paragraph text-mobileTextRegular md:text-textRegular">
               The Abode of All Wisdom{" "}
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Vidyanagar is located on the island of Ritudvip and derives its
                 name from the presence of all forms of knowledge (vidya) that
                 take shelter here, rooted in the Vedas. This sacred place has
@@ -31,7 +31,7 @@ const Vidyanagar = () => {
                 When Bhagavan appeared as Matsya (the fish incarnation), He
                 brought all the Vedas to this very spot.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 At the time of creation, Maya, the illusory energy that binds
                 all living beings in the material world, also manifests.
                 However, the compassionate sages who take shelter in Vidyanagar,
@@ -39,51 +39,51 @@ const Vidyanagar = () => {
                 the path to liberation by dispelling the darkness of ignorance
                 through various forms of knowledge.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Vidyanagar is home to sixty-four types of knowledge, all of
                 which can be learned here. Among them are the sciences of
                 medicine (Ayurveda), military arts (Dhanurveda), philosophy,
                 mantras, yoga, and devotional service. Many exalted
                 personalities gained wisdom here:
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Muni Valmiki was inspired here to compose the Ramayana, a
                 transcendental epic.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Dhanvantari imparted the science of Ayurveda.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Vishwamitra and others mastered the science of military
                 strategy, Dhanurveda.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Shaunaka and other sages recited Vedic mantras.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Shiva discussed Tantra here.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Brahma, at the request of the sages, compiled the four Vedas.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Kanada proposed the Vaisheshika philosophy, which focused on
                 atomic theory.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Patanjali formulated the Yoga Sutras.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Jaimini compiled the Mimamsa philosophy, emphasizing karma.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Vedavyasa composed the Puranas.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Narada and four other sages composed the Pancaratra, a scripture
                 on devotional service.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 Even the personalized Shrutis (embodied Upanishads) worshipped
                 Sri Chaitanya in this forest. Bhagavan chastised Shruti for
                 their contamination by impersonal knowledge, and they only
@@ -97,7 +97,7 @@ const Vidyanagar = () => {
         {/* images   */}
         <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
-          <div className="">
+          <div className="hidden">
             <img
               src="/assets/images/islands/00-general/DSC01792.JPG"
               className="md:w-auto w-[100vw]"
@@ -109,7 +109,7 @@ const Vidyanagar = () => {
                 </p> */}
           </div>
           {/* 2nd img  */}
-          <div className=" ">
+          <div className="hidden ">
             <img
               src="/assets/images/islands/00-general/DSC01793.JPG"
               alt=""

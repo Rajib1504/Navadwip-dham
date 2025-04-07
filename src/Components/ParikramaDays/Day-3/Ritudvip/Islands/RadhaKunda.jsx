@@ -15,34 +15,34 @@ const RadhaKunda = () => {
 
           {/* Second Box (Centered by default) */}
           <div className="col-start-5 col-span-5  w-full mr-space30 ">
-            <h4 className="text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
+            <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Radha Kunda
-            </h4>
-            <p className="text-mobileTextRegular md:text-textRegular">
+            </h2>
+            <p className="paragraph text-mobileTextRegular md:text-textRegular">
               The Pond of Molten Love
             </p>
             {/* description  */}
             <div className="my-space60 text-mobileTextRegular md:text-textRegular md:my-space120 ">
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 When Nityananda Prabhu arrived at this place with Jiva Goswami
                 and other devotees, he became immersed in the mood of Balaram.
                 Like a cowherd boy, he suddenly called for a horn to gather the
                 cows, overcome with longing for Sri Krishna and His companions.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 When the devotees reminded him that Sri Chaitanya had taken
                 sannyasa and departed for Nilachal, Nityananda collapsed in
                 sorrow, rolling in the dust with tears streaming down his face.
                 For over an hour, he remained in deep ecstasy, appearing as if
                 he had lost all desire to live.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 To revive Him, the devotees began chanting the glories of Sri
                 Chaitanya. As soon as he heard His beloved Lord’s name,
                 Nityananda regained awareness. Filled with emotion, he then
                 revealed the sacred nature of this place.
               </p>
-              <p className="mb-space15 md:mb-space30">
+              <p className="paragraph mb-space15 md:mb-space30">
                 He explained that Sri Chaitanya comes here every day after
                 lunch, chanting the Holy Names and freely distributing His
                 boundless love to all, for this place is non-different from
@@ -54,7 +54,7 @@ const RadhaKunda = () => {
         {/* images   */}
         <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
-          <div className="col-start-1 col-span-3">
+          <div className=" hidden col-start-1 col-span-3">
             <img
               src="/assets/images/islands/06-ritudvip/Ritudvip radha kund.JPG"
               className="md:w-auto w-[100vw]"
