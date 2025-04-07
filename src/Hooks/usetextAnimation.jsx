@@ -13,7 +13,7 @@ const usetextAnimation = () => {
         const title = gsap.utils.toArray(".title");
         title.forEach((el) => {
           const words = new SplitType(el, { types: "chars" });
-          console.log(words.chars);
+          // console.log(words.chars);
           gsap.from(words.chars, {
             opacity: 0,
             y: 30,
@@ -40,7 +40,7 @@ const usetextAnimation = () => {
         const element = gsap.utils.toArray(".animateLines");
         element.forEach((el, i) => {
           const split = new SplitType(el, { types: "lines" });
-          console.log(split.lines);
+          // console.log(split.lines);
           gsap.from(split.lines, {
             opacity: 0,
             y: 30,
@@ -65,7 +65,7 @@ const usetextAnimation = () => {
     () => {
       if (containerRef.current) {
         const paragrpah = gsap.utils.toArray(".paragraph");
-        console.log(paragrpah);
+        // console.log(paragrpah);
         paragrpah.forEach((el, i) => {
           gsap.from(el, {
             opacity: 0,
