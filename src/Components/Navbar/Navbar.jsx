@@ -258,7 +258,7 @@ const Navbar = () => {
       });
     }
   return (
-    <div className=" className='container mx-auto'">
+    <div className=' mx-auto'>
         <Link to="#topContainer">
       <div className="fixed left-[4.1666665%] mix-blend-difference z-50 ">
           <img src="/Images/Logo/logo.svg" alt="logo" className="w-20" />
@@ -292,7 +292,7 @@ const Navbar = () => {
           <div className=" flex mix-blend-difference ">
             {/* center content   */}
             {/* main container  */}
-            <div className="fixed  bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+            <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
                 className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
@@ -301,7 +301,7 @@ const Navbar = () => {
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-[100%] max-w-space300 bg-success rounded-full"
+                className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300 bg-success rounded-full"
               >
                 {/* dynamic number  */}
                 <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">

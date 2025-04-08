@@ -18,8 +18,8 @@ import { useGSAP } from '@gsap/react';
           { strokeDashoffset: 1 },
           {
             strokeDashoffset: 0,
-            duration: 4.5,
-            ease: "power3.inOut",
+            duration: 6,
+            // ease: "power2.in",
             onComplete: () => {
               // 2. Reveal animation - Merge from all directions
               gsap.set(revealRef.current, {
@@ -32,9 +32,9 @@ import { useGSAP } from '@gsap/react';
               gsap.to(revealRef.current, {
                 x: 0,
                 y: 0,
-                scale: 1,
+                // scale: 1,
                 opacity: 1,
-                duration: 1.2,
+                duration: 0.2,
                 ease: "power4.out",
                 onComplete: () => {
                   onComplete();

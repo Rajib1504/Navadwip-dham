@@ -10,7 +10,7 @@ const Banner = () => {
     >
       <div className="mix-blend-difference pointer-events-none z-20 w-full min-h-screen absolute flex justify-center items-center">
       <svg
-        className="     w-[50%] md:w-[30%]  fill-success"
+        className=" w-[50%] md:w-[30%]  fill-success"
         viewBox="0 0 450 528"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -35,6 +35,9 @@ a:focus, a:active {
   border: none;
   box-shadow: none;
 }
+html, body {
+  overflow-x: hidden;
+}
 #map-preloader {
   position: fixed;
   top: 0;
