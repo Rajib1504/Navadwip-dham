@@ -64,7 +64,7 @@ const PrithaKunda = () => {
           {/* images   */}
           <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
-            <div className="">
+            <div className="hidden">
               <img
                 src="/assets/images/islands/01-antardvip/08-prithu-kunda/IMG_8695.JPG"
                 className="md:w-auto w-[100vw]"
@@ -76,7 +76,7 @@ const PrithaKunda = () => {
               </p> */}
             </div>
             {/* 2nd img  */}
-            <div className=" ">
+            <div className="hidden ">
               <img src="/assets/images/islands/01-antardvip/08-prithu-kunda/prithu-kunda.jpg" alt="" className="md:mb-space60  " />
               {/* <div className="relative group  hidden">
                 <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">

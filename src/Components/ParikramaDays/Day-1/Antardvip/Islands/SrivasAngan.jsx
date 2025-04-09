@@ -57,7 +57,7 @@ const SrivasAngan = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="col-start-1 col-span-2">
+              <div className="hidden col-start-1 col-span-2">
                 <img
                   src="/assets/images/islands/01-antardvip/04-srivas-angan/1.srivas angan.jpg"
                   className="md:w-auto w-[100vw]"
@@ -73,7 +73,7 @@ const SrivasAngan = () => {
                 </p> */}
               </div>
               {/* 2nd img  */}
-              <div className=" col-start-5 col-span-4">
+              <div className="hidden col-start-5 col-span-4">
                 <img
                   src="/assets/images/islands/01-antardvip/04-srivas-angan/2.IMG_8680.JPG"
                   alt=""
@@ -90,7 +90,7 @@ const SrivasAngan = () => {
                 </div> */}
               </div>
               {/* 3rd img  */}
-              <div className="col-start-10 col-span-3">
+              <div className="hidden col-start-10 col-span-3">
                 <img src="/assets/images/islands/01-antardvip/04-srivas-angan/3.IMG_8711.JPG" className="w-[100vw] md:w-auto" alt="" />
                 {/* <div className="relative group md:hidden block mt-spacelg">
                   <div className="flex border-b justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2  border-accentBlack  transition-all">

@@ -59,7 +59,7 @@ const Footer = () => {
                             </Link>
                             <div className="  grid-flow-col col-span-4 md:grid grid-cols-4  ">
                             {/* mobile  */}
-                            <div  className="  col-span-4 text-success md:hidden block mb-space30 ">
+                            <div  className="  col-span-4 text-success md:hidden flex flex-wrap gap-3 mb-space30 ">
                               {locations.map((location, i) => (
                                 <Link to={`${location}`}
                                 smooth={true}
@@ -76,7 +76,7 @@ const Footer = () => {
                                 .map((location, i) => (
                                   <Link  to={`${location}`}
                                   smooth={true}
-                                  duration={800} key={i} className=" cursor-pointer text-gray-100 mr-spacemd">
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100  mr-spacemd">
                                     {location}
                                   </Link>
                                 ))}
@@ -89,7 +89,7 @@ const Footer = () => {
                                 .map((location, i) => (
                                   <Link  to={`${location}`}
                                   smooth={true}
-                                  duration={800} key={i} className=" cursor-pointer text-gray-100 mr-spacemd">
+                                  duration={800} key={i} className=" cursor-pointer text-gray-100  mr-spacemd">
 
                                     {location}
                                   </Link>

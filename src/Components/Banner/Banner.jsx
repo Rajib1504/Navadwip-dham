@@ -50,7 +50,7 @@ const Banner = () => {
 
     floatingDiv.style.transform = `translateY(${currentY}px)`;
 
-    if (Math.abs(targetY - currentY) > 1) { // Adjust threshold for animation end
+    if (Math.abs(targetY - currentY) > 5) { // Adjust threshold for animation end
       requestAnimationFrame(animate);
     } else {
       ticking = false;

@@ -56,7 +56,7 @@ const AdvaitaBhavan = () => {
         {/* images   */}
         <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
-          <div className="">
+          <div className="hidden">
             <img
               src="/assets/images/islands/01-antardvip/05-advaita-bhavan/1.IMG_8675.JPG"
               className="md:w-auto w-[100vw]"
@@ -68,7 +68,7 @@ const AdvaitaBhavan = () => {
                 </p> */}
           </div>
           {/* 2nd img  */}
-          <div className=" ">
+          <div className=" hidden">
             <img
               src="/assets/images/islands/01-antardvip/05-advaita-bhavan/2.advaita bhavan.jpg"
               alt=""

@@ -48,7 +48,7 @@ const MurariGuptaAngan = () => {
         {/* images   */}
         <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
           {/* 1st img  */}
-          <div className="col-start-1 col-span-2">
+          <div className="hidden col-start-1 col-span-2">
             <img
               src="/assets/images/islands/01-antardvip/07-murari-gupta-angan/1.photo_4_2025-01-20_20-10-29.jpg"
               className="md:w-auto w-[100vw]"
@@ -64,7 +64,7 @@ const MurariGuptaAngan = () => {
                 </p> */}
           </div>
           {/* 2nd img  */}
-          <div className=" col-start-5 col-span-4">
+          <div className="hidden col-start-5 col-span-4">
             <img
               src="/assets/images/islands/01-antardvip/07-murari-gupta-angan/2.IMG_8363.JPG"
               alt=""
@@ -81,7 +81,7 @@ const MurariGuptaAngan = () => {
                 </div> */}
           </div>
           {/* 3rd img  */}
-          <div className="col-start-10 col-span-3">
+          <div className="hidden col-start-10 col-span-3">
             <img
               src="/assets/images/islands/01-antardvip/07-murari-gupta-angan/3.murari-gupta-house.JPG"
               className="w-[100vw] md:w-auto"

@@ -117,7 +117,7 @@ const Sardanga = () => {
             {/* images   */}
             <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
-              <div className="hiddencol-start-1 col-span-3">
+              <div className="hidden col-start-1 col-span-3">
                 <img
                   src="/assets/images/islands/02-simantadvip/01-satdanga-jagannath/1.IMG_1588.JPG"
                   className="md:w-auto w-[100vw]"

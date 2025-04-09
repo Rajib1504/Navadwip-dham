@@ -292,7 +292,7 @@ const Navbar = () => {
           <div className=" flex mix-blend-difference ">
             {/* center content   */}
             {/* main container  */}
-            <div className="fixed box-border bottom-space15 container cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+            <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
                 className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"

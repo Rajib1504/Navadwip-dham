@@ -71,7 +71,7 @@ const Yogapith = () => {
       {/* images   */}
       <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
         {/* 1st img  */}
-        <div className="col-start-1 col-span-2">
+        <div className="hidden col-start-1 col-span-2">
           <img
             src="/assets/images/islands/01-antardvip/03-yogapith/12.DSC01094.JPG"
             className="md:w-auto w-[100vw]"
@@ -87,7 +87,7 @@ const Yogapith = () => {
               </p> */}
         </div>
         {/* 2nd img  */}
-        <div className=" col-start-5 col-span-4">
+        <div className="hidden col-start-5 col-span-4">
           <img
             src="/assets/images/islands/01-antardvip/03-yogapith/10.IMG_1546 (1).JPG"
             alt=""
@@ -104,7 +104,7 @@ const Yogapith = () => {
               </div> */}
         </div>
         {/* 3rd img  */}
-        <div className="col-start-10 col-span-3">
+        <div className="hidden col-start-10 col-span-3">
           <img
             src="/assets/images/islands/01-antardvip/03-yogapith/1.6053707A-EF1C-4F53-AB11-A0146A77C947-min.JPG"
             className="w-[100vw] md:w-auto"

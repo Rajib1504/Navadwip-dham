@@ -50,7 +50,7 @@ const SriChaitanyaGaudiyaMath = () => {
           {/* images   */}
           <div className=" bg-none md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
-            <div className="col-start-1 col-span-3">
+            <div className="hidden col-start-1 col-span-3">
               <img
                 src="/assets/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1.SCGM.jpg"
                 className="md:w-auto w-[100vw]"
@@ -60,7 +60,7 @@ const SriChaitanyaGaudiyaMath = () => {
             {/* 2nd img  */}
             <div
               // onClick={() => document.getElementById("my_modal_3").showModal()}
-              className=" col-start-5 col-span-4"
+              className="hidden col-start-5 col-span-4"
             >
               <img
                 src="/assets/images/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2.dayita madhava maharaj.JPG"

@@ -7,7 +7,7 @@ const IlandImages = ({islandTextRef}) => {
           <img src="/Images/Iland images/Yogapith,_Mayapur 2.webp" alt="img" />
           <img src="/Images/Iland images/IMG_8557.webp" alt="img" />
           <img
-            src="/public/Images/Iland images/NMP1-111 1 (4).webp"
+            src="/Images/Iland images/NMP1-111 1 (4).webp"
             alt="img"
           />
         </div>

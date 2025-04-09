@@ -17,7 +17,7 @@ const IslandList = () => {
       });
   }, []);
   return (
-    <div className="w-11/12 mx-auto border-t border-accentBlack md:mb-space240">
+    <div className="w-11/12 mx-auto border-t border-accentBlack md:mt-space120 md:mb-space240">
     {loading ? (
       <p className="text-center hidden text-lg text-success">Loading...</p>
     ) : (

@@ -125,7 +125,7 @@ const NandanAcharyaBhavan = () => {
           {/* images   */}
           <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
             {/* 1st img  */}
-            <div className="">
+            <div className="hidden">
               <img
                 src="/assets/images/islands/01-antardvip/02-nanda-acharya-bhavan/1.nanda acharya bhavan.JPG"
                 className="md:w-auto w-[100vw]"
@@ -137,7 +137,7 @@ const NandanAcharyaBhavan = () => {
               </p> */}
             </div>
             {/* 2nd img  */}
-            <div className=" ">
+            <div className="hidden ">
               <img src="/assets/images/islands/01-antardvip/02-nanda-acharya-bhavan/2.nanda acharya deities.JPG" alt="" className="md:mb-space60  " />
               {/* <div className="relative group  hidden">
                 <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">

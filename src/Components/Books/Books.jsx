@@ -22,7 +22,7 @@ const Books = () => {
 
           <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60">
             <img
-              src="/public/Images/Books/sri chaitanya.svg"
+              src="/Images/Books/sri chaitanya.svg"
               alt=""
               className="pb-space30"
             />
