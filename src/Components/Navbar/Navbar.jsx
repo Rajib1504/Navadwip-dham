@@ -13,6 +13,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import ParikramaList from './../ParikramaList/ParikramaList';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -124,6 +125,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
   const [active, setActive] = useState({});
+  const [isParikarmaOpen, setIsParikarmaOpen] = useState(false);
   // console.log(active);
   const allPlaces = useMemo(
     () => placesData.flatMap((day) => day.places),
@@ -246,26 +248,26 @@ const Navbar = () => {
       gsap.fromTo(
         ".menu",
         { y: "100%", opacity: 0 },
-        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" },
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" }
       );
     }
   }, [isOpen]);
-  
-  const handleClose=()=>{
-      gsap.to(".close", {
-        y: "100%",
-        opacity: 0,
-        duration: 0.5,
-        ease: "power1.in",
-      });
-    }
+
+  const handleClose = () => {
+    gsap.to(".close", {
+      y: "100%",
+      opacity: 0,
+      duration: 0.5,
+      ease: "power1.in",
+    });
+  };
   return (
-    <nav className=' mx-auto'>
-        <Link to="#topContainer">
-      <div className="fixed left-[4.1666665%] mix-blend-difference z-40 ">
+    <nav className=" mx-auto">
+      <Link to="#topContainer">
+        <div className="fixed left-[4.1666665%] mix-blend-difference z-40 ">
           <img src="/Images/Logo/logo.svg" alt="logo" className="w-20" />
-      </div>
-        </Link>
+        </div>
+      </Link>
       {/* menu  */}
       <div className="fixed   left-[4.1666665%] mix-blend-difference   z-40 ">
         <div className="md:pl-4 md:py-4">
@@ -279,9 +281,13 @@ const Navbar = () => {
               className="rounded-full w-[2.5rem] h-[2.5rem]  border bg-secondaryBlack  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
             >
               {isOpen ? (
-                <RxCross2 type="button" onClick={handleClose} className="text-success text-textSmall" />
+                <RxCross2
+                  type="button"
+                  onClick={handleClose}
+                  className="text-success text-textSmall"
+                />
               ) : (
-                <HiOutlineMenuAlt4  className=" text-success text-textSmall " />
+                <HiOutlineMenuAlt4 className=" text-success text-textSmall " />
               )}
             </button>
           </div>
@@ -404,8 +410,11 @@ const Navbar = () => {
                 Intro
               </a>
               <a
-                href="#DayOne"
-                onClick={() => setIsOpen(!isOpen)}
+                type="button"
+                onClick={() => {
+                  setIsOpen(false); // close main menu
+                  setIsParikarmaOpen(true); // open travel list
+                }}
                 className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg"
               >
                 Parikarma
@@ -439,6 +448,9 @@ const Navbar = () => {
             </footer>
           </div>
         </div>
+      )}
+      {isParikarmaOpen && (
+        <ParikramaList onClose={() => setIsParikarmaOpen(false)}/>
       )}
     </nav>
   );
