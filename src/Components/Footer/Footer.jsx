@@ -12,7 +12,7 @@ const Footer = () => {
       // .catch((error) => console.log(error.message));
   }, []);
   return (
-    <div className="bg-primaryBlack">
+    <div className="bg-primaryBlack ">
       <div className="mx-auto w-11/12">
         <div className=" flex md:justify-end justify-start  pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
@@ -121,32 +121,6 @@ const Footer = () => {
       </div>
     </div>
   );
-
-  {
-    /* mobile  */
-  }
-  //    <div className="text-success  md:hidden block mb-space30 col-span-1">
-  //    {locations.map((location, i) => (
-  //      <div key={i} className="text-mobiletextSmall tracking-wide text-success">
-  //        {location}
-  //      </div>
-  //    ))}
-  //  </div>
-
-  // <div className="text-gray-100 hidden md:block mb-space30 col-span-2">
-  //   {locations.slice(halfLength, adjustedLength).map((location, i) => (
-  //     <div key={i} className="text-gray-100">
-  //       {location}
-  //     </div>
-  //   ))}
-  // </div>;
-  // <div className="text-gray-100 md:block hidden mb-space30 col-span-1">
-  //   {locations.slice(0, halfLength).map((location, i) => (
-  //     <div key={i} className="text-gray-100">
-  //       {location}
-  //     </div>
-  //   ))}
-  // </div>;
 };
 
 export default Footer;

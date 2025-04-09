@@ -12,7 +12,9 @@ import { RxCross2 } from "react-icons/rx";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const placesData = [
@@ -258,14 +260,14 @@ const Navbar = () => {
       });
     }
   return (
-    <div className=' mx-auto'>
+    <nav className=' mx-auto'>
         <Link to="#topContainer">
-      <div className="fixed left-[4.1666665%] mix-blend-difference z-50 ">
+      <div className="fixed left-[4.1666665%] mix-blend-difference z-40 ">
           <img src="/Images/Logo/logo.svg" alt="logo" className="w-20" />
       </div>
         </Link>
       {/* menu  */}
-      <div className="fixed   left-[4.1666665%] mix-blend-difference   z-50 ">
+      <div className="fixed   left-[4.1666665%] mix-blend-difference   z-40 ">
         <div className="md:pl-4 md:py-4">
           <div className="relative pl-space60  md:pl-[5rem]  pt-4 md:pt-1 inline-block ">
             {/* Dropdown Button */}
@@ -438,7 +440,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 
