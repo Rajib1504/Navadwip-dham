@@ -18,7 +18,7 @@ import { useGSAP } from '@gsap/react';
           { strokeDashoffset: 1 },
           {
             strokeDashoffset: 0,
-            duration: 6,
+            duration: 5,
             // ease: "power2.in",
             onComplete: () => {
               // 2. Reveal animation - Merge from all directions
