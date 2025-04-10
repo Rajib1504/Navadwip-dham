@@ -113,7 +113,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <footer className="mt-space240 md:mt-space120 flex items-center md:text-textSmall text-textSmall text-primaryWhite font-primaryLight justify-between">
+        <footer className="mt-space240 mb-space15 md:mb-space30 md:mt-space120 flex items-center md:text-textSmall text-textSmall text-primaryWhite font-primaryLight justify-between">
           <p>@2025</p>
           <a href="https://www.instagram.com/bsvtrust" target="_blank"  className="hidden md:block">Instagram</a>
           <p >Designed by <a href="https://www.instagram.com/chaitanya_agency" target="_blank"></a>Chaitanya</p>

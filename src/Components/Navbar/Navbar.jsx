@@ -13,7 +13,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ParikramaList from './../ParikramaList/ParikramaList';
+import ParikramaList from "./../ParikramaList/ParikramaList";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -263,31 +263,35 @@ const Navbar = () => {
   };
   return (
     <nav className=" mx-auto">
-      <Link to="#topContainer">
-        <div className="fixed left-[4.1666665%] mix-blend-difference z-40 ">
-          <img src="/Images/Logo/logo.svg" alt="logo" className="w-20" />
-        </div>
-      </Link>
+     
+          <Link to="#topContainer" className="fixed left-[4.1666665%] mix-blend-difference z-[60] ">
+            <img
+              src="/Images/Logo/logo.svg"
+              alt="logo"
+              className="  w-14 md:w-20 pt-4 md:pt-2"
+            />
+          </Link>
+        
       {/* menu  */}
-      <div className="fixed   left-[4.1666665%] mix-blend-difference   z-40 ">
+      <div className="fixed   left-[4.1666665%]  z-50 ">
         <div className="md:pl-4 md:py-4">
-          <div className="relative pl-space60  md:pl-[5rem]  pt-4 md:pt-1 inline-block ">
+          <div className="relative  pl-[4rem]  md:pl-[5rem]   pt-6 md:pt-1 inline-block ">
             {/* Dropdown Button */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 setIsOpen(!isOpen);
               }}
-              className="rounded-full w-[2.5rem] h-[2.5rem]  border bg-secondaryBlack  border-secondaryWhite backdrop-blur-2xl flex items-center justify-center"
+              className="rounded-full w-[2.5rem] h-[2.5rem]  border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center"
             >
               {isOpen ? (
                 <RxCross2
                   type="button"
                   onClick={handleClose}
-                  className="text-success text-textSmall"
+                  className=" text-primaryBlack text-textSmall font-light"
                 />
               ) : (
-                <HiOutlineMenuAlt4 className=" text-success text-textSmall " />
+                <HiOutlineMenuAlt4 className="text-primaryBlack font-light text-textSmall " />
               )}
             </button>
           </div>
@@ -300,7 +304,7 @@ const Navbar = () => {
           <div className=" flex mix-blend-difference ">
             {/* center content   */}
             {/* main container  */}
-            <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.125rem] md:h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+            <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
                 className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
@@ -309,7 +313,7 @@ const Navbar = () => {
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex  dropdownMenu border gap-spacelg relative border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300 bg-success rounded-full"
+                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300 bg-success rounded-full"
               >
                 {/* dynamic number  */}
                 <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
@@ -339,7 +343,7 @@ const Navbar = () => {
                   <ul
                     ref={dropDownRef}
                     className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px]   lg:h-[482px]  ml-0 z md:-top-1 border border-accentBlack bottom-10 left-auto rounded-[1.25rem] p-4"
+                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0 z md:-top-1 -bottom-1 border border-accentBlack md:bottom-10 left-auto rounded-[1.25rem] p-4"
                     style={{
                       scrollbarWidth: "none",
                       msOverflowStyle: "none",
@@ -352,8 +356,8 @@ const Navbar = () => {
                       {placesData.map((day, idx) => (
                         <div key={idx}>
                           <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
-                            <h3 className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</h3>
-                            <h5 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h5>
+                            <Link to={`#${day.title}`}  className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</Link>
+                            <h4 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h4>
                           </div>
                           <div className="py-spacelg">
                             {day.places.map((place) => (
@@ -435,7 +439,7 @@ const Navbar = () => {
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-12 md:w-[100vw] grid gird-cols-6 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
+            <footer className="col-span-12 place-self-end  md:w-[100vw] grid gird-cols-6 border-2 border-red-600 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
               <p className="col-span-2">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
@@ -450,7 +454,7 @@ const Navbar = () => {
         </div>
       )}
       {isParikarmaOpen && (
-        <ParikramaList onClose={() => setIsParikarmaOpen(false)}/>
+        <ParikramaList onClose={() => setIsParikarmaOpen(false)} />
       )}
     </nav>
   );

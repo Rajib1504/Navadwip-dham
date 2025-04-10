@@ -101,7 +101,7 @@ const Banner = () => {
     <section id="topContainer" className="w-full intro" ref={introSectionRef}>
       <div className="floating-div mix-blend-difference pointer-events-none z-20 w-full min-h-screen absolute flex justify-center items-center" ref={floatingDivRef}>
       <svg
-          className="map w-[50%] md:w-[30%]  fill-success"
+          className=" w-[50%] md:w-[30%]  fill-success"
           viewBox="0 0 450 528"
           xmlns="http://www.w3.org/2000/svg"
         >
