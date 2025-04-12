@@ -3,7 +3,8 @@ import NagariyaGhat from './Islands/NagariyaGhat';
 import BarakonaGhat from './Islands/BarakonaGhat';
 import JagaiMadhaiGhat from './Islands/JagaiMadhaiGhat';
 import BharadvajaTila from './Islands/BharadvajaTila';
-import usetextAnimation from './../../../../Hooks/usetextAnimation';
+import usetextAnimation from '../../../../Hooks/UsetextAnimation';
+
 const Modrumadvip2 = () => {
   const containerRef = usetextAnimation()
       return (

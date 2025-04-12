@@ -8,7 +8,8 @@ import GadadharAngan from "./Islands/GadadharAngan";
 import MurariGuptaAngan from "./Islands/MurariGuptaAngan";
 import PrithaKunda from "./Islands/PrithaKunda";
 import SriChaitanyaMath from "./Islands/SriChaitanyaMath";
-import usetextAnimation from './../../../../Hooks/usetextAnimation';
+import usetextAnimation from "../../../../Hooks/UsetextAnimation";
+
 
 const Antardvip = () => {
   const containerRef = usetextAnimation();

@@ -1,8 +1,9 @@
+import usetextAnimation from "../../../../Hooks/UsetextAnimation";
 import Belvapaksha from "./Islands/Belvapaksha";
 import SamadhiOfChandKaji from "./Islands/SamadhiOfChandKaji";
 import Sardanga from "./Islands/Sardanga";
 import SridharAngan from "./Islands/SridharAngan";
-import usetextAnimation from './../../../../Hooks/usetextAnimation';
+
 const Simantavip = () => {
   const containerRef = usetextAnimation()
 

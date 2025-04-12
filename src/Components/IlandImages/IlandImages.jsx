@@ -2,12 +2,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect } from "react";
+import usetextAnimation from "../../Hooks/UsetextAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const IlandImages = () => {
-  const containerRef = useRef();
-
+  const imgcontainerRef = useRef();
+const containerRef = usetextAnimation()
   useGSAP(() => {
     const leftImgs = gsap.utils.toArray(".left-images img");
     const rightImgs = gsap.utils.toArray(".right-images img");
@@ -17,7 +18,7 @@ const IlandImages = () => {
         y: i % 2 === 0 ? -50 : 50,
         ease: "none",
         scrollTrigger: {
-          trigger: containerRef.current,
+          trigger: imgcontainerRef.current,
           start: "top center",
           end: "center top",
           scrub: true,
@@ -41,10 +42,10 @@ const IlandImages = () => {
 
   return (
     <div
-      ref={containerRef}
+      ref={imgcontainerRef}
       className="min-h-screen w-full mx-auto justify-center items-center flex overflow-hidden"
     >
-      <div className="flex-col flex md:flex-row justify-center items-center w-full md:justify-between relative">
+      <div ref={containerRef} className="flex-col flex md:flex-row justify-center items-center w-full md:justify-between relative">
 
         {/* Left images */}
         <div className="hidden  lg:flex justify-center items-center gap-4 left-images">

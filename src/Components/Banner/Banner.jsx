@@ -114,10 +114,10 @@ const Banner = () => {
         className="place w-11/12 py-space60 mx-auto min-h-screen border z-10  flex justify-center items-center flex-col"
         ref={(el) => (sectionsRef.current[0] = el)}
       >
-        <h1 className=" uppercase  text-[18vw] md:text-[15vw] font-primaryLight  leading-[2em]    block text-center ">
+        <h1 className="title uppercase  text-[18vw] md:text-[15vw] font-primaryLight  leading-[2em]    block text-center ">
           Navadvip
         </h1>
-        <div className=" absolute bottom-space60 md:bottom-0">
+        <div className="absolute bottom-space60 md:bottom-0">
           <h2 className="font-primaryLight md:text-textRegular text-mobileTextRegular w-full text-center lg:text-textRegular   ">
             The Most Sacred Place in the World
           </h2>
