@@ -13,12 +13,21 @@ const usetextAnimation = () => {
         const title = gsap.utils.toArray(".title");
         title.forEach((el) => {
           const words = new SplitType(el, { types: "chars" });
+          // words.chars.forEach(char => {
+          //   // Create wrapper span with class
+          //   const wrapper = document.createElement("span");
+          //   wrapper.classList.add("overflow-hidden","inline-block");
+          
+          //   // Move the character into the wrapper
+          //   char.parentNode.insertBefore(wrapper, char);
+          //   wrapper.appendChild(char);
+          // })
           // console.log(words.chars);
           gsap.from(words.chars, {
             opacity: 0,
-            y: 30,
-            duration: 0.6,
-            stagger: 0.02,
+            y: 100,
+            duration: 1,
+            stagger: 0.05,
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
@@ -44,8 +53,8 @@ const usetextAnimation = () => {
           gsap.from(split.lines, {
             opacity: 0,
             y: 30,
-            duration: 0.04,
-            stagger: 0.1,
+            duration: 1,
+            stagger: 0.05,
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
@@ -70,7 +79,7 @@ const usetextAnimation = () => {
           gsap.from(el, {
             opacity: 0,
             y: 30,
-            duration: 0.08,
+            duration: 1,
             stagger: 0.2,
             ease: "power4.out",
             scrollTrigger: {

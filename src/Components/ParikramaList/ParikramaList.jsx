@@ -62,11 +62,11 @@ const ParikramaList = ({ onClose }) => {
                           to={`${placeName}`}
                           smooth={true}
                           duration={800}
-                          className={` cursor-pointer col-span-2 text-success tracking-wide text-mobiletextSmall`}
+                          className={` cursor-pointer col-span-3 text-success tracking-wide text-mobiletextSmall`}
                         >
                           {placeName}
                         </Link>
-                        <div className="  grid-flow-col col-span-4 md:grid grid-cols-4  ">
+                        <div className="  grid-flow-col col-span-3 md:grid grid-cols-4  ">
                           {/* mobile  */}
                           <div className="  col-span-4 text-success md:hidden flex flex-wrap gap-3 mb-space30 ">
                             {locations.map((location, i) => (

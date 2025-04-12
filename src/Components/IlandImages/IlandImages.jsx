@@ -55,7 +55,7 @@ const IlandImages = () => {
         </div>
 
         {/* Center Text */}
-        <h2 className="text-mobileheading2 md:text-heading2 font-primaryLight text-center text-primaryBlack 
+        <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight text-center text-primaryBlack 
           absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           Islands of <br /> Navadvip
         </h2>

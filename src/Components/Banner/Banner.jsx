@@ -45,7 +45,7 @@ const Banner = () => {
     const floatingDiv = floatingDivRef.current;
     if (!floatingDiv) return;
 
-    const easing = 0.05; // Adjust easing factor (0.01 = slow, 0.1 = fast)
+    const easing = 0.1; // Adjust easing factor (0.01 = slow, 0.1 = fast)
     currentY += (targetY - currentY) * easing;
 
     floatingDiv.style.transform = `translateY(${currentY}px)`;
@@ -101,7 +101,7 @@ const Banner = () => {
     <section id="topContainer" className="w-full intro" ref={introSectionRef}>
       <div className="floating-div mix-blend-difference pointer-events-none z-20 w-full min-h-screen absolute flex justify-center items-center" ref={floatingDivRef}>
       <svg
-          className=" w-[50%] md:w-[30%]  fill-success"
+          className=" w-[60%] md:w-[30%]  fill-success"
           viewBox="0 0 450 528"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -114,7 +114,7 @@ const Banner = () => {
         className="place w-11/12 py-space60 mx-auto min-h-screen border z-10  flex justify-center items-center flex-col"
         ref={(el) => (sectionsRef.current[0] = el)}
       >
-        <h1 className=" uppercase  text-[15vw] font-primaryLight  leading-[2em]    block text-center ">
+        <h1 className=" uppercase  text-[18vw] md:text-[15vw] font-primaryLight  leading-[2em]    block text-center ">
           Navadvip
         </h1>
         <div className=" absolute bottom-space60 md:bottom-0">

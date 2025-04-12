@@ -60,9 +60,9 @@ html, body {
   align-items: center;
 }
 
-.map {
+/* .map {
   width: 28vw;
-}
+} */
 .map-path {
 	fill: none;
 	stroke: #E9E4DD;

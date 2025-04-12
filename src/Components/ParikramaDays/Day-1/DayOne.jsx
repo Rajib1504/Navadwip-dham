@@ -6,10 +6,10 @@ const DayOne = () => {
       <div className="w-11/12 flex flex-col   mx-auto">
         <div  className="md:grid md:grid-cols-12">
           <div  className=" mb-spacelg  col-start-4 col-span-6 ">
-            <p className="text-success font-primaryLight mb-space60 md:mb-space120 text-center text-textRegular">
+            <p className="paragraph text-success font-primaryLight mb-space60 md:mb-space120 text-center text-textRegular">
               Parikama
             </p>
-            <h1  className="font-primaryLight text-mobileheading1  md:text-heading1 text-success text-center">
+            <h1  className="title font-primaryLight text-mobileheading1  md:text-heading1 text-success text-center">
              Day One
             </h1>
           </div>

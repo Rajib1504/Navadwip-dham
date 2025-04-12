@@ -8,7 +8,7 @@ import GadadharAngan from "./Islands/GadadharAngan";
 import MurariGuptaAngan from "./Islands/MurariGuptaAngan";
 import PrithaKunda from "./Islands/PrithaKunda";
 import SriChaitanyaMath from "./Islands/SriChaitanyaMath";
-import usetextAnimation from "../../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 
 const Antardvip = () => {
   const containerRef = usetextAnimation();
@@ -16,7 +16,7 @@ const Antardvip = () => {
     <div ref={containerRef} className="pt-space120 md:pt-space300">
       <article id="Antardvip" className="w-11/12 mx-auto">
         <section className="md:grid grid-cols-12">
-          <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
+          <p className="title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             01
           </p>
           <h1

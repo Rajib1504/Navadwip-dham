@@ -2,7 +2,7 @@ import Belvapaksha from "./Islands/Belvapaksha";
 import SamadhiOfChandKaji from "./Islands/SamadhiOfChandKaji";
 import Sardanga from "./Islands/Sardanga";
 import SridharAngan from "./Islands/SridharAngan";
-import usetextAnimation from "../../../../Hooks/UsetextAnimation";
+import usetextAnimation from "./../../../Hooks/UsetextAnimation";
 const Simantavip = () => {
   const containerRef = usetextAnimation()
 
@@ -11,7 +11,7 @@ const Simantavip = () => {
     <div ref={containerRef} className="pt-space120 md:pt-space300 ">
     <article id="Simantadvip" className="w-11/12 mx-auto  ">
       <section className="md:grid grid-cols-12 ">
-        <p className="text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
+        <p className=" title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           02
         </p>
         <h1  className=" title font-primaryLight  col-span-12  md:text-heading1 text-mobileheading1 text-center mb-space60 md:mb-space120">
