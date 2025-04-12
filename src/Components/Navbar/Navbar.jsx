@@ -14,6 +14,7 @@ import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ParikramaList from "./../ParikramaList/ParikramaList";
+import usetextAnimation from "../../Hooks/UsetextAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,13 +120,18 @@ const Navbar = () => {
       ],
     },
   ];
-
+  const containerRef = usetextAnimation();
   const [isOpen, setIsOpen] = useState(false);
   const [firstLoad, setFirstLoad] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [currentPlace, setCurrentPlace] = useState(placesData[0].places[0]);
   const [active, setActive] = useState({});
   const [isParikarmaOpen, setIsParikarmaOpen] = useState(false);
+
+  // toggle parikramlist
+  const toggleAccordion = () => {
+    setIsParikarmaOpen((prev) => !prev);
+  };
   // console.log(active);
   const allPlaces = useMemo(
     () => placesData.flatMap((day) => day.places),
@@ -262,16 +268,18 @@ const Navbar = () => {
     });
   };
   return (
-    <nav className=" mx-auto">
-     
-          <Link to="#topContainer" className="fixed left-[4.1666665%] mix-blend-difference z-[60] ">
-            <img
-              src="/Images/Logo/logo.svg"
-              alt="logo"
-              className="  w-14 md:w-20 pt-4 md:pt-2"
-            />
-          </Link>
-        
+    <nav ref={containerRef} className=" mx-auto">
+      <Link
+        to="#topContainer"
+        className="fixed left-[4.1666665%] mix-blend-difference z-[60] "
+      >
+        <img
+          src="/Images/Logo/logo.svg"
+          alt="logo"
+          className="  w-14 md:w-20 pt-4 md:pt-2"
+        />
+      </Link>
+
       {/* menu  */}
       <div className="fixed   left-[4.1666665%]  z-50 ">
         <div className="md:pl-4 md:py-4">
@@ -356,7 +364,10 @@ const Navbar = () => {
                       {placesData.map((day, idx) => (
                         <div key={idx}>
                           <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
-                            <Link to={`#${day.title}`}  className="font-primaryLight text-mobileTextRegular md:text-textRegular">{`${day.title}`}</Link>
+                            <Link
+                              to={`#${day.title}`}
+                              className="font-primaryLight text-mobileTextRegular md:text-textRegular"
+                            >{`${day.title}`}</Link>
                             <h4 className="text-secondaryBlack  text-center text-mobiletextSmall md:text-textSmall font-primaryLight">{`${day.day}`}</h4>
                           </div>
                           <div className="py-spacelg">
@@ -403,30 +414,47 @@ const Navbar = () => {
       {/* Dropdown Menu */}
 
       {isOpen && (
-        <div className="menu overflow-hidden  z-40 bg-primaryBlack w-[100%] box-border   fixed min-h-screen flex justify-between ">
-          <div className="font-primaryLight grid md:w-[100%] grid-cols-12">
-            <div className="md:col-start-5 col-start-1 col-span-12 grid grid-cols-6">
+        <div className="menu overflow-hidden pb-0   z-40 bg-primaryBlack w-[100%] box-border fixed flex justify-between ">
+          <div className="font-primaryLight   min-h-screen grid md:w-[100%] grid-cols-12">
+            <div className="md:col-start-5 mt-space60 md:mt-0 col-start-1 col-span-12 grid grid-cols-6">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
-                className="md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3 cursor-pointer md:text-heading2 text-success"
+                className="title md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3 cursor-pointer md:text-heading2 text-success"
               >
                 Intro
               </a>
-              <a
-                type="button"
-                onClick={() => {
-                  setIsOpen(false); // close main menu
-                  setIsParikarmaOpen(true); // open travel list
-                }}
-                className="cursor-pointer col-start-1 col-span-5 md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg"
-              >
-                Parikarma
-              </a>
+              <div className="col-start-1 col-span-6  ">
+                <button
+                  type="button"
+                  onClick={toggleAccordion}
+                  className="title cursor-pointer md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg w-full text-left"
+                >
+                  Parikarma
+                </button>
+                <div
+                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    isParikarmaOpen
+                      ? "max-h-[80vh] opacity-100 z-40"
+                      : "max-h-0 opacity-0"
+                  }`}
+                  style={{ maxHeight: isParikarmaOpen ? '80vh' : '0', opacity: isParikarmaOpen ? 1 : 0 }}
+                >
+                  {isParikarmaOpen && (
+                    <ParikramaList
+                      onClose={() => {
+                        setIsParikarmaOpen(false);
+                        setIsOpen(false); // Keep the main menu open if only closing the accordion
+                      }}
+                    />
+                  )}
+                </div>
+              </div>
+
               <a
                 href="#Books"
                 onClick={() => setIsOpen(!isOpen)}
-                className="col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3 text-success md:my-space15 my-spacelg"
+                className="title col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3 text-success md:my-space15 my-spacelg"
               >
                 Books
               </a>
@@ -434,18 +462,18 @@ const Navbar = () => {
               <a
                 href="mailto:hello@dhama.info?subject=Navadvip"
                 onClick={() => setIsOpen(!isOpen)}
-                className="col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 md:my-space15 my-spacelg text-success"
+                className="title col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 md:my-space15 my-spacelg text-success"
               >
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-12 place-self-end  md:w-[100vw] grid gird-cols-6 border-2 border-red-600 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
-              <p className="col-span-2">@2025</p>
+            <footer className="col-span-12    md:w-full grid gird-cols-6  md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
+              <p className="paragraph place-self-end col-span-2">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
                 target="_blank"
-                className="hidden md:block col-start-5 col-span-9"
+                className="paragraph place-self-end col-start-5 col-span-9"
               >
                 Instagram
               </a>
@@ -453,9 +481,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      {isParikarmaOpen && (
-        <ParikramaList onClose={() => setIsParikarmaOpen(false)} />
-      )}
+    
     </nav>
   );
 };
