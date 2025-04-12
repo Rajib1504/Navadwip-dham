@@ -301,19 +301,19 @@ const Navbar = () => {
       <div className="w-full fixed z-20 t-0  ">
         <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
-          <div className=" flex mix-blend-difference ">
+          <div className=" flex ">
             {/* center content   */}
             {/* main container  */}
             <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
-                className="flex  justify-center items-center  bg-success   backdrop-blur-sm border border-accentBlack  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all"
+                className="  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all  w-[2.5rem] h-[2.5rem]  border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center"
               >
                 <HiArrowLongLeft className="" />
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300 bg-success rounded-full"
+                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300  rounded-full bg-primaryWhite  "
               >
                 {/* dynamic number  */}
                 <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
@@ -330,7 +330,7 @@ const Navbar = () => {
                 </span>
 
                 {/* dropdown  */}
-                <button className=" mr-3 ml-2 md:ml-0 ">
+                <button className=" mr-3 ml-2 md:ml-0  ">
                   <span className="hidden md:block">
                     {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </span>
@@ -343,7 +343,7 @@ const Navbar = () => {
                   <ul
                     ref={dropDownRef}
                     className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0 z md:-top-1 -bottom-1 border border-accentBlack md:bottom-10 left-auto rounded-[1.25rem] p-4"
+                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0  md:-top-1 -bottom-1 border border-accentBlack md:bottom-10 left-auto rounded-[1.25rem] p-4"
                     style={{
                       scrollbarWidth: "none",
                       msOverflowStyle: "none",
@@ -392,7 +392,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={() => handleNavigate("next")}
-                className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]   bg-success transition-all"
+                className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]    transition-all  bg-primaryWhite  "
               >
                 <HiArrowLongRight />
               </button>
