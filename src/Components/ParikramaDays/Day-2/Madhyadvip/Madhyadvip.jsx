@@ -3,8 +3,7 @@ import Naimisharanya from "./Islands/Naimisharanya";
 import BrahmanPushkar from "./Islands/BrahmanPushkar";
 import Uchahatt from "./Islands/Uchahatt";
 import Panchaveni from "./Islands/Panchaveni";
-
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 
 const Madhyadvip = () => {
   const containerRef = usetextAnimation()

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Vaikunthapur from "./Islands/Vaikunthapur";
 import VrindavanDasThakurShripat from "./Islands/VrindavanDasThakurShripat";
 import Mahatpur from "./Islands/Mahatpur";
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 
 const Modrumadvip = () => {
   const containerRef =usetextAnimation()

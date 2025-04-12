@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import JahnuMuniAsram from "./Islands/JahnuMuniAsram";
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 
 const Jahnudvip = () => {
   const containerRef = usetextAnimation()

@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import { useGSAP } from "@gsap/react";
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 gsap.registerPlugin(ScrollTrigger);
 const Koladvip = () => {
   const containerRef = usetextAnimation()

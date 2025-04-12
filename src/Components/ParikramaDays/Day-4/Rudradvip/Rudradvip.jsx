@@ -2,7 +2,7 @@ import React from 'react';
 import JayadevasShripat from './Islands/JayadevasShripat';
 import NidayaGaht from './Islands/NidayaGaht';
 import RudraGaudiyaMath from './Islands/RudraGaudiyaMath';
-import usetextAnimation from './../../../Hooks/UsetextAnimation';
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 const Rudradvip = () => {
   const containerRef = usetextAnimation()
 

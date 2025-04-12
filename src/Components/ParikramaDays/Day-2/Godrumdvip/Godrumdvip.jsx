@@ -5,7 +5,7 @@ import SuvarnaVihar from "./Islands/SuvarnaVihar";
 import AmraGhat from "./Islands/AmraGhat";
 import NarasimhaPalli from "./Islands/NarasimhaPalli";
 import HariharaKshetra from "./Islands/HariharaKshetra";
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 const Godrumdvip = () => {
   const containerRef = usetextAnimation()
   return (

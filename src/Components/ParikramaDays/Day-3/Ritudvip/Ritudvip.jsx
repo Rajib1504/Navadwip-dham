@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import RadhaKunda from "./Islands/RadhaKunda";
 import Vidyanagar from "./Islands/Vidyanagar";
-import usetextAnimation from "./../../../Hooks/UsetextAnimation";
+import usetextAnimation from './../../../../Hooks/usetextAnimation';
 
 const Ritudvip = () => {
   const containerRef =usetextAnimation()
