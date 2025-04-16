@@ -82,6 +82,7 @@ const ParikramaList = ({ onClose }) => {
                               className="cursor-pointer text-mobiletextSmall tracking-wide text-success"
                             >
                               {location}
+                              <br />
                             </Link>
                           ))}
                         </div>

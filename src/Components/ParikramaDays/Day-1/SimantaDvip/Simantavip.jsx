@@ -9,8 +9,8 @@ const Simantavip = () => {
 
 
   return (
-    <div ref={containerRef} className="pt-space120 md:pt-space300 ">
-    <article id="Simantadvip" className="w-11/12 mx-auto  ">
+    
+    <section ref={containerRef} id="Simantadvip" className="pt-space120 md:pt-space240 w-11/12 mx-auto  ">
       <section className="md:grid grid-cols-12 ">
         <p className=" title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           02
@@ -87,8 +87,8 @@ const Simantavip = () => {
 
         {/* Belvapaksha*/}
        <Belvapaksha/>
-      </article>
-    </div>
+      </section>
+  
   );
 };
 

@@ -2,9 +2,9 @@ import React from 'react';
 
 const NagariyaGhat = () => {
       return (
-        <section id='Nagariya_Ghat'>
-            <div id='Nagariya Ghat'>
-            <div
+        <section id='Nagariya Ghat'>
+            
+            <section
               id="36"
               className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
@@ -14,7 +14,7 @@ const NagariyaGhat = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Nagariya Ghat
                 </h2>
@@ -38,9 +38,9 @@ const NagariyaGhat = () => {
                   
                 </div>
               </div>
-            </div>
+            </section>
             {/* images   */}
-            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+            <section className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="hidden col-start-1 col-span-2">
                 <img
@@ -91,8 +91,8 @@ const NagariyaGhat = () => {
                   </div>
                 </div> */}
               </div>
-            </div>
-          </div>
+            </section>
+          
           </section>
       );
 };

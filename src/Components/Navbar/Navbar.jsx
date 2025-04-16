@@ -414,9 +414,9 @@ const Navbar = () => {
       {/* Dropdown Menu */}
 
       {isOpen && (
-        <div className="menu overflow-hidden pb-0   z-40 bg-primaryBlack w-[100%] box-border fixed flex justify-between ">
+        <section className="menu  pb-0  z-40 bg-primaryBlack w-[100%] box-border  flex justify-between ">
           <div className="font-primaryLight   min-h-screen grid md:w-[100%] grid-cols-12">
-            <div className="md:col-start-5 mt-space60 md:mt-0 col-start-1 col-span-12 grid grid-cols-6">
+            <div className="md:col-start-5 mt-space60  col-start-1 col-span-12 grid grid-cols-6">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -432,13 +432,13 @@ const Navbar = () => {
                 >
                   Parikarma
                 </button>
-                <div
-                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                <section
+                  className={`transition-all duration-500 ease-in-out${
                     isParikarmaOpen
-                      ? "max-h-[80vh] opacity-100 z-40"
+                      ? "min-h-fit  opacity-100 z-40"
                       : "max-h-0 opacity-0"
                   }`}
-                  style={{ maxHeight: isParikarmaOpen ? '80vh' : '0', opacity: isParikarmaOpen ? 1 : 0 }}
+                  style={{ maxHeight: isParikarmaOpen ? '100vh' : '0', opacity: isParikarmaOpen ? 1 : 0 }}
                 >
                   {isParikarmaOpen && (
                     <ParikramaList
@@ -448,7 +448,7 @@ const Navbar = () => {
                       }}
                     />
                   )}
-                </div>
+                </section>
               </div>
 
               <a
@@ -479,7 +479,7 @@ const Navbar = () => {
               </a>
             </footer>
           </div>
-        </div>
+        </section>
       )}
     
     </nav>

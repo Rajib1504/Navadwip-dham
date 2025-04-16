@@ -2,8 +2,8 @@ import React from "react";
 
 const SriChaitanyaMath = () => {
   return (
-    <section id="Sri_Chaitanya_Math">
-    <div id="Sri Chaitanya Math">
+    <section id="Sri Chaitanya Math">
+    
       <div
         id="9"
         className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -14,7 +14,7 @@ const SriChaitanyaMath = () => {
         </p>
 
         {/* Second Box (Centered by default) */}
-        <div className="col-start-5 col-span-5  w-full mr-space30 ">
+        <div className="col-start-5 col-span-5  w-full  ">
           <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
             Chandra Shekhara Bhavan (Sri Chaitanya Math)
           </h2>
@@ -115,7 +115,7 @@ const SriChaitanyaMath = () => {
                 </div> */}
         </div>
       </div>
-    </div>
+    
     </section>
   );
 };

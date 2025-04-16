@@ -2,8 +2,7 @@ import React from 'react';
 
 const VrindavanDasThakurShripat = () => {
       return (
-        <section id="Vrindavan_Thakur’s_Sripat">
-            <div id="Vrindavan Thakur’s Sripat">
+        <section id="Vrindavan Thakur’s Sripat">   
             <div
               id="33"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -14,7 +13,7 @@ const VrindavanDasThakurShripat = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
               Vrindavan Das Thakur’s Shripat
                 </h2>
@@ -85,7 +84,7 @@ const VrindavanDasThakurShripat = () => {
   
   
   
-          </div>
+        
           </section>
       );
 };

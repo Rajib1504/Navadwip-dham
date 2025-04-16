@@ -9,8 +9,8 @@ import usetextAnimation from "../../../../Hooks/UsetextAnimation";
 const Madhyadvip = () => {
   const containerRef = usetextAnimation()
   return (
-    <div ref={containerRef}className="pt-space120 md:pt-space300 ">
-    <article id="Madhyadvip" className="w-11/12 mx-auto  ">
+    
+    <section ref={containerRef} id="Madhyadvip" className="w-11/12 mx-auto pt-space120 md:pt-space240 ">
       <section className="md:grid grid-cols-12 ">
         <p className="title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           04
@@ -94,8 +94,8 @@ const Madhyadvip = () => {
         {/* ............................... */}
 
 
-      </article>
-    </div>
+      </section>
+  
   );
 };
 

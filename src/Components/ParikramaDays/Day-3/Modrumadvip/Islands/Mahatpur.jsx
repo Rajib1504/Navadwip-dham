@@ -3,7 +3,7 @@ import React from 'react';
 const Mahatpur = () => {
       return (
             <section id='Mahatpur'>
-            <div
+            <section
               id="34"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
@@ -13,7 +13,7 @@ const Mahatpur = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                 Mahatpur
                 </h2>
@@ -38,9 +38,9 @@ const Mahatpur = () => {
                  
                 </div>
               </div>
-            </div>
+            </section>
             {/* images   */}
-            <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
+            <section className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="hidden">
                 <img
@@ -82,7 +82,7 @@ const Mahatpur = () => {
                   </div>
                 </div>
               </div> */}
-            </div>
+            </section>
           
   
   

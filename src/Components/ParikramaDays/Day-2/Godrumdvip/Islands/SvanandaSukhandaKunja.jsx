@@ -2,8 +2,8 @@ import React from 'react';
 
 const SvanandaSukhandaKunja = () => {
       return (
-        <section id='Svananda_Sukhada_Kunja'>
-            <div id='Svananda Sukhada Kunja'>
+        <section id='Svananda Sukhada Kunja'>
+            
             <div
               id="14"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -14,7 +14,7 @@ const SvanandaSukhandaKunja = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                  Svananda Sukhada Kunja
                 </h2>
@@ -40,7 +40,7 @@ const SvanandaSukhandaKunja = () => {
                   <p className="paragraph mb-space15 md:mb-space30">
                     The second-floor room of Svananda Sukhada Kunja still holds
                     the presence of Srila Bhakti Vinod Thakur. It was in this very
-                    space that he wrote numerous books and articles, offering
+                    space that he wrote numerous books and sections, offering
                     timeless wisdom to the world. Among them are Jaiva-dharma,
                     Bhajana-rahasya, Krishna-samhita, Navadvipa-dhama-mahatmya,
                     and Harinama-cintamani. Additionally, all four of his
@@ -110,7 +110,7 @@ const SvanandaSukhandaKunja = () => {
                 </p> */}
               </div>
             </div>
-          </div>
+          
           </section>
       );
 };

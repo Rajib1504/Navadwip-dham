@@ -2,8 +2,8 @@ import React from 'react';
 
 const PrayudhaMaya = () => {
       return (
-        <section id='Prayudha_Maya'>
-            <div id='Prayudha Maya'>
+        <section id='Prayudha Maya'>
+            
             <div
               id="24"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -14,7 +14,7 @@ const PrayudhaMaya = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Prayudha Maya
                 </h2>
@@ -81,7 +81,7 @@ const PrayudhaMaya = () => {
                 </p> */}
               </div>
             </div>
-          </div>
+          
           </section>
       );
 };

@@ -6,8 +6,8 @@ import usetextAnimation from "../../../../Hooks/UsetextAnimation";
 const Jahnudvip = () => {
   const containerRef = usetextAnimation()
   return (
-    <section ref={containerRef} className="pt-space120 md:pt-space300 ">
-    <article id="Jahnudvip" className="w-11/12 mx-auto  ">
+    
+    <section ref={containerRef} id="Jahnudvip" className="w-11/12 mx-auto pt-space120 md:pt-space240 ">
       <section className="md:grid grid-cols-12 ">
         <p className="title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           07
@@ -21,7 +21,7 @@ const Jahnudvip = () => {
       </section>
 
       {/* top text with left right sticky  */}
-      <div className="flex  flex-col justify-start mt-space60 mb-space120 md:my-space120 ">
+      <section className="flex  flex-col justify-start mt-space60 mb-space120 md:my-space120 ">
         <div className="md:grid  grid-cols-12">
           {/* left */}
           <div className="relative col-start-1 col-span-2  md:w-auto w-full ">
@@ -64,15 +64,15 @@ const Jahnudvip = () => {
            
           </div>
         </div>
-      </div>
+      </section>
         {/* ...................................................................................... */}
         {/* Jahnu Muni’s Asram  */}
        <JahnuMuniAsram/>
         {/* ............................... */}
 
         {/* ............................... */}
-      </article>
-    </section>
+      </section>
+ 
   );
 };
 

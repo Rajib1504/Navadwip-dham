@@ -9,8 +9,8 @@ const Modrumadvip = () => {
   const containerRef =usetextAnimation()
 
   return (
-    <section ref={containerRef} className="pt-space120 md:pt-space300 ">
-      <article id="Modrumadvip" className="w-11/12 mx-auto  ">
+    
+      <section id="Modrumadvip" ref={containerRef}  className="w-11/12 mx-auto pt-space120 md:pt-space240   ">
         <section className="md:grid grid-cols-12 ">
           <p className="title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
             08
@@ -95,8 +95,8 @@ const Modrumadvip = () => {
         <Mahatpur />
 
         {/* ............................... */}
-      </article>
-    </section>
+      </section>
+   
   );
 };
 

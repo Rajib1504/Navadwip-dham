@@ -14,8 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Koladvip = () => {
   const containerRef = usetextAnimation()
   return (
-    <section ref={containerRef} className="pt-space120 md:pt-space300 ">
-    <article id="Koladvip" className="w-11/12 mx-auto  ">
+    
+    <section ref={containerRef} id="Koladvip" className="w-11/12 mx-auto pt-space120 md:pt-space240  ">
       <section className="md:grid grid-cols-12 ">
         <p className="title text-center col-span-12 mb-space60 md:mb-space120 font-primaryLight text-mobileTextRegular">
           05
@@ -101,8 +101,7 @@ const Koladvip = () => {
      <Chapahati/>
 
         {/* ............................... */}
-      </article>
-    </section>
+      </section>
   );
 };
 

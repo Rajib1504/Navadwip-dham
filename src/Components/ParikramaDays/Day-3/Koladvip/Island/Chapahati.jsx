@@ -3,7 +3,7 @@ import React from 'react';
 const Chapahati = () => {
       return (
             <section id='Champahati'>
-            <div
+            <section
               id="28"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
             >
@@ -13,7 +13,7 @@ const Chapahati = () => {
               </p>
   
               {/* Second Box (Centered by default) */}
-              <div className="col-start-5 col-span-5  w-full mr-space30 ">
+              <div className="col-start-5 col-span-5  w-full  ">
                 <h2 className="animateLines text-mobileheading2 md:text-heading2 font-primaryLight mb-spacelg">
                   Champahatti
                 </h2>
@@ -81,9 +81,9 @@ const Chapahati = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </section>
             {/* images   */}
-            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
+            <section className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
               {/* 1st img  */}
               <div className="hidden col-start-1 col-span-2">
                 <img
@@ -130,7 +130,7 @@ const Chapahati = () => {
                   </div>
                 </div> */}
               </div>
-            </div>
+            </section>
           </section>
       );
 };
