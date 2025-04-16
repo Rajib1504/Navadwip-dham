@@ -306,26 +306,26 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="w-full fixed z-20 t-0  ">
+      <div className="w-full fixed z-20 lg:top-0 bottom-space15  ">
         <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
           <div className=" flex ">
             {/* center content   */}
             {/* main container  */}
-            <div className="fixed box-border bottom-space15  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+            <div className=" box-border  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
-                className="  p-2 rounded-full md:w-[2.5rem] md:h-[2.5rem]  transition-all  w-[2.5rem] h-[2.5rem]  border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center"
+                className="  px-spacemd rounded-full  transition-all  w-[2.5rem] h-[2.5rem]  border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center "
               >
                 <HiArrowLongLeft className="" />
               </button>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.125rem] md:h-[2.5rem]  justify-between w-screen max-w-space300  rounded-full bg-primaryWhite  "
+                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.5rem] md:h-[2.5rem]  justify-between w-[70%] md:w-screen max-w-space300  rounded-full bg-primaryWhite  "
               >
                 {/* dynamic number  */}
-                <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[6rem] text-center  rounded-full flex items-center justify-center">
-                  <p className="leading-[2.125rem] md:leading-10">
+                <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[5rem] w-[7rem] text-center  rounded-full flex items-center justify-center">
+                  <p className="leading-[2.5rem] md:leading-10">
                     {" "}
                     {active?.idx ?? currentPlace.idx ?? "..."}
                   </p>
@@ -339,10 +339,10 @@ const Navbar = () => {
 
                 {/* dropdown  */}
                 <button className=" mr-3 ml-2 md:ml-0  ">
-                  <span className="hidden md:block">
+                  <span className="hidden lg:block">
                     {dropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </span>
-                  <span className="md:hidden block">
+                  <span className="lg:hidden block">
                     {dropdownOpen ? <IoIosArrowDown /> : <IoIosArrowUp />}
                   </span>
                 </button>
@@ -351,7 +351,7 @@ const Navbar = () => {
                   <ul
                     ref={dropDownRef}
                     className="absolute overflow-y-auto  bg-success 
-                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0  md:-top-1 -bottom-1 border border-accentBlack md:bottom-10 left-auto rounded-[1.25rem] p-4"
+                w-full h-[320px] md:h-[320px]  lg:h-[482px]  ml-0  lg:-top-1 -bottom-1 border border-accentBlack md:bottom-10 left-auto rounded-[1.25rem] p-4"
                     style={{
                       scrollbarWidth: "none",
                       msOverflowStyle: "none",
@@ -388,7 +388,7 @@ const Navbar = () => {
                                 <span className="absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
                                   {place.idx}
                                 </span>
-                                <span className="w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                                <span className=" pl-4 truncate w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
                                   {place.name}
                                 </span>
@@ -403,7 +403,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={() => handleNavigate("next")}
-                className=" flex justify-center items-center border border-accentBlack  p-2 backdrop-blur-sm  rounded-full md:w-[2.5rem] md:h-[2.5rem]    transition-all  bg-primaryWhite  "
+                className=" flex justify-center items-center border border-accentBlack  px-spacemd backdrop-blur-sm  rounded-full w-[2.5rem] h-[2.5rem]    transition-all  bg-primaryWhite  "
               >
                 <HiArrowLongRight />
               </button>
