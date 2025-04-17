@@ -22,7 +22,6 @@ const IslandList = () => {
       <p className="text-center hidden text-lg text-success">Loading...</p>
     ) : (
       <>
-      <hr className=" "/>
         {ilands?.map((item) => (
          <div
          key={item.id}
