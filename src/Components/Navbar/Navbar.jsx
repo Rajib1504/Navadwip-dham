@@ -315,7 +315,7 @@ const Navbar = () => {
             <div className=" box-border  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
-                className="  px-spacemd rounded-full  transition-all  w-[2.5rem] h-[2.5rem]  border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center "
+                className="  px-spacemd rounded-full  transition-all  w-mobilespace40 h-mobilespace40   border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center "
               >
                 <HiArrowLongLeft className="" />
               </button>
@@ -375,7 +375,7 @@ const Navbar = () => {
                               <div
                                 key={place.id}
                                 ref={active?.id === place.id ? activeRef : null}
-                                className={`py-spacesm  mb-1 flex w-full md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
+                                className={`py-spacesm  mb-1 flex w-full items-center md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
                                   (active?.id ?? currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
@@ -385,12 +385,12 @@ const Navbar = () => {
                                   setDropdownOpen(false);
                                 }}
                               >
-                                <span className="absolute md:w-1/4 w-1/5 pl-2 text-left md:text-textSmall font-primaryLight text-mobiletextSmall">
+                                <span className=" md:w-1/4 w-1/3   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
                                   {place.idx}
                                 </span>
-                                <span className=" pl-4 truncate w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                                <span className="truncate  w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
-                                  {place.name}
+                              {place.name}
                                 </span>
                               </div>
                             ))}
@@ -403,7 +403,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={() => handleNavigate("next")}
-                className=" flex justify-center items-center border border-accentBlack  px-spacemd backdrop-blur-sm  rounded-full w-[2.5rem] h-[2.5rem]    transition-all  bg-primaryWhite  "
+                className=" flex justify-center items-center border border-accentBlack   backdrop-blur-sm  rounded-full w-mobilespace40 h-mobilespace40   transition-all  bg-primaryWhite  "
               >
                 <HiArrowLongRight />
               </button>
@@ -438,7 +438,10 @@ const Navbar = () => {
                       ? "min-h-fit  opacity-100 z-40"
                       : "max-h-0 opacity-0"
                   }`}
-                  style={{ maxHeight: isParikarmaOpen ? '100vh' : '0', opacity: isParikarmaOpen ? 1 : 0 }}
+                  style={{
+                    maxHeight: isParikarmaOpen ? "100vh" : "0",
+                    opacity: isParikarmaOpen ? 1 : 0,
+                  }}
                 >
                   {isParikarmaOpen && (
                     <ParikramaList
@@ -481,7 +484,6 @@ const Navbar = () => {
           </div>
         </section>
       )}
-    
     </nav>
   );
 };
