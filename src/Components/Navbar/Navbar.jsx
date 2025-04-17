@@ -360,7 +360,7 @@ const Navbar = () => {
                       boxShadow: "0 20px 40px 4px rgba(28,27,27,0.2)",
                     }}
                   >
-                    <div className="mx-auto text-center">
+                    <div className="mx-auto  text-center">
                       {placesData.map((day, idx) => (
                         <div key={idx}>
                           <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
@@ -375,7 +375,7 @@ const Navbar = () => {
                               <div
                                 key={place.id}
                                 ref={active?.id === place.id ? activeRef : null}
-                                className={`py-spacesm  mb-1 flex w-full items-center md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
+                                className={`py-spacesm mb-1 flex w-full items-center md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
                                   (active?.id ?? currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
@@ -385,12 +385,15 @@ const Navbar = () => {
                                   setDropdownOpen(false);
                                 }}
                               >
-                                <span className=" md:w-1/4 w-1/3   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
+                                <span className=" md:absolute md:w-1/4 w-mobilespace40   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
                                   {place.idx}
                                 </span>
                                 <span className="truncate  w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
+                                  <p className="w-mobilespace130 pl-spacelg md:pl-0 sm:w-auto truncate">
+
                               {place.name}
+                                  </p>
                                 </span>
                               </div>
                             ))}

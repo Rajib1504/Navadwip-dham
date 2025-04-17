@@ -6,9 +6,9 @@ const NavadwipMeaning = () => {
   return (
     <div
       ref={containerRef}
-      className="w-11/12 md:w-full mx-auto md:grid grid-cols-12  md:my-space240 "
+      className="  w-11/12 md:w-full mx-auto md:grid grid-cols-12  md:my-space240 "
     >
-      <p className="paragraph text-center tracking-wider  md:col-start-3 md:col-span-8  font-primaryLight text-mobileTextRegular  md:text-textRegular  mx-auto">
+      <p className="animateLines text-center tracking-wider  md:col-start-3 md:col-span-8  font-primaryLight text-mobileTextRegular  md:text-textRegular  mx-auto">
         Navadvip means “Nine (nava) Islands (dvip)” surrounded by the sacred
         branches of the Ganges. It unfolds like a lotus. At its heart lies the
         birthplace of Sri Chaitanya, symbolizing self-surrender. From surrender,

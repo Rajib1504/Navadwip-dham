@@ -12,7 +12,7 @@ const Footer = () => {
       // .catch((error) => console.log(error.message));
   }, []);
   return (
-    <div className="bg-primaryBlack ">
+    <div className="bg-primaryBlack border-2 border-red-600 ">
       <div className="mx-auto w-11/12">
         <div className=" flex md:justify-end justify-start  pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
