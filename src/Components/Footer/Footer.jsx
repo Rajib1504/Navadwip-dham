@@ -37,7 +37,7 @@ const Footer = () => {
               {Object.entries(travellist).map(([day, places], index) => (
                 <div
                   key={index}
-                  className=" grid  tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4  mt-[12px] sm:mt-space15 md:items-start"
+                  className=" grid  tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4  mt-[12px] sm:mt-space30 md:items-start"
                 >
                   {/* Day Name */}
                   <Link

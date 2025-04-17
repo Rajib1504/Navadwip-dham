@@ -324,7 +324,7 @@ const Navbar = () => {
                 className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.5rem] md:h-[2.5rem]  justify-between w-[70%] md:w-screen max-w-space300  rounded-full bg-primaryWhite  "
               >
                 {/* dynamic number  */}
-                <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[5rem] w-[7rem] text-center  rounded-full flex items-center justify-center">
+                <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[7rem] text-center  rounded-full flex items-center justify-center">
                   <p className="leading-[2.5rem] md:leading-10">
                     {" "}
                     {active?.idx ?? currentPlace.idx ?? "..."}
