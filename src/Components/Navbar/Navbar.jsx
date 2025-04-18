@@ -417,7 +417,7 @@ const Navbar = () => {
       {isOpen && (
         <section className="menu overflow-y-auto bg-primaryBlack box-border flex justify-between fixed top-0 bottom-0 left-0 right-0 z-50">
           <div className="font-primaryLight  grid md:w-[100%] grid-cols-12">
-            <div className="md:col-start-5 mt-space30 col-start-1 col-span-12 grid grid-cols-6">
+            <div className="md:col-start-5 mt-space60 sm:mt-space30 col-start-1 col-span-12 grid grid-cols-6">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -471,13 +471,13 @@ const Navbar = () => {
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-12  md:w-full grid gird-cols-6 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
-              <p className="paragraph place-self-end col-span-2">@2025</p>
+            <footer className="col-span-12 mb-mobilespace50  md:w-full grid gird-cols-6 mt-mobilespace60 sm:mt-0 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight ">
+              <p className="paragraph col-start-1 col-span-2">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
                 target="_blank"
-                className="paragraph place-self-end col-start-5 col-span-9"
+                className="paragraph col-start-5 col-span-9"
               >
                 Instagram
               </a>

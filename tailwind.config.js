@@ -40,6 +40,7 @@ export default {
         spacemd: "0.5rem",
         spacesm: "0.25rem",
         mobilespace40:" 40px",
+        mobilespace50:" 50px",
         mobilespace60:" 60px",
         mobilespace130:" 130px",
         mobilespace274:" 274px",
