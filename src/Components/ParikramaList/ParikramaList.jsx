@@ -25,105 +25,107 @@ const ParikramaList = ({ onClose }) => {
   return (
     <div
     ref={container}
-    className="w-full  h-screen bg-primaryBlack overflow-y-scroll px-space20 py-space20"
+    className="w-full bg-primaryBlack overflow-y-scroll px-space20 py-space20"
   >
     <div className="flex flex-col text-textSmall">
-      <div className="flex flex-col text-textSmall py-space15 mb-space60">
+      <div className="flex flex-col text-textSmall py-space15 mb-space15">
         {travellist.length === 0 ? (
           <p className="text-white">Loading Parikramas...</p>
         ) : (
           Object.entries(travellist).map(([day, places], index) => (
-            <div
-              key={index}
-              className="grid grid-rows-2 tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4 mt-space15 md:items-start"
-            >
-              {/* Day Name */}
-              <Link
-                onClick={onClose}
-                to={`${day}`}
-                smooth={true}
-                duration={800}
-                className="text-mobiletextSmall cursor-pointer tracking-wider row-span-full md:text-textSmall text-primaryWhite font-primaryLight md:col-span-1 font-bold"
-              >
-                {day}
-              </Link>
-  
-              <div className="col-span-3 my-space15 md:my-auto grid-cols-6 grid md:grid">
-                {Object.entries(places).map(([placeName, locations], idx) => {
-                  let adjustedLength =
-                    locations.length % 2 !== 0
-                      ? locations.length + 1
-                      : locations.length;
-                  let halfLength = adjustedLength / 2;
-  
-                  return (
-                    <React.Fragment key={idx}>
-                      {/* Place Name */}
-                      <Link
-                        onClick={onClose}
-                        to={`${placeName}`}
-                        smooth={true}
-                        duration={800}
-                        className="cursor-pointer col-span-3 text-success tracking-wide text-mobiletextSmall"
-                      >
-                        {placeName}
-                      </Link>
-  
-                      <div className="grid-flow-col col-span-3 md:grid grid-cols-4">
-                        {/* Mobile */}
-                        <div className="col-span-2 text-success md:hidden flex flex-wrap gap-spacelg mb-space15">
-                          {locations.map((location, i) => (
+             <div
+                  key={index}
+                  className=" grid  tracking-wide md:grid-rows-none md:grid-cols-4 md:gap-4  mt-[12px] sm:mt-space30 md:items-start"
+                >
+                  {/* Day Name */}
+                  <Link
+                   onClick={onClose}
+                    to={`${day}`}
+                    smooth={true}
+                    duration={800}
+                    className="text-mobiletextSmall cursor-pointer tracking-wider  md:text-textSmall text-primaryWhite font-primaryLight md:col-span-1 font-bold  "
+                  >
+                    {day}
+                  </Link>
+                  <div className="col-span-3 mt-space15 md:my-auto grid-cols-6 gap-space15  grid">
+                    {Object.entries(places).map(
+                      ([placeName, locations], idx) => {
+                        // Convert odd length to even by subtracting 1 if needed
+                        let adjustedLength =
+                          locations.length % 2 !== 0
+                            ? locations.length + 1
+                            : locations.length;
+                        let halfLength = adjustedLength / 2; // Divide into 2 equal columns
+
+                        return (
+                          <React.Fragment key={idx}>
+                            {/* Place Name - Same row for first item, new row for others */}
                             <Link
-                              onClick={onClose}
-                              to={`${location}`}
+                             onClick={onClose}
+                              to={`${placeName}`}
                               smooth={true}
                               duration={800}
-                              key={i}
-                              className="cursor-pointer text-mobiletextSmall tracking-wide text-success"
+                              className={` cursor-pointer col-span-2 text-success tracking-wide text-mobiletextSmall`}
                             >
-                              {location}
-                              <br />
+                              <h6>{placeName}</h6>
                             </Link>
-                          ))}
-                        </div>
-  
-                        {/* Laptop - First Column */}
-                        <div className="text-gray-100 md:block hidden mb-space30 col-start-1 col-span-2">
-                          {locations.slice(0, halfLength).map((location, i) => (
-                            <Link
-                              onClick={onClose}
-                              to={`${location}`}
-                              smooth={true}
-                              duration={800}
-                              key={i}
-                              className="cursor-pointer text-gray-100 mr-spacemd"
-                            >
-                              {location}
-                            </Link>
-                          ))}
-                        </div>
-  
-                        {/* Laptop - Second Column */}
-                        <section className="text-gray-100 hidden md:block mb-space30 col-start-3 col-span-2">
-                          {locations.slice(halfLength, adjustedLength).map((location, i) => (
-                            <Link
-                              onClick={onClose}
-                              to={`${location}`}
-                              smooth={true}
-                              duration={800}
-                              key={i}
-                              className="cursor-pointer text-gray-100 mr-spacemd"
-                            >
-                              {location}
-                            </Link>
-                          ))}
-                        </section>
-                      </div>
-                    </React.Fragment>
-                  );
-                })}
-              </div>
-            </div>
+                            <div className=" gap-space15 col-start-4 col-span-4 grid-flow-col md:col-span-4 md:grid grid-cols-4">
+                              {/* mobile  */}
+                              <div className="col-span-4 text-success md:hidden gap-3  ">
+                                {locations.map((location, i) => (
+                                  <Link
+                                  onClick={onClose}
+                                    to={`${location}`}
+                                    smooth={true}
+                                    duration={800}
+                                    key={i}
+                                    className="cursor-pointer text-mobiletextSmall tracking-wide text-success"
+                                  >
+                                    <p>{location}</p>
+                                  </Link>
+                                ))}
+                              </div>
+                              {/* laptop  */}
+                              {/* First Column (First half of locations) */}
+                              <div className=" text-textSmall  text-gray-100 md:block hidden  col-start-1 col-span-2">
+                                {locations.slice(0, 5).map((location, i) => (
+                                  <Link
+                                  onClick={onClose}
+                                    to={`${location}`}
+                                    smooth={true}
+                                    duration={800}
+                                    key={i}
+                                    className=" cursor-pointer text-gray-100  "
+                                  >
+                                    <p>{location}</p>
+                                  </Link>
+                                ))}
+                              </div>
+
+                              {/* Second Column (Remaining half of locations) */}
+                              <section className="text-gray-100  hidden md:block   col-start-3 col-span-2 ">
+                                {locations
+                                  .slice(5, adjustedLength)
+                                  .map((location, i) => (
+                                    <Link
+                                    onClick={onClose}
+                                      to={`${location}`}
+                                      smooth={true}
+                                      duration={800}
+                                      key={i}
+                                      className=" cursor-pointer text-gray-100  "
+                                    >
+                                      <p>{location}</p>
+                                    </Link>
+                                  ))}
+                              </section>
+                            </div>
+                          </React.Fragment>
+                        );
+                      }
+                    )}
+                  </div>
+                </div>
           ))
         )}
       </div>

@@ -226,18 +226,18 @@ const Navbar = () => {
       if (mostVisibleSection) {
         const sectionId = mostVisibleSection.id;
 
-        // ✅ Check if section ID has changed
+        //  Check if section ID has changed
         if (previousSectionId.current !== sectionId) {
           previousSectionId.current = sectionId; // Update previous section ID
 
-          // ✅ Find the corresponding place from `placesData`
+          //  Find the corresponding place from `placesData`
           const foundPlace = placesData
             .flatMap((day) => day.places)
             .find((place) => place.id === sectionId);
 
           if (foundPlace) {
             // console.log("New Active Section:", foundPlace);
-            setActive(foundPlace); // ✅ Update active title only when it changes
+            setActive(foundPlace); //  Update active title only when it changes
           }
         }
       }
@@ -281,7 +281,7 @@ const Navbar = () => {
       </Link>
 
       {/* menu  */}
-      <div className="fixed   left-[4.1666665%]  z-50 ">
+      <div className="fixed   left-[4.1666665%]  z-[60] ">
         <div className="md:pl-4 md:py-4">
           <div className="relative  pl-[4rem]  md:pl-[5rem]   pt-6 md:pt-1 inline-block ">
             {/* Dropdown Button */}
@@ -306,7 +306,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="w-full fixed z-20 lg:top-0 bottom-space15  ">
+      <div className="w-full fixed z-20 lg:top-0  bottom-space15  ">
         <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
           <div className=" flex ">
@@ -391,8 +391,7 @@ const Navbar = () => {
                                 <span className="truncate  w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
                                   <p className="w-mobilespace130 pl-spacelg md:pl-0 sm:w-auto truncate">
-
-                              {place.name}
+                                    {place.name}
                                   </p>
                                 </span>
                               </div>
@@ -415,11 +414,10 @@ const Navbar = () => {
         </div>
       </div>
       {/* Dropdown Menu */}
-
       {isOpen && (
-        <section className="menu  pb-0  z-40 bg-primaryBlack w-[100%] box-border  flex justify-between ">
-          <div className="font-primaryLight   min-h-screen grid md:w-[100%] grid-cols-12">
-            <div className="md:col-start-5 mt-space60  col-start-1 col-span-12 grid grid-cols-6">
+        <section className="menu overflow-y-auto bg-primaryBlack box-border flex justify-between fixed top-0 bottom-0 left-0 right-0 z-50">
+          <div className="font-primaryLight  grid md:w-[100%] grid-cols-12">
+            <div className="md:col-start-5 mt-space30 col-start-1 col-span-12 grid grid-cols-6">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -427,7 +425,7 @@ const Navbar = () => {
               >
                 Intro
               </a>
-              <div className="col-start-1 col-span-6  ">
+              <div className="col-start-1 col-span-6 ">
                 <button
                   type="button"
                   onClick={toggleAccordion}
@@ -438,11 +436,11 @@ const Navbar = () => {
                 <section
                   className={`transition-all duration-500 ease-in-out${
                     isParikarmaOpen
-                      ? "min-h-fit  opacity-100 z-40"
+                      ? "min-h-fit opacity-100 z-40"
                       : "max-h-0 opacity-0"
                   }`}
                   style={{
-                    maxHeight: isParikarmaOpen ? "100vh" : "0",
+                    maxHeight: isParikarmaOpen ? "200vh" : "0",
                     opacity: isParikarmaOpen ? 1 : 0,
                   }}
                 >
@@ -473,7 +471,7 @@ const Navbar = () => {
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-12    md:w-full grid gird-cols-6  md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
+            <footer className="col-span-12  md:w-full grid gird-cols-6 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight">
               <p className="paragraph place-self-end col-span-2">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}

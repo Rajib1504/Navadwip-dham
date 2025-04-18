@@ -12,7 +12,7 @@ const Footer = () => {
     // .catch((error) => console.log(error.message));
   }, []);
   return (
-    <div className="bg-primaryBlack grid grid-cols-12 ">
+    <section className="bg-primaryBlack grid grid-cols-12 ">
       <div className="mx-auto w-11/12  col-span-12 grid grid-cols-12 ">
         <div className="col-start-1 col-span-12 flex md:justify-end justify-start   pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
@@ -161,7 +161,7 @@ const Footer = () => {
           </p>
         </footer>
       </div>
-    </div>
+    </section>
   );
 };
 
