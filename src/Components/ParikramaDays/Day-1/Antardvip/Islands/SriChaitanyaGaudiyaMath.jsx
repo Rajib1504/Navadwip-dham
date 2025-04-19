@@ -10,7 +10,7 @@ const SriChaitanyaGaudiyaMath = () => {
             className=" place pt-space60 md:pt-space60 gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
           >
             {/* First Box (Starts from top) */}
-            <p className="self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
+            <p className="animateLines self-start text-mobileTextRegular col-start-1 col-span-1 md:text-textRegular">
             I 1.1
             </p>
 

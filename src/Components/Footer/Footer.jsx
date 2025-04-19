@@ -16,12 +16,12 @@ const Footer = () => {
       <div className="mx-auto w-11/12  col-span-12 grid grid-cols-12 ">
         <div className="col-start-1 col-span-12 flex md:justify-end justify-start   pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
-            <p className="font-primaryLight border-b border-secondaryWhite text-mobiletextSmall sm:text-textSmall mb-spacelg text-success">
+            <p className="font-primaryLight border-b border-secondaryWhite text-mobiletextSmall sm:text-textSmall pb-spacelg text-success">
               Menu
             </p>
             <Link
               to="topContainer"
-              className=" cursor-pointer my-space15 text-mobileheading2  sm:text-heading2 text-success  border-b border-secondaryWhite"
+              className=" cursor-pointer py-space15 text-mobileheading2  sm:text-heading2 text-success  border-b border-secondaryWhite"
             >
               Intro
             </Link>

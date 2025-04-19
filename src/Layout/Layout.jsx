@@ -12,9 +12,9 @@ const Layout = () => {
         <SmoothScroll />
         <Outlet />
       </div>
-      <div>
+    
         <Footer />
-      </div>
+    
     </div>
   );
 };
