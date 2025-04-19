@@ -14,7 +14,7 @@ const Books = () => {
         {/* books images  */}
         <section className="w-11/12 mx-auto mt-space120 md:mt-space240  grid grid-cols-1  sm:grid-cols-12 gap-spacemd">
           <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60 col-span-12 md:col-start-1 md:col-span-4 flex-col rounded-md items-center ">
-            <img src="/Images/Books/The Life of Chaitanya Mahaprabhu.svg" alt="" className="pb-space30 backdrop-blur-md" />
+            <img src="/Images/Books/Chaitanay mahaprabhu.webp" alt="" className="pb-space30 backdrop-blur-md shadow-box" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
               The Life of <br /> Chaitanya Mahaprabhu
             </h6>
@@ -22,9 +22,9 @@ const Books = () => {
 
           <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full col-span-12 md:col-start-5 md:col-span-4 flex flex-col items-center rounded-md py-space60">
             <img
-              src="/Images/Books/sri chaitanya.svg"
+              src="../../../public/Images/Books/sri chaitanya and his associatates.webp"
               alt=""
-              className="pb-space30 backdrop-blur-md"
+              className="pb-space30 backdrop-blur-md shadow-box"
             />
             <h6 className="text-center font-primaryLight text-mobiletextSmall text-success">
               Sri Chaitanya <br /> and His Associates
@@ -33,9 +33,9 @@ const Books = () => {
 
           <a href="https://www.amazon.com/Navadvipa-dhama-mahatmya-Bhaktivedanta-Narayana-Gosvami-Maharaja/dp/1935428098" target="_blank" className="bg-accentWhite col-span-12 md:col-start-9 w-full rounded-md flex flex-col items-center py-space60 md:col-span-4  ">
             <img
-              src="/Images/Books/sri navadvipa dhama.svg"
+              src="../../../public/Images/Books/Sri navadvip Dham.jpg"
               alt=""
-              className="pb-space30 backdrop-blur-md"
+              className="pb-space30 backdrop-blur-md shadow-box"
             />
             <h6 className="text-center font-primaryLight text-mobiletextSmall text-success">
               The Excellence <br /> of Navadvip

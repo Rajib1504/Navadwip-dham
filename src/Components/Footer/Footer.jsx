@@ -26,7 +26,7 @@ const Footer = () => {
               Intro
             </Link>
             <Link
-              to="DayOne"
+              to="Day One"
               className=" text-mobileheading2 cursor-pointer my-space15 sm:text-heading2 text-success"
             >
               Parikarma
@@ -87,7 +87,7 @@ const Footer = () => {
                               {/* laptop  */}
                               {/* First Column (First half of locations) */}
                               <div className=" text-textSmall  text-gray-100 md:block hidden  col-start-1 col-span-2">
-                                {locations.slice(0, 5).map((location, i) => (
+                                {locations.slice(0, 3).map((location, i) => (
                                   <Link
                                     to={`${location}`}
                                     smooth={true}
@@ -103,7 +103,7 @@ const Footer = () => {
                               {/* Second Column (Remaining half of locations) */}
                               <section className="text-gray-100  hidden md:block   col-start-3 col-span-2 ">
                                 {locations
-                                  .slice(5, adjustedLength)
+                                  .slice(3, adjustedLength)
                                   .map((location, i) => (
                                     <Link
                                       to={`${location}`}

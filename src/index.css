@@ -85,7 +85,7 @@ html, body {
   will-change: transform;
   backface-visibility: hidden;
 }
-/* .shadow-box {
+.shadow-box {
   box-shadow: 0px 25px 35px -10px rgba(0, 0, 0, 0.25);
-} */
+}
 
