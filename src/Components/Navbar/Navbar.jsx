@@ -312,10 +312,10 @@ const Navbar = () => {
           <div className=" flex ">
             {/* center content   */}
             {/* main container  */}
-            <div className=" box-border  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-11/12  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
+            <div className=" box-border  cursor-pointer md:static flex h-[2.5rem]  gap-2 w-full  md:gap-4 font-primayRegular justify-center mx-auto md:w-4/5 lg:w-1/2 items-center ">
               <button
                 onClick={() => handleNavigate("prev")}
-                className="  px-spacemd rounded-full  transition-all  w-mobilespace40 h-mobilespace40   border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center "
+                className=" px-spacelg  rounded-full  transition-all  w-mobilespace40 h-mobilespace40   border bg-primaryWhite  backdrop-blur-sm border-neutralBlack  flex items-center justify-center "
               >
                 <HiArrowLongLeft className="" />
               </button>
@@ -405,7 +405,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={() => handleNavigate("next")}
-                className=" flex justify-center items-center border border-accentBlack   backdrop-blur-sm  rounded-full w-mobilespace40 h-mobilespace40   transition-all  bg-primaryWhite  "
+                className=" flex justify-center items-center border border-accentBlack   backdrop-blur-sm  rounded-full w-mobilespace40 h-mobilespace40 px-spacelg  transition-all  bg-primaryWhite  "
               >
                 <HiArrowLongRight />
               </button>
@@ -415,9 +415,9 @@ const Navbar = () => {
       </div>
       {/* Dropdown Menu */}
       {isOpen && (
-        <section className="menu overflow-y-auto bg-primaryBlack box-border flex justify-between fixed top-0 bottom-0 left-0 right-0 z-50">
-          <div className="font-primaryLight  grid md:w-[100%] grid-cols-12">
-            <div className="md:col-start-5 mt-space60 sm:mt-space30 col-start-1 col-span-12 grid grid-cols-6">
+        <section className="menu overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
+          <div className="font-primaryLight  grid md:w-[100%] grid-cols-12">  
+            <div className="md:col-start-5 sm:mb-space312 mt-space60  col-start-1 col-span-12 grid grid-cols-12">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -425,7 +425,7 @@ const Navbar = () => {
               >
                 Intro
               </a>
-              <div className="col-start-1 col-span-6 ">
+              <div className="col-start-1 col-span-12 ">
                 <button
                   type="button"
                   onClick={toggleAccordion}
@@ -434,13 +434,13 @@ const Navbar = () => {
                   Parikarma
                 </button>
                 <section
-                  className={`transition-all duration-500 ease-in-out${
+                  className={`transition-all  duration-500 ease-in-out${
                     isParikarmaOpen
                       ? "min-h-fit opacity-100 z-40"
                       : "max-h-0 opacity-0"
                   }`}
                   style={{
-                    maxHeight: isParikarmaOpen ? "200vh" : "0",
+                    maxHeight: isParikarmaOpen ? "250vh" : "0",
                     opacity: isParikarmaOpen ? 1 : 0,
                   }}
                 >
@@ -471,13 +471,13 @@ const Navbar = () => {
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-12 mb-mobilespace50  md:w-full grid gird-cols-6 mt-mobilespace60 sm:mt-0 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight ">
-              <p className="paragraph col-start-1 col-span-2">@2025</p>
+            <footer className="col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight ">
+              <p className="paragraph col-span-2 place-self-end ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
                 target="_blank"
-                className="paragraph col-start-5 col-span-9"
+                className="paragraph col-start-9  col-span-12 "
               >
                 Instagram
               </a>

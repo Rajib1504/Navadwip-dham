@@ -13,16 +13,16 @@ const Books = () => {
         </div>
         {/* books images  */}
         <section className="w-full mt-space120 md:mt-space240  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-spacelg">
-          <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60  flex-col  items-center ">
-            <img src="../../../dist/Images/Books/The Life of Chaitanya Mahaprabhu.svg" alt="" className="pb-space30 backdrop-blur-md" />
+          <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60  flex-col rounded-md items-center ">
+            <img src="/Images/Books/The Life of Chaitanya Mahaprabhu.svg" alt="" className="pb-space30 backdrop-blur-md" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">
               The Life of <br /> Chaitanya Mahaprabhu
             </h6>
           </a>
 
-          <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60">
+          <a href="https://www.amazon.com/-/es/Chaitanya-Associates-Swami-Tirtha-Maharaja/dp/1647226767" target="_blank" className="bg-accentWhite w-full flex flex-col items-center rounded-md py-space60">
             <img
-              src="../../../dist/Images/Books/sri chaitanya.svg"
+              src="/Images/Books/sri chaitanya.svg"
               alt=""
               className="pb-space30 backdrop-blur-md"
             />
@@ -31,9 +31,9 @@ const Books = () => {
             </h6>
           </a>
 
-          <a href="https://www.amazon.com/Navadvipa-dhama-mahatmya-Bhaktivedanta-Narayana-Gosvami-Maharaja/dp/1935428098" target="_blank" className="bg-accentWhite w-full flex flex-col items-center py-space60 ">
+          <a href="https://www.amazon.com/Navadvipa-dhama-mahatmya-Bhaktivedanta-Narayana-Gosvami-Maharaja/dp/1935428098" target="_blank" className="bg-accentWhite w-full rounded-md flex flex-col items-center py-space60  ">
             <img
-              src="../../../dist/Images/Books/sri navadvipa dhama.svg"
+              src="/Images/Books/sri navadvipa dhama.svg"
               alt=""
               className="pb-space30 backdrop-blur-md"
             />

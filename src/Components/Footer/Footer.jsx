@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <Link
               to="topContainer"
-              className=" cursor-pointermy-space15 text-mobileheading2  sm:text-heading2 text-success  border-b border-secondaryWhite"
+              className=" cursor-pointer my-space15 text-mobileheading2  sm:text-heading2 text-success  border-b border-secondaryWhite"
             >
               Intro
             </Link>

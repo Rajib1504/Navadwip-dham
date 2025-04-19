@@ -32,6 +32,7 @@ export default {
       spacing: {
         space300: "30rem",
         space240: "24rem",
+        space312: '312px',
         space120: "12rem",
         space60: "6rem",
         space30: "3rem",
@@ -43,6 +44,7 @@ export default {
         mobilespace50:" 50px",
         mobilespace60:" 60px",
         mobilespace130:" 130px",
+        mobilespace192:" 192px",
         mobilespace274:" 274px",
         mobilespace285:" 17.8125rem",
         mobilespace314:"19.625rem",

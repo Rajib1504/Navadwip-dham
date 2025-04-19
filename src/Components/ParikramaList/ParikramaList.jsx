@@ -65,7 +65,7 @@ const ParikramaList = ({ onClose }) => {
                               to={`${placeName}`}
                               smooth={true}
                               duration={800}
-                              className={` cursor-pointer col-span-2 text-success tracking-wide text-mobiletextSmall`}
+                              className={` cursor-pointer col-span-2 text-success tracking-wide sm:text-textSmall text-mobiletextSmall`}
                             >
                               <h6>{placeName}</h6>
                             </Link>
@@ -88,7 +88,7 @@ const ParikramaList = ({ onClose }) => {
                               {/* laptop  */}
                               {/* First Column (First half of locations) */}
                               <div className=" text-textSmall  text-gray-100 md:block hidden  col-start-1 col-span-2">
-                                {locations.slice(0, 5).map((location, i) => (
+                                {locations.slice(0, 3).map((location, i) => (
                                   <Link
                                   onClick={onClose}
                                     to={`${location}`}
@@ -105,7 +105,7 @@ const ParikramaList = ({ onClose }) => {
                               {/* Second Column (Remaining half of locations) */}
                               <section className="text-gray-100  hidden md:block   col-start-3 col-span-2 ">
                                 {locations
-                                  .slice(5, adjustedLength)
+                                  .slice(3, adjustedLength)
                                   .map((location, i) => (
                                     <Link
                                     onClick={onClose}
