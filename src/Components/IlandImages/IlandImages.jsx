@@ -49,10 +49,10 @@ const containerRef = usetextAnimation()
 
         {/* Left images */}
         <div className="hidden  lg:flex justify-center items-center gap-4 left-images">
-          <img src="../../../dist/Images/Iland images/IMG_8584.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/Yogapith,_Mayapur 2.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/IMG_8557.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/NMP1-111 1 (4).webp" alt="img" />
+          <img src="/Images/Iland images/IMG_8584.webp" alt="img" />
+          <img src="/Images/Iland images/Yogapith,_Mayapur 2.webp" alt="img" />
+          <img src="/Images/Iland images/IMG_8557.webp" alt="img" />
+          <img src="/Images/Iland images/NMP1-111 1 (4).webp" alt="img" />
         </div>
 
         {/* Center Text */}
@@ -63,10 +63,10 @@ const containerRef = usetextAnimation()
 
         {/* Right images */}
         <div className="hidden lg:flex gap-4 justify-center items-center right-images">
-          <img src="../../../dist/Images/Iland images/1986-01-16 1.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/IMG_8425.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/IMG_8487.webp" alt="img" />
-          <img src="../../../dist/Images/Iland images/NMP1-111 1 (1).webp" alt="img" />
+          <img src="/Images/Iland images/1986-01-16 1.webp" alt="img" />
+          <img src="/Images/Iland images/IMG_8425.webp" alt="img" />
+          <img src="/Images/Iland images/IMG_8487.webp" alt="img" />
+          <img src="/Images/Iland images/NMP1-111 1 (1).webp" alt="img" />
         </div>
       </div>
     </div>
