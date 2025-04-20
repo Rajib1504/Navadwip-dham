@@ -271,7 +271,7 @@ const Navbar = () => {
     <nav ref={containerRef} className=" mx-auto">
       <Link
         to="#topContainer"
-        className="fixed left-[4.1666665%] mix-blend-difference z-[60] "
+        className="fixed left-[4.1666665%] mix-blend-difference z-[70] "
       >
         <img
           src="/Images/Logo/logo.svg"
@@ -306,7 +306,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="w-full fixed z-20 lg:top-0  bottom-space15  ">
+      <div className="w-full  fixed lg:top-0  z-20   bottom-space15 h-fit  ">
         <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
           <div className=" flex ">
