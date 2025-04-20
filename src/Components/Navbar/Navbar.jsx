@@ -18,7 +18,7 @@ import usetextAnimation from "../../Hooks/UsetextAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Navbar = () => {
+const Navbar = ({footerRef}) => {
   const placesData = [
     {
       day: "Day One",
@@ -180,7 +180,7 @@ const Navbar = () => {
   }, [currentPlace, firstLoad]);
   // select place and go
   const handleSelectPlace = (place) => {
-    console.log(place);
+    // console.log(place);
     setCurrentPlace(place);
     setDropdownOpen(false);
     document.getElementById(place.id)?.scrollIntoView({ behavior: "smooth" });
@@ -267,8 +267,71 @@ const Navbar = () => {
       ease: "power1.in",
     });
   };
+
+  // scolloff in footer 
+  const navbarRef = useRef(null);
+//   useGSAP(
+//     () => {
+//       const navbarElement = navbarRef.current;
+//       const footerElement = footerRef.current;
+
+//       if (!navbarElement || !footerElement) {
+//         // return; // Ensure elements exist
+//         console.log("error")
+//       }
+// if(navbarElement){
+//   console.log("navbarelement")
+// }
+// if(footerElement){
+//   console.log("footer element")
+// }
+//       gsap.to(navbarElement, {
+//         yPercent: -100, // Move Navbar up by 100% of its height
+//         scrollTrigger: {
+//           trigger: footerElement, // When the Footer comes into view
+//           start: 'top bottom-=50', // When the top of the Footer is 50px above the bottom of the viewport
+//           end: 'top top',        // When the top of the Footer hits the top of the viewport
+//           scrub: true,             // Smoothly animate based on scroll progress
+//           markers: true,          // For debugging
+//           onLeaveBack: () => {      // When scrolling back *past* the start trigger
+//             gsap.to(navbarElement, { yPercent: 0, duration: 0.3, overwrite: true });
+//           },
+//         },
+//       });
+//     },
+//     [footerRef] // Dependencies for the useGSAP hook
+//   );
+// useGSAP(
+//   () => {
+//     const navbarElement = navbarRef.current;
+//     const footerElement = footerRef.current;
+
+//     if (!navbarElement || !footerElement) {
+//       // return;
+//       console.l
+//     }
+
+//     gsap.to(navbarElement, {
+//       yPercent: -100,
+//       scrollTrigger: {
+//         trigger: footerElement,
+//         start: 'top bottom', // Changed start value
+//         end: 'top top',
+//         scrub: true,
+//         markers: true, // Keep markers for now
+//         onLeaveBack: () => {
+//           gsap.to(navbarElement, { yPercent: 0, duration: 0.3, overwrite: true });
+//         },
+//       },
+//     });
+//   },
+//   [footerRef]
+// );
   return (
-    <nav ref={containerRef} className=" mx-auto">
+    <nav ref={navbarRef}  >
+      <header ref={containerRef} className=" mx-auto">
+
+      </header>
       <Link
         to="#topContainer"
         className="fixed left-[4.1666665%] mix-blend-difference z-[70] "

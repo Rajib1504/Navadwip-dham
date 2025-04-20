@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-scroll";
 
-const Footer = () => {
+const Footer = React.forwardRef((props, ref)  => {
   const [travellist, setTravelList] = useState([]);
+  
   // console.log(travellist);
   useEffect(() => {
     fetch("/Json/Travel.json")
@@ -12,7 +13,7 @@ const Footer = () => {
     // .catch((error) => console.log(error.message));
   }, []);
   return (
-    <section className="bg-primaryBlack grid grid-cols-12 ">
+    <section ref={ref} className="bg-primaryBlack grid grid-cols-12 ">
       <div className="mx-auto w-11/12  col-span-12 grid grid-cols-12 ">
         <div className="col-start-1 col-span-12 flex md:justify-end justify-start   pt-space60">
           <div className="md:w-2/3 w-full font-primaryLight  flex flex-col justify-end">
@@ -163,6 +164,6 @@ const Footer = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Footer;
