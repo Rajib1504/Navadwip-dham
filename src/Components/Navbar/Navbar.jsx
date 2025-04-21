@@ -453,7 +453,7 @@ const Navbar = ({footerRef}) => {
                                 </span>
                                 <span className="truncate  w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
-                                  <p className="w-mobilespace130 pl-spacelg md:pl-0 sm:w-auto truncate">
+                                  <p className="w-mobilespace130 mx-auto sm:w-auto truncate">
                                     {place.name}
                                   </p>
                                 </span>
@@ -484,7 +484,7 @@ const Navbar = ({footerRef}) => {
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
-                className="title md:my-space15 my-spacelg col-start-1 col-span-5 text-heading3 cursor-pointer md:text-heading2 text-success"
+                className="title md:my-space15 my-spacelg col-start-1 col-span-5  cursor-pointer text-mobileheading2  sm:text-heading2  text-success"
               >
                 Intro
               </a>
@@ -492,7 +492,7 @@ const Navbar = ({footerRef}) => {
                 <button
                   type="button"
                   onClick={toggleAccordion}
-                  className="title cursor-pointer md:my-space15 text-heading3 md:text-heading2 text-success my-spacelg w-full text-left"
+                  className="title cursor-pointer md:my-space15  text-mobileheading2  sm:text-heading2  text-success my-spacelg w-full text-left"
                 >
                   Parikarma
                 </button>
@@ -521,7 +521,7 @@ const Navbar = ({footerRef}) => {
               <a
                 href="#Books"
                 onClick={() => setIsOpen(!isOpen)}
-                className="title col-start-1 col-span-5 cursor-pointer md:text-heading2 text-heading3 text-success md:my-space15 my-spacelg"
+                className="title col-start-1 col-span-5 cursor-pointer text-mobileheading2  sm:text-heading2  text-success md:my-space15 my-spacelg"
               >
                 Books
               </a>
@@ -529,13 +529,13 @@ const Navbar = ({footerRef}) => {
               <a
                 href="mailto:hello@dhama.info?subject=Navadvip"
                 onClick={() => setIsOpen(!isOpen)}
-                className="title col-start-1 cursor-pointer col-span-5 md:text-heading2 text-heading3 md:my-space15 my-spacelg text-success"
+                className="title col-start-1 cursor-pointer col-span-6 text-mobileheading2  sm:text-heading2  md:my-space15 my-spacelg text-success"
               >
                 Ask a Question
               </a>
             </div>
             <footer className="col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight ">
-              <p className="paragraph col-span-2 place-self-end ">@2025</p>
+              <p className="paragraph  col-span-2 md:place-self-end ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"

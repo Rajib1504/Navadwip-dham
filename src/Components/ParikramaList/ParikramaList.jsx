@@ -43,7 +43,7 @@ const ParikramaList = ({ onClose }) => {
                     to={`${day}`}
                     smooth={true}
                     duration={800}
-                    className="text-mobiletextSmall cursor-pointer tracking-wider  md:text-textSmall text-primaryWhite font-primaryLight md:col-span-1 font-bold  "
+                    className="text-mobiletextSmall cursor-pointer tracking-wider  md:text-textSmall text-primaryWhite font-primaryLight md:col-span-1  "
                   >
                     {day}
                   </Link>
