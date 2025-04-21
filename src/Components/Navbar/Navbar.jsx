@@ -529,12 +529,12 @@ const Navbar = ({footerRef}) => {
               <a
                 href="mailto:hello@dhama.info?subject=Navadvip"
                 onClick={() => setIsOpen(!isOpen)}
-                className="title col-start-1 cursor-pointer col-span-6 text-mobileheading2  sm:text-heading2  md:my-space15 my-spacelg text-success"
+                className="title col-start-1 cursor-pointer col-span-8 text-mobileheading2  sm:text-heading2  md:my-space15 my-spacelg text-success"
               >
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0 md:text-textSmall text-textRegular text-primaryWhite font-primaryLight ">
+            <footer className="col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0  text-textSmall text-primaryWhite font-primaryLight ">
               <p className="paragraph  col-span-2 md:place-self-end ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
