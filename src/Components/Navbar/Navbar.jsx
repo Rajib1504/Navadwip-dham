@@ -451,11 +451,14 @@ const Navbar = ({footerRef}) => {
                                 <span className=" md:absolute md:w-1/4 w-mobilespace40   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
                                   {place.idx}
                                 </span>
-                                <span className="truncate  w-full text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
+                                <span className="truncate  w-full md:text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
                                   {" "}
-                                  <p className="w-mobilespace130 mx-auto sm:w-auto truncate">
+                                  <p className="truncate">
                                     {place.name}
                                   </p>
+                                </span>
+                                <span className=" md:absolute md:w-1/4 w-mobilespace40   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
+                                  
                                 </span>
                               </div>
                             ))}
@@ -478,9 +481,9 @@ const Navbar = ({footerRef}) => {
       </div>
       {/* Dropdown Menu */}
       {isOpen && (
-        <section className="menu overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
-          <div className="font-primaryLight  grid md:w-[100%] grid-cols-12">  
-            <div className="md:col-start-5 sm:mb-space312 mt-space60  col-start-1 col-span-12 grid grid-cols-12">
+        <section className="menu block overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
+          <div className="font-primaryLight  grid md:w-[100%] h-screen grid-cols-10">  
+            <div className="md:col-start-5 sm:mb-space312 mt-space60  ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -534,8 +537,8 @@ const Navbar = ({footerRef}) => {
                 Ask a Question
               </a>
             </div>
-            <footer className="col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0  text-textSmall text-primaryWhite font-primaryLight ">
-              <p className="paragraph  col-span-2 md:place-self-end ">@2025</p>
+            <footer className=" place-self-end sm:place-self-auto col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0  text-textSmall text-primaryWhite font-primaryLight ">
+              <p className="paragraph  col-span-2 sm:place-self-end ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
