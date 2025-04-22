@@ -143,16 +143,16 @@ const Footer = React.forwardRef((props, ref)  => {
             </div>
           </div>
         </div>
-        <footer className="col-start-1 col-span-12 mt-space240  md:mt-space120 mb-space30 flex items-center md:text-textSmall text-textSmall text-primaryWhite font-primaryLight justify-between">
-          <p>@2025</p>
+        <footer className="col-start-1 col-span-12   mt-space60 mb-space15 grid grid-cols-12 md:text-textSmall text-textSmall text-primaryWhite font-primaryLight ">
+          <p className="col-span-4">@2025</p>
           <a
             href="https://www.instagram.com/bsvtrust"
             target="_blank"
-            className="hidden md:block"
+            className="hidden md:block col-span-4  "
           >
             Instagram
           </a>
-          <p>
+          <p className=" col-span-8 md:col-span-4 text-right">
             Designed by{" "}
             <a
               href="https://www.instagram.com/chaitanya_agency"

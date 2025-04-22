@@ -99,7 +99,7 @@ const Banner = () => {
 
   return (
     <section id="topContainer" className="w-full intro" ref={introSectionRef}>
-      <div className="floating-div mix-blend-difference pointer-events-none z-10 w-full min-h-screen absolute flex justify-center items-center" ref={floatingDivRef}>
+      <div className="floating-div mix-blend-difference pointer-events-none z-10 w-full min-h-dvh absolute flex justify-center items-center" ref={floatingDivRef}>
       <svg
           className=" w-[60%] md:w-[30%]  fill-success"
           viewBox="0 0 450 528"
@@ -111,7 +111,7 @@ const Banner = () => {
 
       <div
         id="title"
-        className="place w-11/12 py-space60 mx-auto min-h-screen border z-10  flex justify-center items-center flex-col"
+        className="place w-11/12 py-space60 mx-auto min-h-dvh border z-10  flex justify-center items-center flex-col"
         ref={(el) => (sectionsRef.current[0] = el)}
       >
         <h1 className="title uppercase  text-[18vw] md:text-[15vw] font-primaryLight  leading-[2em]    block text-center ">

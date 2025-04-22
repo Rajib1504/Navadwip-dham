@@ -10,8 +10,8 @@ export default {
         primaryBlack: "rgb(28,27,27)", // black "rgba(34, 197, 94, 0.8)"
         secondaryBlack: "rgba(28,27,27,0.5)", // black 50%
         accentBlack: "rgba(28,27,27,0.2)", // black 20%
-        neutralBlack: "rgba(28,27,27,0.1)", // black 10%
         success: "rgb(233,228,221)", // send
+        neutralBlack: "rgba(28,27,27,0.1)", // black 10%
         primaryWhite: "rgba(233,228,221,0.5)", // white 50%
         secondaryWhite: "rgba(233,228,221,0.2)", // white 20 %
         accentWhite: "rgba(233,228,221,0.1)", //white 10%

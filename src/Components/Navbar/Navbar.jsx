@@ -344,7 +344,7 @@ const Navbar = ({footerRef}) => {
       </Link>
 
       {/* menu  */}
-      <div className="fixed   left-[4.1666665%]  z-[60] ">
+      <section className="fixed   left-[4.1666665%]  z-[60] ">
         <div className="md:pl-4 md:py-4">
           <div className="relative  pl-[4rem]  md:pl-[5rem]   pt-6 md:pt-1 inline-block ">
             {/* Dropdown Button */}
@@ -367,9 +367,9 @@ const Navbar = ({footerRef}) => {
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="w-full  fixed lg:top-0  z-20   bottom-space15 h-fit  ">
+      <section className="w-full  fixed lg:top-0  z-20   bottom-space15 h-fit  ">
         <div className="w-11/12   mx-auto pt-[20px]">
           {/* left content  */}
           <div className=" flex ">
@@ -382,9 +382,9 @@ const Navbar = ({footerRef}) => {
               >
                 <HiArrowLongLeft className="" />
               </button>
-              <div
+              <section
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex  dropdownMenu border gap-spacelg relative  border-accentBlack backdrop-blur-sm items-center h-[2.5rem] md:h-[2.5rem]  justify-between w-[70%] md:w-screen max-w-space300  rounded-full bg-primaryWhite  "
+                className="flex  dropdownMenu border gap-spacelg relative  border-neutralBlack backdrop-blur-sm items-center h-[2.5rem] md:h-[2.5rem]  justify-between w-[70%] md:w-screen max-w-space300  rounded-full bg-primaryWhite  "
               >
                 {/* dynamic number  */}
                 <div className=" bg-accentBlack md:text-textSmall  text-mobiletextSmall  font-primaryLight md:w-[4rem] w-[7rem] text-center  rounded-full flex items-center justify-center">
@@ -468,22 +468,22 @@ const Navbar = ({footerRef}) => {
                     </div>
                   </ul>
                 )}
-              </div>
+              </section>
               <button
                 onClick={() => handleNavigate("next")}
-                className=" flex justify-center items-center border border-accentBlack   backdrop-blur-sm  rounded-full w-mobilespace40 h-mobilespace40 px-spacelg  transition-all  bg-primaryWhite  "
+                className=" flex justify-center items-center border border-neutralBlack   backdrop-blur-sm  rounded-full w-mobilespace40 h-mobilespace40 px-spacelg  transition-all  bg-primaryWhite  "
               >
                 <HiArrowLongRight />
               </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* Dropdown Menu */}
       {isOpen && (
         <section className="menu block overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
-          <div className="font-primaryLight  grid md:w-[100%] h-[98dvh] grid-cols-10">  
-            <div className="md:col-start-5 sm:mb-space120 mt-space60  ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
+          <div className="font-primaryLight  flex flex-col justify-between md:grid md:w-full min-h-dvh  grid-cols-10">  
+            <section className="md:col-start-5 mt-space60   ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -536,16 +536,16 @@ const Navbar = ({footerRef}) => {
               >
                 Ask a Question
               </a>
-            </div>
-            <footer className=" place-self-end sm:place-self-auto col-span-6 mb-mobilespace50   grid grid-cols-12 mt-mobilespace60 sm:mt-0  text-textSmall text-primaryWhite font-primaryLight ">
+            </section>
+            <footer className="pt-space30  place-self-end sm:place-self-auto col-span-6 mb-space15   grid grid-cols-12  sm:mt-space60  text-textSmall text-primaryWhite font-primaryLight ">
               <p className="paragraph  col-span-2 sm:place-self-end ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
                 target="_blank"
-                className="paragraph col-start-9  col-span-12 "
+                className="paragraph col-start-9 sm:place-self-end "
               >
-                Instagram
+               <p> Instagram</p>
               </a>
             </footer>
           </div>
