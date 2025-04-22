@@ -12,7 +12,7 @@ const Books = () => {
           </h5>
         </div>
         {/* books images  */}
-        <section className="w-11/12 mx-auto mt-space120 md:mt-space240  grid grid-cols-1  sm:grid-cols-12 gap-spacemd">
+        <section className="w-11/12 mx-auto mt-space120 md:mt-space240  grid grid-cols-1  sm:grid-cols-12 gap-[16px]">
           <a href="https://www.amazon.com/Life-Chaitanya-Mahaprabhu-Lilamrita-Teachings/dp/B0BRWMYD1R" target="_blank" className="bg-accentWhite w-full flex  py-space60 h-[587.74px] col-span-12 md:col-start-1 md:col-span-4 flex-col rounded-md items-center ">
             <img src="/Images/Books/Chaitanay mahaprabhu.webp" alt="" className="mb-space30 backdrop-blur-md shadow-box w-[233px] h-[299.43px]" />
             <h6 className="text-center  text-mobiletextSmall font-primaryLight text-success">

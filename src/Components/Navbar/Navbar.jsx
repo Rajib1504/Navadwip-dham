@@ -426,7 +426,7 @@ const Navbar = ({footerRef}) => {
                     <div className="mx-auto  text-center">
                       {placesData.map((day, idx) => (
                         <div key={idx}>
-                          <div className="flex sticky -top-4 justify-between items-center  bg-success z-50 p-spacemd ">
+                          <div className="flex sticky -top-4 justify-between items-center  bg-success z-50  p-spacesm ">
                             <Link
                               to={`#${day.title}`}
                               className="font-primaryLight text-mobileTextRegular md:text-textRegular"
@@ -482,8 +482,8 @@ const Navbar = ({footerRef}) => {
       {/* Dropdown Menu */}
       {isOpen && (
         <section className="menu block overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
-          <div className="font-primaryLight  grid md:w-[100%] h-screen grid-cols-10">  
-            <div className="md:col-start-5 sm:mb-space312 mt-space60  ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
+          <div className="font-primaryLight  grid md:w-[100%] h-[98dvh] grid-cols-10">  
+            <div className="md:col-start-5 sm:mb-space120 mt-space60  ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}

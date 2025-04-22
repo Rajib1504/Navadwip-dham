@@ -16,7 +16,8 @@ const usetextAnimation = () => {
           words.chars.forEach(char => {
             // Create wrapper span with class
             const wrapper = document.createElement("span");
-            wrapper.classList.add("overflow-hidden","inline-block");
+            wrapper.classList.add("overflow-hidden","inline-block",
+          "h-space60");
           
             // Move the character into the wrapper
             char.parentNode.insertBefore(wrapper, char);
