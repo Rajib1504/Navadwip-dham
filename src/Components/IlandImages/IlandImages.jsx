@@ -43,7 +43,7 @@ const containerRef = usetextAnimation()
   return (
     <div
       ref={imgcontainerRef}
-      className="min-h-screen w-full mx-auto  justify-center items-center flex overflow-hidden"
+      className="min-h-dvh w-full mx-auto  justify-center items-center flex overflow-hidden"
     >
       <div ref={containerRef} className="flex-col flex md:flex-row justify-center items-center w-full md:justify-between relative">
 

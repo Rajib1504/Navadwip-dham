@@ -13,26 +13,26 @@ const usetextAnimation = () => {
         const title = gsap.utils.toArray(".title");
         title.forEach((el) => {
           const words = new SplitType(el, { types: "chars" });
-          words.chars.forEach(char => {
-            // Create wrapper span with class
-            const wrapper = document.createElement("span");
-            wrapper.classList.add("overflow-hidden","inline-block",
-          "h-space60");
+          // words.chars.forEach(char => {
+          //   // Create wrapper span with class
+          //   const wrapper = document.createElement("span");
+          //   wrapper.classList.add("overflow-hidden","inline-block",
+          // );
           
-            // Move the character into the wrapper
-            char.parentNode.insertBefore(wrapper, char);
-            wrapper.appendChild(char);
-          })
+          //   // Move the character into the wrapper
+          //   char.parentNode.insertBefore(wrapper, char);
+          //   wrapper.appendChild(char);
+          // })
           // console.log(words.chars);
           gsap.from(words.chars, {
             opacity: 0,
-            y: 100,
+            y: 30,
             duration: 1,
-            stagger: 0.05,
+            stagger: 0.03,
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 70%",
+              start: "top 85%",
               end: "top 50%",
               // scrub: true,
               // markers: true,
@@ -59,7 +59,7 @@ const usetextAnimation = () => {
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 70%",
+              start: "top 85%",
               end: "top 50%",
               // scrub: true,
               id: `line-${i}`,
@@ -85,7 +85,7 @@ const usetextAnimation = () => {
             ease: "power4.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 70%",
+              start: "top 85%",
               end: "top 50%",
               // scrub: true,
               id: `line-${i}`,
