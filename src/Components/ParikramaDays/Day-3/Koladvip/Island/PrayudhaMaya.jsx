@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrayudhaMaya = () => {
       return (
-        <section id='Prayudha Maya'>
+        <section id='prayudha-maya'>
             
             <div
               id="24"

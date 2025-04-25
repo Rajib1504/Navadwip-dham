@@ -71,7 +71,7 @@ const ParikramaList = ({ onClose }) => {
                           {locations.map((location, i) => (
                             <Link
                               onClick={onClose}
-                              to={`${location}`}
+                              to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                               smooth={true}
                               duration={800}
                               key={i}
@@ -87,7 +87,7 @@ const ParikramaList = ({ onClose }) => {
                           {locations.slice(0, 3).map((location, i) => (
                             <Link
                               onClick={onClose}
-                              to={`${location}`}
+                              to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                               smooth={true}
                               duration={800}
                               key={i}
@@ -105,7 +105,7 @@ const ParikramaList = ({ onClose }) => {
                             .map((location, i) => (
                               <Link
                                 onClick={onClose}
-                                to={`${location}`}
+                                to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                                 smooth={true}
                                 duration={800}
                                 key={i}

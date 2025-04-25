@@ -2,7 +2,7 @@ import React from "react";
 
 const Yogapith = () => {
   return (
-    <section id="Yogpith">
+    <section id="yogpith">
    
       <div
         id="3"

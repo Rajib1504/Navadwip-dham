@@ -2,7 +2,7 @@ import React from "react";
 
 const PrithaKunda = () => {
   return (
-    <section id="Pritha-kunda">
+    <section id="pritha-kunda">
       <div
         id="8"
         className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

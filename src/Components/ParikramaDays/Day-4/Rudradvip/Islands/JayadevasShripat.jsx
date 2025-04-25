@@ -2,7 +2,7 @@ import React from "react";
 
 const JayadevasShripat = () => {
   return (
-    <section id="Jayadev's Sripat">
+    <section id="jayadev's-sripat">
       <section
         id="39"
         className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

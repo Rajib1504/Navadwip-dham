@@ -481,9 +481,9 @@ const Navbar = ({footerRef}) => {
       </section>
       {/* Dropdown Menu */}
       {isOpen && (
-        <section className=" overflow-y-auto bg-primaryBlack box-border sm:px- mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
-          <div className="font-primaryLight  flex flex-col justify-between md:grid md:w-full min-h-dvh  grid-cols-10">  
-            <section className="md:col-start-5 mt-space60   ml-spacelg col-start-1 col-span-12 grid grid-cols-12">
+        <section className=" overflow-y-auto bg-primaryBlack box-border  sm:mx-auto fixed top-0 bottom-0 left-0 right-0 z-50">
+          <div className="w-11/12 mx-auto  font-primaryLight  flex flex-col justify-between md:grid  min-h-dvh  grid-cols-10">  
+            <section className="md:col-start-5 mt-space60   col-start-1 col-span-12 grid grid-cols-12">
               <a
                 href="#topContainer"
                 onClick={() => setIsOpen(!isOpen)}
@@ -537,13 +537,13 @@ const Navbar = ({footerRef}) => {
                 Ask a Question
               </a>
             </section>
-            <footer className="pt-space30 ml-spacelg place-self-end sm:place-self-auto col-span-6 mb-space15   grid grid-cols-12  sm:mt-space60  text-textSmall text-primaryWhite font-primaryLight ">
-              <p className="paragraph  col-span-2 sm:place-self-end ">@2025</p>
+            <footer className="pt-space30  place-self-end sm:place-self-auto col-span-12 mb-space15   grid grid-cols-10  sm:mt-space60  text-textSmall text-primaryWhite font-primaryLight ">
+              <p className="paragraph col-start-1  col-span-2  ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
                 target="_blank"
-                className="paragraph col-start-9 sm:place-self-end "
+                className="paragraph col-start-9 sm:col-start-5  "
               >
                <p> Instagram</p>
               </a>

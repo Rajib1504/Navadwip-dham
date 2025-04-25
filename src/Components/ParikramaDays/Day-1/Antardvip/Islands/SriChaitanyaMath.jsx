@@ -2,7 +2,7 @@ import React from "react";
 
 const SriChaitanyaMath = () => {
   return (
-    <section id="Sri Chaitanya Math">
+    <section id="sri-chaitanya-math">
     
       <div
         id="9"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const HariharaKshetra = () => {
       return (
-        <section id='Harihara Ksetra'>
+        <section id='harihara-ksetra'>
             
             <div
               id="19"

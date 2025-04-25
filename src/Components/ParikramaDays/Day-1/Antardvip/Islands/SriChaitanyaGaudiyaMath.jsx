@@ -3,7 +3,7 @@ import { RxCross2 } from 'react-icons/rx';
 
 const SriChaitanyaGaudiyaMath = () => {
       return (
-        <section id= "Sri Chaitanya Gaudiya Math">
+        <section id= "sri-chaitanya-gaudiya-math">
             
           <div 
             id="1"

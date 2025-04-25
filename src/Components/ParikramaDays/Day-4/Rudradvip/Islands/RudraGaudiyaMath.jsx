@@ -2,7 +2,7 @@ import React from 'react';
 
 const RudraGaudiyaMath = () => {
       return (
-        <section id='Rudra Gaudiya Math'>
+        <section id='rudra-gaudiya-math'>
             
             <section
               id="41"

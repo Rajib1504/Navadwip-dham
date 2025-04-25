@@ -4,7 +4,7 @@ import usetextAnimation from "../../../../../Hooks/UsetextAnimation";
 const Belvapaksha = () => {
   const containerRef = usetextAnimation()
   return (
-    <section id="Belvapaksha">
+    <section id="belvapaksha">
     
       <div
         id="13"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const JahnuMuniAsram = () => {
       return (
-        <section id="Jahnu Muni's Asram">
+        <section id="jahnu-muni's-asram">
             
           <div
             id="31"

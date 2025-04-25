@@ -2,7 +2,7 @@ import React from "react";
 
 const MurariGuptaAngan = () => {
   return (
-    <section id="Murari Gupta Angan">
+    <section id="murari-gupta-angan">
       
         <div
           id="7"

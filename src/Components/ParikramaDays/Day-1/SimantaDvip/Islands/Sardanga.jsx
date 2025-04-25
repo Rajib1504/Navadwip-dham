@@ -4,7 +4,7 @@ import usetextAnimation from '../../../../../Hooks/UsetextAnimation';
 const Sardanga = () => {
   const containerRef = usetextAnimation()
       return (
-            <section id='Sardanga'>
+            <section id='sardanga'>
             <div
               id="10"
               className="place  pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"

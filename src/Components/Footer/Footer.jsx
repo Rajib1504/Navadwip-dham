@@ -68,14 +68,15 @@ const Footer = React.forwardRef((props, ref)  => {
                               duration={800}
                               className={` cursor-pointer col-span-2 text-success tracking-wide text-mobiletextSmall`}
                             >
-                              <h6>{placeName}</h6>
+                            {placeName}
                             </Link>
                             <div className=" gap-space15 col-start-4 col-span-4 grid-flow-col md:col-span-4 md:grid grid-cols-4">
                               {/* mobile  */}
                               <div className="col-span-4 text-success md:hidden gap-3  ">
                                 {locations.map((location, i) => (
                                   <Link
-                                    to={`${location}`}
+                                    // to={`${location}`}
+                                    to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                                     smooth={true}
                                     duration={800}
                                     key={i}
@@ -90,7 +91,7 @@ const Footer = React.forwardRef((props, ref)  => {
                               <div className=" text-textSmall  text-gray-100 md:block hidden  col-start-1 col-span-2">
                                 {locations.slice(0, 3).map((location, i) => (
                                   <Link
-                                    to={`${location}`}
+                                    to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                                     smooth={true}
                                     duration={800}
                                     key={i}
@@ -107,7 +108,7 @@ const Footer = React.forwardRef((props, ref)  => {
                                   .slice(3, adjustedLength)
                                   .map((location, i) => (
                                     <Link
-                                      to={`${location}`}
+                                      to={location.toLowerCase().trim().replace(/\s+/g, '-')}
                                       smooth={true}
                                       duration={800}
                                       key={i}
