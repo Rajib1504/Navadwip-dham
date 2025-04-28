@@ -1,4 +1,5 @@
 import React from "react";
+import LayoutA from "../../../../Home_galary/LayoutA";
 
 const AdvaitaBhavan = () => {
   return (
@@ -53,39 +54,9 @@ const AdvaitaBhavan = () => {
         </div>
       </div>
       {/* images   */}
-      <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
-        {/* 1st img  */}
-        <div className="hidden">
-          <img
-            src="/assets/images/islands/01-antardvip/05-advaita-bhavan/1.IMG_8675.JPG"
-            className="md:w-auto w-[100vw]"
-            alt=""
-          />
-          {/* <p className="md:block hidden md:text-textSmall mt-space30 w-[200px] font-primaryLight">
-                  The central altar of the main temple with Sri Gaura Narayana
-                  accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-                </p> */}
-        </div>
-        {/* 2nd img  */}
-        <div className=" hidden">
-          <img
-            src="/assets/images/islands/01-antardvip/05-advaita-bhavan/2.advaita bhavan.jpg"
-            alt=""
-            className="md:mb-space60  "
-          />
-          {/* <div className="relative group  hidden">
-                  <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">
-                    <p className="font-primaryLight md:text-textSmall">
-                      Open Full Gallery
-                    </p>
-                    <img src="/→.svg" alt="" />
-                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
-                  </div>
-                </div> */}
-        </div>
-        {/* array for gallery  */}
+      {/* <div className="border-2 border-red-600 md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
         <div>
-          {/* <div className="relative group hidden  mt-spacelg">
+          <div className="relative group   mt-spacelg">
                   <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2    transition-all">
                     <p className="font-primaryLight text-mobileTextRegular ">
                       Open Full Gallery
@@ -93,9 +64,10 @@ const AdvaitaBhavan = () => {
                     <img src="/→.svg" alt="" />
                     <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-[263px] group-focus:w-[263px]"></span>
                   </div>
-                </div> */}
+                </div>
         </div>
-      </div>
+      </div> */}
+      <LayoutA />
     </section>
   );
 };
