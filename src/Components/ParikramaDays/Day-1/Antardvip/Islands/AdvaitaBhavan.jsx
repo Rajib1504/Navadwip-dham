@@ -67,7 +67,11 @@ const AdvaitaBhavan = () => {
                 </div>
         </div>
       </div> */}
-      <LayoutA />
+      <LayoutA
+        img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+        img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+        img3={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+      />
     </section>
   );
 };
