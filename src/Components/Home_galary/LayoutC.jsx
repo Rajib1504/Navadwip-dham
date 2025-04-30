@@ -1,8 +1,7 @@
-import React from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
-const LayoutA = ({ img1, img2, img3 }) => {
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+const LayoutC = ({img1,img2,img3}) => {
   return (
     <section
       id="layoutA"
@@ -12,7 +11,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
       <div className="col-span-12 order-1 md:col-span-2">
         <LazyLoadImage
           src={img1}
-          className="h-auto w-full "
+          className="h-80 w-full "
           alt="img1"
           effect="blur"
           threshold={0.3}
@@ -37,25 +36,29 @@ const LayoutA = ({ img1, img2, img3 }) => {
               Open Full Gallery
             </p>
             <div className="col-start-4 self-place-end flex items-center justify-end ">
-              <LazyLoadImage src="../../../public/Images/Arrow/→.svg" alt="" className="" />
+              <LazyLoadImage
+                src="../../../public/Images/Arrow/→.svg"
+                alt=""
+                className=""
+              />
             </div>
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
+            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
           </div>
         </div>
       </div>
 
       {/* img-3  */}
-      <div className="order-2 md:order-3 col-span-12 md:col-start-11 md:col-span-2">
+      <div className="order-2 md:order-3 col-span-12 md:col-start-10 md:col-span-3">
         <LazyLoadImage
           src={img3}
           alt="img3"
           effect="blur"
           threshold={0.3}
-          className="h-80 w-full "
+          className=" w-full "
         />
       </div>
     </section>
   );
 };
 
-export default LayoutA;
+export default LayoutC;

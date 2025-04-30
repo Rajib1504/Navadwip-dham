@@ -53,20 +53,7 @@ const AdvaitaBhavan = () => {
           </div>
         </div>
       </div>
-      {/* images   */}
-      {/* <div className="border-2 border-red-600 md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
-        <div>
-          <div className="relative group   mt-spacelg">
-                  <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2    transition-all">
-                    <p className="font-primaryLight text-mobileTextRegular ">
-                      Open Full Gallery
-                    </p>
-                    <img src="/→.svg" alt="" />
-                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-[263px] group-focus:w-[263px]"></span>
-                  </div>
-                </div>
-        </div>
-      </div> */}
+    
       <LayoutA
         img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
         img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}

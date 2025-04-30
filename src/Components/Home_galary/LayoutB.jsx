@@ -1,15 +1,14 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-
-const LayoutA = ({ img1, img2, img3 }) => {
+const LayoutB = ({ img1, img2, img3 }) => {
   return (
     <section
       id="layoutA"
       className="mt-space60 mb-mobilespace192 md:mb-space240 gap-spacelg grid grid-cols-12 "
     >
       {/* img-1  */}
-      <div className="col-span-12 order-1 md:col-span-2">
+      <div className="col-span-12 order-1 md:col-span-3">
         <LazyLoadImage
           src={img1}
           className="h-auto w-full "
@@ -20,7 +19,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
       </div>
 
       {/* img-2  */}
-      <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-4">
+      <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-5">
         <LazyLoadImage
           src={img2}
           alt="img2"
@@ -37,9 +36,13 @@ const LayoutA = ({ img1, img2, img3 }) => {
               Open Full Gallery
             </p>
             <div className="col-start-4 self-place-end flex items-center justify-end ">
-              <LazyLoadImage src="../../../public/Images/Arrow/→.svg" alt="" className="" />
+              <LazyLoadImage
+                src="../../../public/Images/Arrow/→.svg"
+                alt=""
+                className=""
+              />
             </div>
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
+            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
           </div>
         </div>
       </div>
@@ -58,4 +61,4 @@ const LayoutA = ({ img1, img2, img3 }) => {
   );
 };
 
-export default LayoutA;
+export default LayoutB;
