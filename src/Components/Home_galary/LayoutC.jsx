@@ -1,4 +1,5 @@
 
+import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const LayoutC = ({img1,img2,img3}) => {
@@ -19,7 +20,7 @@ const LayoutC = ({img1,img2,img3}) => {
       </div>
 
       {/* img-2  */}
-      <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-4">
+    <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-4">
         <LazyLoadImage
           src={img2}
           alt="img2"
@@ -36,13 +37,9 @@ const LayoutC = ({img1,img2,img3}) => {
               Open Full Gallery
             </p>
             <div className="col-start-4 self-place-end flex items-center justify-end ">
-              <LazyLoadImage
-                src="../../../public/Images/Arrow/→.svg"
-                alt=""
-                className=""
-              />
+              <LazyLoadImage src="../../../public/Images/Arrow/→.svg" alt="" className="" />
             </div>
-            <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
+              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
           </div>
         </div>
       </div>

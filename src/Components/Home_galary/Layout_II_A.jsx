@@ -1,11 +1,11 @@
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import "react-lazy-load-image-component/src/effects/blur.css";
-const LayoutB = ({ img1, img2, img3 }) => {
-  return (
-    <section
-      id="layoutA"
+const Layout_II_A = ({img1,img2,img3}) => {
+      return (
+              <section
+      id="layout_II_A"
       className="mt-space60 mb-mobilespace192 md:mb-space240 gap-spacelg grid grid-cols-12 "
     >
       {/* img-1  */}
@@ -20,7 +20,7 @@ const LayoutB = ({ img1, img2, img3 }) => {
       </div>
 
       {/* img-2  */}
-     <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-5">
+    <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-6">
         <LazyLoadImage
           src={img2}
           alt="img2"
@@ -44,18 +44,9 @@ const LayoutB = ({ img1, img2, img3 }) => {
         </div>
       </div>
 
-      {/* img-3  */}
-      <div className="order-2 md:order-3 col-span-12 md:col-start-11 md:col-span-2">
-        <LazyLoadImage
-          src={img3}
-          alt="img3"
-          effect="blur"
-          threshold={0.3}
-          className="h-80 w-full "
-        />
-      </div>
+   
     </section>
-  );
+      );
 };
 
-export default LayoutB;
+export default Layout_II_A;
