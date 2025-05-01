@@ -30,13 +30,13 @@ const Layout_II_B = ({img1,img2,img3}) => {
         />
         <div
           className="
-           group grid grid-cols-4 gap-spacelg  "
+           group grid grid-cols-5 md:grid-cols-8 gap-spacelg"
         >
-          <div className=" col-span-3 relative grid-cols-4 grid font-primaryLight  group transition-all">
-            <p className=" col-start-1 col-span-3   sm:col-span-2 font-primaryLight md:text-textSmall text-mobiletextSmall">
+          <div className="col-span-3 flex justify-between items-center relative  font-primaryLight  group transition-all ">
+            <p className="  font-primaryLight md:text-textSmall text-mobiletextSmall">
               Open Full Gallery
             </p>
-            <div className="col-start-4 self-place-end flex items-center justify-end ">
+            <div className="flex items-center justify-end ">
               <LazyLoadImage src="../../../public/Images/Arrow/→.svg" alt="" className="" />
             </div>
               <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>

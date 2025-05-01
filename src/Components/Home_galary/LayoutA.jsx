@@ -30,7 +30,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
         />
         <div
           className="
-           group grid grid-cols-4 gap-spacelg  "
+           group grid grid-cols-5 md:grid-cols-4 gap-spacelg  "
         >
           <div className=" col-span-3 relative grid-cols-4 grid font-primaryLight  group transition-all">
             <p className=" col-start-1 col-span-3   sm:col-span-2 font-primaryLight md:text-textSmall text-mobiletextSmall">
