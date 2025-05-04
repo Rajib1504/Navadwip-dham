@@ -37,7 +37,7 @@ const Layout_II_A = ({img1,img2,img3}) => {
               Open Full Gallery
             </p>
             <div className="flex items-center  ">
-              <LazyLoadImage src="../../../public/Images/Arrow/→.svg" alt="" className="" />
+              <LazyLoadImage src="../../../Images/Arrow/→.svg" alt="" className="" />
             </div>
               <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
           </div>

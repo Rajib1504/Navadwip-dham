@@ -1,5 +1,6 @@
 import React from 'react';
 import usetextAnimation from '../../../../../Hooks/UsetextAnimation';
+import Layout_II_A from './../../../../Home_galary/Layout_II_A';
 
 const SridharAngan = () => {
   const containerRef = usetextAnimation()
@@ -68,21 +69,10 @@ const SridharAngan = () => {
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
-              {/* 1st img  */}
-              <div className="hidden">
-                <img
-                  src="/assets/images/islands/02-simantadvip/02-sridhar-angan/Sridhar Angan.jpg"
-                  className="md:w-auto w-[100vw]"
-                  alt=""
-                />
-                {/* <p className="md:block hidden md:text-textSmall mt-space30 w-[200px] font-primaryLight">
-                  The central altar of the main temple with Sri Gaura Narayana
-                  accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-                </p> */}
-              </div>
-           
-            </div>
+          <Layout_II_A
+          img1={"/public/islands/02-simantadvip/02-sridhar-angan/1-sridhar-angan.jpg"}
+          img2={"/public/islands/00-general/IMG_8715.jpg"}
+          />
           
           </section> 
       );

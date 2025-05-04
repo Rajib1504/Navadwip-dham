@@ -65,8 +65,8 @@ const SriChaitanyaMath = () => {
       </div>
       {/* images   */}
     <Layout_II_A
-    img1={"/public/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg"}
-    img2={"/public/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg"}
+    img1={"/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg"}
+    img2={"/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg"}
     />
     
     </section>

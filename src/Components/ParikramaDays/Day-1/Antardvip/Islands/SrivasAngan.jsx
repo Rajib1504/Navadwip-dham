@@ -56,9 +56,9 @@ const SrivasAngan = () => {
               </div>
             </div>
             {/* images   */}
-           <LayoutA img1={'/public/islands/01-antardvip/04-srivas-angan/1-srivas-angan.jpg'}
-           img2={'/public/islands/01-antardvip/04-srivas-angan/2-pancha-tattva.JPG'}
-           img3={'/public/islands/01-antardvip/04-srivas-angan/3-pancha-tattva-2.JPG'}/>
+           <LayoutA img1={'/islands/01-antardvip/04-srivas-angan/1-srivas-angan.jpg'}
+           img2={'/islands/01-antardvip/04-srivas-angan/2-pancha-tattva.JPG'}
+           img3={'/islands/01-antardvip/04-srivas-angan/3-pancha-tattva-2.JPG'}/>
         
           </section>
       );

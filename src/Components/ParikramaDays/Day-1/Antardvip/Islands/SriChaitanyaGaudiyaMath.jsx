@@ -50,9 +50,9 @@ const SriChaitanyaGaudiyaMath = () => {
           </div>
           {/* images   */}
         <LayoutA
-        img1={'/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1-SCGM.jpg'}
-        img2={'/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2-bhakti-dayita-madhava-maharaj.jpg'}
-        img3={"/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/3-photo_2025-03-04-17-36-28.jpg"}/>
+        img1={'/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1-SCGM.jpg'}
+        img2={'/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2-bhakti-dayita-madhava-maharaj.jpg'}
+        img3={"/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/3-photo_2025-03-04-17-36-28.jpg"}/>
         
         </section>
       );

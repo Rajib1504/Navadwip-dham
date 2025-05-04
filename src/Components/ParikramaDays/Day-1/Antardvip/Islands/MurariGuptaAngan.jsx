@@ -46,9 +46,9 @@ const MurariGuptaAngan = () => {
       </div>
       {/* images   */}
       <LayoutC
-        img1={"/public/islands/01-antardvip/07-murari-gupta-angan/1-murari-gupta.jpg"}
-        img2={"/public/islands/01-antardvip/07-murari-gupta-angan/4-murari-gupta-garden.jpg"}
-        img3={"/public/islands/01-antardvip/07-murari-gupta-angan/3-murari-gupta-temple.JPG"}
+        img1={"/islands/01-antardvip/07-murari-gupta-angan/1-murari-gupta.jpg"}
+        img2={"/islands/01-antardvip/07-murari-gupta-angan/4-murari-gupta-garden.jpg"}
+        img3={"/islands/01-antardvip/07-murari-gupta-angan/3-murari-gupta-temple.JPG"}
       />
     </section>
   );
