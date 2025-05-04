@@ -1,4 +1,5 @@
 import React from "react";
+import Layout_II_B from "../../../../Home_galary/Layout_II_B";
 
 const BrahmanPushkar = () => {
   return (
@@ -67,40 +68,10 @@ const BrahmanPushkar = () => {
         </div>
       </div>
       {/* images   */}
-      <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-center gap-4 items-start ">
-        {/* 1st img  */}
-        <div className=" hidden col-start-1 col-span-3">
-          <img
-            src="/assets/images/islands/04-madhyadvip/02-brahman-pushkar/Brahman-Pushkar-min-min.jpg"
-            className="md:w-auto w-[100vw]"
-            alt=""
-          />
-        </div>
-        {/* 2nd img  */}
-        {/* <div className=" col-start-5 col-span-4">
-              <img
-                src="/assets/images/islands"
-                alt=""
-                className="md:mb-space60 md:w-[30rem]"
-              /> */}
-        {/* <div className="relative group md:block hidden">
-                <div className="flex border-b justify-between items-center  px-4 font-primayRegular text-xl py-2  border-accentBlack  transition-all">
-                  <p className="font-primaryLight md:text-textSmall">
-                    Open Full Gallery
-                  </p>
-                  <img src="/→.svg" alt="" />
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                </div>
-              </div> */}
-        {/* </div> */}
-        {/* 3rd img  */}
-
-        {/* <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-                The central altar of the main temple with Sri Gaura Narayana
-                accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-              </p> */}
-        {/* </div> */}
-      </div>
+     <Layout_II_B
+     img1={"/public/islands/04-madhyadvip/02-brahman-pushkar/3-brahman-pushkar.jpg"}
+     img2={"/public/islands/00-general/IMG_8589.jpg"}
+     />
     </section>
   );
 };

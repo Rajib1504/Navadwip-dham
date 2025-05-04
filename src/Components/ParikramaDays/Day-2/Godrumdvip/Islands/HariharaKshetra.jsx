@@ -1,4 +1,5 @@
 import React from 'react';
+import LayoutA from '../../../../Home_galary/LayoutA';
 
 const HariharaKshetra = () => {
       return (
@@ -69,38 +70,11 @@ const HariharaKshetra = () => {
               </div>
             </div>
             {/* images   */}
-            <div className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
-              {/* 1st img  */}
-              <div className=" hidden col-start-1 col-span-2">
-                <img
-                  src="/assets/images/islands/03-godrumdvip/07-harihara/1.Image 04.03.2025 at 16.34.JPG"
-                  className="md:w-auto w-[100vw]"
-                  alt=""
-                />
-                {/* <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-                  The central altar of the main temple with Sri Gaura Narayana
-                  accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-                  Additionally, the unique four-armed deity Adhokshaja Vishnu,
-                  which was discovered during the excavation of the temple, is
-                  also present here alongside His consorts, Bhu Devi and Lakshmi
-                  Devi.
-                </p> */}
-              </div>
-              {/* 2nd img  */}
-              <div className="hidden col-start-5 col-span-4">
-                <img
-                  src="/assets/images/islands/03-godrumdvip/07-harihara/2.harihara_kshetra.jpg"
-                  alt=""
-                  className="md:mb-space60 md:w-[30rem]"
-                />
-              
-              </div>
-              {/* 3rd img  */}
-              <div className="hidden col-start-10 col-span-3">
-                <img src="/assets/images/islands/03-godrumdvip/07-harihara/4.IMG20240318141117-min.jpg" className="w-[100vw] md:w-auto" alt="" />
-               
-              </div>
-            </div>
+           <LayoutA
+           img1={"/public/islands/03-godrumdvip/07-harihara/1-harihara.JPG"}
+           img2={"/public/islands/03-godrumdvip/07-harihara/2-harihara-murti.jpg"}
+           img3={"/public/islands/03-godrumdvip/07-harihara/3-harihara-murti.jpg"}
+           />
           
           </section>
       );
