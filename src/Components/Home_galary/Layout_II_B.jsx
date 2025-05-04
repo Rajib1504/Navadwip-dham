@@ -16,6 +16,7 @@ const Layout_II_B = ({img1,img2,img3}) => {
                 alt="img1"
                 effect="blur"
                 threshold={0.3}
+                wrapperClassName="min-h-[130px]"
               />
             </div>
       
@@ -27,6 +28,7 @@ const Layout_II_B = ({img1,img2,img3}) => {
           effect="blur"
           threshold={0.3}
           className="md:mb-space60 mb-mobilespace47 md:h-[548px] "
+          wrapperClassName="min-h-[548px]"
         />
         <div
           className="

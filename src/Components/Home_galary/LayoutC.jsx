@@ -16,6 +16,7 @@ const LayoutC = ({img1,img2,img3}) => {
           alt="img1"
           effect="blur"
           threshold={0.3}
+          wrapperClassName="min-h-[248px]"
         />
       </div>
 
@@ -26,6 +27,7 @@ const LayoutC = ({img1,img2,img3}) => {
           alt="img2"
           effect="blur"
           threshold={0.3}
+          wrapperClassName="min-h-[548px]"
           className="md:mb-space60 mb-mobilespace47 md:h-[548px] "
         />
        <div
@@ -52,6 +54,7 @@ const LayoutC = ({img1,img2,img3}) => {
           effect="blur"
           threshold={0.3}
           className=" w-full "
+          wrapperClassName="min-h-[143px]"
         />
       </div>
     </section>

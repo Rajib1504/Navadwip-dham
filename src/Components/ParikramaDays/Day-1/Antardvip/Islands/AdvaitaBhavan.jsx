@@ -1,6 +1,5 @@
 import React from "react";
-import LayoutA from "../../../../Home_galary/LayoutA";
-
+import Layout_II_A from './../../../../Home_galary/Layout_II_A';
 const AdvaitaBhavan = () => {
   return (
     <section id="advaita-bhavan">
@@ -52,13 +51,10 @@ const AdvaitaBhavan = () => {
             </p>
           </div>
         </div>
-      </div>
-    
-      <LayoutA
-        img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img3={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-      />
+      </div>  
+      <Layout_II_A
+      img1={"/islands/01-antardvip/05-advaita-bhavan/1-advaita-bhavan.jpg"}
+      img2={"/islands/01-antardvip/05-advaita-bhavan/2-advaita-bhavan.JPG"}/>
     </section>
   );
 };

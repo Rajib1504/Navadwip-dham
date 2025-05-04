@@ -15,6 +15,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
           className="h-auto w-full "
           alt="img1"
           effect="blur"
+          wrapperClassName="min-h-[217px]"
           threshold={0.3}
         />
       </div>
@@ -26,6 +27,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
           alt="img2"
           effect="blur"
           threshold={0.3}
+          wrapperClassName="min-h-[548px]"
           className="md:mb-space60 mb-mobilespace47 md:h-[548px] "
         />
         <div
@@ -51,6 +53,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
           alt="img3"
           effect="blur"
           threshold={0.3}
+          wrapperClassName="min-h-[251px]"
           className="h-80 w-full "
         />
       </div>

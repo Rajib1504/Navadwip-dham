@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "title": "Antardvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Atma-nivedanam",
+      "personal": "[self-surrendering]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Gokula Mahavan,",
+      "place": "Madhuvan"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day One of Parikrama"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Simantadvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Shravanam",
+      "personal": "[hearing]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Mathura,",
+      "place": "Talavan"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day One of Parikrama"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Godrumdvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Kirtanam",
+      "personal": "[chanting]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Sri Nandishvar,",
+      "place": "Mahavanavasi"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Two of Parikrama"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Madhyadvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Smaranam",
+      "personal": "[remembering]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Brahman Puskaran,",
+      "place": "Kurukshetra"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Two of Parikrama"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Koladvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Pada-sevanam",
+      "personal": "[serving the Lord’s feet]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Govardhan, Bahulavan,",
+      "place": "Khadiravan, Dwarka, Mahaprayag, Gangasagar"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Three of Parikrama"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Ritudvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Archanam",
+      "personal": "[worshiping]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Radha-kunda,",
+      "place": "Shyama-kunda"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Three of Parikrama"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Jahnudvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Vandanam",
+      "personal": "[praying]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Bhadavan"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Three of Parikrama"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Modrumdvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Dasyam",
+      "personal": "[servitorship]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Bhandaravan,",
+      "place": "Kamyavan, Ayodhya"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Day Three of Parikrama"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Rudradvip",
+    "represents": {
+      "label": "Represents",
+      "value": "Sakhyam",
+      "personal": "[friendship]"
+    },
+    "embodies": {
+      "label": "Embodies",
+      "value": "Vrindavan, Rasa Mandala, Dhira Samira,",
+      "place": "Vamsi Vat, Satikran, Bhitavan"
+    },
+    "visit_on": {
+      "label": "Visit on",
+      "value": "Last Day of Parikrama"
+    }
+  }
+]
