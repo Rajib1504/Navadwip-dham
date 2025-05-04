@@ -12,7 +12,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
       <div className="col-span-12 order-1 md:col-span-2">
         <LazyLoadImage
           src={img1}
-          className="h-auto w-full "
+          className="h-auto w-[225px] "
           alt="img1"
           effect="blur"
           wrapperClassName="min-h-[217px]"
@@ -28,7 +28,7 @@ const LayoutA = ({ img1, img2, img3 }) => {
           effect="blur"
           threshold={0.3}
           wrapperClassName="min-h-[548px]"
-          className="md:mb-space60 mb-mobilespace47 md:h-[548px] "
+          className="md:mb-space60 mb-mobilespace47 w-[460px]"
         />
         <div
           className="

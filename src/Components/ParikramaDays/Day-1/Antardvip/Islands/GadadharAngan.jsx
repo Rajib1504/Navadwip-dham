@@ -61,9 +61,9 @@ const GadadharAngan = () => {
       </div>
       {/* images   */}
       <LayoutB
-        img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img3={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+        img1={"/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg"}
+        img2={"/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg"}
+        img3={"/islands/01-antardvip/06-gadadhar-angan/3-gadhar-angan.jpg"}
       />
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Layout_II_B from "../../../../Home_galary/Layout_II_B";
+import Layout_II_A from "../../../../Home_galary/Layout_II_A";
 
 const SriChaitanyaMath = () => {
   return (
@@ -64,9 +64,9 @@ const SriChaitanyaMath = () => {
         </div>
       </div>
       {/* images   */}
-    <Layout_II_B
-    img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-    img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+    <Layout_II_A
+    img1={"/public/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg"}
+    img2={"/public/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg"}
     />
     
     </section>

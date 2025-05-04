@@ -46,9 +46,9 @@ const MurariGuptaAngan = () => {
       </div>
       {/* images   */}
       <LayoutC
-        img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-        img3={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
+        img1={"/public/islands/01-antardvip/07-murari-gupta-angan/1-murari-gupta.jpg"}
+        img2={"/public/islands/01-antardvip/07-murari-gupta-angan/4-murari-gupta-garden.jpg"}
+        img3={"/public/islands/01-antardvip/07-murari-gupta-angan/3-murari-gupta-temple.JPG"}
       />
     </section>
   );

@@ -61,8 +61,8 @@ const PrithaKunda = () => {
       </div>
       {/* images   */}
       <Layout_II_A
-      img1={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}
-      img2={"https://www.wearegecko.co.uk/media/50316/mountain-3.jpg"}/>
+      img1={"/islands/01-antardvip/08-prithu-kunda/1-prithu-kunda.jpg"}
+      img2={"/islands/01-antardvip/08-prithu-kunda/2-prithu-kunda.jpg"}/>
     </section>
   );
 };
