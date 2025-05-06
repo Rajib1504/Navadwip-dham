@@ -1,4 +1,5 @@
 import React from "react";
+import LayoutA from "../../../../Home_galary/LayoutA";
 
 const JayadevasShripat = () => {
   return (
@@ -31,32 +32,11 @@ const JayadevasShripat = () => {
         </div>
       </section>
       {/* images   */}
-      <section className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
-        {/* 1st img  */}
-        <div className="hidden col-start-1 col-span-3">
-          <img
-            src="/assets/images/islands/09-rudradvip/01-jayadev-sripat/1.IMG_1601-min.JPG"
-            className="md:w-auto w-[100vw]"
-            alt=""
-          />
-        </div>
-        {/* 2nd img  */}
-        <div className="hidden col-start-5 col-span-4">
-          <img
-            src="/assets/images/islands/09-rudradvip/01-jayadev-sripat/2.IMG_1600-min.JPG"
-            alt=""
-            className="md:mb-space60 md:w-[30rem]"
-          />
-        </div>
-        {/* 3rd img  */}
-        <div className="hidden col-start-11 col-span-2">
-          <img
-            src="/assets/images/islands/09-rudradvip/01-jayadev-sripat/3.Jayadeva-Goswami-5.jpg"
-            className="w-[100vw] md:w-auto"
-            alt=""
-          />
-        </div>
-      </section>
+     <LayoutA
+     img1={"/public/islands/09-rudradvip/01-Jayadev/1-jayadev.jpg"}
+     img2={"/public/islands/09-rudradvip/01-Jayadev/2-jayadev.jpg"}
+     img3={"/public/islands/09-rudradvip/01-Jayadev/3-jayadeva-goswami.jpg"}
+     />
     </section>
   );
 };

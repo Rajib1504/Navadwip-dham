@@ -1,4 +1,6 @@
 import React from "react";
+import LayoutB from "../../../../Home_galary/LayoutB";
+import Layout_II_A from "../../../../Home_galary/Layout_II_A";
 
 const BarakonaGhat = () => {
   return (
@@ -52,49 +54,10 @@ const BarakonaGhat = () => {
         </div>
       </section>
       {/* images   */}
-      <section className=" md:pb-space120 flex md:flex-row flex-col justify-between gap-4 items-start ">
-        {/* 1st img  */}
-        <div className="hidden">
-          <img
-            src="/assets/images/islands/00-general/IMG_8715.JPG"
-            className="md:w-auto w-[100vw]"
-            alt=""
-          />
-          <p className="md:block hidden md:text-textSmall mt-space30 w-[200px] font-primaryLight paragraph ">
-            The central altar of the main temple with Sri Gaura Narayana
-            accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-          </p>
-        </div>
-        {/* 2nd img  */}
-        <div className="hidden ">
-          <img
-            src="/assets/images/islands/08-modrumdvip/Barakona Ghat.png"
-            alt=""
-            className="md:mb-space60  "
-          />
-          {/* <div className="relative group md:block hidden">
-                  <div className=" w-space240 flex border-b border-accentBlack justify-between items-center  px-4 font-primayRegular text-xl py-2     transition-all">
-                    <p className="font-primaryLight md:text-textSmall">
-                      Open Full Gallery
-                    </p>
-                    <img src="/→.svg" alt="" />
-                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-space240 group-focus:w-space240"></span>
-                  </div>
-                </div> */}
-        </div>
-        {/* array for gallery  */}
-        {/* <div>
-                <div className="relative group md:hidden block mt-spacelg">
-                  <div className="flex border-b border-accentBlack justify-between gap-spacelg w-[263px] items-center  px-4 font-primayRegular py-2    transition-all">
-                    <p className="font-primaryLight text-mobileTextRegular ">
-                      Open Full Gallery
-                    </p>
-                    <img src="/→.svg" alt="" />
-                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primaryBlack transition-all duration-700 group-hover:w-full group-focus:w-full"></span>
-                  </div>
-                </div>
-              </div> */}
-      </section>
+      <Layout_II_A
+      img2={"/public/islands/08-modrumdvip/4-Barakona-ghat.jpg"}
+      img1={"/public/islands/00-general/DSC01384.jpg"}
+      />
     </section>
   );
 };

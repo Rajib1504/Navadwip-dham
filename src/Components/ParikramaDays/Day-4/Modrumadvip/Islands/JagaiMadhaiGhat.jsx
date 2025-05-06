@@ -1,4 +1,5 @@
 import React from "react";
+import Layout_II_A from "../../../../Home_galary/Layout_II_A";
 
 const JagaiMadhaiGhat = () => {
   return (
@@ -49,36 +50,10 @@ const JagaiMadhaiGhat = () => {
         </div>
       </section>
       {/* images   */}
-      <section className=" md:pb-space120 flex md:grid grid-cols-12 flex-col justify-between gap-4 items-start ">
-        {/* 1st img  */}
-        <div className="hidden col-start-1 col-span-3">
-          <img
-            src="/assets/images/islands/08-modrumdvip/07-jagai-madhai-ghat/3.IMG_8524.JPG"
-            className="md:w-auto w-[100vw]"
-            alt=""
-          />
-        </div>
-        {/* 2nd img  */}
-        <div className="hidden col-start-5 col-span-4">
-          <img
-            src="/assets/images/islands/08-modrumdvip/07-jagai-madhai-ghat/IMG_8529.JPG"
-            alt=""
-            className="md:mb-space60 md:w-[30rem]"
-          />
-        </div>
-        {/* 3rd img  */}
-        <div className="hidden col-start-11 col-span-2">
-          <img
-            src="/assets/images/islands/00-general/IMG_8589.JPG"
-            className="w-[100vw] md:w-auto"
-            alt=""
-          />
-
-          {/* <p className="md:block hidden mt-space30 w-[200px] md:text-textSmall font-primaryLight">
-                The central altar of the main temple with Sri Gaura Narayana accompanied by His two consorts, Vishnupriya and Lakshmipriya.
-                </p> */}
-        </div>
-      </section>
+    <Layout_II_A
+    img1={"/public/islands/08-modrumdvip/06-jagai-madhai-ghat/1-jagai-madhai-ghat.JPG"}
+    img2={"/public/islands/08-modrumdvip/06-jagai-madhai-ghat/2-jagai-madhai-ghat.JPG"}
+    />
     </section>
   );
 };
