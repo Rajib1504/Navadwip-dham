@@ -1,5 +1,6 @@
 import React from "react";
 import Layout_II_A from "../../../../Home_galary/Layout_II_A";
+import LayoutA from "../../../../Home_galary/LayoutA";
 
 const SriChaitanyaMath = () => {
   return (
@@ -64,9 +65,8 @@ const SriChaitanyaMath = () => {
         </div>
       </div>
       {/* images   */}
-    <Layout_II_A
-    img1={"/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg"}
-    img2={"/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg"}
+    <LayoutA
+    images={["/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg","/public/islands/01-antardvip/09-adi-math/2-adimath.jpg","/public/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg","/public/islands/01-antardvip/09-adi-math/4-prabhupad-samadhi-murti.jpg","/public/islands/01-antardvip/09-adi-math/5-prabhupad-samadhi-murti.JPG","/public/islands/01-antardvip/09-adi-math/6-gourakishor-samadhi.jpg","/public/islands/01-antardvip/09-adi-math/7-gourakishor-samadhi-murti.jpg","/public/islands/01-antardvip/09-adi-math/8-Radha-Kunda.jpg","/public/islands/01-antardvip/09-adi-math/9-govardhan.jpg"]}
     />
     
     </section>

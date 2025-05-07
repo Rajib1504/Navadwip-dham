@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from './../../../../../Layout/Layout';
 import LayoutA from "../../../../Home_galary/LayoutA";
 
 const Vidyanagar = () => {
@@ -97,9 +96,7 @@ const Vidyanagar = () => {
       </section>
       {/* images   */}
     <LayoutA
-    img3={"/public/islands/00-general/DSC01792.jpg"}
-    img1={"/public/islands/00-general/DSC01793.jpg"}
-    img2={"/public/islands/00-general/DSC01621.jpg"}
+    imges={["/public/islands/00-general/DSC01792.jpg","/public/islands/00-general/DSC01793.jpg","/public/islands/00-general/DSC01621.jpg"]}
     />
     </section>
   );

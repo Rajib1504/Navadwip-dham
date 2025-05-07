@@ -47,8 +47,8 @@ const JahnuMuniAsram = () => {
           </div>
           {/* images   */}
          <Layout_II_A
-         img1={"/public/islands/07-jahnudvip/1-jahnudvip-jahnu-muni-ashram.jpg"}
-         img2={"/public/islands/00-general/IMG_8560.jpg"}
+         img2={"/public/islands/07-jahnudvip/1-jahnudvip-jahnu-muni-ashram.jpg"}
+         img1={"/public/islands/00-general/IMG_8560.jpg"}
          />
       
         </section>

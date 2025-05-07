@@ -71,8 +71,8 @@ const Yogapith = () => {
       </div>
       {/* images   */}
     <LayoutB
-    img1={"/islands/01-antardvip/03-yogapith/2-ypgapith-3-mandirs.jpg"}
-    img2={"/islands/01-antardvip/03-yogapith/1-yogapith.jpg"}
+    img2={"/islands/01-antardvip/03-yogapith/2-ypgapith-3-mandirs.jpg"}
+    img1={"/islands/01-antardvip/03-yogapith/1-yogapith.jpg"}
     img3={"/islands/01-antardvip/03-yogapith/3-shacimata-and-jagannath-mishra.jpg"}
     />
   

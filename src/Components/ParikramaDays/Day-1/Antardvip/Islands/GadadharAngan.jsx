@@ -1,5 +1,6 @@
 import React from "react";
 import LayoutB from "../../../../Home_galary/LayoutB";
+import Layout_II_B from "../../../../Home_galary/Layout_II_B";
 
 const GadadharAngan = () => {
   return (
@@ -60,10 +61,10 @@ const GadadharAngan = () => {
         </div>
       </div>
       {/* images   */}
-      <LayoutB
-        img1={"/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg"}
-        img2={"/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg"}
-        img3={"/islands/01-antardvip/06-gadadhar-angan/3-gadhar-angan.jpg"}
+      <Layout_II_B
+        img1={"/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg"}
+        img2={"/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg"}
+
       />
     </section>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import usetextAnimation from "../../../../../Hooks/UsetextAnimation";
-import LayoutA from './../../../../Home_galary/LayoutA';
+import LayoutA from "./../../../../Home_galary/LayoutA";
 
 const Belvapaksha = () => {
-  const containerRef = usetextAnimation()
+  const containerRef = usetextAnimation();
   return (
     <section id="belvapaksha">
-    
       <div
         id="13"
         className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -76,12 +75,13 @@ const Belvapaksha = () => {
         </div>
       </div>
       {/* images   */}
-     <LayoutA
-     img1={"/islands/00-general/_MG_2055.jpg"}
-     img2={"/islands/00-general/_MG_2380.jpg"}
-     img3={"/islands/00-general/IMG_8722.jpg"}
-     />
-    
+      <LayoutA
+        images={[
+          "/islands/00-general/_MG_2055.jpg",
+          "/islands/00-general/_MG_2380.jpg",
+          "/islands/00-general/IMG_8722.jpg",
+        ]}
+      />
     </section>
   );
 };

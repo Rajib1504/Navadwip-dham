@@ -1,6 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-const Layout_II_A = ({img1,img2,img3}) => {
+const Layout_II_A = ({img1,img2}) => {
       return (
               <section
       id="layout_II_A"

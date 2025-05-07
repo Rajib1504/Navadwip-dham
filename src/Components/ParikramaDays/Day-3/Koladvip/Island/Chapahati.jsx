@@ -1,5 +1,6 @@
 import React from 'react';
 import LayoutB from '../../../../Home_galary/LayoutB';
+import Layout_II_A from '../../../../Home_galary/Layout_II_A';
 
 const Chapahati = () => {
       return (
@@ -84,9 +85,9 @@ const Chapahati = () => {
               </div>
             </section>
             {/* images   */}
-          <LayoutB
+          <Layout_II_A
           img1={"/public/islands/05-koladvip/05-champahatti/2-champahatti.jpg"}
-          img3={"/public/islands/05-koladvip/05-champahatti/1-gaura-gadadhar-champahatti.JPG"}
+          
           img2={"/public/islands/05-koladvip/05-champahatti/3-gaura-gadadhar-champahatti.jpg"}
           />
           </section>

@@ -28,7 +28,7 @@ const LayoutB = ({ img1, img2, img3 }) => {
           effect="blur"
           threshold={0.3}
           wrapperClassName="md:min-h-[402px]"
-          className="md:mb-space60 mb-mobilespace47  w-full md:w-[580px] "
+          className="md:mb-space60 mb-mobilespace47  w-full h-auto "
         />
        <div
           className="
@@ -54,7 +54,7 @@ const LayoutB = ({ img1, img2, img3 }) => {
           effect="blur"
           threshold={0.3}
           wrapperClassName="min-h-[242px]"
-          className="md:h-80 w-full "
+          className="h-auto w-full "
         />
       </div>
     </section>

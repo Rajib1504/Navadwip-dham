@@ -46,6 +46,7 @@ const AmraGhat = () => {
       <Layout_II_A
       img1={"/public/islands/03-godrumdvip/05-amra-ghat/1-amra-ghat.jpg"}
       img2={"/public/islands/03-godrumdvip/05-amra-ghat/2-amra-ghat.jpg"}
+      // imges={["/public/islands/03-godrumdvip/05-amra-ghat/1-amra-ghat.jpg","/public/islands/03-godrumdvip/05-amra-ghat/2-amra-ghat.jpg"]}
       />
      
     </section>

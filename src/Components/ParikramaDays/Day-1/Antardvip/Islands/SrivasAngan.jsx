@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutA from '../../../../Home_galary/LayoutA';
+import Layout_II_A from '../../../../Home_galary/Layout_II_A';
 
 const SrivasAngan = () => {
       return (
@@ -56,9 +56,9 @@ const SrivasAngan = () => {
               </div>
             </div>
             {/* images   */}
-           <LayoutA img1={'/islands/01-antardvip/04-srivas-angan/1-srivas-angan.jpg'}
+           <Layout_II_A img1={'/islands/01-antardvip/04-srivas-angan/1-srivas-angan.jpg'}
            img2={'/islands/01-antardvip/04-srivas-angan/2-pancha-tattva.JPG'}
-           img3={'/islands/01-antardvip/04-srivas-angan/3-pancha-tattva-2.JPG'}/>
+           />
         
           </section>
       );

@@ -124,15 +124,9 @@ const NandanAcharyaBhavan = () => {
       </div>
       {/* images   */}
       <LayoutA
-          img1={
-            "/islands/01-antardvip/02-nanda-acharya-bhavan/2-nanda-acharya-deities.jpg"
-          }
-        img2={
-          "/islands/01-antardvip/02-nanda-acharya-bhavan/1-nanda-acharya-bhavan.jpg"
-        }
-        img3={
-          "/islands/01-antardvip/02-nanda-acharya-bhavan/3-nanda-acharya-bhavan-2.jpg"
-        }
+          images={[
+            "/islands/01-antardvip/02-nanda-acharya-bhavan/2-nanda-acharya-deities.jpg","/islands/01-antardvip/02-nanda-acharya-bhavan/1-nanda-acharya-bhavan.jpg","/islands/01-antardvip/02-nanda-acharya-bhavan/3-nanda-acharya-bhavan-2.jpg","/public/islands/01-antardvip/02-nanda-acharya-bhavan/4-saranga-goswami-maharaj.jpg","/public/islands/01-antardvip/02-nanda-acharya-bhavan/5-Saranga-goswami-maharaj-murti.jpg","/public/islands/01-antardvip/02-nanda-acharya-bhavan/6-natya-mandir.jpg"]
+}
       />
     </section>
   );

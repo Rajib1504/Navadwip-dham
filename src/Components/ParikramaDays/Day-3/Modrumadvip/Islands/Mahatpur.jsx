@@ -1,5 +1,4 @@
 import React from 'react';
-import LayoutA from '../../../../Home_galary/LayoutA';
 import Layout_II_B from './../../../../Home_galary/Layout_II_B';
 
 const Mahatpur = () => {

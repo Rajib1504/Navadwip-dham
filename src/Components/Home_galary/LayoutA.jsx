@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const LayoutA = ({ img1, img2, img3 }) => {
+const LayoutA = ({ images = [] }) => {
   return (
     <section
       id="layoutA"
@@ -11,8 +11,8 @@ const LayoutA = ({ img1, img2, img3 }) => {
       {/* img-1  */}
       <div className="col-span-12 order-1 md:col-span-2">
         <LazyLoadImage
-          src={img1}
-          className="h-auto md:w-[225px] w-full "
+          src={images[0]}
+          className="h-auto  w-full "
           alt="img1"
           effect="blur"
           wrapperClassName="min-h-[217px]"
@@ -23,38 +23,44 @@ const LayoutA = ({ img1, img2, img3 }) => {
       {/* img-2  */}
       <div className="order-3 md:order-2 col-span-12 md:col-start-5 md:col-span-4">
         <LazyLoadImage
-          src={img2}
+          src={images[1]}
           alt="img2"
           effect="blur"
           threshold={0.3}
           wrapperClassName="min-h-[548px]"
-          className="md:mb-space60 mb-mobilespace47  w-[460px]"
+          className="md:mb-space60 mb-mobilespace47  w-full h-auto"
         />
-        <div
-          className="
+        {images.length > 3 &&(
+            <div
+              className="
            group grid grid-cols-5 md:grid-cols-4 gap-spacelg  "
-        >
-          <div className=" col-span-3 relative grid-cols-4 grid font-primaryLight  group transition-all">
-            <p className=" col-start-1 col-span-3   sm:col-span-2 font-primaryLight md:text-textSmall text-mobiletextSmall">
-              Open Full Gallery
-            </p>
-            <div className="col-start-4 self-place-end flex items-center justify-end ">
-              <LazyLoadImage src="../../../Images/Arrow/→.svg" alt="" className="" />
+            >
+              <div className=" col-span-3 relative grid-cols-4 grid font-primaryLight  group transition-all">
+                <p className=" col-start-1 col-span-3   sm:col-span-2 font-primaryLight md:text-textSmall text-mobiletextSmall">
+                  Open Full Gallery
+                </p>
+                <div className="col-start-4 self-place-end flex items-center justify-end ">
+                  <LazyLoadImage
+                    src="../../../Images/Arrow/→.svg"
+                    alt=""
+                    className=""
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
+              </div>
             </div>
-              <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-secondaryBlack transition-all duration-700 group-hover:w-full "></div>
-          </div>
-        </div>
+          )}
       </div>
 
       {/* img-3  */}
-      <div className="order-2 md:order-3 col-span-12 md:col-start-11 md:col-span-2">
+      <div className="order-2 md:order-3 col-span-12 md:col-start-10 md:col-span-3">
         <LazyLoadImage
-          src={img3}
+          src={images[2]}
           alt="img3"
           effect="blur"
           threshold={0.3}
           wrapperClassName="min-h-[251px]"
-          className="md:h-80 w-full "
+          className="h-auto w-full "
         />
       </div>
     </section>
