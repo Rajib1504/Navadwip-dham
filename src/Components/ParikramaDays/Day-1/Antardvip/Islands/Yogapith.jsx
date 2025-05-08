@@ -4,7 +4,6 @@ import LayoutB from "../../../../Home_galary/LayoutB";
 const Yogapith = () => {
   return (
     <section id="yogpith">
-   
       <div
         id="3"
         className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -70,12 +69,26 @@ const Yogapith = () => {
         </div>
       </div>
       {/* images   */}
-    <LayoutB
-    img2={"/islands/01-antardvip/03-yogapith/2-ypgapith-3-mandirs.jpg"}
-    img1={"/islands/01-antardvip/03-yogapith/1-yogapith.jpg"}
-    img3={"/islands/01-antardvip/03-yogapith/3-shacimata-and-jagannath-mishra.jpg"}
-    />
-  
+      <LayoutB
+        images={[
+          "/islands/01-antardvip/03-yogapith/2-ypgapith-3-mandirs.jpg",
+          "/islands/01-antardvip/03-yogapith/1-yogapith.jpg",
+          "/islands/01-antardvip/03-yogapith/3-shacimata-and-jagannath-mishra.jpg",
+          "/public/islands/01-antardvip/03-yogapith/4-goura-gadadhara-narasimhadeva.jpg",
+          "/public/islands/01-antardvip/03-yogapith/5-bhaktivinod-thakur-pushpa-samadhi.JPG",
+          "/public/islands/01-antardvip/03-yogapith/6-bhaktivinod-thakur-pushpa-samadhi-murti.jpg",
+          "/public/islands/01-antardvip/03-yogapith/7-pancha-tattva-yogapith.jpg",
+          "/public/islands/01-antardvip/03-yogapith/8-sri-sri-radha-madhava-yogapith.jpg",
+          "/public/islands/01-antardvip/03-yogapith/9-lakshmi-priya-vishu-priya-mahaprabhu-yogapith1.jpg",
+          "/public/islands/01-antardvip/03-yogapith/10-goura-gadadhar-yogapith.JPG",
+          "/public/islands/01-antardvip/03-yogapith/11-narasimhadeva.JPG",
+          "/public/islands/01-antardvip/03-yogapith/12-nim-three-yogapith.JPG",
+          "/public/islands/01-antardvip/03-yogapith/13-nim-three-yogapith2.jpg",
+          "/public/islands/01-antardvip/03-yogapith/14-shiv-mandir.jpg",
+          "/public/islands/01-antardvip/03-yogapith/15-shiva-lingam.JPG",
+          "/public/islands/01-antardvip/03-yogapith/16-yogapith.jpg",
+        ]}
+      />
     </section>
   );
 };

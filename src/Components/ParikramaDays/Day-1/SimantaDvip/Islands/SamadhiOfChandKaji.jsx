@@ -1,12 +1,11 @@
 import React from "react";
 import usetextAnimation from "../../../../../Hooks/UsetextAnimation";
-import LayoutB from './../../../../Home_galary/LayoutB';
+import LayoutB from "./../../../../Home_galary/LayoutB";
 
 const SamadhiOfChandKaji = () => {
-  const containerRef = usetextAnimation()
+  const containerRef = usetextAnimation();
   return (
     <section id="samadhi-of-chand-kazi">
-    
       <div
         id="12"
         className=" place pt-space60 md:mt-0 mt-space30   gap-spacelg flex flex-col  md:grid grid-cols-12 font-primaryLight"
@@ -74,12 +73,16 @@ const SamadhiOfChandKaji = () => {
         </div>
       </div>
       {/* images   */}
-     <LayoutB
-     img1={"/islands/02-simantadvip/03-chand-kazi-samadhi/1-chand-kazi-samadhi.jpg"}
-     img2={"/islands/02-simantadvip/03-chand-kazi-samadhi/3-chand-kazi-samadhi.jpg"}
-     img3={"/islands/02-simantadvip/03-chand-kazi-samadhi/4-chand-kazi-samadhi.jpg"}
-     />
-   
+      <LayoutB
+        images={[
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/1-chand-kazi-samadhi.jpg",
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/2-chand-kazi-samadhi.jpg",
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/3-chand-kazi-samadhi.jpg",
+          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/4-chand-kazi-samadhi.jpg",
+          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/5-chand-kazi-samadhi.jpg",
+          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/6-chand-kazi-samadhi.jpg",
+        ]}
+      />
     </section>
   );
 };

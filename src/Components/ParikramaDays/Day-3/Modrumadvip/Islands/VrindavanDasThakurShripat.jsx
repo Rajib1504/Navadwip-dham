@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout_II_B from '../../../../Home_galary/Layout_II_B';
 import LayoutB from '../../../../Home_galary/LayoutB';
 
 const VrindavanDasThakurShripat = () => {
@@ -36,9 +35,9 @@ const VrindavanDasThakurShripat = () => {
             </div>
             {/* images   */}
            <LayoutB
-           img3={"/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/1-vrindavan-das-thakur-sripat.jpg"}
-           img1={"/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/2-vrindavan-das-thakur-sripat-deity.jpg"}
-           img2={"/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/3-vrindavan-das-thakur-sripat.jpg"}
+           images={["/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/1-vrindavan-das-thakur-sripat.jpg",
+           "/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/2-vrindavan-das-thakur-sripat-deity.jpg",
+           "/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/3-vrindavan-das-thakur-sripat.jpg","/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/4-vrindavan-das-thakur-sripat.jpg"]}
            
            />
           

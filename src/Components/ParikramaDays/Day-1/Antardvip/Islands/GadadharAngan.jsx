@@ -1,5 +1,4 @@
 import React from "react";
-import LayoutB from "../../../../Home_galary/LayoutB";
 import Layout_II_B from "../../../../Home_galary/Layout_II_B";
 
 const GadadharAngan = () => {

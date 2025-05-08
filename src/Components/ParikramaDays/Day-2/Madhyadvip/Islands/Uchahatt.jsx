@@ -52,11 +52,13 @@ const Uchahatt = () => {
         </div>
       </div>
       {/* images   */}
-    <LayoutB
-    img3={"/public/islands/00-general/IMG_8565.jpg"}
-    img2={"/public/islands/00-general/IMG_8582.jpg"}
-    img1={"/public/islands/00-general/IMG_8583.jpg"}
-    />
+      <LayoutB
+        images={[
+          "/public/islands/00-general/IMG_8565.jpg",
+          "/public/islands/00-general/IMG_8582.jpg",
+          "/public/islands/00-general/IMG_8583.jpg",
+        ]}
+      />
     </section>
   );
 };
