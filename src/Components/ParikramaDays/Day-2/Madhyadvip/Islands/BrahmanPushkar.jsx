@@ -68,10 +68,12 @@ const BrahmanPushkar = () => {
         </div>
       </div>
       {/* images   */}
-     <Layout_II_B
-     img1={"/public/islands/04-madhyadvip/02-brahman-pushkar/3-brahman-pushkar.jpg"}
-     img2={"/public/islands/00-general/IMG_8589.jpg"}
-     />
+      <Layout_II_B
+        images={[
+          "/public/islands/00-general/IMG_8589.jpg",
+          "/public/islands/04-madhyadvip/02-brahman-pushkar/3-brahman-pushkar.jpg",
+        ]}
+      />
     </section>
   );
 };

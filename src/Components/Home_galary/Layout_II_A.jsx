@@ -29,7 +29,7 @@ const Layout_II_A = ({ images = [] }) => {
           wrapperClassName="min-h-[576px]"
           className="md:mb-space60 mb-mobilespace47 w-full md:w-[690px] "
         />
-        {images.length > 3 && (
+        {images.length > 2 && (
           <div
             className="
            group grid grid-cols-5 md:grid-cols-6 gap-spacelg"

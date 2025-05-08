@@ -61,9 +61,11 @@ const GadadharAngan = () => {
       </div>
       {/* images   */}
       <Layout_II_B
-        img1={"/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg"}
-        img2={"/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg"}
-
+        images={[
+          "/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg",
+          "/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg",
+          "/public/islands/01-antardvip/06-gadadhar-angan/3-gadhar-angan.jpg",
+        ]}
       />
     </section>
   );

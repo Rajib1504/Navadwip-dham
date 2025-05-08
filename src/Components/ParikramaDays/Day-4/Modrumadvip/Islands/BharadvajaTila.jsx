@@ -49,9 +49,10 @@ const BharadvajaTila = () => {
       </section>
       {/* images   */}
       <Layout_II_B
-      img2={"/public/islands/08-modrumdvip/7-Bharadvaja-tila.jpg"}
-      img1={"/public/islands/00-general/DSC01384.jpg"}
-      
+        images={[
+          "/public/islands/00-general/DSC01384.jpg",
+          "/public/islands/08-modrumdvip/7-Bharadvaja-tila.jpg",
+        ]}
       />
     </section>
   );

@@ -39,10 +39,12 @@ const NidayaGaht = () => {
         </div>
       </section>
       {/* images   */}
-    <Layout_II_B
-    img1={"/public/islands/09-rudradvip/02-nidaya-ghat/1-nidaya-ghat.jpg"}
-    img2={"/public/islands/09-rudradvip/02-nidaya-ghat/2-nidaya-ghat.jpg"}
-    />
+      <Layout_II_B
+        images={[
+          "/public/islands/09-rudradvip/02-nidaya-ghat/1-nidaya-ghat.jpg",
+          "/public/islands/09-rudradvip/02-nidaya-ghat/2-nidaya-ghat.jpg"
+        ]}
+      />
     </section>
   );
 };
