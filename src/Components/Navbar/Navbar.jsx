@@ -270,63 +270,6 @@ const Navbar = ({footerRef}) => {
 
   // scolloff in footer 
   const navbarRef = useRef(null);
-//   useGSAP(
-//     () => {
-//       const navbarElement = navbarRef.current;
-//       const footerElement = footerRef.current;
-
-//       if (!navbarElement || !footerElement) {
-//         // return; // Ensure elements exist
-//         console.log("error")
-//       }
-// if(navbarElement){
-//   console.log("navbarelement")
-// }
-// if(footerElement){
-//   console.log("footer element")
-// }
-//       gsap.to(navbarElement, {
-//         yPercent: -100, // Move Navbar up by 100% of its height
-//         scrollTrigger: {
-//           trigger: footerElement, // When the Footer comes into view
-//           start: 'top bottom-=50', // When the top of the Footer is 50px above the bottom of the viewport
-//           end: 'top top',        // When the top of the Footer hits the top of the viewport
-//           scrub: true,             // Smoothly animate based on scroll progress
-//           markers: true,          // For debugging
-//           onLeaveBack: () => {      // When scrolling back *past* the start trigger
-//             gsap.to(navbarElement, { yPercent: 0, duration: 0.3, overwrite: true });
-//           },
-//         },
-//       });
-//     },
-//     [footerRef] // Dependencies for the useGSAP hook
-//   );
-// useGSAP(
-//   () => {
-//     const navbarElement = navbarRef.current;
-//     const footerElement = footerRef.current;
-
-//     if (!navbarElement || !footerElement) {
-//       // return;
-//       console.l
-//     }
-
-//     gsap.to(navbarElement, {
-//       yPercent: -100,
-//       scrollTrigger: {
-//         trigger: footerElement,
-//         start: 'top bottom', // Changed start value
-//         end: 'top top',
-//         scrub: true,
-//         markers: true, // Keep markers for now
-//         onLeaveBack: () => {
-//           gsap.to(navbarElement, { yPercent: 0, duration: 0.3, overwrite: true });
-//         },
-//       },
-//     });
-//   },
-//   [footerRef]
-// );
   return (
     <nav ref={navbarRef}  >
       <header ref={containerRef} className=" mx-auto">
@@ -438,7 +381,7 @@ const Navbar = ({footerRef}) => {
                               <div
                                 key={place.id}
                                 ref={active?.id === place.id ? activeRef : null}
-                                className={`py-spacesm mb-1 flex w-full items-center md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full ${
+                                className={`py-spacesm mb-1 flex w-full items-center md:px-spacemd cursor-pointer text-mobiletextSmall md:text-textSmall rounded-full text-nowrap ${
                                   (active?.id ?? currentPlace.id) === place.id
                                     ? "bg-primaryBlack text-white"
                                     : "hover:bg-accentBlack"
@@ -448,7 +391,7 @@ const Navbar = ({footerRef}) => {
                                   setDropdownOpen(false);
                                 }}
                               >
-                                <span className=" md:absolute md:w-1/4 w-mobilespace40   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
+                                <span className=" md:absolute md:w-1/4 max-w-mobilespace40 w-full   text-center md:text-textSmall font-primaryLight text-mobiletextSmall">
                                   {place.idx}
                                 </span>
                                 <span className="truncate  w-full md:text-center  z-20 md:text-textSmall font-primaryLight text-mobiletextSmall ">
@@ -537,8 +480,8 @@ const Navbar = ({footerRef}) => {
                 Ask a Question
               </a>
             </section>
-            <footer className="pt-space30  place-self-end sm:place-self-auto col-span-12 mb-space15   grid grid-cols-10  sm:mt-space60  text-textSmall text-primaryWhite font-primaryLight ">
-              <p className="paragraph col-start-1  col-span-2  ">@2025</p>
+            <footer className="pt-space30 place-self-end sm:place-self-auto sm:mb-space30 col-span-12 h-fit grid grid-cols-10 text-textSmall text-primaryWhite font-primaryLight ">
+              <p className="paragraph col-start-1  col-span-2 ">@2025</p>
               <a
                 onClick={() => setIsOpen(!isOpen)}
                 href="https://www.instagram.com/bsvtrust"
