@@ -96,7 +96,7 @@ const Vidyanagar = () => {
       </section>
       {/* images   */}
     <LayoutA
-    imges={["/public/islands/00-general/DSC01792.jpg","/public/islands/00-general/DSC01793.jpg","/public/islands/00-general/DSC01621.jpg"]}
+    images={["/public/islands/00-general/DSC01792.jpg","/public/islands/00-general/DSC01793.jpg","/public/islands/00-general/DSC01621.jpg"]}
     />
     </section>
   );

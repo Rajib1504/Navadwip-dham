@@ -40,7 +40,7 @@ const PrayudhaMaya = () => {
       </div>
       {/* images   */}
       <LayoutA
-        img1={[
+        images  ={[
           "/public/islands/05-koladvip/01-prauda-maya/1-prauda-maya.jpg",
           "/public/islands/05-koladvip/01-prauda-maya/2-prauda-maya-mandir.jpg",
           "/public/islands/05-koladvip/01-prauda-maya/4-prauda-maya-murti.jpg",

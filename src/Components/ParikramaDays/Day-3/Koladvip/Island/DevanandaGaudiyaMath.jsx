@@ -51,7 +51,7 @@ const DevanandaGaudiyaMath = () => {
       </div>
       {/* images   */}
       <LayoutA
-        img1={[
+        images={[
           "/public/islands/05-koladvip/02-devananda-gaudiya-math/1-devananda-gaudiya-math-mandir.jpg",
           "/public/islands/05-koladvip/02-devananda-gaudiya-math/2-devananda-gaudiya-math-varaha.JPG",
           "/public/islands/05-koladvip/02-devananda-gaudiya-math/3-bhaktiprajnana-devananda-gaudiya-math.JPG",

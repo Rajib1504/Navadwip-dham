@@ -66,8 +66,7 @@ const ParikramaList = ({ onClose }) => {
                         {placeName}
                       </Link>
                       <div className=" gap-space15 col-start-4 col-span-4 grid-flow-col md:col-span-4 md:grid grid-cols-4">
-                        {/* mobile  */}
-                        <div className="col-span-4 text-success md:hidden gap-3  ">
+                        <div className={`text-textSmall  text-gray-100  col-start-1 col-span-4 ${locations.length>3&& "md:columns-2"}`}>
                           {locations.map((location, i) => (
                             <Link
                               onClick={onClose}
@@ -75,46 +74,12 @@ const ParikramaList = ({ onClose }) => {
                               smooth={true}
                               duration={800}
                               key={i}
-                              className="cursor-pointer text-mobiletextSmall tracking-wide text-success"
+                              className=" cursor-pointer text-gray-100  block "
                             >
-                              <p>{location}</p>
+                              {location}
                             </Link>
                           ))}
                         </div>
-                        {/* laptop  */}
-                        {/* First Column (First half of locations) */}
-                        <div className=" text-textSmall  text-gray-100 md:block hidden  col-start-1 col-span-2">
-                          {locations.slice(0, 3).map((location, i) => (
-                            <Link
-                              onClick={onClose}
-                              to={location.toLowerCase().trim().replace(/\s+/g, '-')}
-                              smooth={true}
-                              duration={800}
-                              key={i}
-                              className=" cursor-pointer text-gray-100  "
-                            >
-                              <p>{location}</p>
-                            </Link>
-                          ))}
-                        </div>
-
-                        {/* Second Column (Remaining half of locations) */}
-                        <section className="text-gray-100  hidden md:block   col-start-3 col-span-2 ">
-                          {locations
-                            .slice(3, adjustedLength)
-                            .map((location, i) => (
-                              <Link
-                                onClick={onClose}
-                                to={location.toLowerCase().trim().replace(/\s+/g, '-')}
-                                smooth={true}
-                                duration={800}
-                                key={i}
-                                className=" cursor-pointer text-gray-100  "
-                              >
-                                <p>{location}</p>
-                              </Link>
-                            ))}
-                        </section>
                       </div>
                     </React.Fragment>
                   );
