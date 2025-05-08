@@ -47,10 +47,12 @@ const Panchaveni = () => {
         </div>
       </div>
       {/* images   */}
- <Layout_II_A
- img1={"/public/islands/04-madhyadvip/04-panchaveni/1-panchaveni.jpg"}
- img2={"/public/islands/04-madhyadvip/04-panchaveni/2-panchaveni.jpg"}
- />
+      <Layout_II_A
+        images={[
+          "/public/islands/04-madhyadvip/04-panchaveni/1-panchaveni.jpg",
+          "/public/islands/04-madhyadvip/04-panchaveni/2-panchaveni.jpg",
+        ]}
+      />
     </section>
   );
 };

@@ -58,10 +58,12 @@ const Naimisharanya = () => {
         </div>
       </div>
       {/* images   */}
-     <Layout_II_A
-     img1={"/public/islands/04-madhyadvip/01-naimisharanya/1-naimisharanya.jpg"}
-     img2={"/public/islands/04-madhyadvip/01-naimisharanya/2-naimisharanya.jpg"}
-     />
+      <Layout_II_A
+        images={[
+          "/public/islands/04-madhyadvip/01-naimisharanya/1-naimisharanya.jpg",
+          "/public/islands/04-madhyadvip/01-naimisharanya/2-naimisharanya.jpg",
+        ]}
+      />
     </section>
   );
 };

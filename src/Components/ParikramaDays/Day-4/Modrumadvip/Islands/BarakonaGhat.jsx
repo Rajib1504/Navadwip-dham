@@ -54,8 +54,10 @@ const BarakonaGhat = () => {
       </section>
       {/* images   */}
       <Layout_II_A
-      img2={"/public/islands/08-modrumdvip/4-Barakona-ghat.jpg"}
-      img1={"/public/islands/00-general/DSC01384.jpg"}
+        images={[
+          "/public/islands/00-general/DSC01384.jpg",
+          "/public/islands/08-modrumdvip/4-Barakona-ghat.jpg",
+        ]}
       />
     </section>
   );

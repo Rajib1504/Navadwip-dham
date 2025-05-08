@@ -1,5 +1,4 @@
 import React from "react";
-import Layout_II_A from "../../../../Home_galary/Layout_II_A";
 import LayoutA from "../../../../Home_galary/LayoutA";
 
 const SriChaitanyaMath = () => {

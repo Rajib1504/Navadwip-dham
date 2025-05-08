@@ -53,8 +53,8 @@ const AdvaitaBhavan = () => {
         </div>
       </div>  
       <Layout_II_A
-      img1={"/islands/01-antardvip/05-advaita-bhavan/1-advaita-bhavan.jpg"}
-      img2={"/islands/01-antardvip/05-advaita-bhavan/2-advaita-bhavan.JPG"}/>
+      images={["/islands/01-antardvip/05-advaita-bhavan/1-advaita-bhavan.jpg",
+     "/islands/01-antardvip/05-advaita-bhavan/2-advaita-bhavan.JPG"]}/>
     </section>
   );
 };
