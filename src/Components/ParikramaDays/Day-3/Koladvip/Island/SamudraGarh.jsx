@@ -85,8 +85,8 @@ const SamudraGarh = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/00-general/IMG_8546.jpg",
-          "/public/islands/00-general/IMG_8551.jpg",
+          "/islands/00-general/IMG_8546.jpg",
+          "/islands/00-general/IMG_8551.jpg",
         ]}
       />
     </section>

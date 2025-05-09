@@ -52,8 +52,8 @@ const Mahatpur = () => {
       {/* images   */}
       <Layout_II_B
         images={[
-          "/public/islands/00-general/IMG_8525.jpg",
-          "/public/islands/08-modrumdvip/3-Mahatpur.jpg",
+          "/islands/00-general/IMG_8525.jpg",
+          "/islands/08-modrumdvip/3-Mahatpur.jpg",
         ]}
       />
     </section>

@@ -65,7 +65,7 @@ const SriChaitanyaMath = () => {
       </div>
       {/* images   */}
     <LayoutA
-    images={["/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg","/public/islands/01-antardvip/09-adi-math/2-adimath.jpg","/public/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg","/public/islands/01-antardvip/09-adi-math/4-prabhupad-samadhi-murti.jpg","/public/islands/01-antardvip/09-adi-math/5-prabhupad-samadhi-murti.JPG","/public/islands/01-antardvip/09-adi-math/6-gourakishor-samadhi.jpg","/public/islands/01-antardvip/09-adi-math/7-gourakishor-samadhi-murti.jpg","/public/islands/01-antardvip/09-adi-math/8-Radha-Kunda.jpg","/public/islands/01-antardvip/09-adi-math/9-govardhan.jpg"]}
+    images={["/islands/01-antardvip/09-adi-math/1-guru-gauranga-gandarvika-giridhari.jpg","/islands/01-antardvip/09-adi-math/2-adimath.jpg","/islands/01-antardvip/09-adi-math/3-prabhupad-samadhi.jpg","/islands/01-antardvip/09-adi-math/4-prabhupad-samadhi-murti.jpg","/islands/01-antardvip/09-adi-math/5-prabhupad-samadhi-murti.JPG","/islands/01-antardvip/09-adi-math/6-gourakishor-samadhi.jpg","/islands/01-antardvip/09-adi-math/7-gourakishor-samadhi-murti.jpg","/islands/01-antardvip/09-adi-math/8-Radha-Kunda.jpg","/islands/01-antardvip/09-adi-math/9-govardhan.jpg"]}
     />
     
     </section>

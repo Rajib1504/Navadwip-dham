@@ -68,8 +68,8 @@ const SridharAngan = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/00-general/IMG_8715.jpg",
-          "/public/islands/02-simantadvip/02-sridhar-angan/1-sridhar-angan.jpg",
+          "/islands/00-general/IMG_8715.jpg",
+          "/islands/02-simantadvip/02-sridhar-angan/1-sridhar-angan.jpg",
         ]}
       />
     </section>

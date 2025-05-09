@@ -64,7 +64,7 @@ const GadadharAngan = () => {
         images={[
           "/islands/01-antardvip/06-gadadhar-angan/1-gadhar-angan.jpg",
           "/islands/01-antardvip/06-gadadhar-angan/2-goura-gadadhar.jpg",
-          "/public/islands/01-antardvip/06-gadadhar-angan/3-gadhar-angan.jpg",
+          "/islands/01-antardvip/06-gadadhar-angan/3-gadhar-angan.jpg",
         ]}
       />
     </section>

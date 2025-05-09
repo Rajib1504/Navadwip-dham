@@ -62,9 +62,9 @@ const NarasimhaPalli = () => {
       </div>
       {/* images   */}
     <LayoutC
-    img1={"/public/islands/03-godrumdvip/06-nrisimhapali/1-nrisimhapali.jpg"}
-    img2={"/public/islands/03-godrumdvip/06-nrisimhapali/2-nrisimhadeva-at-pali.jpg"}
-    img3={"/public/islands/03-godrumdvip/06-nrisimhapali/3-nrisimhadeva-at-pali.jpg"}
+    img1={"/islands/03-godrumdvip/06-nrisimhapali/1-nrisimhapali.jpg"}
+    img2={"/islands/03-godrumdvip/06-nrisimhapali/2-nrisimhadeva-at-pali.jpg"}
+    img3={"/islands/03-godrumdvip/06-nrisimhapali/3-nrisimhadeva-at-pali.jpg"}
     />
   
     </section>

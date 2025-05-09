@@ -53,14 +53,14 @@ const RudraGaudiyaMath = () => {
       {/* images   */}
       <LayoutA
         images={[
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/1-rudra-gaudiya-math.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/2-rudra-gaudiya-math-mandir.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/3-shiva-temple-at-rudra-gaudiya-math.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/4-shiva-temple-at-rudra-gaudiya-math.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/5-rudra-gaudiya-math-entrance.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/6-rudra-gaudiya-math-entrance.JPG",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/7-rudra-gaudiya-math-natyamandir.jpg",
-          "/public/islands/09-rudradvip/03-rudra-gaudiya-math/8-rudra-gaudiya-math-natyamandir.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/1-rudra-gaudiya-math.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/2-rudra-gaudiya-math-mandir.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/3-shiva-temple-at-rudra-gaudiya-math.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/4-shiva-temple-at-rudra-gaudiya-math.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/5-rudra-gaudiya-math-entrance.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/6-rudra-gaudiya-math-entrance.JPG",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/7-rudra-gaudiya-math-natyamandir.jpg",
+          "/islands/09-rudradvip/03-rudra-gaudiya-math/8-rudra-gaudiya-math-natyamandir.jpg",
         ]}
       />
     </section>

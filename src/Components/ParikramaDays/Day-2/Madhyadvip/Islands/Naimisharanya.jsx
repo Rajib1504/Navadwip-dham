@@ -60,8 +60,8 @@ const Naimisharanya = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/04-madhyadvip/01-naimisharanya/1-naimisharanya.jpg",
-          "/public/islands/04-madhyadvip/01-naimisharanya/2-naimisharanya.jpg",
+          "/islands/04-madhyadvip/01-naimisharanya/1-naimisharanya.jpg",
+          "/islands/04-madhyadvip/01-naimisharanya/2-naimisharanya.jpg",
         ]}
       />
     </section>

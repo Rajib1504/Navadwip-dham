@@ -49,8 +49,8 @@ const Panchaveni = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/04-madhyadvip/04-panchaveni/1-panchaveni.jpg",
-          "/public/islands/04-madhyadvip/04-panchaveni/2-panchaveni.jpg",
+          "/islands/04-madhyadvip/04-panchaveni/1-panchaveni.jpg",
+          "/islands/04-madhyadvip/04-panchaveni/2-panchaveni.jpg",
         ]}
       />
     </section>

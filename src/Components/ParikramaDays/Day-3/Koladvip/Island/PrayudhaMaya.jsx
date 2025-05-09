@@ -41,12 +41,12 @@ const PrayudhaMaya = () => {
       {/* images   */}
       <LayoutA
         images  ={[
-          "/public/islands/05-koladvip/01-prauda-maya/1-prauda-maya.jpg",
-          "/public/islands/05-koladvip/01-prauda-maya/2-prauda-maya-mandir.jpg",
-          "/public/islands/05-koladvip/01-prauda-maya/4-prauda-maya-murti.jpg",
-          "/public/islands/05-koladvip/01-prauda-maya/3-prauda-maya.jpg",
-          "/public/islands/05-koladvip/01-prauda-maya/5-prauda-maya-temple.JPG",
-          "/public/islands/05-koladvip/01-prauda-maya/6-prauda-maya.jpg",
+          "/islands/05-koladvip/01-prauda-maya/1-prauda-maya.jpg",
+          "/islands/05-koladvip/01-prauda-maya/2-prauda-maya-mandir.jpg",
+          "/islands/05-koladvip/01-prauda-maya/4-prauda-maya-murti.jpg",
+          "/islands/05-koladvip/01-prauda-maya/3-prauda-maya.jpg",
+          "/islands/05-koladvip/01-prauda-maya/5-prauda-maya-temple.JPG",
+          "/islands/05-koladvip/01-prauda-maya/6-prauda-maya.jpg",
         ]}
       />
     </section>

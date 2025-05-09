@@ -47,8 +47,8 @@ const JahnuMuniAsram = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/07-jahnudvip/1-jahnudvip-jahnu-muni-ashram.jpg",
-          "/public/islands/00-general/IMG_8560.jpg",
+          "/islands/07-jahnudvip/1-jahnudvip-jahnu-muni-ashram.jpg",
+          "/islands/00-general/IMG_8560.jpg",
         ]}
       />
     </section>

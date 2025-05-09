@@ -46,9 +46,9 @@ const SurabhiKunja = () => {
       {/* images   */}
       <LayoutB
         images={[
-          "/public/islands/03-godrumdvip/02-surabhi-kunja/1-surabhi-kunja.jpg",
-          "/public/islands/03-godrumdvip/02-surabhi-kunja/2-surabhi-kunja-mandir.jpg",
-          "/public/islands/03-godrumdvip/02-surabhi-kunja/3-surabhi-kunja.jpg",
+          "/islands/03-godrumdvip/02-surabhi-kunja/1-surabhi-kunja.jpg",
+          "/islands/03-godrumdvip/02-surabhi-kunja/2-surabhi-kunja-mandir.jpg",
+          "/islands/03-godrumdvip/02-surabhi-kunja/3-surabhi-kunja.jpg",
         ]}
       />
     </section>

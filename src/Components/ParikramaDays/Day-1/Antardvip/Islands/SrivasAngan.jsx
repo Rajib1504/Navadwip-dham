@@ -58,8 +58,8 @@ const SrivasAngan = () => {
         images={[
           "/islands/01-antardvip/04-srivas-angan/1-srivas-angan.jpg",
           "/islands/01-antardvip/04-srivas-angan/2-pancha-tattva.JPG",
-          "/public/islands/01-antardvip/04-srivas-angan/3-pancha-tattva-2.JPG",
-          "/public/islands/01-antardvip/04-srivas-angan/4-srivas-angan.JPG",
+          "/islands/01-antardvip/04-srivas-angan/3-pancha-tattva-2.JPG",
+          "/islands/01-antardvip/04-srivas-angan/4-srivas-angan.JPG",
         ]}
       />
     </section>

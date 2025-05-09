@@ -33,10 +33,10 @@ const JayadevasShripat = () => {
       </section>
       {/* images   */}
      <LayoutA
-     images={["/public/islands/09-rudradvip/01-Jayadev/1-jayadev.jpg",
-     "/public/islands/09-rudradvip/01-Jayadev/2-jayadev.jpg",
-     "/public/islands/09-rudradvip/01-Jayadev/3-jayadeva-goswami.jpg",
-     "/public/islands/09-rudradvip/01-Jayadev/4-jayadev.JPG"
+     images={["/islands/09-rudradvip/01-Jayadev/1-jayadev.jpg",
+     "/islands/09-rudradvip/01-Jayadev/2-jayadev.jpg",
+     "/islands/09-rudradvip/01-Jayadev/3-jayadeva-goswami.jpg",
+     "/islands/09-rudradvip/01-Jayadev/4-jayadev.JPG"
     ]}
      />
     </section>

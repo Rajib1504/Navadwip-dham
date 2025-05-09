@@ -51,7 +51,7 @@ const JagaiMadhaiGhat = () => {
       </section>
       {/* images   */}
     <Layout_II_A
-    images={["/public/islands/08-modrumdvip/06-jagai-madhai-ghat/1-jagai-madhai-ghat.JPG","/public/islands/08-modrumdvip/06-jagai-madhai-ghat/2-jagai-madhai-ghat.JPG"]}
+    images={["/islands/08-modrumdvip/06-jagai-madhai-ghat/1-jagai-madhai-ghat.JPG","/islands/08-modrumdvip/06-jagai-madhai-ghat/2-jagai-madhai-ghat.JPG"]}
     />
     </section>
   );

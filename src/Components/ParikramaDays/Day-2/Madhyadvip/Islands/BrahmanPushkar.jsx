@@ -70,8 +70,8 @@ const BrahmanPushkar = () => {
       {/* images   */}
       <Layout_II_B
         images={[
-          "/public/islands/00-general/IMG_8589.jpg",
-          "/public/islands/04-madhyadvip/02-brahman-pushkar/3-brahman-pushkar.jpg",
+          "/islands/00-general/IMG_8589.jpg",
+          "/islands/04-madhyadvip/02-brahman-pushkar/3-brahman-pushkar.jpg",
         ]}
       />
     </section>

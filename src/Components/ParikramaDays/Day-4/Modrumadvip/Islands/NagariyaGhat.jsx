@@ -59,9 +59,9 @@ const NagariyaGhat = () => {
       {/* images   */}
       <LayoutA
         images={[
-          "/public/islands/00-general/DSC00867.jpg",
-          "/public/islands/00-general/DSC01293.jpg",
-          "/public/islands/00-general/DSC00868.jpg",
+          "/islands/00-general/DSC00867.jpg",
+          "/islands/00-general/DSC01293.jpg",
+          "/islands/00-general/DSC00868.jpg",
         ]}
       />
     </section>

@@ -54,8 +54,8 @@ const RadhaKunda = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/00-general/IMG_3468.jpg",
-          "/public/islands/06-ritudvip/1-ritudvip-radha-kunda.JPG",
+          "/islands/00-general/IMG_3468.jpg",
+          "/islands/06-ritudvip/1-ritudvip-radha-kunda.JPG",
         ]}
       />
     </section>

@@ -105,11 +105,11 @@ const SuvarnaVihar = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/03-godrumdvip/04-suvarna-vihar/1-suvarna-vihar.jpg",
-          "/public/islands/03-godrumdvip/04-suvarna-vihar/3-suvarna-sena-palace.jpg",
-          "/public/islands/03-godrumdvip/04-suvarna-vihar/2-suvarna-vihar-deities.jpg",
-          "/public/islands/03-godrumdvip/04-suvarna-vihar/4-suvarna-sena-palace.jpg",
-          "/public/islands/03-godrumdvip/04-suvarna-vihar/5-suvarna-vihar-entrance.jpg",
+          "/islands/03-godrumdvip/04-suvarna-vihar/1-suvarna-vihar.jpg",
+          "/islands/03-godrumdvip/04-suvarna-vihar/3-suvarna-sena-palace.jpg",
+          "/islands/03-godrumdvip/04-suvarna-vihar/2-suvarna-vihar-deities.jpg",
+          "/islands/03-godrumdvip/04-suvarna-vihar/4-suvarna-sena-palace.jpg",
+          "/islands/03-godrumdvip/04-suvarna-vihar/5-suvarna-vihar-entrance.jpg",
         ]}
       />
     </section>

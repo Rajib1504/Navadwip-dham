@@ -54,8 +54,8 @@ const Vaikunthapur = () => {
       {/* images   */}
       <Layout_II_B
         images={[
-          "/public/islands/00-general/IMAG0713.jpg",
-          "/public/islands/08-modrumdvip/1-Vaikunthapur.jpg",
+          "/islands/00-general/IMAG0713.jpg",
+          "/islands/08-modrumdvip/1-Vaikunthapur.jpg",
         ]}
       />
     </section>

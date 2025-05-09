@@ -78,9 +78,9 @@ const SamadhiOfChandKaji = () => {
           "/islands/02-simantadvip/03-chand-kazi-samadhi/1-chand-kazi-samadhi.jpg",
           "/islands/02-simantadvip/03-chand-kazi-samadhi/2-chand-kazi-samadhi.jpg",
           "/islands/02-simantadvip/03-chand-kazi-samadhi/3-chand-kazi-samadhi.jpg",
-          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/4-chand-kazi-samadhi.jpg",
-          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/5-chand-kazi-samadhi.jpg",
-          "/public/islands/02-simantadvip/03-chand-kazi-samadhi/6-chand-kazi-samadhi.jpg",
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/4-chand-kazi-samadhi.jpg",
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/5-chand-kazi-samadhi.jpg",
+          "/islands/02-simantadvip/03-chand-kazi-samadhi/6-chand-kazi-samadhi.jpg",
         ]}
       />
     </section>

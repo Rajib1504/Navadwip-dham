@@ -44,8 +44,8 @@ const AmraGhat = () => {
         </div>
         {/* images   */}
       <Layout_II_A
-      images={["/public/islands/03-godrumdvip/05-amra-ghat/1-amra-ghat.jpg",
-      "/public/islands/03-godrumdvip/05-amra-ghat/2-amra-ghat.jpg","/public/islands/03-godrumdvip/05-amra-ghat/3-amra-ghat.jpg"]}
+      images={["/islands/03-godrumdvip/05-amra-ghat/1-amra-ghat.jpg",
+      "/islands/03-godrumdvip/05-amra-ghat/2-amra-ghat.jpg","/islands/03-godrumdvip/05-amra-ghat/3-amra-ghat.jpg"]}
       />
      
     </section>

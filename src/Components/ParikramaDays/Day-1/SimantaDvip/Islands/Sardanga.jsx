@@ -116,9 +116,9 @@ const Sardanga = () => {
         images={[
           "/islands/02-simantadvip/01-satdanga-jagannath/4-satdanhga-jagannath.jpg",
           "/islands/02-simantadvip/01-satdanga-jagannath/2-baladev-subhadra-jagannath-satdanhga.JPG",
-          "/public/islands/02-simantadvip/01-satdanga-jagannath/1-satdanhga-mahadev.jpg",
-          "/public/islands/02-simantadvip/01-satdanga-jagannath/3-satdanhga-jagannath-natymandir.JPG",
-          "/public/islands/02-simantadvip/01-satdanga-jagannath/5-baladev-subhadra-jagannath-satdanhga.JPG",
+          "/islands/02-simantadvip/01-satdanga-jagannath/1-satdanhga-mahadev.jpg",
+          "/islands/02-simantadvip/01-satdanga-jagannath/3-satdanhga-jagannath-natymandir.JPG",
+          "/islands/02-simantadvip/01-satdanga-jagannath/5-baladev-subhadra-jagannath-satdanhga.JPG",
         ]}
       />
     </section>

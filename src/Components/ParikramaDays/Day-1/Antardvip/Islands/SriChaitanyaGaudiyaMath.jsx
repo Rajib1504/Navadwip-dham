@@ -52,12 +52,12 @@ const SriChaitanyaGaudiyaMath = () => {
           "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/1-SCGM.jpg",
           "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/2-bhakti-dayita-madhava-maharaj.jpg",
           "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/3-photo_2025-03-04-17-36-28.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/4-bhakti-dayita-madhava-maharaj-murti.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/5-bhakti-dayita-madhava-maharaj-murti2.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/6-Bhakti-Vallabha-Tirtha-Maharaj-murti.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/7-Bhakti-Vallabha-Tirtha-Maharaj-bhajan-kutir.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/8-Deities.jpg",
-          "/public/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/9-Radha-kunda.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/4-bhakti-dayita-madhava-maharaj-murti.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/5-bhakti-dayita-madhava-maharaj-murti2.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/6-Bhakti-Vallabha-Tirtha-Maharaj-murti.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/7-Bhakti-Vallabha-Tirtha-Maharaj-bhajan-kutir.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/8-Deities.jpg",
+          "/islands/01-antardvip/01-sri-chaitanya-gaudiya-math/9-Radha-kunda.jpg",
         ]}
       />
     </section>

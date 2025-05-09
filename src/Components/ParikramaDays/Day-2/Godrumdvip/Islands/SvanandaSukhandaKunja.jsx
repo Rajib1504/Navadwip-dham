@@ -71,15 +71,15 @@ const SvanandaSukhandaKunja = () => {
       {/* images   */}
       <LayoutB
         images={[
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/1-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/2-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/3-bhaktivinod-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/4-mandir-svananda-sukhanda-kunja.JPG",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/6-goura-gadadhar-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/7-bhakrtivinods-room-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/8-BVTs-Gaura-Gadahara.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/9-gaurakishor-svananda-sukhanda-kunja.jpg",
-          "/public/islands/03-godrumdvip/01-svananda-sukhanda-kunja/10-bhaktivinod-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/1-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/2-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/3-bhaktivinod-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/4-mandir-svananda-sukhanda-kunja.JPG",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/6-goura-gadadhar-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/7-bhakrtivinods-room-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/8-BVTs-Gaura-Gadahara.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/9-gaurakishor-svananda-sukhanda-kunja.jpg",
+          "/islands/03-godrumdvip/01-svananda-sukhanda-kunja/10-bhaktivinod-svananda-sukhanda-kunja.jpg",
         ]}
       />
     </section>

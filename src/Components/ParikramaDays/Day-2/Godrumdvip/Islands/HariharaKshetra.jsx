@@ -71,7 +71,7 @@ const HariharaKshetra = () => {
             </div>
             {/* images   */}
            <LayoutA
-           images={["/public/islands/03-godrumdvip/07-harihara/1-harihara.JPG","/public/islands/03-godrumdvip/07-harihara/2-harihara-murti.jpg","/public/islands/03-godrumdvip/07-harihara/3-harihara-murti.jpg","/public/islands/03-godrumdvip/07-harihara/4-harihara.jpg","/public/islands/03-godrumdvip/07-harihara/5-harihara.jpg","/public/islands/03-godrumdvip/07-harihara/6-harihara.jpg"]}
+           images={["/islands/03-godrumdvip/07-harihara/1-harihara.JPG","/islands/03-godrumdvip/07-harihara/2-harihara-murti.jpg","/islands/03-godrumdvip/07-harihara/3-harihara-murti.jpg","/islands/03-godrumdvip/07-harihara/4-harihara.jpg","/islands/03-godrumdvip/07-harihara/5-harihara.jpg","/islands/03-godrumdvip/07-harihara/6-harihara.jpg"]}
            />
           
           </section>

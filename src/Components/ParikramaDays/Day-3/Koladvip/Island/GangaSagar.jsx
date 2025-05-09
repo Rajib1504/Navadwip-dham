@@ -51,8 +51,8 @@ const GangaSagar = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/05-koladvip/04-ganga-sagar/1-ganga-sagar.jpg",
-          "/public/islands/00-general/IMG_8582.jpg",
+          "/islands/05-koladvip/04-ganga-sagar/1-ganga-sagar.jpg",
+          "/islands/00-general/IMG_8582.jpg",
         ]}
       />
     </section>

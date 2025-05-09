@@ -50,8 +50,8 @@ const BharadvajaTila = () => {
       {/* images   */}
       <Layout_II_B
         images={[
-          "/public/islands/00-general/DSC01384.jpg",
-          "/public/islands/08-modrumdvip/7-Bharadvaja-tila.jpg",
+          "/islands/00-general/DSC01384.jpg",
+          "/islands/08-modrumdvip/7-Bharadvaja-tila.jpg",
         ]}
       />
     </section>

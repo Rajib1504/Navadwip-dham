@@ -83,12 +83,12 @@ const Chapahati = () => {
       {/* images   */}
       <Layout_II_A
         images={[
-          "/public/islands/05-koladvip/05-champahatti/1-gaura-gadadhar-champahatti.JPG",
-          "/public/islands/05-koladvip/05-champahatti/2-champahatti.jpg",
-          "/public/islands/05-koladvip/05-champahatti/3-gaura-gadadhar-champahatti.jpg",
-          "/public/islands/05-koladvip/05-champahatti/4-champahatti.jpg",
-          "/public/islands/05-koladvip/05-champahatti/5-champahatti.jpg",
-          "/public/islands/05-koladvip/05-champahatti/6-champahatti.webp",
+          "/islands/05-koladvip/05-champahatti/1-gaura-gadadhar-champahatti.JPG",
+          "/islands/05-koladvip/05-champahatti/2-champahatti.jpg",
+          "/islands/05-koladvip/05-champahatti/3-gaura-gadadhar-champahatti.jpg",
+          "/islands/05-koladvip/05-champahatti/4-champahatti.jpg",
+          "/islands/05-koladvip/05-champahatti/5-champahatti.jpg",
+          "/islands/05-koladvip/05-champahatti/6-champahatti.webp",
         ]}
       />
     </section>

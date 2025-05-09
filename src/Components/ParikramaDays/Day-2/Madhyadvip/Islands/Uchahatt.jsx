@@ -54,9 +54,9 @@ const Uchahatt = () => {
       {/* images   */}
       <LayoutB
         images={[
-          "/public/islands/00-general/IMG_8565.jpg",
-          "/public/islands/00-general/IMG_8582.jpg",
-          "/public/islands/00-general/IMG_8583.jpg",
+          "/islands/00-general/IMG_8565.jpg",
+          "/islands/00-general/IMG_8582.jpg",
+          "/islands/00-general/IMG_8583.jpg",
         ]}
       />
     </section>

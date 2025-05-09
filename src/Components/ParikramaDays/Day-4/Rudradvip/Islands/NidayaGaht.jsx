@@ -41,8 +41,8 @@ const NidayaGaht = () => {
       {/* images   */}
       <Layout_II_B
         images={[
-          "/public/islands/09-rudradvip/02-nidaya-ghat/1-nidaya-ghat.jpg",
-          "/public/islands/09-rudradvip/02-nidaya-ghat/2-nidaya-ghat.jpg"
+          "/islands/09-rudradvip/02-nidaya-ghat/1-nidaya-ghat.jpg",
+          "/islands/09-rudradvip/02-nidaya-ghat/2-nidaya-ghat.jpg"
         ]}
       />
     </section>

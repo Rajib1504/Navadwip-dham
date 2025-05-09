@@ -35,9 +35,9 @@ const VrindavanDasThakurShripat = () => {
             </div>
             {/* images   */}
            <LayoutB
-           images={["/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/1-vrindavan-das-thakur-sripat.jpg",
-           "/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/2-vrindavan-das-thakur-sripat-deity.jpg",
-           "/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/3-vrindavan-das-thakur-sripat.jpg","/public/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/4-vrindavan-das-thakur-sripat.jpg"]}
+           images={["/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/1-vrindavan-das-thakur-sripat.jpg",
+           "/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/2-vrindavan-das-thakur-sripat-deity.jpg",
+           "/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/3-vrindavan-das-thakur-sripat.jpg","/islands/08-modrumdvip/02-vrindavan-das-thakur-sripat/4-vrindavan-das-thakur-sripat.jpg"]}
            
            />
           

@@ -52,11 +52,11 @@ const DevanandaGaudiyaMath = () => {
       {/* images   */}
       <LayoutA
         images={[
-          "/public/islands/05-koladvip/02-devananda-gaudiya-math/1-devananda-gaudiya-math-mandir.jpg",
-          "/public/islands/05-koladvip/02-devananda-gaudiya-math/2-devananda-gaudiya-math-varaha.JPG",
-          "/public/islands/05-koladvip/02-devananda-gaudiya-math/3-bhaktiprajnana-devananda-gaudiya-math.JPG",
-          "/public/islands/05-koladvip/02-devananda-gaudiya-math/4-bhaktivedanta-vamana-devananda-gaudiya-math.jpg",
-          "/public/islands/05-koladvip/02-devananda-gaudiya-math/5-devananda-gaudiya-math-natya-mandir.jpg",
+          "/islands/05-koladvip/02-devananda-gaudiya-math/1-devananda-gaudiya-math-mandir.jpg",
+          "/islands/05-koladvip/02-devananda-gaudiya-math/2-devananda-gaudiya-math-varaha.JPG",
+          "/islands/05-koladvip/02-devananda-gaudiya-math/3-bhaktiprajnana-devananda-gaudiya-math.JPG",
+          "/islands/05-koladvip/02-devananda-gaudiya-math/4-bhaktivedanta-vamana-devananda-gaudiya-math.jpg",
+          "/islands/05-koladvip/02-devananda-gaudiya-math/5-devananda-gaudiya-math-natya-mandir.jpg",
         ]}
       />
     </section>
